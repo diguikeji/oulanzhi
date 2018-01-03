@@ -1,0 +1,15 @@
+[ 2018-01-03T17:05:00+08:00 ] 60.168.149.11 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000412s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000364s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM tb_role_user a INNER JOIN tb_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `tb_users` SET `user_login`='admin',`user_pass`='###3292f0f51b4822ab58e9bce5e00b1799',`user_nicename`='admin',`user_email`='450175465@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='60.168.149.11',`last_login_time`='2018-01-03 17:05:00',`create_time`='2017-12-27 06:00:41',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0003s ]
+
