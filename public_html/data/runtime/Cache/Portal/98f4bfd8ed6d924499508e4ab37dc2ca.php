@@ -12,30 +12,30 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
 
-	<link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+	<link href="/think/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/think/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/think/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/think/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
 		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
 		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
 		.table-list{margin-bottom: 0px;}
 	</style>
 	<!--[if IE 7]>
-	<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="/think/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
 	<![endif]-->
 	<script type="text/javascript">
 	//全局变量
 	var GV = {
-	    ROOT: "/",
-	    WEB_ROOT: "/",
+	    ROOT: "/think/",
+	    WEB_ROOT: "/think/",
 	    JS_ROOT: "public/js/",
 	    APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
 	};
 	</script>
-    <script src="/public/js/jquery.js"></script>
-    <script src="/public/js/wind.js"></script>
-    <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/think/public/js/jquery.js"></script>
+    <script src="/think/public/js/wind.js"></script>
+    <script src="/think/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
     	$(function(){
     		$("[data-toggle='tooltip']").tooltip();
@@ -141,11 +141,11 @@
 								<div style="text-align: center;">
 									<input type="hidden" name="smeta[thumb]" id="thumb" value="<?php echo ((isset($smeta["thumb"]) && ($smeta["thumb"] !== ""))?($smeta["thumb"]):''); ?>">
 									<a href="javascript:upload_one_image('图片上传','#thumb');">
-										<?php if(empty($smeta['thumb'])): ?><img src="/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand"/>
+										<?php if(empty($smeta['thumb'])): ?><img src="/think/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand"/>
 										<?php else: ?>
 											<img src="<?php echo sp_get_image_preview_url($smeta['thumb']);?>" id="thumb-preview" width="135" style="cursor: hand"/><?php endif; ?>
 									</a>
-									<input type="button" class="btn btn-small" onclick="$('#thumb-preview').attr('src','/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+									<input type="button" class="btn btn-small" onclick="$('#thumb-preview').attr('src','/think/admin/themes/simplebootx/Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
 								</div>
 							</td>
 						</tr>
@@ -206,13 +206,13 @@
 			</div>
 		</form>
 	</div>
-	<script type="text/javascript" src="/public/js/common.js"></script>
+	<script type="text/javascript" src="/think/public/js/common.js"></script>
 	<script type="text/javascript">
 		//编辑器路径定义
 		var editorURL = GV.WEB_ROOT;
 	</script>
-	<script type="text/javascript" src="/public/js/ueditor/ueditor.config.js"></script>
-	<script type="text/javascript" src="/public/js/ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="/think/public/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="/think/public/js/ueditor/ueditor.all.min.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			

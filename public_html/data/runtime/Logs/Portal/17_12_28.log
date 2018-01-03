@@ -1,6 +1,0 @@
-[ 2017-12-28T19:30:57+08:00 ] 140.205.201.34 /index.php?m=member&c=index&a=register&siteid=1
-ERR: 无法加载控制器:Member
-
-[ 2017-12-28T19:37:17+08:00 ] 140.205.201.34 /index.php?m=wap&a=index&siteid=1
-ERR: 无法加载控制器:Wap
-

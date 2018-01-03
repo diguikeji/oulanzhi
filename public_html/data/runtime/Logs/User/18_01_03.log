@@ -1,104 +1,288 @@
-[ 2018-01-03T14:28:05+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:51:51+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000347s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000103s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001271s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003335s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:04:14+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:51:54+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000649s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001659s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:04:21+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:51:57+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000664s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:04:25+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:51:58+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000301s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000079s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001055s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002362s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:04:36+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:51:59+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000563s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000127s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001633s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000989s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002309s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:04:40+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:31+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000445s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000114s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000735s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002371s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:04:42+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:34+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000312s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000099s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000649s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:05:57+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:49+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000315s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000085s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000737s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001959s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:06:00+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:49+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000339s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000102s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000632s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:06:02+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:50+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000098s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000680s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:06:58+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:50+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000319s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000809s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002092s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:07:00+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:50+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000675s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001824s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
 
-[ 2018-01-03T17:07:00+08:00 ] 60.168.149.11 /index.php?g=user&m=index&a=is_login
+[ 2018-01-03T18:52:51+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000301s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000639s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T18:52:51+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000650s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T18:52:51+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000686s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001862s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:00:37+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001193s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003376s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:10:11+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001011s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002955s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:10:13+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001010s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002670s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:10:14+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000931s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003221s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:11:51+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001030s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002866s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:11:58+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000933s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002522s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:12:01+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001108s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003436s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:12:02+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000916s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002443s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:12:03+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000957s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002594s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:12:04+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000932s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002707s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:12:07+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002905s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:25:14+08:00 ] 127.0.0.1 /think/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001085s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002821s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\think\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:35:05+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000902s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:05+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000821s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:14+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001589s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004126s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:32+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000784s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001960s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:33+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001024s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002834s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:35+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000941s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002405s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:37+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001256s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:38+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000978s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002670s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T19:43:39+08:00 ] 127.0.0.1 /oulanzhi/public_html/index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000750s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
 
