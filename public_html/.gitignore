@@ -1,9 +1,0 @@
-.buildpath
-.DS_Store
-.project
-.settings
-!/data/index.html
-!/data/runtime/index.html
-.idea
-
-
