@@ -1,0 +1,6 @@
+[ 2018-01-03T14:22:42+08:00 ] 60.168.149.11 /info/refs?service=git-upload-pack
+ERR: 无法加载控制器:Info
+
+[ 2018-01-03T14:26:45+08:00 ] 60.168.149.11 /info/refs?service=git-upload-pack
+ERR: 无法加载控制器:Info
+

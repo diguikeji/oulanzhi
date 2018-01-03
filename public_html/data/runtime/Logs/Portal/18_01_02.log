@@ -1,0 +1,64 @@
+[ 2018-01-02T20:42:49+08:00 ] 211.161.245.2 /index.php?g=&m=AdminTerm&a=delete&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000352s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000393s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_terms` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_terms` WHERE `parent` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `tb_terms` WHERE `term_id` = 1 [ RunTime:0.0002s ]
+
+[ 2018-01-02T20:42:51+08:00 ] 211.161.245.2 /index.php?g=&m=AdminTerm&a=delete&id=2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000384s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_terms` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_terms` WHERE `parent` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `tb_terms` WHERE `term_id` = 2 [ RunTime:0.0002s ]
+
+[ 2018-01-02T20:51:49+08:00 ] 211.161.245.2 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000375s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000445s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_terms` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','美食','','article','','','','list','article') [ RunTime:0.0002s ]
+SQL: UPDATE `tb_terms` SET `path`='0-3' WHERE ( term_id=3 ) [ RunTime:0.0002s ]
+
+[ 2018-01-02T20:53:43+08:00 ] 211.161.245.2 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000393s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_terms` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','测试','','picture','','','','list','article') [ RunTime:0.0002s ]
+SQL: UPDATE `tb_terms` SET `path`='0-4' WHERE ( term_id=4 ) [ RunTime:0.0002s ]
+
