@@ -4,10 +4,10 @@
  */
 return array(
     'DB_TYPE' => 'mysql',
-    'DB_HOST' => 'localhost',
+    'DB_HOST' => '106.14.44.160',
     'DB_NAME' => 'oulanzhi',
-    'DB_USER' => 'root',
-    'DB_PWD' => 'tuyao19910715',
+    'DB_USER' => 'oulanzhi',
+    'DB_PWD' => 'oulanzhi123',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'tb_',
     //密钥
