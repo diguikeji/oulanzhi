@@ -11,7 +11,7 @@ use Common\Controller\HomebaseController;
 
 class ArticleController extends HomebaseController {
     
-    //文章内页
+    //采集详情页
     public function index() {
     	$article_id=I('get.id',0,'intval');
     	$term_id=I('get.cid',0,'intval');
@@ -82,7 +82,7 @@ class ArticleController extends HomebaseController {
     	$this->display(":$tplname");
     }
     
-    // 文章点赞
+    // 采集点赞
     public function do_like(){
     	$this->check_login();
     	

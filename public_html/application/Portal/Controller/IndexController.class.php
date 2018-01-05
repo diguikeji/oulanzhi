@@ -30,8 +30,21 @@ use Common\Controller\HomebaseController;
  */
 class IndexController extends HomebaseController {
 	
-    //首页 小夏是老猫除外最帅的男人了
+    //首页
 	public function index() {
+		//采集列表
+		$posts_model =M('Posts');
+		$count = $posts_model->where('recommended'==0)->count();
+		$page = new \Think\Page($count,3);
+		$show = $page->show();
+		$list = $posts_model->where('recommended'==0)->order('post_date')->limit($page->firstRow.','.$page->listRows)->select();
+		var_dump($list);
+		var_dump($show);
+
+		//采集推荐
+		$postsRecommend = $posts_model->where('recommend'==1)->select();
+		$this->assign('posts',$posts);
+		$this->assign('postsRecommend',$postsRecommend);
     	$this->display(":index");
     }
 

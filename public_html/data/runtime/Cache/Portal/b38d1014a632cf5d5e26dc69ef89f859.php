@@ -125,14 +125,10 @@
 <?php $home_slides=sp_getslide("portal_index"); $home_slides=empty($home_slides)?$default_home_slides:$home_slides; ?>
 <ul id="homeslider" class="unstyled">
 	<?php if(is_array($home_slides)): foreach($home_slides as $key=>$vo): ?><li>
-		<div class="caption-wraper">
-			<div class="caption"><?php echo ($vo["slide_name"]); ?></div>
-		</div>
 		<a href="<?php echo ($vo["slide_url"]); ?>"><img src="<?php echo sp_get_asset_upload_path($vo['slide_pic']);?>" alt=""></a>
 	</li><?php endforeach; endif; ?>
 </ul>
 <div class="container">
-	
 	<div>
 		<h1 class="text-center">快速了解ThinkCMF</h1>
 		<h3 class="text-center">Quickly understand the ThinkCMF</h3>
