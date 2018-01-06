@@ -42,6 +42,8 @@ $home_slides=sp_getslide("portal_index");
 
 $home_slides=empty($home_slides)?$default_home_slides:$home_slides;
 </php>
+
+
 <ul id="homeslider" class="unstyled">
 	<foreach name="home_slides" item="vo">
 	<li>
@@ -119,6 +121,9 @@ $home_slides=empty($home_slides)?$default_home_slides:$home_slides;
 <tc_include file="Public:footer"/>
 </div>
 
+
+<div id="load">加载更多</div>
+
 <tc_include file="Public:scripts"/>
 <script src="__TMPL__Public/assets/js/slippry.min.js"></script>
 <script>
@@ -132,6 +137,40 @@ $(function() {
 		auto: true,
 		preload: 'visible'
 	});
+
+
+		var pageIndex=1;
+	function getPostList(page)
+	{
+		$.ajax({
+
+			type: "GET",
+
+			url: "/index.php?g=&m=Index&a=getPostList&p="+page,
+
+			dataType: "json",
+
+			success: function (data) {
+
+				console.log(data);
+
+				if(data.length<16)
+				{
+					$("#load").text("没有更多数据了");
+				}
+
+				pageIndex++;
+			}
+		});
+	}
+
+	getPostList(pageIndex);
+
+	$("#load").click(function()
+	{
+		getPostList(pageIndex);
+	});
+
 });
 </script>
 {:hook('footer_end')}

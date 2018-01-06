@@ -24,30 +24,57 @@
 // | Author: Dean <zxxjjforever@163.com>
 // +----------------------------------------------------------------------
 namespace Portal\Controller;
-use Common\Controller\HomebaseController; 
+
+use Common\Controller\HomebaseController;
+
 /**
  * 首页
  */
-class IndexController extends HomebaseController {
-	
-    //首页
-	public function index() {
-		//采集列表
-		$posts_model =M('Posts');
-		$count = $posts_model->where('recommended'==0)->count();
-		$page = new \Think\Page($count,3);
-		$show = $page->show();
-		$list = $posts_model->where('recommended'==0)->order('post_date')->limit($page->firstRow.','.$page->listRows)->select();
-		var_dump($list);
-		var_dump($show);
+class IndexController extends HomebaseController
+{
 
-		//采集推荐
-		$postsRecommend = $posts_model->where('recommend'==1)->select();
-		$this->assign('posts',$posts);
-		$this->assign('postsRecommend',$postsRecommend);
-    	$this->display(":index");
+    //首页
+    public function index()
+    {
+        $this->display(":index");
     }
 
+    //采集列表
+    public function getPostList()
+    {
+        $users_model = M('Users');
+        $post_model = M("Posts");
+        $count = $post_model->count();
+        $page = new \Think\Page($count, 16);
+        $list = $users_model
+            ->alias("a")
+            ->join("tb_posts b on a.id =b.post_author")
+            ->field("a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
+            ->order('post_date desc')
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->select();
+        echo json_encode($list);
+    }
+
+
+    //为您推荐
+    public function getRecommended()
+    {
+        $users_model = M('Users');
+        $post_model = M("Posts");
+        $count = $post_model->where("recommended=1")->count();
+        $page = new \Think\Page($count, 16);
+        $show = $page->show();
+        $list = $users_model
+            ->alias("a")
+            ->join("tb_posts b on a.id =b.post_author")
+            ->field("a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
+            ->where('recommended=1')
+            ->order('post_date desc')
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->select();
+        echo json_encode($list);
+    }
 }
 
 
