@@ -12,30 +12,30 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
 
-	<link href="/think/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/think/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/think/public/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/think/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+	<link href="/public/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/public/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/public/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
     <style>
 		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
 		.table-actions{margin-top: 5px; margin-bottom: 5px;padding:0px;}
 		.table-list{margin-bottom: 0px;}
 	</style>
 	<!--[if IE 7]>
-	<link rel="stylesheet" href="/think/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="/public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
 	<![endif]-->
 	<script type="text/javascript">
 	//全局变量
 	var GV = {
-	    ROOT: "/think/",
-	    WEB_ROOT: "/think/",
+	    ROOT: "/",
+	    WEB_ROOT: "/",
 	    JS_ROOT: "public/js/",
 	    APP:'<?php echo (MODULE_NAME); ?>'/*当前应用名*/
 	};
 	</script>
-    <script src="/think/public/js/jquery.js"></script>
-    <script src="/think/public/js/wind.js"></script>
-    <script src="/think/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/wind.js"></script>
+    <script src="/public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
     <script>
     	$(function(){
     		$("[data-toggle='tooltip']").tooltip();
@@ -81,7 +81,7 @@
 					<td><?php echo ($vo["createtime"]); ?></td>
 					<td><?php echo ($status[$vo['status']]); ?></td>
 					<td>
-						<a target="_blank" href="/think/<?php echo ($vo["url"]); ?>">查看原文</a> 
+						<a target="_blank" href="/<?php echo ($vo["url"]); ?>">查看原文</a> 
 						<a href="<?php echo U('Commentadmin/delete',array('id'=>$vo['id']));?>" class="js-ajax-delete"><?php echo L('DELETE');?></a>
 					</td>
 				</tr><?php endforeach; endif; ?>
@@ -106,6 +106,6 @@
 			<div class="pagination"><?php echo ($page); ?></div>
 		</form>
 	</div>
-	<script src="/think/public/js/common.js"></script>
+	<script src="/public/js/common.js"></script>
 </body>
 </html>

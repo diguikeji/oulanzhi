@@ -1,0 +1,289 @@
+[ 2018-01-03T20:21:01+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001445s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003666s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `tb_options` WHERE ( option_name='site_options' ) LIMIT 1   [ RunTime:0.0176s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:21:03+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002336s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004697s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:26:17+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000737s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:26:51+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000800s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:26:52+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000676s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002120s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:26:53+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000689s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:27:04+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001005s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002140s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:27:09+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000897s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002210s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:37:24+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001015s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002294s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:38:07+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001286s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002895s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:38:08+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001092s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002482s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:38:12+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001579s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003514s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:38:51+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000907s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002280s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:39:05+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001006s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002864s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:39:11+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000903s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002585s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:40:03+08:00 ] 127.0.0.1 /index.php?g=user&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000766s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001872s ]
+
+[ 2018-01-03T20:40:06+08:00 ] 127.0.0.1 /index.php?g=user&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001107s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002373s ]
+
+[ 2018-01-03T20:40:13+08:00 ] 127.0.0.1 /index.php?g=user&m=register&a=doregister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001169s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002335s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0213s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\oulanzhi\public_html\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_users` WHERE `user_login` = 'zhouqian11989_sina_com' OR `user_email` = 'zhouqian11989@sina.com' LIMIT 1   [ RunTime:0.0208s ]
+SQL: INSERT INTO `tb_users` (`user_login`,`user_email`,`user_nicename`,`user_pass`,`last_login_ip`,`create_time`,`last_login_time`,`user_status`,`user_type`) VALUES ('zhouqian11989_sina_com','zhouqian11989@sina.com','zhouqian11989_sina_com','###22e465f015fa549a8d318a98ccb49d72','127.0.0.1','2018-01-03 20:40:13','2018-01-03 20:40:13','1','2') [ RunTime:0.0212s ]
+
+[ 2018-01-03T20:40:15+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002701s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:40:25+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001047s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002471s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:40:27+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000938s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002191s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:41:58+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000760s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:42:11+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000873s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002199s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:44:42+08:00 ] 127.0.0.1 /index.php?g=user&m=favorite&a=do_favorite&id=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000776s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0224s ]
+SQL: SELECT `user_status` FROM `tb_users` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '2' LIMIT 1   [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `tb_user_favorites` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `tb_user_favorites` WHERE `table` = 'posts' AND `object_id` = 1 AND `uid` = '2' LIMIT 1   [ RunTime:0.0215s ]
+SQL: INSERT INTO `tb_user_favorites` (`url`,`title`,`table`,`object_id`,`uid`,`createtime`) VALUES ('/index.php?g=&amp;m=article&amp;a=index&amp;id=1&amp;cid=3','test1','posts','1','2','1514983482') [ RunTime:0.0223s ]
+
+[ 2018-01-03T20:44:48+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000766s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:44:49+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000728s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:46:06+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000811s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001919s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:49:21+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000872s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:49:25+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000772s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:49:30+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000756s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:53:39+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000936s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:53:44+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001376s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003316s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T20:58:27+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001153s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003282s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T21:01:50+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000730s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-03T21:01:52+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000786s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002037s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
