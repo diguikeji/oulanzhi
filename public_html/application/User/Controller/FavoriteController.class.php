@@ -78,4 +78,10 @@ class FavoriteController extends MemberbaseController{
 			$this->error("取消收藏失败！");
 		}
 	}
+
+	//用户采集
+    public function do_collect()
+    {
+
+    }
 }
