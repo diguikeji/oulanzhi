@@ -42,11 +42,13 @@
     text-align: center;
 }
 /*注册手机端*/
-
+.reg-box{
+    margin-top: 0px;
+}
 .logo{
     margin:2.5rem auto;
-    width: 6rem;
-    height:6rem;
+    width: 60%;
+    height:auto;
 }
 
 
@@ -76,5 +78,8 @@
 .last{
    margin-top: 1rem;
     z-index: 9999;
+    width: 100%;
+}
+.div3_form input{
     width: 100%;
 }
