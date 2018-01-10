@@ -15,32 +15,26 @@ use Portal\Model\XingquModel;
  */
 class FindController extends HomebaseController
 {
-    //发现页分类列表
+    //发现页
      public function index(){
 
-        $xingqu_model  = M("Xingqu");
-         $xingqu = $xingqu_model->where("xq_fl_zc=1")
-               ->alias("a")
-               ->join("tb_huaban b on a.xq_id = b.hb_xqd_id")
-               ->field("a.xq_id,a.xq_name,a.xq_intro,a.xq_img,b.hb_id")
-               ->select();
-         /*
-         $dataList = json_encode($xingqu);
-         $arrcount = count($xingqu);
-         for($i = 1; i<$arrcount; $i++){
-             $hb_id = $xingqu[$arrcount][hb_id];
-         }
-
-         echo $hb_id;
-
-         echo json_encode($huaban);
-         */
-         exit();
          $this->display(":find");
      }
 
-     //发现页兴趣采集
-     public function interest(){
+     //发现页活动
+    public function active(){
 
+    }
+
+     //发现页兴趣和画板
+     public function getInterestList(){
+         $xingqu_model = M("xingqu");
+         $count = $xingqu_model->where("xq_fl_zc=1")->count();
+         $page = new \Think\Page($count,16);
+         $Model = M(); // 实例化一个model对象 没有对应任何数据表
+         $xingqu=$Model ->query("select a.xq_id,a.xq_name,a.xq_intro, GROUP_CONCAT(hb_id) as hb_id_list,GROUP_CONCAT(hb_img) as hb_img_list from (select * from tb_xingqu where xq_fl_zc=1) a join tb_huaban b on a.xq_id = b.hb_xqd_id group by xq_id ");
+           //  ->limit($page->firstRow . ',' . $page->listRows)
+            // ->select()
+         echo json_encode($xingqu);
      }
 }
