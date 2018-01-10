@@ -1,107 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>{$site_name}</title>
-<meta name="keywords" content="{$site_seo_keywords}" />
-<meta name="description" content="{$site_seo_description}">
-<meta name="author" content="ThinkCMF">
-<tc_include file="Public:head" />
+	<meta charset="utf-8">
+	<title>登录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/login.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="__TMPL__Public/new/css/small.css" />
 </head>
+<body>
 
-<body class="body-white">
-	<tc_include file="Public:nav" />
-
-	<div class="container tc-main">
-		<div class="row">
-			<div class="span4 offset4">
-				<h2 class="text-center">用户注册</h2>
-				<!-- <ul class="nav nav-tabs" id="myTab">
-					<li class="active"><a href="#mobile" data-toggle="tab">手机注册</a></li>
-					<li><a href="#email" data-toggle="tab">邮箱注册</a></li>
-				</ul> -->
-
-				<div class="tab-content">
-					<div class="tab-pane" id="mobile">
-						<form class="form-horizontal js-ajax-form" action="{:U('user/register/doregister')}" method="post">
-		
-							<div class="control-group">
-								<input type="text" name="mobile" placeholder="手机号" class="span4">
-							</div>
-		
-							<div class="control-group">
-								<input type="password" name="password" placeholder="密码" class="span4">
-							</div>
-							
-							<div class="control-group">
-								<div class="span4" style="margin-left: 0px;">
-									<input type="text" name="verify" placeholder="验证码" style="width:232px;">
-									{:sp_verifycode_img('length=4&font_size=14&width=120&height=34&charset=1234567890&use_noise=1&use_curve=0')}
-								</div>
-							</div>
-		
-							<div class="control-group">
-								<div class="span4" style="margin-left: 0px;">
-									<input type="text" name="mobile_verify" placeholder="手机验证码" style="width:232px;">
-									<a class="btn btn-success" style="width: 96px;">获取验证码</a>
-								</div>
-							</div>
-		
-							<div class="control-group">
-								<button class="btn btn-primary js-ajax-submit span4" type="submit" data-wait="1500" style="margin-left: 0px;">确定注册</button>
-							</div>
-		
-							<div class="control-group" style="text-align: center;">
-								<p>
-									已有账号? <a href="{:leuu('user/login/index')}">点击此处登录</a>
-								</p>
-							</div>
-						</form>
-					</div>
-					<div class="tab-pane active" id="email">
-						<form class="form-horizontal js-ajax-form" action="{:U('user/register/doregister')}" method="post">
-		
-							<div class="control-group">
-								<input type="text" name="email" placeholder="邮箱" class="span4">
-							</div>
-		
-							<div class="control-group">
-								<input type="password" name="password" placeholder="密码" class="span4">
-							</div>
-							
-							<div class="control-group">
-								<input type="password" name="repassword" placeholder="重复密码" class="span4">
-							</div>
-		
-							<div class="control-group">
-								<div class="span4" style="margin-left: 0px;">
-									<input type="text" name="verify" placeholder="验证码" style="width:252px;">
-									{:sp_verifycode_img('length=4&font_size=14&width=100&height=34&charset=1234567890&use_noise=1&use_curve=0')}
-								</div>
-								
-							</div>
-		
-							<div class="control-group">
-								<button class="btn btn-primary js-ajax-submit span4" type="submit" data-wait="1500" style="margin-left: 0px;">确定注册</button>
-							</div>
-		
-							<div class="control-group" style="text-align: center;">
-								<p>
-									已有账号? <a href="{:leuu('user/login/index')}">点击此处登录</a>
-								</p>
-							</div>
-						</form>
-					
-					</div>
-				</div>
-				
-			</div>
+<div class="border">
+	<div class="shuzhe">
+		<img src="__TMPL__Public/new/image/shuzhe.jpg">
+	</div>
+	<div class="shuzhe1">
+		<div class="shuzhe2">
+			<li class="text">WELCOM TO JOIN US</li>
+			<li class="text-1">we will give you the best service</li>
+		</div>
+		<div class="shuzhe3"></div>
+		<div class="shuzhe4"style="width: 180px;text-align: center;height: 20px;margin-top: 20px">
+		<!--	<div class="border1">
+				<div class="border1-1"></div>
+		</div>-->
+			<div class="border2"><div class="border2-1" style="font-size: 1.1rem;width: 180px;text-align: center">---使用第三方账号注册---</div></div>
+			<!--<div class="border3"><div class="border3-1"></div></div>-->
+		</div>
+		<div class="login" style="margin-top: 40px;width:180px;height: 50px;">
+			<div class="login-1" style="width: 45px;height: 45px;margin-right: 20px;"><a href="{:U('api/oauth/login',array('type'=>'qq'))}"><img src="__TMPL__Public/new/image/qq.png" style="width: 100%;height: 100%"></a></div>
+			<div class="login-1" style="width: 45px;height: 45px;margin-right: 20px;"><a href="{:U('api/oauth/login',array('type'=>'sina'))}"><img src="__TMPL__Public/new/image/weibo.png" style="width: 100%;height: 100%"></a></div>
+			<div class="login-1" style="width: 45px;height: 45px;"><a href="{:U('api/oauth/login',array('type'=>'weixin'))}"><img src="__TMPL__Public/new/image/weixin.png" style="width: 100%;height: 100%"></a></div>
 		</div>
 
-		<tc_include file="Public:footer" />
+
+
+		<div class="bottom" style="margin-top: 100px">
+			<a href="{:U('user/login/forgot_password')}"> <li class="text-2">忘记密码 ＞</li></a>
+			<div class="bottom-1"> <li class="text-3">已经注册为会员！</li></div>
+			<div class="bottom-2"><a href="{:leuu('user/login/index')}"><li class="text-4">点击登录 ＞</li></a></div>
+		</div>
 
 	</div>
-	<!-- /container -->
 
-	<tc_include file="Public:scripts" />
+</div>
+
+<div class="last">
+	<div class="last-1"><li class="text-5">Copyright&nbsp;&nbsp;&nbsp; 2006-2016 Built by Asis. All rights reserved.</li></div>
+	<div class="last-1"><li class="text-5">Read the boring legal stuff</li></div>
+</div>
 </body>
 </html>
+
+<tc_include file="Public:scripts" />

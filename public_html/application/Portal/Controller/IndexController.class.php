@@ -45,11 +45,11 @@ class IndexController extends HomebaseController
         $users_model = M('Users');
         $post_model = M("Posts");
         $count = $post_model->count();
-        $page = new \Think\Page($count, 16);
+        $page = new \Think\Page($count,16);
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
             ->limit($page->firstRow . ',' . $page->listRows)
             ->select();
@@ -62,17 +62,18 @@ class IndexController extends HomebaseController
     {
         $users_model = M('Users');
         $post_model = M("Posts");
-        $count = $post_model->where("recommended=1")->count();
-        $page = new \Think\Page($count, 16);
-        $show = $page->show();
+        $count = $post_model->count();
+        $page = new \Think\Page($count,16);
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
-            ->where('recommended=1')
+            ->field("b.id as pid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
+            ->where("recommended = 1")
             ->limit($page->firstRow . ',' . $page->listRows)
             ->select();
+
+
         echo json_encode($list);
     }
 }
