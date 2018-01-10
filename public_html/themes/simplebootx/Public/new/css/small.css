@@ -1,0 +1,85 @@
+/*登陆手机端*/
+@media (min-width:200px)and (max-width:468px) {
+    .box {
+        background-color: white;
+        width: 100%;
+        height: 45rem;
+    }
+}
+.shuzhe {
+    display: none;
+    block: none;
+}
+.shuzhe img {
+    display: none;
+    block: none;
+}
+.border{
+    width: 30rem;
+    height: 45rem;
+    margin:0 auto;
+    padding-top: 1rem;
+}
+.shuzhe1 {
+    width: 30rem;
+    height: 45rem;
+    background-color: white;
+}
+.last{
+    width: 100%;
+    height: 6rem;
+
+}
+.last-1{
+    width: 30rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.text-5{
+    list-style: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+/*注册手机端*/
+.reg-box{
+    margin-top: 0px;
+}
+.logo{
+    margin:2.5rem auto;
+    width: 60%;
+    height:auto;
+}
+
+
+.wanshanxinxi{
+    width: 80%;
+    height: auto;
+
+}
+.div1_form .div2_form{
+    width: 30%;
+    height: 2rem;
+    font-size: 100%;
+    float: left;
+}
+.form1 .div3_form{
+    width: 69%;
+    height: 2rem;
+    float: left;
+}
+.shuzhe1{
+    width: 95%;
+    margin: 0 auto;
+    float: none;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+.last{
+   margin-top: 1rem;
+    z-index: 9999;
+    width: 100%;
+}
+.div3_form input{
+    width: 100%;
+}

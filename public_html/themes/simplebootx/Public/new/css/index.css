@@ -262,7 +262,6 @@ ul#nav li a:hover{
     width: 100%;
     height: auto;
     background-color: #2C2C2C;
-
 }
 .footer .footer_1{
     width: 50%;
@@ -274,7 +273,7 @@ ul#nav li a:hover{
     font-family: 微软雅黑;
     color: #EDEDED;
     line-height: 2rem;
-    font-size: 1.3rem!important;
+    font-size: 0.6rem;
     padding-top: 1rem;
     float: left;
     margin-left: 10%;
@@ -289,7 +288,7 @@ ul#nav li a:hover{
 }
 .footer_2 .footer_2_1{
     width: 100%;
-    font-size: 1.3rem!important;
+    font-size: 0.8rem;
     font-family: 微软雅黑;
     color: #EDEDED;
     padding-left: 20%;
@@ -298,7 +297,7 @@ ul#nav li a:hover{
     font-family: 微软雅黑;
     color: #EDEDED;
     line-height: 2rem;
-    font-size: 1.3rem!important;
+    font-size: 0.6rem;
     padding-top: 1rem;
     float: left;
     margin-left: 22%;
@@ -306,7 +305,8 @@ ul#nav li a:hover{
 .footer .footer_3{
     line-height: 2rem;
     text-align: center;
-    font-size: 1rem!important;
+    width: 100%;
+    font-size: 0.3rem;
     font-family: 微软雅黑;
     color: #EDEDED;
     margin-top: 2rem;
