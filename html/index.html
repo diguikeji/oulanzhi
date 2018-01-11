@@ -95,20 +95,20 @@
 </nav>-->
 
 <nav class="nav-box">
-			<div class="nav-box-logo">
-				<img src="image/logo.png">
-			</div>
+	<div class="nav-box-logo">
+		<img src="image/logo.png">
+	</div>
 	<div class="nav-box-ul">
 		<ul id="nav">
 			<li><a href="#" class="active">首页</a></li>
 			<li><a href="#">发现</a></li>
 			<li><a href="#">最新</a>
-		<!--		<ul>
-					<li><a href="#">我的推荐</a></li>
-					<li><a href="#">我的关注</a></li>
-					<li><a href="#">我的画板</a></li>
-					<li><a href="#">用户</a></li>
-				</ul>-->
+				<!--		<ul>
+                            <li><a href="#">我的推荐</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的画板</a></li>
+                            <li><a href="#">用户</a></li>
+                        </ul>-->
 			</li>
 			<li><a href="#">活动</a></li>
 		</ul>
@@ -118,6 +118,15 @@
 	<div class="right-menu">
 		<img class="open-menu" src="image/menu.png" />
 		<img class="close-menu" src="image/closeMenu.png" />
+	</div>
+
+	<div class="login-ul">
+		<ul id="nav-login">
+			<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
+			<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
+			<li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="image/touxiang.png"></div></a></li>
+			<li id="login"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
+		</ul>
 	</div>
 
 
@@ -130,33 +139,33 @@
 <!-- 幻灯片-->
 
 <div class="slide-box">
-<div class="container" style="width: 100%;">
-	<div class="row" >
-		<div class="col-md-12"  style="padding: 0px">
-			<!-- Swiper -->
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="image/banner.jpg"></div>
-					<div class="swiper-slide"><img src="image/banner1.jpg"></div>
-					<div class="swiper-slide"><img src="image/banner2.jpg"></div>
-					<div class="swiper-slide"><img src="image/banner3.jpg"></div>
+	<div class="container" style="width: 100%;">
+		<div class="row" >
+			<div class="col-md-12"  style="padding: 0px">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="image/banner.jpg"></div>
+						<div class="swiper-slide"><img src="image/banner1.jpg"></div>
+						<div class="swiper-slide"><img src="image/banner2.jpg"></div>
+						<div class="swiper-slide"><img src="image/banner3.jpg"></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
-				<!-- Add Arrows -->
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
 			</div>
+
 		</div>
-
 	</div>
-</div>
 
 
-<div class="search-box">
-	<input class="search-box-input" placeholder="点击搜索一下您就知道">
-	<button class="sousuo"><i class="iconfont icon-sousuo"></i></button>
-</div>
+	<div class="search-box">
+		<input class="search-box-input" placeholder="点击搜索一下您就知道">
+		<button class="sousuo"><i class="iconfont icon-sousuo"></i></button>
+	</div>
 </div>
 
 <!-- 内容 -->
@@ -190,28 +199,28 @@
 
 
 
-         <div class="com-mide">
-		<h3>为您推荐</h3>
-		<p >———&nbsp;&nbsp; E-COMMERCE&nbsp;&nbsp; ———</p>
-		<div class="hb-box" style="margin-top: 3rem;padding-bottom: 3rem">
-			<div class="huaban">
-				<div class="guajian"><img src="image/guajian.png"></div>
-				<div class="image-box">
-					<img src="image/haibao.png">
-				</div>
-				<div class="bottom-box">
-					<div class="touiang">
-						<img src="image/touxiang.gif">&nbsp;&nbsp;Dideo</div>
-					<div class="guanzhu">
-						<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;26
-					</div>
+<div class="com-mide">
+	<h3>为您推荐</h3>
+	<p >———&nbsp;&nbsp; E-COMMERCE&nbsp;&nbsp; ———</p>
+	<div class="hb-box" style="margin-top: 3rem;padding-bottom: 3rem">
+		<div class="huaban">
+			<div class="guajian"><img src="image/guajian.png"></div>
+			<div class="image-box">
+				<img src="image/haibao.png">
+			</div>
+			<div class="bottom-box">
+				<div class="touiang">
+					<img src="image/touxiang.gif">&nbsp;&nbsp;Dideo</div>
+				<div class="guanzhu">
+					<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;26
 				</div>
 			</div>
-
-			<div class="clear"></div>
-			<button class="more-box">点击查看更多>>>></button>
 		</div>
-		 </div>
+
+		<div class="clear"></div>
+		<button class="more-box">点击查看更多>>>></button>
+	</div>
+</div>
 
 <!-- foot -->
 <div class="footer">
@@ -263,8 +272,11 @@
 
 	$(".nav-box .right-menu .close-menu").click(function(){
 
+		$(".login-ul").slideUp();
 		$(".nav-box-ul").slideUp();
 		$(this).parent().removeClass("active");
+
+
 
 
 	});
@@ -272,8 +284,11 @@
 
 	$(".nav-box .right-menu .open-menu").click(function(){
 
+		$(".login-ul").slideDown();
 		$(".nav-box-ul").slideDown();
 		$(this).parent().addClass("active");
+
+
 
 	});
 

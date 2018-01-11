@@ -1,5 +1,8 @@
 
 /*index.css*/
+.right-menu{
+    display: none;
+}
 .nav-box{
     width: 100%;
     height: 6rem;
@@ -66,6 +69,58 @@ ul#nav li a:hover{
     text-decoration:none
 
 }
+
+.login-ul{
+    width: 250px;
+    float: left;
+    margin-left: 15%;
+    height: 100%;
+}
+
+ul#nav-login{
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+
+}
+ul#nav-login li{
+    display:inline;
+    height:100%;
+
+
+}
+ul#nav-login li:hover{
+    color: black;
+
+}
+ul#nav-login li a{
+    display:inline-block;
+    padding:5px 10px;
+    height:100%;
+    line-height:60px;
+    color:#FFF;
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+    font-size:1.9rem;
+    text-decoration:none;
+}
+ul#nav-login li a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+ul#nav-login li a:hover{
+    text-decoration:none;
+    color: #FF4B66;
+
+}
+ul#nav-login li a i{
+    font-size:2.3rem;
+}
+
+
+
+
 .slide-box{
     margin-top: 6rem;
 }
@@ -320,14 +375,23 @@ ul#nav li a:hover{
 
 /*phone*/
 @media screen and (max-width: 468px) {
-
+    .right-menu{
+        display: block;
+    }
     .nav-box-logo img{width:140px;}
     .nav-box-ul{display: none;width:100%;position: absolute;top:6rem;left:0;background-color: rgba(0,0,0,0.7);height:auto;margin:0;padding:10px 0;}
     .nav-box-ul #nav{width:100%;padding:0;height:auto;}
     .nav-box-ul #nav li{display: block;width:100%;text-align: left;padding:0;height:auto;}
     .nav-box-ul #nav li a{padding:0px 20px;display: block;line-height:50px;font-size:16px;}
     .nav-box-ul #nav li a.active{border-bottom:0;}
-    .nav-box .right-menu{position: absolute;right:10px;top:13px;}
+
+    .login-ul{display: none;}
+    .login-ul #jia{display: none;}
+    .login-ul #login{display: none;}
+    .login-ul #nav-login{margin-left: -4rem}
+
+
+    .nav-box .right-menu{position: absolute;right:10px;top:18px;}
     .nav-box .right-menu.active{border:0;}
     .nav-box .right-menu img{width:30px}
     .nav-box .right-menu .close-menu{display: none;}
@@ -335,8 +399,8 @@ ul#nav li a:hover{
     .nav-box .right-menu.active .open-menu{display: none;}
 
 
-  .vertical-align-middle{
-      margin-left: -100px;
+    .vertical-align-middle{
+        margin-left: -100px;
     }
     .slide-box{
         display: none;
@@ -365,7 +429,7 @@ ul#nav li a:hover{
     }
 
     .guajian{
-       display: none;
+        display: none;
     }
 
     .image-box{
@@ -392,7 +456,7 @@ ul#nav li a:hover{
         width: 100%;
         height: 50px;
         margin-top: 10px;
-       padding: 5px;
+        padding: 5px;
 
     }
     .touiang{
