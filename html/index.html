@@ -115,6 +115,11 @@
 	</div>
 
 
+	<div class="right-menu">
+		<img class="open-menu" src="image/menu.png" />
+		<img class="close-menu" src="image/closeMenu.png" />
+	</div>
+
 
 </nav>
 
@@ -254,6 +259,22 @@
 		centeredSlides: true,
 		autoplay: 20000,
 		autoplayDisableOnInteraction: false
+	});
+
+	$(".nav-box .right-menu .close-menu").click(function(){
+
+		$(".nav-box-ul").slideUp();
+		$(this).parent().removeClass("active");
+
+
+	});
+
+
+	$(".nav-box .right-menu .open-menu").click(function(){
+
+		$(".nav-box-ul").slideDown();
+		$(this).parent().addClass("active");
+
 	});
 
 
