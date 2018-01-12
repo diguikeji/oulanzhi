@@ -1,3 +1,0 @@
-[ 2018-01-03T20:53:49+08:00 ] 127.0.0.1 /index.php?g=api&m=oauth&a=login&type=sina
-ERR: 请配置您申请的APP_KEY和APP_SECRET
-
