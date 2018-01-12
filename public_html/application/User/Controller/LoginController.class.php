@@ -208,9 +208,7 @@ hello;
     // 登录验证提交
     public function dologin(){
 
-    	if(!sp_check_verify_code()){
-    		$this->error("验证码错误！");
-    	}
+
     	
     	$users_model=M("Users");
     	$rules = array(

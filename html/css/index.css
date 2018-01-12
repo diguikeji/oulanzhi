@@ -1,3 +1,129 @@
+
+/*index.css*/
+.right-menu{
+    display: none;
+}
+.nav-box{
+    width: 100%;
+    height: 6rem;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.nav-box-logo{
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.nav-box-logo img{
+    max-width: 100%;
+}
+.nav-box-ul{
+    width: 450px;
+    float: left;
+    margin-left: 15%;
+    height: 100%;
+
+}
+ul#nav{ width:100%;
+    height:100%;
+    margin: 0 auto;
+
+}
+ul#nav li{
+    display:inline;
+    height:100%;
+
+
+}
+ul#nav li:hover{
+    color: black;
+
+}
+ul#nav li a{
+    display:inline-block;
+    padding:5px 30px;
+    height:100%;
+    line-height:60px;
+    color:#FFF;
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+    font-size:1.9rem;
+    text-decoration:none;
+}
+.active{
+    border-bottom: 1px solid #FF4B66;
+    color:#FF4B66!important;
+
+}
+ul#nav li a:hover{
+    background:rgba(0,0,0,0.2);
+    text-decoration:none
+
+}
+
+.login-ul{
+    width: 250px;
+    float: left;
+    margin-left: 15%;
+    height: 100%;
+}
+
+ul#nav-login{
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+
+}
+ul#nav-login li{
+    display:inline;
+    height:100%;
+
+
+}
+ul#nav-login li:hover{
+    color: black;
+
+}
+ul#nav-login li a{
+    display:inline-block;
+    padding:5px 10px;
+    height:100%;
+    line-height:60px;
+    color:#FFF;
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+    font-size:1.9rem;
+    text-decoration:none;
+}
+ul#nav-login li a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+ul#nav-login li a:hover{
+    text-decoration:none;
+    color: #FF4B66;
+
+}
+ul#nav-login li a i{
+    font-size:2.3rem;
+}
+
+
+
+
+.slide-box{
+    margin-top: 6rem;
+}
 .swiper-container {
     width: 100%;
     height:550px;
@@ -31,7 +157,7 @@
     margin-top: -290px;
     border: 0px;
     margin-left: 40px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-left: 5px;
     background-color:transparent;
     color: white;
@@ -49,7 +175,7 @@
 
 }
 .sousuo i{
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: white;
     opacity: 0.5;
     display: -webkit-box;
@@ -74,7 +200,7 @@
     width: 1200px;
     height: auto;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 250px;
 }
 .clear{
     clear: both;
@@ -103,15 +229,19 @@
     height: 315px;
     margin: 0 auto	;
     margin-top: -5px;
-    -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    -webkit-box-shadow:  0px 2px 10px  rgba(0,0,0,0.2);
+    -moz-box-shadow:  0px 2px 10px  rgba(0,0,0,0.2);
     box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
     overflow: hidden;
+    position: relative;
+    background-image: url("../image/background.jpg");
 }
+.image-box > a{position: absolute; top: -100%; bottom: -100%; left: -100%; right: -100%; text-align: center;}
+.image-box > a:before { content: ""; display: inline-block; vertical-align: middle; height: 100%; }
+.image-box > a > img { vertical-align: middle; }
 .image-box img{
-    width: 100%;
-    height: 100%;
-    z-index: 9;
+    max-width:100%;
+    height:auto;
     transition: all 1s;
 }
 .image-box img:hover{
@@ -167,24 +297,39 @@
     color: white;
     font-size: 1.5rem;
     margin-top: 40px;
+    outline:medium;
+}
+.com-mide{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 4rem;
+    background-color: rgba(243,244,243,0.6);
+    padding-top: 3rem;
+}
+.com-mide h3{
+    color: #F83254;
+    font-weight: bold;
+    line-height: 3rem
 }
 /*foot*/
 .footer{
     width: 100%;
     height: auto;
     background-color: #2C2C2C;
+
 }
 .footer .footer_1{
     width: 50%;
     margin-left: 10%;
-
+    margin-top: 20px;
     float: left;
 }
 .footer .footer_1_1{
     font-family: 微软雅黑;
     color: #EDEDED;
     line-height: 2rem;
-    font-size: 0.6rem;
+    font-size: 1.3rem!important;
     padding-top: 1rem;
     float: left;
     margin-left: 10%;
@@ -192,14 +337,14 @@
 .footer .footer_2{
     width: 20%;
     float: right;
-    margin-top: 1.5rem;
+    margin-top: 30px;
     margin-right: 10%;
-    border-left: 1px solid #EDEDED ;
-    border-right: 1px solid #EDEDED ;
+    border-left: 1px solid grey ;
+    border-right: 1px solid grey ;
 }
 .footer_2 .footer_2_1{
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 1.3rem!important;
     font-family: 微软雅黑;
     color: #EDEDED;
     padding-left: 20%;
@@ -208,7 +353,7 @@
     font-family: 微软雅黑;
     color: #EDEDED;
     line-height: 2rem;
-    font-size: 0.6rem;
+    font-size: 1.3rem!important;
     padding-top: 1rem;
     float: left;
     margin-left: 22%;
@@ -216,8 +361,7 @@
 .footer .footer_3{
     line-height: 2rem;
     text-align: center;
-    width: 100%;
-    font-size: 0.3rem;
+    font-size: 1rem!important;
     font-family: 微软雅黑;
     color: #EDEDED;
     margin-top: 2rem;
@@ -225,4 +369,128 @@
 .footer a{
     text-decoration: none;
     color: #EDEDED;
+}
+
+
+
+/*phone*/
+@media screen and (max-width: 468px) {
+    .right-menu{
+        display: block;
+    }
+    .nav-box-logo img{width:140px;}
+    .nav-box-ul{display: none;width:100%;position: absolute;top:6rem;left:0;background-color: rgba(0,0,0,0.7);height:auto;margin:0;padding:10px 0;}
+    .nav-box-ul #nav{width:100%;padding:0;height:auto;}
+    .nav-box-ul #nav li{display: block;width:100%;text-align: left;padding:0;height:auto;}
+    .nav-box-ul #nav li a{padding:0px 20px;display: block;line-height:50px;font-size:16px;}
+    .nav-box-ul #nav li a.active{border-bottom:0;}
+
+    .login-ul{display: none;}
+    .login-ul #jia{display: none;}
+    .login-ul #login{display: none;}
+    .login-ul #nav-login{margin-left: -4rem}
+
+
+    .nav-box .right-menu{position: absolute;right:10px;top:18px;}
+    .nav-box .right-menu.active{border:0;}
+    .nav-box .right-menu img{width:30px}
+    .nav-box .right-menu .close-menu{display: none;}
+    .nav-box .right-menu.active .close-menu{display: block;}
+    .nav-box .right-menu.active .open-menu{display: none;}
+
+
+    .vertical-align-middle{
+        margin-left: -100px;
+    }
+    .slide-box{
+        display: none;
+
+    }
+    .hb-box{
+        width: 100%;
+        height: auto;
+        margin-top: 7rem;
+        padding-left: 1%;
+        padding-right: 1%;
+        overflow: hidden;
+
+    }
+    .huaban{
+        width: 45%;
+        height: 310px;
+        float: left;
+        background-color:rgba(255,255,255,0.6);
+        -webkit-box-shadow:  0px 2px 10px  rgba(0,0,0,0.2);
+        -moz-box-shadow:  0px 2px 10px  rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+        border-radius: 2px;
+        overflow: hidden;
+        margin-top: 0px;
+    }
+
+    .guajian{
+        display: none;
+    }
+
+    .image-box{
+        width: 100%;
+        height: 250px;
+        margin: 0 auto	;
+        overflow: hidden;
+        position: relative;
+        box-shadow: none;
+        background-image: url("../image/background.jpg");
+    }
+    .image-box > a{position: absolute; top: -100%; bottom: -100%; left: -100%; right: -100%; text-align: center;}
+    .image-box > a:before { content: ""; display: inline-block; vertical-align: middle; height: 100%; }
+    .image-box > a > img { vertical-align: middle; }
+    .image-box img{
+        width:100%;
+        height:auto;
+        transition: all 1s;
+    }
+    .image-box img:hover{
+        transform: scale(1.1);
+    }
+    .bottom-box{
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        padding: 5px;
+
+    }
+    .touiang{
+        float: left;
+        width: 50%;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .touiang img{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+    .guanzhu{
+        width: 49%;
+        height: auto;
+        margin-top: 5px;
+        float: right;
+        margin-right: 0px;
+        color: black;
+    }
+    .more-box{
+        width: 50%;
+        height: 40px;
+        font-size: 1.5rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .met-index-product{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+
 }
