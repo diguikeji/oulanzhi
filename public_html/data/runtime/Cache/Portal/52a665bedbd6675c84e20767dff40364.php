@@ -21,15 +21,15 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-	<link rel="icon" href="/think/themes/simplebootx/Public/assets/images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="/think/themes/simplebootx/Public/assets/images/favicon.ico" type="image/x-icon">
-    <link href="/think/themes/simplebootx/Public/assets/simpleboot/themes/simplebootx/theme.min.css" rel="stylesheet">
-    <link href="/think/themes/simplebootx/Public/assets/simpleboot/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="/think/themes/simplebootx/Public/assets/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+	<link rel="icon" href="/themes/simplebootx/Public/assets/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/themes/simplebootx/Public/assets/images/favicon.ico" type="image/x-icon">
+    <link href="/themes/simplebootx/Public/assets/simpleboot/themes/simplebootx/theme.min.css" rel="stylesheet">
+    <link href="/themes/simplebootx/Public/assets/simpleboot/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/themes/simplebootx/Public/assets/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
 	<!--[if IE 7]>
-	<link rel="stylesheet" href="/think/themes/simplebootx/Public/assets/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="/themes/simplebootx/Public/assets/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css">
 	<![endif]-->
-	<link href="/think/themes/simplebootx/Public/assets/css/style.css" rel="stylesheet">
+	<link href="/themes/simplebootx/Public/assets/css/style.css" rel="stylesheet">
 	<style>
 		/*html{filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}*/
 		#backtotop{position: fixed;bottom: 50px;right:20px;display: none;cursor: pointer;font-size: 50px;z-index: 9999;}
@@ -48,7 +48,7 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </a>
-       <a class="brand" href="/think/"><img src="/think/themes/simplebootx/Public/assets/images/logo.png"/></a>
+       <a class="brand" href="/"><img src="/themes/simplebootx/Public/assets/images/logo.png"/></a>
        <div class="nav-collapse collapse" id="main-menu">
        	<?php
  $effected_id="main-menu"; $filetpl="<a href='\$href' target='\$target'>\$label</a>"; $foldertpl="<a href='\$href' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label <b class='caret'></b></a>"; $ul_class="dropdown-menu" ; $li_class="li-class" ; $style="nav"; $showlevel=6; $dropdown='dropdown'; echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown); ?>
@@ -62,7 +62,7 @@
           	</li> -->
 			<li class="dropdown user login">
 	            <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
-	            <img src="/think/themes/simplebootx/Public/assets/images/headicon.png" class="headicon"/>
+	            <img src="/themes/simplebootx/Public/assets/images/headicon.png" class="headicon"/>
 	            <span class="user-nicename"></span><b class="caret"></b></a>
 	            <ul class="dropdown-menu pull-right">
 	               <li><a href="<?php echo U('user/center/index');?>"><i class="fa fa-user"></i> &nbsp;个人中心</a></li>
@@ -72,7 +72,7 @@
           	</li>
           	<li class="dropdown user offline">
 	            <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
-	           		<img src="/think/themes/simplebootx/Public/assets/images/headicon.png" class="headicon"/>登录<b class="caret"></b>
+	           		<img src="/themes/simplebootx/Public/assets/images/headicon.png" class="headicon"/>登录<b class="caret"></b>
 	            </a>
 	            <ul class="dropdown-menu pull-right">
 	               <li><a href="<?php echo U('api/oauth/login',array('type'=>'sina'));?>"><i class="fa fa-weibo"></i> &nbsp;微博登录</a></li>
@@ -152,7 +152,7 @@
 	                        <i class="fa fa-comment"></i>
 	                        <a href="<?php echo U('user/index/index',array('id'=>$vo['uid']));?>"><?php echo ($vo["full_name"]); ?>:</a>
 	                        <span><?php echo ($vo["content"]); ?></span>
-	                        <a href="/think/<?php echo ($vo["url"]); ?>#comment<?php echo ($vo["id"]); ?>">查看原文</a>
+	                        <a href="/<?php echo ($vo["url"]); ?>#comment<?php echo ($vo["id"]); ?>">查看原文</a>
 	                        <span class="comment-time"><?php echo date('m月d日  H:i',strtotime($vo['createtime']));?></span>
 	                    </div><?php endforeach; endif; ?>
                 </div>
@@ -182,7 +182,7 @@
 			        	<dl class="dl-horizontal">
 				            <dt>
 					            <a class="img-wraper" href="<?php echo leuu('article/index',array('id'=>$vo['object_id'],'cid'=>$vo['term_id']));?>">
-					            	<?php if(empty($smeta['thumb'])): ?><img src="/think/themes/simplebootx/Public/assets/images/default_tupian4.png" class="img-responsive" alt="<?php echo ($vo["post_title"]); ?>"/>
+					            	<?php if(empty($smeta['thumb'])): ?><img src="/themes/simplebootx/Public/assets/images/default_tupian4.png" class="img-responsive" alt="<?php echo ($vo["post_title"]); ?>"/>
 									<?php else: ?> 
 										<img src="<?php echo sp_get_asset_upload_path($smeta['thumb']);?>" class="img-responsive img-thumbnail" alt="<?php echo ($vo["post_title"]); ?>" /><?php endif; ?>
 					            </a>
@@ -240,16 +240,16 @@
 <script type="text/javascript">
 //全局变量
 var GV = {
-    ROOT: "/think/",
-    WEB_ROOT: "/think/",
+    ROOT: "/",
+    WEB_ROOT: "/",
     JS_ROOT: "public/js/"
 };
 </script>
    <!-- Placed at the end of the document so the pages load faster -->
-   <script src="/think/public/js/jquery.js"></script>
-   <script src="/think/public/js/wind.js"></script>
-   <script src="/think/themes/simplebootx/Public/assets/simpleboot/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/think/public/js/frontend.js"></script>
+   <script src="/public/js/jquery.js"></script>
+   <script src="/public/js/wind.js"></script>
+   <script src="/themes/simplebootx/Public/assets/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+   <script src="/public/js/frontend.js"></script>
 <script>
 $(function(){
 	$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
