@@ -96,7 +96,7 @@ class ArticleController extends HomebaseController
             ->alias("a")
             ->join("tb_users b on a.post_author = b.id")
             ->where(array("a.id" => $pid))
-            ->field("a.id as pid,b.id as uid,b.user_nicename,b.avatar,a.post_like,a.post_title,a.post_content,a.post_img_url,a.post_date")
+            ->field("a.id as pid,b.id as uid,b.user_nicename,a.post_like,a.post_title,a.post_content,a.post_img_url,a.post_date")
             ->find();
 
         session("uid", $posts["uid"]);
@@ -124,7 +124,7 @@ class ArticleController extends HomebaseController
                     ->alias("a")
                     ->where(array("post_author"=>$uid))
                     ->join("tb_users c on a.post_author = c.id")
-                    ->field("a.id as pid,a.post_like,a.post_img_url,c.user_nicename,c.avatar")
+                    ->field("a.id as pid,c.id as uid,a.post_like,a.post_img_url,c.user_nicename")
                     ->limit($page->firstRow . ',' . $page->listRows)
                     ->select();
         echo json_encode($list);

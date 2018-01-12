@@ -49,10 +49,11 @@ class IndexController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
             ->limit($page->firstRow . ',' . $page->listRows)
             ->select();
+
         echo json_encode($list);
     }
 
@@ -67,7 +68,7 @@ class IndexController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
             ->where("recommended = 1")
             ->limit($page->firstRow . ',' . $page->listRows)

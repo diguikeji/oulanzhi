@@ -51,12 +51,12 @@
 				<li><a href="#"><i class="iconfont icon-fenxiang" style="font-size: 2rem;color: white;"></i></a></li>
 			</ul>
 			<div>
-				<img src="{$post_img_url}">
+				<img src="{:U('user/collect/imgCollect',array('id'=>$pid))}">
 			</div>
 		</div>
 		<div class="detail-bbs-box">
 			<div class="info-box">
-				<div class="touxiang-box"> <img src="{$avatar}"></div>
+				<div class="touxiang-box"> <img src="{:U('user/public/avatar',array('id'=>$uid))}"></div>
 				<div class="item-inner">
 					<div class="item-inner-text">
 						<div class="item-title">{$user_nicename}</div>
@@ -144,16 +144,17 @@
 				//var html ='';
 				for(var i =0; i<data.length;i++){
 					var pid = data[i].pid;
+					var uid = data[i].uid;
 					$("#hb-box").append(
 							'<div class="huaban">'+
 							'<div class="guajian"><img src="__TMPL__Public/new/image/guajian.png"></div>'+
 							'<div class="image-box">'+
 
-							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="'+data[i].post_img_url+'"></a>'+
+							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="index.php?g=user&m=collect&a=imgCollect&id='+pid+'"></a>'+
 							'</div>'+
 							'<div class="bottom-box">'+
 							'<div class="touiang">'+
-							'<img src="'+data[i].avatar+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
+							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
 							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
 							'</div>'+
@@ -199,17 +200,18 @@
 				console.log(data);
 				for(var i =0; i<data.length;i++){
 					var pid = data[i].pid;
+					var uid = data[i].uid;
 					console.log(pid);
 					$("#hb-box-recommended").append(
 							'<div class="huaban">'+
 							'<div class="guajian"><img src="__TMPL__Public/new/image/guajian.png"></div>'+
 							'<div class="image-box">'+
 
-							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="'+data[i].post_img_url+'"></a>'+
+							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="index.php?g=user&m=collect&a=imgCollect&id='+pid+'"></a>'+
 							'</div>'+
 							'<div class="bottom-box">'+
 							'<div class="touiang">'+
-							'<img src="'+data[i].avatar+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
+							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
 							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
 							'</div>'+
