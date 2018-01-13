@@ -72,4 +72,6 @@ class CollectController extends MemberbaseController
             ->select();
         echo json_encode($love);
     }
+
+
 }
