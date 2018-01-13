@@ -1,0 +1,1428 @@
+
+.yesterday{
+    width: 100%;
+    height: 20rem;
+    background-color: #EAEBEA;
+    margin-top:5rem ;
+}
+.yesterday_1{
+    width: 15rem;
+    height: 20rem;
+
+    margin-left: 7%;
+    float: left;
+}
+.yesterday_1_1{
+    width: 9rem;
+    height: 9rem;
+
+    margin: 2.5rem auto;
+    border-radius: 50%;
+
+}
+.yesterday_1_1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.yesterday_1_2{
+    width: 5rem;
+    height: 2rem;
+    margin: -2rem auto;
+
+}
+.yesterday_1_2_1{
+    float: left;
+    font-weight: 600;
+    color: #888988;
+    font-size:1.4rem ;
+
+}
+.yesterday_1_2_2{
+    float: right;
+    font-weight: 600;
+    color: #888988;
+    font-size:1.4rem ;
+
+
+}
+.yesterday_1_3{
+    width: 6rem;
+    height: 1.6rem;
+    margin: 2rem auto;
+
+    background-color: #585958;
+}
+.yesterday_1_3_1{
+    float: left;
+    font-size: 1rem;
+    color: white;
+
+    margin-left: 2%;
+}
+.yesterday_1_3_2{
+    float: left;
+    width: 0.15rem;
+    height: 1.5rem;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+.yesterday_1_3_3{
+    float: right;
+    font-size: 1rem;
+    color: white;
+
+    margin-right: 3%;
+}
+.yesterday_2{
+    width: 30rem;
+    height: 20rem;
+
+    float: left;
+
+}
+.yesterday_2_1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #393A39;
+    margin-top: 4rem;
+    letter-spacing: 2px;
+}
+.yesterday_2_2{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #A4A5A4;
+}
+.yesterday_3{
+    width: 15rem;
+    height: 20rem;
+
+    float: right;
+    margin-right:7%
+}
+.yesterday_3_1{
+    margin-top: 2.5rem;
+    width: 6.5rem;
+    height: 2.5rem;
+
+    text-align: center;
+    background-color: #C1A062;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    float: left;
+}
+.yesterday_3_2{
+    width: 5rem;
+    height: 2.5rem;
+
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    background-color: #C1A062;
+    padding-top: 0.3rem;
+    text-align: center;
+    font-size:1.2rem ;
+}
+.yesterday_3_2 img{
+    width: 2.2rem;
+    height:1.8rem;
+
+}
+.hongse{
+    width: 50rem;
+    height: 8rem;
+    margin: 0 auto;
+    background-color: #FD455E;
+    position: relative;
+    top:-4rem;
+
+
+
+
+
+}
+.hongse_1{
+    width:24.8%;
+    height: 8rem;
+    position: relative;
+    float: left;
+}
+.hongse_1_1{
+    text-align: center;
+    font-size: 2rem;
+    color: #FFB1C2;
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    margin-top: 1rem;
+}
+.number{
+    position: absolute;
+    font-size:2rem;
+    color: #FFB1C2;
+    left: 40%;
+}
+.hongse_1_2{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 3rem;
+    color:#FFB1C2;
+    position: relative;
+}
+.hongse_1_2:hover{
+    color: white;
+}
+.number-1{
+    position: absolute;
+    font-size:2rem;
+    color: #FFB1C2;
+    left: 35%;
+}
+.hongse_2{
+    width: 1px;
+    height: 6rem;
+    float: left;
+    background-color: #FFB1C2;
+    margin-top: 1rem;
+
+}
+.shinei{
+    width: 1230px;
+    height: auto;
+    margin:3rem auto;
+}
+.design{
+    width: 1230px;
+    height: 395px;
+}
+.design-1{
+    width: 290px;
+    height: 390px;
+    box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.7);
+    background-color: #F3F4F3;
+    float: left;
+
+}
+.jiazai{
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+    padding-top:50%;
+}
+.jiazai a:hover{
+    text-decoration: none;
+}
+.jiazai a:link{
+    text-decoration: none;
+}
+.jiazai .icon-jia{
+    font-size: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+
+}
+@media (min-width:768px)and (max-width:852px){
+    .yesterday{
+        width: 100%;
+        height: 18rem;
+        background-color: #EAEAEA;
+        margin-top: 5rem;
+
+    }
+    .yesterday_1{
+        width: 15rem;
+        height:18rem;
+        margin-left: 7%;
+        float: left;
+    }
+    .yesterday_1_1 {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin: 2.5rem auto;
+        overflow: hidden;
+    }
+    .yesterday_1_1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .yesterday_1_2{
+        width: 5rem;
+        height:2rem;
+
+        margin:-2rem  auto;
+    }
+    .yesterday_1_2_1{
+        font-size: 1.4rem;
+        float: left;
+        font-weight:600 ;
+    }
+    .yesterday_1_2_2{
+        font-size: 1.4rem;
+        float: right;
+        font-weight:600 ;
+    }
+    .yesterday_1_3{
+        width: 6rem;
+        height:1.6rem;
+
+        margin:2rem  auto;
+        background-color: #595959;
+    }
+    .yesterday_1_3_1{
+        font-size: 1rem;
+        float: left;
+        color: white;
+        margin-left: 2%;
+        padding-left: 0.3rem;
+    }
+    .yesterday_1_3_2{
+        background-color: white;
+        width: 0.15rem;
+        height: 1.5rem;
+
+        margin-left: 9%;
+        float: left;
+
+    }
+    .yesterday_1_3_3{
+        font-size: 1rem;
+        float: right;
+        color: white;
+        margin-right: 3%;
+        padding-right: 0.3rem;
+    }
+    .yesterday_2{
+        width: 25rem;
+        height:18rem;
+
+        float: left;
+    }
+    .yesterday_2_1{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 4rem;
+        letter-spacing: 2px;
+
+    }
+    .yesterday_2_2{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #7E7E7E;
+
+    }
+    .yesterday_3{
+        width: 15rem;
+        height:18rem;
+
+        margin-right: 7%;
+        float: right;
+    }
+    .yesterday_3_1{
+        width: 6.5rem;
+        height: 2.5em;
+        margin-top: 2.5rem;
+        float: left;
+        text-align: center;
+        background-color:#C29E62 ;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.3rem;
+    }
+    .yesterday_3_2{
+        width: 5rem;
+        height: 2.5em;
+        margin-top: 2.5rem;
+        margin-left: 2rem;
+        text-align: center;
+        background-color:#C29E62 ;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.3rem;
+        float: left;
+    }
+    .yesterday_3_2 img{
+        width: 2.2rem;
+        height: 1.8rem;
+    }
+    /*画板*/
+
+    .hongse{
+        width: 40rem;
+        height: 6rem;
+        margin: auto ;
+        background-color: #FF445F;
+        position: relative;
+        top: -3rem;
+    }
+    .hongse_1{
+        position: relative;
+        width: 24.8%;
+        height: 100%;
+        float: left;
+
+
+    }
+
+    .hongse_1_1{
+
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .hongse_1_1 .number{
+        color:#FFADB8;
+        font-size: 1.5rem;
+        position: absolute;
+        margin: 1rem 40%;
+
+
+    }
+    .hongse_1_2{
+
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .hongse_1_2 .number_1{
+        color:#FFADB8;
+        font-size: 1.5rem;
+        position: absolute;
+        margin-left: 35%;
+
+    }
+
+    .hongse_2{
+        position: relative;
+        height: 4rem;
+        width: 1px;
+        background-color: #FFADB8;
+        float: left;
+        margin-top:1rem;
+    }
+}
+/*6和6plus*/
+@media (min-width:375px)and (max-width:414px){
+    .yesterday{
+        width: 100%;
+        height: 12rem;
+        background-color: #EAEAEA;
+        margin-top: 5rem;
+
+    }
+    .yesterday_1{
+        width: 25%;
+        height:12rem;
+        margin-left: 0;
+        float: left;
+
+    }
+    .yesterday_1_1 {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        margin: 2rem auto;
+        overflow: hidden;
+    }
+    .yesterday_1_1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .yesterday_1_2{
+        width: 5rem;
+        height:2rem;
+
+        margin:-2rem  auto;
+    }
+    .yesterday_1_2_1{
+        font-size: 1.2rem;
+        float: left;
+        font-weight:600 ;
+    }
+    .yesterday_1_2_2{
+        font-size: 1.2rem;
+        float: right;
+        font-weight:600 ;
+    }
+    .yesterday_1_3{
+        width: 6rem;
+        height:1.6rem;
+
+        margin:2rem  auto;
+        background-color: #595959;
+    }
+    .yesterday_1_3_1{
+        font-size: 1rem;
+        float: left;
+        color: white;
+        margin-left: 2%;
+        padding-left: 0.3rem;
+    }
+    .yesterday_1_3_2{
+        background-color: white;
+        width: 0.15rem;
+        height: 1.5rem;
+
+        margin-left: 9%;
+        float: left;
+
+    }
+    .yesterday_1_3_3{
+        font-size: 1rem;
+        float: right;
+        color: white;
+        margin-right: 3%;
+        padding-right: 0.2rem;
+    }
+    .yesterday_2{
+        width: 75%;
+        height:6rem;
+
+        float: left;
+    }
+    .yesterday_2_1{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+
+    }
+    .yesterday_2_2{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #7E7E7E;
+
+    }
+    .yesterday_3{
+        width: 68%;
+        height:5rem;
+
+        float: left;
+    }
+    .yesterday_3_1{
+        width:5rem;
+        height: 1.8rem;
+        margin-top: 2.5rem;
+        float: right;
+        text-align: center;
+        background-color:#C29E62 ;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        margin-left:2rem ;
+    }
+    .yesterday_3_2{
+        width:5rem;
+        height: 1.8rem;
+        margin-top: 2.5rem;
+        float: right;
+        text-align: center;
+        background-color:#C29E62 ;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.1rem;
+        margin-left:2rem ;
+    }
+    .yesterday_3_2 img{
+        width: 2.2rem;
+        height: 1.8rem;
+    }
+    /*画板*/
+
+    .hongse{
+        width: 100%;
+        height: 6rem;
+        margin: auto ;
+        background-color: #FF445F;
+        position: relative;
+        top: 0rem;
+    }
+    .hongse_1{
+        position: relative;
+        width: 24.8%;
+        height: 100%;
+        float: left;
+
+
+    }
+
+    .hongse_1_1{
+
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .hongse_1_1 .number{
+        color:#FFADB8;
+        font-size: 1.5rem;
+        position: absolute;
+        margin: 1rem 40%;
+    }
+    .hongse_1_2{
+
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .hongse_1_2 .number_1{
+        color:#FFADB8;
+        font-size: 1.5rem;
+        position: absolute;
+        margin-left: 35%;
+
+    }
+
+    .hongse_2{
+        position: relative;
+        height: 4rem;
+        width: 1px;
+        background-color: #FFADB8;
+        float: left;
+        margin-top:1rem;
+    }
+}
+/*320-360*/
+@media (min-width:320px)and (max-width:360px){
+    .yesterday{
+        width: 100%;
+        height: 10rem;
+        background-color: #EAEAEA;
+        margin-top: 5rem;
+
+    }
+    .yesterday_1{
+        width: 25%;
+        height:10rem;
+        margin-left: 0;
+        float: left;
+
+    }
+    .yesterday_1_1 {
+        width: 4rem;
+        height: 4rem;
+        margin: 2rem auto;
+    }
+    .yesterday_1_1 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .yesterday_1_2{
+        width: 5rem;
+        height:2rem;
+
+        margin:-2rem  auto;
+    }
+    .yesterday_1_2_1{
+        font-size: 1.2rem;
+        float: left;
+        font-weight:600 ;
+    }
+    .yesterday_1_2_2{
+        font-size: 1.2rem;
+        float: right;
+        font-weight:600 ;
+    }
+    .yesterday_1_3{
+        width: 6rem;
+        height:1.6rem;
+
+        margin:2rem  auto;
+        background-color: #595959;
+    }
+    .yesterday_1_3_1{
+        font-size: 1rem;
+        float: left;
+        color: white;
+        margin-left: 2%;
+        padding-left: 0.3rem;
+
+    }
+    .yesterday_1_3_2{
+        background-color: white;
+        width: 0.15rem;
+        height: 1.5rem;
+        margin-left: 15%;
+        float: left;
+        margin-left: 9%;
+    }
+    .yesterday_1_3_3{
+        font-size: 1rem;
+        float: right;
+        color: white;
+        margin-right: 3%;
+        padding-right: 0.3rem;
+    }
+    .yesterday_2{
+        width: 75%;
+        height:5.5rem;
+
+        float: left;
+    }
+    .yesterday_2_1{
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+
+    }
+    .yesterday_2_2{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #7E7E7E;
+
+    }
+    .yesterday_3{
+        width: 68%;
+        height:4.5rem;
+
+        float: left;
+    }
+    .yesterday_3_1{
+        width:5rem;
+        height: 1.8rem;
+        margin-top: 2.1rem;
+        float: right;
+        text-align: center;
+        background-color:#C29E62 ;
+        color: white;
+        font-size: 1rem;
+        padding-top: 0.2rem;
+        margin-left: 2rem;
+    }
+    .yesterday_3_2{
+        width:5rem;
+        height: 1.8rem;
+        margin-top: 2.1rem;
+        float: right;
+        text-align: center;
+        background-color:#C29E62 ;
+        color: white;
+        font-size: 1rem;
+        padding-top: 0.1rem;
+        margin-left: 2rem;
+    }
+    .yesterday_3_2 img{
+        width: 2.2rem;
+        height: 1.8rem;
+    }
+    /*画板*/
+
+    .hongse{
+        width: 100%;
+        height: 5rem;
+        margin: auto ;
+        background-color: #FF445F;
+        position: relative;
+        top: 0rem;
+    }
+    .hongse_1{
+        position: relative;
+        width: 24.7%;
+        height: 100%;
+        float: left;
+
+
+    }
+
+    .hongse_1_1{
+
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .hongse_1_1 .number{
+        color:#FFADB8;
+        font-size: 1.5rem;
+        position: absolute;
+        margin: 0.3rem 40%;
+
+    }
+
+    .hongse_1_2{
+
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .hongse_1_2 .number_1{
+        color:#FFADB8;
+        font-size: 1.5rem;
+        position: absolute;
+        margin-left: 35%;
+        margin-bottom: 1rem;
+    }
+
+    .hongse_2{
+        position: relative;
+        height: 3rem;
+        width: 1px;
+        background-color: #FFADB8;
+        float: left;
+        margin-top:1rem;
+    }
+}
+
+/*跳转*/
+
+#login
+{
+    display:none;
+    border-radius: 10px;
+    height:40rem;
+    width:48.5rem;
+    position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+    top:50%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+    left: 50%;
+    margin: -20rem 0 0 -24.25rem;
+    z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+    background:url("../img/caijibg.fw.png") no-repeat;
+
+
+}
+#over
+{
+    width: 100%;
+    height:100%;
+    opacity:0.6;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+    filter:alpha(opacity=80);
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    background: black;
+    position: fixed;
+}
+.login_3{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color:#9B9B9B;
+    float: right;
+    margin-top: 10%;
+}
+.quan{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 14%;
+    float: right;
+    margin-right: 19%;
+}
+
+
+.login_1{
+    font-size: 2.5rem;
+    margin-top: 25%;
+    margin-left: 5%;
+}
+.login_2{
+    border: 1px dashed #9F9F9F;
+    height: 37%;
+    width: 90%;
+    margin:5% auto 10% auto;
+    border-radius: 10px;
+}
+.login_2 .login_2_p_1{
+    text-align: center;
+    color: #999999;
+    margin-top: 5%;
+}
+.login_2 .login_2_p_3{
+    text-align: center;
+    color: #999999;
+    margin-top: 0;
+}
+.login_2_p_3 a{
+    font-style: italic;
+    color: #E6A131;
+}
+.login_2 .login_2_p_2{
+    text-align: center;
+    color: #999999;
+    margin-top: 8%;
+    font-size: 0.8rem;
+}
+.button{
+    width: 6rem;
+    height: 3rem;
+    margin-top: -6%;
+    float: right;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+@media (min-width:1000px)and (max-width:1200px){
+
+    #login
+    {
+        display:none;
+        border-radius: 3%;
+        height:40rem;
+        width:48.5rem;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:50%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 50%;
+        margin: -20rem 0 0 -24.25rem;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background:url("../img/caijibg.fw.png") no-repeat;
+
+    }
+    #over
+    {
+        width: 100%;
+        height:100%;
+        opacity:0.6;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login_3{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #9B9B9B;
+        float: right;
+        margin-top: 10%;
+    }
+    .quan{
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 14%;
+        float: right;
+        margin-right: 19%;
+    }
+
+
+    .login_1{
+        font-size: 2.5rem;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+    .login_2{
+        border: 1px dashed #9F9F9F;
+        height: 37%;
+        width: 90%;
+        margin:5% auto 10% auto;
+        border-radius: 10px;
+    }
+    .login_2 .login_2_p_1{
+       display: none;
+    }
+    .login_2 .login_2_p_3{
+        text-align: center;
+        color: #999999;
+        padding-top:10%;
+    }
+    .login_2_p_3 a{
+        font-style: italic;
+        color: #E6A131;
+    }
+    .login_2 .login_2_p_2{
+        text-align: center;
+        color: #999999;
+        margin-top: 5%;
+        font-size: 0.8rem;
+    }
+    .button{
+        width: 6rem;
+        height: 3rem;
+        margin-top: -6%;
+        float: right;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+}
+@media (min-width:501px)and (max-width:999px){
+    #login
+    {
+        display:none;
+        border-radius: 10px;
+        height:30rem;
+        width:35rem;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:50%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 50%;
+        margin: -15rem 0 0 -17.5rem;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background:url("../img/caijibg.fw.png") no-repeat;
+
+
+    }
+    #over
+    {
+        width: 100%;
+        height:100%;
+        opacity:0.6;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login_3{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #9B9B9B;
+        float: right;
+        margin-top: 10%;
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 14%;
+        float: right;
+        margin-right: 19%;
+    }
+
+
+    .login_1{
+        font-size: 2.5rem;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+    .login_2{
+        border: 1px dashed #9F9F9F;
+        height: 37%;
+        width: 90%;
+        margin:5% auto 10% auto;
+        border-radius: 10px;
+    }
+    .login_2 .login_2_p_1{
+        display: none;
+    }
+    .login_2 .login_2_p_3{
+        text-align: center;
+        color: #999999;
+        padding-top: 10%;
+    }
+    .login_2_p_3 a{
+        font-style: italic;
+        color: #E6A131;
+    }
+    .login_2 .login_2_p_2{
+        text-align: center;
+        color: #999999;
+        margin-top: 8%;
+        font-size: 0.8rem;
+    }
+    .button{
+        width: 6rem;
+        height: 3rem;
+        margin-top: -6%;
+        float: right;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+
+}
+@media (min-width:371px)and (max-width:500px){
+    #login
+    {
+        display:none;
+        border-radius: 10px;
+        height:32rem;
+        width:90%;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:50%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        margin-top: -16rem;
+        margin-left: -45%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background:url("../img/caijibg.fw.png") no-repeat;
+
+
+
+    }
+    #over
+    {
+        width: 100%;
+        height:100%;
+        opacity:0.6;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login_3{
+        width: 2.5rem;
+        height: 2.5rem;
+
+        background-color:#9B9B9B;
+        float: right;
+        margin-top: 10%;
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 14%;
+        float: right;
+        margin-right: 19%;
+    }
+
+    .login img{
+        width: 2.5rem;
+        height: 2.5rem;
+        float: right;
+        margin-top: 15%;
+    }
+    .login_1{
+        font-size: 2.5rem;
+        margin-top: 35%;
+        margin-left: 5%;
+    }
+    .login_2{
+        border: 1px dashed #9F9F9F;
+        height: 35%;
+        width: 90%;
+        margin:5% auto 10% auto;
+        border-radius: 10px;
+    }
+    .login_2 .login_2_p_1{
+       display: none;
+    }
+    .login_2 .login_2_p_3{
+        text-align: center;
+        color: #999999;
+        padding-top: 10%;
+    }
+    .login_2_p_3 a{
+        font-style: italic;
+        color: #E6A131;
+    }
+    .login_2 .login_2_p_2{
+        text-align: center;
+        color: #999999;
+        margin-top: 8%;
+        font-size: 0.8rem;
+    }
+    .button{
+        width: 6rem;
+        height: 3rem;
+        margin-top: -6%;
+        float: right;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+}
+@media (min-width:320px)and (max-width:370px){
+    #login
+    {
+        display:none;
+        border-radius: 10px;
+        height:32rem;
+        width:90%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background:url("../img/caijibg.fw.png") no-repeat;
+        position: fixed;
+        top:50%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        margin: -16rem 0 0 -45%;
+    }
+    #over
+    {
+        width: 100%;
+        height:100%;
+        opacity:0.6;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login_3{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color:#9B9B9B ;
+        float: right;
+        margin-top: 15%;
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 14%;
+        float: right;
+        margin-right: 19%;
+    }
+
+    .login img{
+        width: 2rem;
+        height: 2rem;
+        float: right;
+        margin-top: 15%;
+
+    }
+    .login_1{
+        font-size: 1.8rem;
+        margin-top: 33%;
+        margin-left: 5%;
+    }
+    .login_2{
+        border: 1px dashed #9F9F9F;
+        height: 35%;
+        width: 90%;
+        margin:5% auto 5% auto;
+        border-radius: 10px;
+    }
+    .login_2 .login_2_p_1{
+        display: none;
+    }
+    .login_2 .login_2_p_3{
+        text-align: center;
+        color: #999999;
+        padding-top: 10%;
+    }
+    .login_2_p_3 a{
+        font-style: italic;
+        color: #E6A131;
+    }
+    .login_2 .login_2_p_2{
+        text-align: center;
+        color: #999999;
+        margin-top: 8%;
+        font-size: 0.8rem;
+    }
+    .button{
+        width: 4rem;
+        height: 2rem;
+        margin-top: -2%;
+        float: right;
+        margin-right: 12%;
+        border-radius: 5px;
+    }
+}
+
+#uploadphoto
+{
+    display:none;
+    height:35rem;
+    width:42rem;
+    position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+    top:50%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+    left: 50%;
+    margin: -16.5rem 0 0 -21rem;
+    z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+background-color: white;
+
+
+}
+#over
+{
+    width: 100%;
+    height:100%;
+    opacity:0.6;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+    filter:alpha(opacity=80);
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    background: black;
+    position: fixed;
+}
+.cha1{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color:white;
+    float: right;
+    margin-top:3%;
+    margin-right: 3%;
+}
+.upload_1{
+    width: 38%;
+    height: 100%;
+    background-color: #F2F2F2;
+    float: left;
+}
+.upload_1_1{
+    width: 90%;
+    height: 50%;
+   margin: 50% auto;
+
+}
+.upload_2{
+    width: 62%;
+    height: 100%;
+    float: left;
+}
+.upload_2 p{
+    font-size: 2rem;
+    font-family: 宋体;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+.input_1{
+    margin-left: 5%;
+    width: 94%;
+    font-size: 2rem;
+    border-radius: 1px;
+    height: 3rem;
+}
+.input_2{
+    margin-left: 5%;
+    margin-top: 70%;
+    width: 94%;
+    font-size: 1.5rem;
+    border-radius: 1px;
+    height: 3rem;
+}
+.upload_2_1{
+    border: 1px solid red;
+    width: 94%;
+    height: 16rem;
+    margin-left: 5%;
+}
+.upload_2_2{
+
+    background-color: #FAFAFA;
+    height: 5rem;
+    width: 100%;
+   margin-top:5%;
+}
+.button_1{
+    width: 6rem;
+    height: 3rem;
+    margin-top: 4%;
+    float: right;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+.button_2{
+    width: 6rem;
+    height: 3rem;
+    margin-top: 4%;
+    float: right;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+.tags {
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    color: #777;
+    padding: 4px 6px;
+    width: 94%;
+    margin-left: 5%;
+    height: 3rem;
+
+}
+.tags:hover {
+    border-color: #d5d5d5;
+    outline: 0 none;
+}
+.tags[class*="span"] {
+    float: none;
+    margin-left: 0;
+}
+.tags input[type="text"], .tags input[type="text"]:focus {
+    border: 0 none;
+    box-shadow: none;
+    display: inline;
+    line-height: 22px;
+    margin: 0;
+    outline: 0 none;
+    padding: 4px 6px;
+}
+.tags .tag {
+    background-color: #91b8d0;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    padding: 4px 22px 5px 9px;
+    position: relative;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease 0s;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.tags .tag .close {
+    bottom: 0;
+    color: #fff;
+    float: none;
+    font-size: 12px;
+    line-height: 20px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-shadow: none;
+    top: 0;
+    width: 18px;
+}
+.tags .tag .close:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.close {
+    color: #000;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #fff;
+}
+.close:hover, .close:focus {
+    color: #000;
+    cursor: pointer;
+    opacity: 0.5;
+    text-decoration: none;
+}
+button.close {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    padding: 0;
+}
+.tags .tag-warning {
+    background-color: #d5d5d5;
+}
+
+
+
