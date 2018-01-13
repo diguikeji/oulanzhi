@@ -1,0 +1,4140 @@
+
+.yesterday{
+    width: 100%;
+    height: 20rem;
+    background-color: #EAEBEA;
+    margin-top:5rem ;
+}
+.yesterday_1{
+    width: 15rem;
+    height: 20rem;
+
+    margin-left: 7%;
+    float: left;
+}
+.yesterday_1_1{
+    width: 9rem;
+    height: 9rem;
+
+    margin: 2.5rem auto;
+    border-radius: 50%;
+
+}
+.yesterday_1_1 img{
+     width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.yesterday_1_2{
+    width: 5rem;
+    height: 2rem;
+    margin: -2rem auto;
+
+}
+.yesterday_1_2_1{
+    float: left;
+    font-weight: 600;
+    color: #888988;
+    font-size:1.4rem ;
+
+}
+.yesterday_1_2_2{
+    float: right;
+    font-weight: 600;
+    color: #888988;
+    font-size:1.4rem ;
+
+
+}
+.yesterday_1_3{
+    width: 6rem;
+    height: 1.6rem;
+    margin: 2rem auto;
+
+    background-color: #585958;
+}
+.yesterday_1_3_1{
+    float: left;
+    font-size: 1rem;
+    color: white;
+
+    margin-left: 2%;
+}
+.yesterday_1_3_2{
+    float: left;
+    width: 0.15rem;
+    height: 1.5rem;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+.yesterday_1_3_3{
+    float: right;
+    font-size: 1rem;
+    color: white;
+
+    margin-right: 3%;
+}
+.yesterday_2{
+    width: 30rem;
+    height: 20rem;
+
+    float: left;
+
+}
+.yesterday_2_1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #393A39;
+    margin-top: 4rem;
+    letter-spacing: 2px;
+}
+.yesterday_2_2{
+    font-size: 1.5rem;
+     margin-top: 0.5rem;
+    color: #A4A5A4;
+}
+.yesterday_3{
+    width: 15rem;
+    height: 20rem;
+
+    float: right;
+    margin-right:7%
+}
+.yesterday_3_1{
+    margin-top: 2.5rem;
+    width: 6.5rem;
+    height: 2.5rem;
+
+    text-align: center;
+    background-color: #C1A062;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    float: left;
+}
+.yesterday_3_2{
+    width: 5rem;
+    height: 2.5rem;
+
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    background-color: #C1A062;
+    padding-top: 0.3rem;
+    text-align: center;
+    font-size:1.2rem ;
+}
+.yesterday_3_2 img{
+    width: 2.2rem;
+    height:1.8rem;
+
+}
+.hongse{
+    width: 50rem;
+    height: 8rem;
+    margin: 0 auto;
+    background-color: #FD455E;
+    position: relative;
+    top:-4rem;
+
+
+
+
+
+}
+.hongse_1{
+    width:24.8%;
+    height: 8rem;
+    position: relative;
+    float: left;
+}
+.hongse_1_1{
+    text-align: center;
+    font-size: 2rem;
+    color: #FFB1C2;
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    margin-top: 1rem;
+}
+.number{
+    position: absolute;
+    font-size:2rem;
+    color: #FFB1C2;
+    left: 40%;
+}
+.hongse_1_2{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 3rem;
+    color:#FFB1C2;
+    position: relative;
+}
+.hongse_1_2:hover{
+   color: white;
+}
+.number-1{
+    position: absolute;
+    font-size:2rem;
+    color: #FFB1C2;
+    left: 35%;
+}
+.hongse_2{
+    width: 1px;
+    height: 6rem;
+    float: left;
+    background-color: #FFB1C2;
+    margin-top: 1rem;
+
+}
+.shinei{
+    width: 1230px;
+    height: auto;
+    margin:3rem auto;
+}
+.design{
+    width: 1230px;
+    height: 395px;
+}
+.design-1{
+    width: 290px;
+    height: 390px;
+    box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.7);
+    background-color: #F3F4F3;
+    float: left;
+
+}
+.design-1-1{
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+    padding-top:50%;
+}
+.design-1-1 a:hover{
+    text-decoration: none;
+}
+.design-1-1 a:link{
+    text-decoration: none;
+}
+.design-1-1 .icon-jia{
+    font-size: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+
+}
+#login
+{
+    display:none;
+    height:40rem;
+    width:48.5rem;
+    position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+    top:50%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+    left: 50%;
+    z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+    background: url("../image/baise.png") no-repeat;
+    margin: -20rem 0 0 -24.25rem;
+    border-radius: 3%;
+
+}
+#over
+{
+    width: 100%;
+    height: 100%;
+    opacity:0.6;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+    filter:alpha(opacity=80);
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    background: black;
+    position: fixed;
+}
+.login-1{
+    font-size: 2.5rem;
+    width: 10rem;
+    height: 5rem;
+    margin-top: 25%;
+    margin-left: 3%;
+}
+.title{
+    font-size: 1.8rem;
+    height: 2.7rem;
+
+    margin: 3rem auto;
+   width: 80%;
+
+}
+.title-1{
+    font-size: 1.8rem;
+    width: 80%;
+    height: 3rem;
+    margin: 3rem auto;
+
+}
+.title-2{
+    color:black;background-color: white;outline: medium;border: 0px;width: 100%
+}
+::-webkit-input-placeholder{color:#414141;}/*chrome、safari浏览器*/
+::-moz-placeholder{color:#414141;}/*火狐浏览器   Mozilla Firefox 19+*/
+:-moz-placeholder{color:#414141;}/*Mozilla Firefox 4 to 18*/
+:-ms-input-placeholder{color:#414141;}
+.cha{
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    border-radius:50% ;
+    margin-top: 10%;
+    background-color: #9b9b9b;
+    }
+.icon-cha1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: #AFB0AF;
+
+}
+.quan{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 14%;
+    float: right;
+    margin-right: 19%;
+}
+.design-2 {
+    width: 288px;
+    height: 390px;
+    box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.7);
+    background-color: #F3F4F3;
+    float: left;
+    margin-left: 23px;
+}
+.design-2-1{
+    width: 20rem;
+    height: 8rem;
+    margin: 0 auto;
+}
+.design-2-2{
+    width: 4rem;
+    height: 6rem;
+    background-color: #C1A062;
+    border-bottom-left-radius:50% ;
+    float: left;
+
+}
+.design-2-3{
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    padding-top: 40%;
+}
+.design-2-4{
+    font-size: 2.6rem;
+    text-align: center;
+    width: 15rem;
+    float: left;
+    margin-top:10% ;
+}
+.design-3{
+    width: 21rem;
+    height: 15rem;
+
+    margin: 0 auto;
+}
+.design-3 img{
+    width:100%;
+    height: 100%;
+}
+.design-4{
+    width: 21rem;
+    height: 4rem;
+    margin: 1rem auto;
+}
+.design-4-1{
+    width: 33%;
+    height: 4rem;
+    float: left;
+}
+.design-4-1 img {
+    width:100%;
+    height: 100%;
+}
+.design-4-2{
+    width: 31%;
+    height: 4rem;
+    float: left;
+    margin-left:0.52rem;
+}
+.design-4-2 img{
+    width:100%;
+    height: 100%;
+}
+.dian{
+    width: 120px; height: 2.4rem;
+    margin: 1rem auto;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.dian-1{
+    width: 120px; height: 2.4rem;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.designs{
+    width: 1230px;
+    height: 395px;
+    margin-top: 5rem;
+
+
+}
+.nomore{
+    width: 1230px;
+    height: 3rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+.nomore a{
+    text-decoration: none;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #2C2C2C;
+}
+.footer .footer_1{
+    width: 50%;
+    margin-left: 10%;
+
+    float: left;
+}
+.footer .footer_1_1{
+    font-family: 微软雅黑;
+    color: #EDEDED;
+    line-height: 2rem;
+    font-size: 0.6rem;
+    padding-top: 1rem;
+    float: left;
+    margin-left: 10%;
+}
+.footer .footer_2{
+    width: 20%;
+    float: right;
+    margin-top: 1.5rem;
+    margin-right: 10%;
+    border-left: 1px solid #EDEDED ;
+    border-right: 1px solid #EDEDED ;
+}
+.footer_2 .footer_2_1{
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: 微软雅黑;
+    color: #EDEDED;
+    padding-left: 20%;
+}
+.footer .footer_2_2{
+    font-family: 微软雅黑;
+    color: #EDEDED;
+    line-height: 2rem;
+    font-size: 0.6rem;
+    padding-top: 1rem;
+    float: left;
+    margin-left: 22%;
+}
+.footer .footer_3{
+    line-height: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size: 0.3rem;
+    font-family: 微软雅黑;
+    color: #EDEDED;
+    margin-top: 2rem;
+}
+.footer a{
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+@media (min-width:365px)and (max-width:440px){
+    .yesterday{
+        width: 100%;
+        height: 12rem;
+        background-color: #EAEBEA;
+        margin-top:5rem ;
+    }
+    .yesterday_1{
+        width: 7.5rem;
+        height: 10rem;
+        margin-left:0%;
+        float: left;
+    }
+    .yesterday_1_1{
+        width: 5rem;
+        height: 5rem;
+        margin: 2rem auto;
+        border-radius: 50%;
+
+    }
+    .yesterday_1_1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .yesterday_1_2{
+        width: 5rem;
+        height: 2rem;
+        margin: -2rem auto;
+
+    }
+    .yesterday_1_2_1{
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size:1.4rem ;
+
+    }
+    .yesterday_1_2_2{
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size:1.4rem ;
+
+
+    }
+    .yesterday_1_3{
+        width: 6rem;
+        height: 1.6rem;
+        margin: 2rem auto;
+
+        background-color: #585958;
+    }
+    .yesterday_1_3_1{
+        float: left;
+        font-size: 1rem;
+        color: white;
+
+        margin-left: 2%;
+    }
+    .yesterday_1_3_2{
+        float: left;
+        width: 0.15rem;
+        height: 1.5rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+    .yesterday_1_3_3{
+        float: right;
+        font-size: 1rem;
+        color: white;
+
+        margin-right: 3%;
+    }
+    .yesterday_2{
+        width: 23.5rem;
+        height: 6rem;
+        float: left;
+
+    }
+    .yesterday_2_1{
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+    .yesterday_2_2{
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+    .yesterday_3{
+        width: 9rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+    }
+    .yesterday_3_1{
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+    .yesterday_3_2{
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0.1rem;
+        text-align: center;
+        font-size:1.2rem ;
+    }
+    .yesterday_3_2 img{
+        width: 1.9rem;
+        height:1.5rem;
+
+    }
+    .hongse{
+        width: 100%;
+        height: 6rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: 0rem;
+    }
+    .hongse_1{
+        width:24.8%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+    .hongse_1_1{
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.8rem;
+    }
+    .number{
+        position: absolute;
+        font-size:1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+    .hongse_1_2{
+        font-size:1.5rem;
+        width: 100%;
+        height: 2rem;
+        color:#FFB1C2;
+        position: relative;
+    }
+    .number-1{
+        position: absolute;
+        font-size:1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+    .hongse_2{
+        width: 1px;
+        height: 4rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+    .shinei{
+        width: 100%;
+        height: auto;
+        margin:3rem auto;
+    }
+    .design{
+        width: 100%;
+        height: 280px;
+    }
+    .design-1{
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left:1rem;
+
+    }
+    .design-1-1{
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top:50%;
+    }
+    .design-1-1 .icon-jia{
+        font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:80%;
+        width:90%;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:30%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 50%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin: -40% 0 0 -45%;
+        border-radius: 3%;
+
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 30%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2.7rem;
+        margin: 3rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2.7rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 3rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 12%;
+
+    }
+    .icon-cha1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 18%;
+        float: right;
+        margin-right: 19%;
+    }
+    .design-2 {
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+    .design-2-1{
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+    .design-2-2{
+        width: 3rem;
+        height: 4rem;
+        background-color: #C1A062;
+        border-bottom-left-radius:50% ;
+        float: left;
+
+    }
+    .design-2-3{
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .design-2-4{
+        font-size: 2rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top:10% ;
+    }
+    .design-3{
+        width: 14rem;
+        height: 10rem;
+        margin: 1rem auto;
+    }
+    .design-3 img{
+        width:100%;
+        height: 100%;
+    }
+    .design-4{
+        width: 14rem;
+        height: 3rem;
+        margin: 1.5rem auto;
+    }
+    .design-4-1{
+        width: 33%;
+        height: 3rem;
+        float: left;
+    }
+    .design-4-1 img {
+        width:100%;
+        height: 100%;
+    }
+    .design-4-2{
+        width: 31%;
+        height: 3rem;
+        float: left;
+        margin-left:0.2rem;
+    }
+    .design-4-2 img{
+        width:100%;
+        height: 100%;
+    }
+    .dian {
+        width: 90px;
+        height: 2rem;
+        margin:-0.5rem auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .dian-1{
+        width: 90px;
+        height: 2rem;
+        margin:0 auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .designs{
+        width: 100%;
+        height: 280px;
+        margin-top: 5rem;
+    }
+    .nomore{
+        width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    .nomore a{
+        text-decoration: none;
+    }
+    .footer{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2{
+        display: none;
+        block:none;
+    }
+    .footer_2 .footer_2_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2_2{
+        display: none;
+        block:none;
+    }
+    .footer .footer_3{
+        display: none;
+        block:none;
+    }
+    .footer a{
+        display: none;
+        block:none;
+    }
+}
+
+@media (min-width:440px)and (max-width:540px){
+    .yesterday{
+        width: 100%;
+        height: 12rem;
+        background-color: #EAEBEA;
+        margin-top:5rem ;
+    }
+    .yesterday_1{
+        width: 7.5rem;
+        height: 10rem;
+        margin-left:0%;
+        float: left;
+    }
+    .yesterday_1_1{
+        width: 5rem;
+        height: 5rem;
+        margin: 2rem auto;
+        border-radius: 50%;
+
+    }
+    .yesterday_1_1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .yesterday_1_2{
+        width: 5rem;
+        height: 2rem;
+        margin: -2rem auto;
+
+    }
+    .yesterday_1_2_1{
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size:1.4rem ;
+
+    }
+    .yesterday_1_2_2{
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size:1.4rem ;
+
+
+    }
+    .yesterday_1_3{
+        width: 6rem;
+        height: 1.6rem;
+        margin: 2rem auto;
+
+        background-color: #585958;
+    }
+    .yesterday_1_3_1{
+        float: left;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-left: 2%;
+    }
+    .yesterday_1_3_2{
+        float: left;
+        width: 0.15rem;
+        height: 1.5rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+    .yesterday_1_3_3{
+        float: right;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-right: 3%;
+    }
+    .yesterday_2{
+        width: 25rem;
+        height: 6rem;
+        float: left;
+
+    }
+    .yesterday_2_1{
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+    .yesterday_2_2{
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+    .yesterday_3{
+        width: 10rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+    }
+    .yesterday_3_1{
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+    .yesterday_3_2{
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0.1rem;
+        text-align: center;
+        font-size:1.2rem ;
+    }
+    .yesterday_3_2 img{
+        width: 1.9rem;
+        height:1.5rem;
+
+    }
+    .hongse{
+        width: 100%;
+        height: 6rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: 0rem;
+    }
+    .hongse_1{
+        width:24.8%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+    .hongse_1_1{
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.8rem;
+    }
+    .number{
+        position: absolute;
+        font-size:1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+    .hongse_1_2{
+        font-size:1.5rem;
+        width: 100%;
+        height: 2rem;
+        color:#FFB1C2;
+        position: relative;
+    }
+    .number-1{
+        position: absolute;
+        font-size:1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+    .hongse_2{
+        width: 1px;
+        height: 4rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+    .shinei{
+        width: 95%;
+        height: auto;
+        margin:3rem auto;
+    }
+    .design{
+        width: 100%;
+        height: 280px;
+    }
+    .design-1{
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left:1.5rem;
+
+    }
+    .design-1-1{
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top:50%;
+    }
+    .design-1-1 .icon-jia{
+        font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:90%;
+        width:90%;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:30%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 50%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin:-45% 0 0 -45%;
+        border-radius: 3%;
+        position: fixed;
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 30%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2.7rem;
+        margin: 2rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2.7rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 5rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 10%;
+
+    }
+    .icon-cha1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 15%;
+        float: right;
+        margin-right: 19%;
+    }
+    .design-2 {
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    .design-2-1{
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+    .design-2-2{
+        width: 3rem;
+        height: 4rem;
+        background-color: #C1A062;
+        border-bottom-left-radius:50% ;
+        float: left;
+
+    }
+    .design-2-3{
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .design-2-4{
+        font-size: 2rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top:10% ;
+    }
+    .design-3{
+        width: 14rem;
+        height: 10rem;
+        margin: 1rem auto;
+    }
+    .design-3 img{
+        width:100%;
+        height: 100%;
+    }
+    .design-4{
+        width: 14rem;
+        height: 3rem;
+        margin: 1.5rem auto;
+    }
+    .design-4-1{
+        width: 33%;
+        height: 3rem;
+        float: left;
+    }
+    .design-4-1 img {
+        width:100%;
+        height: 100%;
+    }
+    .design-4-2{
+        width: 31%;
+        height: 3rem;
+        float: left;
+        margin-left:0.2rem;
+    }
+    .design-4-2 img{
+        width:100%;
+        height: 100%;
+    }
+    .dian {
+        width: 90px;
+        height: 2rem;
+        margin:-0.5rem auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .dian-1{
+        width: 90px;
+        height: 2rem;
+        margin:0 auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .designs{
+        width: 100%;
+        height: 280px;
+        margin-top: 5rem;
+    }
+    .nomore{
+        width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    .nomore a{
+        text-decoration: none;
+    }
+    .footer{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2{
+        display: none;
+        block:none;
+    }
+    .footer_2 .footer_2_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2_2{
+        display: none;
+        block:none;
+    }
+    .footer .footer_3{
+        display: none;
+        block:none;
+    }
+    .footer a{
+        display: none;
+        block:none;
+    }
+}
+
+@media (min-width:200px)and (max-width:340px) {
+    .yesterday {
+        width: 100%;
+        height: 10rem;
+        background-color: #EAEBEA;
+        margin-top: 5rem;
+    }
+
+    .yesterday_1 {
+        width: 5rem;
+        height: 7.5rem;
+        margin-left: 3%;
+        float: left;
+    }
+
+    .yesterday_1_1 {
+        width: 4rem;
+        height: 4rem;
+        margin: 2rem auto;
+        border-radius: 50%;
+
+    }
+
+    .yesterday_1_1 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .yesterday_1_2 {
+        width: 5rem;
+        height: 2rem;
+        margin: -2rem auto;
+
+    }
+
+    .yesterday_1_2_1 {
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_2_2 {
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_3 {
+        width: 6rem;
+        height: 1.6rem;
+        margin: 2rem auto;
+
+        background-color: #585958;
+    }
+
+    .yesterday_1_3_1 {
+        float: left;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-left: 2%;
+    }
+
+    .yesterday_1_3_2 {
+        float: left;
+        width: 0.15rem;
+        height: 1.5rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    .yesterday_1_3_3 {
+        float: right;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-right: 3%;
+    }
+
+    .yesterday_2 {
+        width: 16rem;
+        height: 6rem;
+        float: left;
+        margin-left: 1rem;
+
+    }
+
+    .yesterday_2_1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .yesterday_2_2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+
+    .yesterday_3 {
+        width: 10rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+        margin-top: -1rem;
+    }
+
+    .yesterday_3_1 {
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+
+    .yesterday_3_2 {
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0.1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .yesterday_3_2 img {
+        width: 1.9rem;
+        height: 1.5rem;
+
+    }
+
+    .hongse {
+        width: 100%;
+        height: 5rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: 0rem;
+
+    }
+
+    .hongse_1 {
+        width: 24.5%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+
+    .hongse_1_1 {
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.5rem;
+    }
+
+    .number {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+
+    .hongse_1_2 {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 2rem;
+        color: #FFB1C2;
+        position: relative;
+    }
+
+    .number-1 {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+
+    .hongse_2 {
+        width: 1px;
+        height: 3rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+
+    .shinei {
+        width: 100%;
+        height: auto;
+        margin: 3rem auto;
+    }
+
+    .design {
+        width: 100%;
+        height: 280px;
+    }
+
+    .design-1 {
+        width: 150px;
+        height: 250px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+
+    }
+
+    .design-1-1 {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top: 50%;
+    }
+
+    .design-1-1 .icon-jia{
+        font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:75%;
+        width:90%;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:30%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 50%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin: -37.5% 0 0 -45%;
+        border-radius: 3%;
+
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 40%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2.7rem;
+        margin: 2rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2.7rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 3rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 12%;
+
+    }
+    .icon-cha1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 18%;
+        float: right;
+        margin-right: 19%;
+    }
+
+    .design-2 {
+        width: 150px;
+        height: 250px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .design-2-1 {
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+
+    .design-2-2 {
+        width: 2.5rem;
+        height: 3.5rem;
+        background-color: #C1A062;
+        border-bottom-left-radius: 50%;
+        float: left;
+
+    }
+
+    .design-2-3 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .design-2-4 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top: 10%;
+    }
+
+    .design-3 {
+        width: 12rem;
+        height: 8.5rem;
+        margin: 1rem auto;
+    }
+
+    .design-3 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-4 {
+        width: 12rem;
+        height: 2.5rem;
+        margin: 1rem auto;
+    }
+
+    .design-4-1 {
+        width: 33%;
+        height: 3rem;
+        float: left;
+    }
+
+    .design-4-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-4-2 {
+        width: 31%;
+        height: 3rem;
+        float: left;
+        margin-left: 0.2rem;
+    }
+
+    .design-4-2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dian {
+        width: 90px;
+        height: 2rem;
+        margin:1rem auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .dian-1{
+        width: 90px;
+        height: 2rem;
+        margin:0 auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .designs {
+        width: 100%;
+        height: 280px;
+        margin-top: 5rem;
+    }
+
+    .nomore {
+        width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .nomore a {
+        text-decoration: none;
+    }
+    .footer {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2 {
+        display: none;
+        block: none;
+    }
+    .footer_2 .footer_2_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2_2 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_3 {
+        display: none;
+        block: none;
+    }
+    .footer a {
+        display: none;
+        block: none;
+    }
+}
+
+@media (min-width:340px)and (max-width:349px) {
+    .yesterday {
+        width: 100%;
+        height: 8.5rem;
+        background-color: #EAEBEA;
+        margin-top: 5rem;
+    }
+
+    .yesterday_1 {
+        width: 5rem;
+        height: 7rem;
+        margin-left: 3%;
+        float: left;
+    }
+
+    .yesterday_1_1 {
+        width:4rem;
+        height: 4rem;
+        margin: 1.5rem auto;
+        border-radius: 50%;
+
+    }
+
+    .yesterday_1_1 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .yesterday_1_2 {
+        width: 5rem;
+        height: 2rem;
+        margin: -1.8rem auto;
+
+    }
+
+    .yesterday_1_2_1 {
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_2_2 {
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_3 {
+        width: 6rem;
+        height: 1.6rem;
+        margin: 1.5rem auto;
+        background-color: #585958;
+        margin-left: -0.3rem;
+    }
+
+    .yesterday_1_3_1 {
+        float: left;
+        font-size: 0.7rem;
+        color: white;
+        margin-left: 2%;
+    }
+
+    .yesterday_1_3_2 {
+        float: left;
+        width: 0.15rem;
+        height: 1.5rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    .yesterday_1_3_3 {
+        float: right;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-right: 3%;
+    }
+
+    .yesterday_2 {
+        width: 15rem;
+        height: 4rem;
+        float: left;
+        margin-left: 0rem;
+
+    }
+
+    .yesterday_2_1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .yesterday_2_2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+
+    .yesterday_3 {
+        width: 10rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+        margin-top: -1rem;
+    }
+
+    .yesterday_3_1 {
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+
+    .yesterday_3_2 {
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0.1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .yesterday_3_2 img {
+        width: 1.9rem;
+        height: 1.5rem;
+
+    }
+
+    .hongse {
+        width: 100%;
+        height: 5rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: 0rem;
+
+    }
+
+    .hongse_1 {
+        width: 24.5%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+
+    .hongse_1_1 {
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.5rem;
+    }
+
+    .number {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+
+    .hongse_1_2 {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 2rem;
+        color: #FFB1C2;
+        position: relative;
+    }
+
+    .number-1 {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+
+    .hongse_2 {
+        width: 1px;
+        height: 3rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+
+    .shinei {
+        width: 100%;
+        height: auto;
+        margin: 3rem auto;
+    }
+
+    .design {
+        width: 100%;
+        height: 250px;
+    }
+
+    .design-1 {
+        width: 140px;
+        height: 250px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+
+    }
+
+    .design-1-1 {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top: 50%;
+    }
+
+    .design-1-1 .icon-jia{
+        font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:75%;
+        width:90%;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:30%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 50%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin: -37.5% 0 0 -45%;
+        border-radius: 3%;
+        position: fixed;
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 30%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2.7rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 3rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2.7rem;
+        margin: 3rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 12%;
+
+    }
+    .icon-cha1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 18%;
+        float: right;
+        margin-right: 19%;
+    }
+
+    .design-2 {
+        width: 140px;
+        height: 250px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .design-2-1 {
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+
+    .design-2-2 {
+        width: 2.5rem;
+        height: 3.5rem;
+        background-color: #C1A062;
+        border-bottom-left-radius: 50%;
+        float: left;
+
+    }
+
+    .design-2-3 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .design-2-4 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top: 10%;
+    }
+
+    .design-3 {
+        width: 12rem;
+        height: 8.5rem;
+        margin: 1rem auto;
+    }
+
+    .design-3 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-4 {
+        width: 12rem;
+        height: 2.5rem;
+        margin: 1rem auto;
+    }
+
+    .design-4-1 {
+        width: 33%;
+        height: 3rem;
+        float: left;
+    }
+
+    .design-4-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-4-2 {
+        width: 31%;
+        height: 3rem;
+        float: left;
+        margin-left: 0.2rem;
+    }
+
+    .design-4-2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dian {
+        width: 90px;
+        height: 2rem;
+        margin:1rem auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .dian-1{
+        width: 90px;
+        height: 2rem;
+        margin:0 auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .designs {
+        width: 100%;
+        height: 250px;
+        margin-top: 5rem;
+    }
+
+    .nomore {
+        width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .nomore a {
+        text-decoration: none;
+    }
+    .footer {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2 {
+        display: none;
+        block: none;
+    }
+    .footer_2 .footer_2_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2_2 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_3 {
+        display: none;
+        block: none;
+    }
+    .footer a {
+        display: none;
+        block: none;
+    }
+}
+
+@media (min-width:757px)and (max-width:900px) {
+    .yesterday {
+        width: 100%;
+        height: 12rem;
+        background-color: #EAEBEA;
+        margin-top: 5rem;
+    }
+
+    .yesterday_1 {
+        width: 5rem;
+        height: 7rem;
+        margin-left: 3%;
+        float: left;
+    }
+
+    .yesterday_1_1 {
+        width:4rem;
+        height: 4rem;
+        margin: 1.5rem auto;
+        border-radius: 50%;
+
+    }
+
+    .yesterday_1_1 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .yesterday_1_2 {
+        width: 5rem;
+        height: 2rem;
+        margin: -1.8rem auto;
+
+    }
+
+    .yesterday_1_2_1 {
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_2_2 {
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_3 {
+        width: 6rem;
+        height: 1.6rem;
+        margin: 1.5rem auto;
+        background-color: #585958;
+        margin-left: -0.3rem;
+    }
+
+    .yesterday_1_3_1 {
+        float: left;
+        font-size: 0.7rem;
+        color: white;
+        margin-left: 2%;
+    }
+
+    .yesterday_1_3_2 {
+        float: left;
+        width: 0.15rem;
+        height: 1.5rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    .yesterday_1_3_3 {
+        float: right;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-right: 3%;
+    }
+
+    .yesterday_2 {
+        width: 16rem;
+        height: 5rem;
+        float: left;
+        margin-left: 1rem;
+
+    }
+
+    .yesterday_2_1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .yesterday_2_2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+
+    .yesterday_3 {
+        width: 10rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+        margin-top: -1rem;
+    }
+
+    .yesterday_3_1 {
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+
+    .yesterday_3_2 {
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0.1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .yesterday_3_2 img {
+        width: 1.9rem;
+        height: 1.5rem;
+
+    }
+
+    .hongse {
+        width:70%;
+        height: 5rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: -2.5rem;
+
+    }
+
+    .hongse_1 {
+        width: 24.5%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+
+    .hongse_1_1 {
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.5rem;
+    }
+
+    .number {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+
+    .hongse_1_2 {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 2rem;
+        color: #FFB1C2;
+        position: relative;
+    }
+
+    .number-1 {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+
+    .hongse_2 {
+        width: 1px;
+        height: 3rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+
+    .shinei {
+        width: 90%;
+        height: auto;
+        margin: 3rem auto;
+    }
+
+    .shinei{
+        width: 95%;
+        height: auto;
+        margin:3rem auto;
+    }
+    .design{
+        width: 100%;
+        height: 280px;
+    }
+    .design-1{
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.8);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left:0.8rem;
+
+    }
+    .design-1-1{
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top:50%;
+    }
+    .design-1-1 .icon-jia{
+        font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:39rem;
+        width:48.5rem;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:10%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 10%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin: 0 auto;
+        border-radius: 3%;
+        position: fixed;
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 30%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2.7rem;
+        margin: 3rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2.7rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 3rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 10%;
+
+    }
+    .icon-cha1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 15%;
+        float: right;
+        margin-right: 19%;
+    }
+    .design-2 {
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 0.8rem;
+        margin-top: 2rem;
+    }
+    .design-2-1{
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+    .design-2-2{
+        width: 3rem;
+        height: 4rem;
+        background-color: #C1A062;
+        border-bottom-left-radius:50% ;
+        float: left;
+
+    }
+    .design-2-3{
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .design-2-4{
+        font-size: 2rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top:10% ;
+    }
+    .design-3{
+        width: 14rem;
+        height: 10rem;
+        margin: 1rem auto;
+    }
+    .design-3 img{
+        width:100%;
+        height: 100%;
+    }
+    .design-4{
+        width: 14rem;
+        height: 3rem;
+        margin: 1.5rem auto;
+    }
+    .design-4-1{
+        width: 33%;
+        height: 3rem;
+        float: left;
+    }
+    .design-4-1 img {
+        width:100%;
+        height: 100%;
+    }
+    .design-4-2{
+        width: 31%;
+        height: 3rem;
+        float: left;
+        margin-left:0.2rem;
+    }
+    .design-4-2 img{
+        width:100%;
+        height: 100%;
+    }
+    .dian{
+        width: 100px;
+        height: 2rem;
+        margin: -0.5rem auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .designs{
+        width: 100%;
+        height: 280px;
+        margin-top: 5rem;
+    }
+    .nomore {
+        width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .nomore a {
+        text-decoration: none;
+    }
+    .footer {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2 {
+        display: none;
+        block: none;
+    }
+    .footer_2 .footer_2_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2_2 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_3 {
+        display: none;
+        block: none;
+    }
+    .footer a {
+        display: none;
+        block: none;
+    }
+}
+
+@media (min-width:340px)and (max-width:365px) {
+    .yesterday {
+        width: 100%;
+        height: 10rem;
+        background-color: #EAEBEA;
+        margin-top: 5rem;
+    }
+
+    .yesterday_1 {
+        width: 5rem;
+        height: 7.5rem;
+        margin-left: 3%;
+        float: left;
+    }
+
+    .yesterday_1_1 {
+        width: 4rem;
+        height: 4rem;
+        margin: 2rem auto;
+        border-radius: 50%;
+
+    }
+
+    .yesterday_1_1 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .yesterday_1_2 {
+        width: 5rem;
+        height: 2rem;
+        margin: -2rem auto;
+
+    }
+
+    .yesterday_1_2_1 {
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_2_2 {
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+
+    }
+
+    .yesterday_1_3 {
+        width: 6rem;
+        height: 1.6rem;
+        margin: 2rem auto;
+        background-color: #585958;
+        margin-left: -0.3rem;
+    }
+
+    .yesterday_1_3_1 {
+        float: left;
+        font-size: 1rem;
+        color: white;
+        margin-left: 2%;
+    }
+
+    .yesterday_1_3_2 {
+        float: left;
+        width: 0.15rem;
+        height: 1.4rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 12%;
+    }
+
+    .yesterday_1_3_3 {
+        float: right;
+        font-size: 1rem;
+        color: white;
+        margin-right: 0.5rem;
+    }
+
+    .yesterday_2 {
+        width: 23rem;
+        height: 6rem;
+        float: left;
+        margin-left: 1rem;
+
+    }
+
+    .yesterday_2_1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .yesterday_2_2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+
+    .yesterday_3 {
+        width: 10rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+        margin-top: -1rem;
+    }
+
+    .yesterday_3_1 {
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+
+    .yesterday_3_2 {
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .yesterday_3_2 img {
+        width: 1.9rem;
+        height: 1.5rem;
+
+    }
+
+    .hongse {
+        width: 100%;
+        height: 5rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: 0rem;
+
+    }
+
+    .hongse_1 {
+        width: 24.5%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+
+    .hongse_1_1 {
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.5rem;
+    }
+
+    .number {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+
+    .hongse_1_2 {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 2rem;
+        color: #FFB1C2;
+        position: relative;
+    }
+
+    .number-1 {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+
+    .hongse_2 {
+        width: 1px;
+        height: 3rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+
+    .shinei {
+        width: 98%;
+        height: auto;
+        margin: 3rem auto;
+    }
+
+    .design {
+        width: 100%;
+        height: 280px;
+    }
+
+    .design-1 {
+        width: 150px;
+        height: 240px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+
+    }
+
+    .design-1-1 {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top: 50%;
+    }
+
+    .design-1-1 .icon-jia{
+        font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:80%;
+        width:90%;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:40%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 50%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin: -40% 0 0 -45%;
+        border-radius: 3%;
+
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 35%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2rem;
+        margin: 2rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 4rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3rem;
+        height: 3rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 12%;
+
+    }
+    .icon-cha1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 18%;
+        float: right;
+        margin-right: 19%;
+    }
+
+    .design-2 {
+        width: 150px;
+        height: 240px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .design-2-1 {
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+
+    .design-2-2 {
+        width: 2.5rem;
+        height: 3.5rem;
+        background-color: #C1A062;
+        border-bottom-left-radius: 50%;
+        float: left;
+
+    }
+
+    .design-2-3 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .design-2-4 {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top: 10%;
+    }
+
+    .design-3 {
+        width: 13.5rem;
+        height: 8.5rem;
+        margin: 1rem auto;
+    }
+
+    .design-3 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-4 {
+        width: 13.5rem;
+        height: 3rem;
+        margin:1.5rem auto;
+    }
+
+    .design-4-1 {
+        width: 33.3333%;
+        height: 3rem;
+        float: left;
+    }
+
+    .design-4-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-4-2 {
+        width: 31.5%;
+        height: 3rem;
+        float: left;
+        margin-left: 0.2rem;
+    }
+
+    .design-4-2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dian {
+        width: 100px;
+        height: 3rem;
+        margin:0 auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .dian-1{
+        width: 100px;
+        height: 3rem;
+        margin:0 auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .designs {
+        width: 100%;
+        height: 250px;
+        margin-top: 5rem;
+    }
+
+    .nomore {
+        width: 100%;
+        height: 3rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 1rem;
+
+    }
+
+    .nomore a {
+        text-decoration: none;
+    }
+    .footer {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2 {
+        display: none;
+        block: none;
+    }
+    .footer_2 .footer_2_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2_2 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_3 {
+        display: none;
+        block: none;
+    }
+    .footer a {
+        display: none;
+        block: none;
+    }
+}
+
+@media (min-width:538px)and (max-width:757px){
+    .yesterday{
+        width: 100%;
+        height: 12rem;
+        background-color: #EAEBEA;
+        margin-top:5rem ;
+    }
+    .yesterday_1{
+        width: 7.5rem;
+        height: 10rem;
+        margin-left:0%;
+        float: left;
+    }
+    .yesterday_1_1{
+        width: 5rem;
+        height: 5rem;
+        margin: 2rem auto;
+        border-radius: 50%;
+
+    }
+    .yesterday_1_1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .yesterday_1_2{
+        width: 5rem;
+        height: 2rem;
+        margin: -2rem auto;
+
+    }
+    .yesterday_1_2_1{
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size:1.4rem ;
+
+    }
+    .yesterday_1_2_2{
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size:1.4rem ;
+
+
+    }
+    .yesterday_1_3{
+        width: 6rem;
+        height: 1.6rem;
+        margin: 2rem auto;
+
+        background-color: #585958;
+    }
+    .yesterday_1_3_1{
+        float: left;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-left: 2%;
+    }
+    .yesterday_1_3_2{
+        float: left;
+        width: 0.15rem;
+        height: 1.5rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+    .yesterday_1_3_3{
+        float: right;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-right: 3%;
+    }
+    .yesterday_2{
+        width: 23rem;
+        height: 6rem;
+        float: left;
+
+    }
+    .yesterday_2_1{
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+    .yesterday_2_2{
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+    .yesterday_3{
+        width: 10rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+    }
+    .yesterday_3_1{
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+    .yesterday_3_2{
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0.1rem;
+        text-align: center;
+        font-size:1.2rem ;
+    }
+    .yesterday_3_2 img{
+        width: 1.9rem;
+        height:1.5rem;
+
+    }
+    .hongse{
+        width: 100%;
+        height: 6rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: 0rem;
+    }
+    .hongse_1{
+        width:24.8%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+    .hongse_1_1{
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.8rem;
+    }
+    .number{
+        position: absolute;
+        font-size:1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+    .hongse_1_2{
+        font-size:1.5rem;
+        width: 100%;
+        height: 2rem;
+        color:#FFB1C2;
+        position: relative;
+    }
+    .number-1{
+        position: absolute;
+        font-size:1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+    .hongse_2{
+        width: 1px;
+        height: 4rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+    .shinei{
+        width: 98%;
+        height: auto;
+        margin:3rem auto;
+    }
+    .design{
+        width: 100%;
+        height: 280px;
+    }
+    .design-1{
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left:1.5rem;
+
+    }
+    .design-1-1{
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top:50%;
+    }
+    .design-1-1 .icon-jia{
+        font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:92%;
+        width:78%;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:10%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left: 10%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin: 0 auto;
+        border-radius: 3%;
+        position: fixed;
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 30%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2.7rem;
+        margin: 3rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2.7rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 3rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 8%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    .icon-cha1{
+
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 15%;
+        float: right;
+        margin-right: 19%;
+    }
+    .design-2 {
+        width: 170px;
+        height: 280px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    .design-2-1{
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+    .design-2-2{
+        width: 3rem;
+        height: 4rem;
+        background-color: #C1A062;
+        border-bottom-left-radius:50% ;
+        float: left;
+
+    }
+    .design-2-3{
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .design-2-4{
+        font-size: 2rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top:10% ;
+    }
+    .design-3{
+        width: 14rem;
+        height: 10rem;
+        margin: 1rem auto;
+    }
+    .design-3 img{
+        width:100%;
+        height: 100%;
+    }
+    .design-4{
+        width: 14rem;
+        height: 3rem;
+        margin: 1.5rem auto;
+    }
+    .design-4-1{
+        width: 33%;
+        height: 3rem;
+        float: left;
+    }
+    .design-4-1 img {
+        width:100%;
+        height: 100%;
+    }
+    .design-4-2{
+        width: 31%;
+        height: 3rem;
+        float: left;
+        margin-left:0.2rem;
+    }
+    .design-4-2 img{
+        width:100%;
+        height: 100%;
+    }
+    .dian{
+        width: 100px;
+        height: 2rem;
+        margin: -0.5rem auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .designs{
+        width: 100%;
+        height: 280px;
+        margin-top: 0rem;
+    }
+    .nomore{
+        width: 100%;
+        height: 3rem;
+        margin: 2rem auto;
+        text-align: center;
+
+    }
+    .nomore a{
+        text-decoration: none;
+    }
+    .footer{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2{
+        display: none;
+        block:none;
+    }
+    .footer_2 .footer_2_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2_2{
+        display: none;
+        block:none;
+    }
+    .footer .footer_3{
+        display: none;
+        block:none;
+    }
+    .footer a{
+        display: none;
+        block:none;
+    }
+}
+
+@media (min-width:900px)and (max-width:1030px) {
+    .yesterday {
+        width: 100%;
+        height: 12rem;
+        background-color: #EAEBEA;
+        margin-top: 5rem;
+    }
+
+    .yesterday_1 {
+        width: 5rem;
+        height: 7rem;
+        margin-left: 3%;
+        float: left;
+    }
+
+    .yesterday_1_1 {
+        width:4rem;
+        height: 4rem;
+        margin: 1.5rem auto;
+        border-radius: 50%;
+
+    }
+
+    .yesterday_1_1 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .yesterday_1_2 {
+        width: 5rem;
+        height: 2rem;
+        margin: -1.8rem auto;
+
+    }
+
+    .yesterday_1_2_1 {
+        float: left;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_2_2 {
+        float: right;
+        font-weight: 600;
+        color: #888988;
+        font-size: 1.4rem;
+
+    }
+
+    .yesterday_1_3 {
+        width: 6rem;
+        height: 1.6rem;
+        margin: 1.5rem auto;
+        background-color: #585958;
+        margin-left: -0.3rem;
+    }
+
+    .yesterday_1_3_1 {
+        float: left;
+        font-size: 0.7rem;
+        color: white;
+        margin-left: 2%;
+    }
+
+    .yesterday_1_3_2 {
+        float: left;
+        width: 0.15rem;
+        height: 1.5rem;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    .yesterday_1_3_3 {
+        float: right;
+        font-size: 0.7rem;
+        color: white;
+
+        margin-right: 3%;
+    }
+
+    .yesterday_2 {
+        width: 16rem;
+        height: 5rem;
+        float: left;
+        margin-left: 1rem;
+
+    }
+
+    .yesterday_2_1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #393A39;
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .yesterday_2_2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        color: #A4A5A4;
+    }
+
+    .yesterday_3 {
+        width: 10rem;
+        height: 3rem;
+        float: right;
+        margin-right: 0rem;
+        margin-top: -1rem;
+    }
+
+    .yesterday_3_1 {
+        margin-top: 2.8rem;
+        width: 4rem;
+        height: 1.8rem;
+        text-align: center;
+        background-color: #C1A062;
+        color: white;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        float: left;
+    }
+
+    .yesterday_3_2 {
+        width: 4rem;
+        height: 1.8rem;
+
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        background-color: #C1A062;
+        padding-top: 0.1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .yesterday_3_2 img {
+        width: 1.9rem;
+        height: 1.5rem;
+
+    }
+
+    .hongse {
+        width:70%;
+        height: 5rem;
+        margin: 0 auto;
+        background-color: #FD455E;
+        position: relative;
+        top: -2.5rem;
+
+    }
+
+    .hongse_1 {
+        width: 24.5%;
+        height: 4rem;
+        position: relative;
+        float: left;
+    }
+
+    .hongse_1_1 {
+        width: 100%;
+        height: 2rem;
+        position: relative;
+        margin-top: 0.5rem;
+    }
+
+    .number {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 40%;
+    }
+
+    .hongse_1_2 {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 2rem;
+        color: #FFB1C2;
+        position: relative;
+    }
+
+    .number-1 {
+        position: absolute;
+        font-size: 1.5rem;
+        color: #FFB1C2;
+        left: 35%;
+    }
+
+    .hongse_2 {
+        width: 1px;
+        height: 3rem;
+        float: left;
+        background-color: #FFB1C2;
+        margin-top: 1rem;
+
+    }
+
+    .shinei {
+        width: 90%;
+        height: auto;
+        margin: 3rem auto;
+    }
+
+    .shinei{
+        width: 85%;
+        height: auto;
+        margin:0rem auto;
+    }
+    .design{
+        width: 100%;
+        height: 290px;
+    }
+    .design-1{
+        width: 200px;
+        height: 290px;
+        box-shadow: 0rem  0.1rem 0.5rem rgba(0,0,0,0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-top: 2rem;
+        margin-left:1.2rem;
+
+    }
+    .design-1-1{
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+        padding-top:50%;
+        font-size: 10rem;
+    }
+    .design-1-1 .icon-jia{
+     font-size: 5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+    #login
+    {
+        display:none;
+        height:40rem;
+        width:48.5rem;
+        position:absolute;/*让节点脱离文档流,我的理解就是,从页面上浮出来,不再按照文档其它内容布局*/
+        top:30%;/*节点脱离了文档流,如果设置位置需要用top和left,right,bottom定位*/
+        left:50%;
+        z-index:2;/*个人理解为层级关系,由于这个节点要在顶部显示,所以这个值比其余节点的都大*/
+        background: url("../image/baise.png") no-repeat;
+        margin: -20rem 0 0 -24.25rem;
+        border-radius: 3%;
+
+    }
+    #over
+    {
+        width: 100%;
+        height: 100%;
+        opacity:0.7;/*设置背景色透明度,1为完全不透明,IE需要使用filter:alpha(opacity=80);*/
+        filter:alpha(opacity=80);
+        display: none;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        background: black;
+        position: fixed;
+    }
+    .login-1{
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 5rem;
+        margin-top: 25%;
+        margin-left: 3%;
+    }
+    .title{
+        font-size: 1.8rem;
+        height: 2.7rem;
+
+        margin: 3rem auto;
+        width: 80%;
+
+    }
+    .title-1{
+        font-size: 1.8rem;
+        width: 80%;
+        height: 2.7rem;
+        border-bottom: 1px solid dimgrey;
+        margin: 3rem auto;
+
+    }
+    .title-2{
+        color:black;background-color: white;outline: medium;border: 0px;width: 100%
+    }
+    .cha{
+        width: 3rem;
+        height: 3rem;
+        background-color: #9b9b9b;
+        float: right;
+        border-radius:50% ;
+        margin-top: 10%;
+    }
+    .icon-cha1{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #AFB0AF;
+
+    }
+    .quan{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: 14%;
+        float: right;
+        margin-right: 19%;
+    }
+    .design-2 {
+        width: 200px;
+        height: 290px;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.7);
+        background-color: #F3F4F3;
+        float: left;
+        margin-left: 1.2rem;
+        margin-top: 2rem;
+    }
+    .design-2-1{
+        width: 10rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+    .design-2-2{
+        width: 3rem;
+        height: 4rem;
+        background-color: #C1A062;
+        border-bottom-left-radius:50% ;
+        float: left;
+
+    }
+    .design-2-3{
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .design-2-4{
+        font-size: 2rem;
+        text-align: center;
+        width: 7rem;
+        float: left;
+        margin-top:10% ;
+    }
+    .design-3{
+        width: 14rem;
+        height: 10rem;
+        margin: 1rem auto;
+    }
+    .design-3 img{
+        width:100%;
+        height: 100%;
+    }
+    .design-4{
+        width: 14rem;
+        height: 3rem;
+        margin: 1.5rem auto;
+    }
+    .design-4-1{
+        width: 33%;
+        height: 3rem;
+        float: left;
+    }
+    .design-4-1 img {
+        width:100%;
+        height: 100%;
+    }
+    .design-4-2{
+        width: 31%;
+        height: 3rem;
+        float: left;
+        margin-left:0.2rem;
+    }
+    .design-4-2 img{
+        width:100%;
+        height: 100%;
+    }
+    .dian{
+        width: 100px;
+        height: 2rem;
+        margin: -0.5rem auto;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .designs{
+        width: 100%;
+        height: 290px;
+        margin-top: 0rem;
+    }
+    .nomore {
+        width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .nomore a {
+        text-decoration: none;
+    }
+    .footer {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_1_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2 {
+        display: none;
+        block: none;
+    }
+    .footer_2 .footer_2_1 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_2_2 {
+        display: none;
+        block: none;
+    }
+    .footer .footer_3 {
+        display: none;
+        block: none;
+    }
+    .footer a {
+        display: none;
+        block: none;
+    }
+}
