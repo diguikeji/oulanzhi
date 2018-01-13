@@ -39,6 +39,16 @@ class IndexController extends HomebaseController
         $this->display(":index");
     }
 
+    //获取用户登录信息
+    public function getUser(){
+        $user = session("user");
+        if($user){
+            echo json_encode($user);
+        }else{
+            echo 0;
+        }
+    }
+
     //采集列表
     public function getPostList()
     {
@@ -49,7 +59,7 @@ class IndexController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
             ->limit($page->firstRow . ',' . $page->listRows)
             ->select();
@@ -68,7 +78,7 @@ class IndexController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
             ->where("recommended = 1")
             ->limit($page->firstRow . ',' . $page->listRows)

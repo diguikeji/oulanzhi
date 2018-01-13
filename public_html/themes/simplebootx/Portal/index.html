@@ -28,8 +28,8 @@
 	</div>
 	<div class="nav-box-ul">
 		<ul id="nav">
-			<li><a href="#" class="active">首页</a></li>
-			<li><a href="#">发现</a></li>
+			<li><a href="{:U('Portal/index/index')}" class="active">首页</a></li>
+			<li><a href="{:U('Portal/find/index')}">发现</a></li>
 			<li><a href="#">最新</a>
 				<!--		<ul>
                             <li><a href="#">我的推荐</a></li>
@@ -38,7 +38,7 @@
                             <li><a href="#">用户</a></li>
                         </ul>-->
 			</li>
-			<li><a href="#">活动</a></li>
+			<li><a href="{:U('Portal/activity/index')}">活动</a></li>
 		</ul>
 	</div>
 
@@ -48,14 +48,16 @@
 		<img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
 	</div>
 
-	<div class="login-ul">
-		<ul id="nav-login">
-			<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
-			<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
-			<li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="image/touxiang.png"></div></a></li>
-			<li id="login"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
-		</ul>
+	<div class="login-ul" id="user">
+
 	</div>
+<!--
+<div class="login-ul">
+	<ul id="nav-login">
+	<li id="login"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
+	</ul>
+	</div>
+-->
 
 </nav>
 
@@ -80,10 +82,6 @@
 						<foreach name="home_slides" item="vo">
 							<div class="swiper-slide"><a href="{$vo.slide_url}"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" alt=""></a></div>
 						</foreach>
-					<!--	<div class="swiper-slide"><img src="image/banner.jpg"></div>
-						<div class="swiper-slide"><img src="image/banner1.jpg"></div>
-						<div class="swiper-slide"><img src="image/banner2.jpg"></div>
-						<div class="swiper-slide"><img src="image/banner3.jpg"></div>-->
 					</div>
 					<!-- Add Pagination -->
 					<div class="swiper-pagination"></div>
@@ -152,7 +150,6 @@
 
 	});
 
-
 	$(".nav-box .right-menu .open-menu").click(function(){
 
 		$(".login-ul").slideDown();
@@ -161,6 +158,34 @@
 
 	});
 
+	$.ajax({
+		type: "GET",
+
+		url: "/index.php?g=&m=Index&a=getUser",
+
+		dataType: "json",
+
+		success: function (data) {
+            var uid =data.id;
+			//console.log(uid);
+			if(data == 0){
+				$("#user").append(
+						'<ul id="nav-login">'+
+							'<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
+						'</ul>'
+				)
+			}else{
+				$("#user").append(
+						'<ul id="nav-login">'+
+				'<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
+				'<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
+				'<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
+				'</ul>'
+			)
+			}
+		}
+
+	});
 
 	var pageIndex=1;
 	function getPostList(page)
@@ -174,7 +199,7 @@
 			dataType: "json",
 
 			success: function (data) {
-				console.log(data);
+				//console.log(data);
 				//var html ='';
 				for(var i =0; i<data.length;i++){
 					var pid = data[i].pid;
@@ -190,17 +215,19 @@
 							'<div class="touiang">'+
 							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
-							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
+							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
 							'</div>'+
 							'</div>'
 				)
 				}
+
+
 				$("#hb-box").append(
 						'<div class="clear">'+
 						'</div>'
 
-				)
+				);
 
 				if(data.length<16)
 				{
@@ -247,7 +274,7 @@
 							'<div class="touiang">'+
 							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
-							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
+							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
 							'</div>'+
 							'</div>'
