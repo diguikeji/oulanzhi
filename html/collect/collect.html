@@ -97,8 +97,8 @@
     <a href="../collect/collect.html">
         <div class="hongse_2"></div>
         <div class="hongse_1">
-            <div class="hongse_1_1" style="text-align: center;color: white;font-size: 2rem">122</div>
-            <div class="hongse_1_2" style="text-align: center;color: white">采集</div>
+            <div class="hongse_1_1" style="color: white;">122</div>
+            <div class="hongse_1_2" style="color: white">采集</div>
             <div   class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: 0.5rem"></div>
         </div></a>
     <a href="#">
@@ -342,6 +342,27 @@
         over.style.display = "none";
     }
 
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+
+
+
+
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+
+
+    });
 
 </script>
 
