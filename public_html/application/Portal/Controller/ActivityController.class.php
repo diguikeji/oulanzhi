@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Admin
- * Date: 2018/1/7
- * Time: 17:07
+ * Date: 2018/1/13
+ * Time: 10:41
  */
 namespace Portal\Controller;
 
@@ -11,39 +11,25 @@ use Common\Controller\HomebaseController;
 use Portal\Model\XingquModel;
 
 /**
- *  发现
+ *  活动
  */
-class FindController extends HomebaseController
-{
-    //发现页
-     public function index(){
-         $activity_model = M("Activity");
-         $activity = $activity_model->order('hd_time')->where("hd_recommend=1")->limit(5)->select();
-         $this->assign("activity",$activity);
-         $this->display(":find");
-     }
+class ActivityController extends HomebaseController{
 
-     //发现页活动
-    public function active(){
-
+    public function index(){
+        $activity_model = M("Activity");
+        $activity = $activity_model->select();
+        $activityRecommend = $activity_model->where("hd_recommend=1")->select();
+        $this->assign("activity",$activity);
+        $this->assign("activityRecommend",$activityRecommend);
+        $this->display(":activity");
     }
 
-     //发现页兴趣和画板
-     public function getInterestList(){
-         $xingqu_model = M("xingqu");
-         $count = $xingqu_model->where("xq_fl_zc=1")->count();
-         $page = new \Think\Page($count,16);
-         $Model = M(); // 实例化一个model对象 没有对应任何数据表
-         $xingqu=$Model ->query("select a.xq_id,a.xq_name,a.xq_intro, GROUP_CONCAT(hb_id) as hb_id_list,GROUP_CONCAT(hb_img) as hb_img_list from (select * from tb_xingqu where xq_fl_zc=1) a join tb_huaban b on a.xq_id = b.hb_xqd_id group by xq_id limit $page->firstRow,$page->listRows ");
-         echo json_encode($xingqu);
-     }
-
-    //获取画板图片地址
-    public function imgHuaban(){
-        $huaban_model = M("Huaban");
+    //获取活动图片地址
+    public function imgActivity(){
+        $activity_model = M("Activity");
         $id=I("get.id",0,"intval");
-        $huaban_img = $huaban_model->field("hb_img")->where(array("hb_id" =>$id))->find();
-        $img = $huaban_img['hb_img'];
+        $activity_img = $activity_model->field("hd_img_url")->where(array("id" =>$id))->find();
+        $img = $activity_img['hd_img_url'];
 
         $should_show_default=false;
 
@@ -54,7 +40,7 @@ class FindController extends HomebaseController
                 header("Location: $img");
                 exit();
             } else {
-                $img_dir = C("UPLOADPATH") . "huaban/";
+                $img_dir = C("UPLOADPATH");
                 $img = $img_dir . $img;
                 if (file_exists($img)) {
                     $imageInfo = getimagesize($img);
