@@ -1,95 +1,295 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>{$site_name}</title>
-<meta name="keywords" content="{$site_seo_keywords}" />
-<meta name="description" content="{$site_seo_description}">
-<meta name="author" content="ThinkCMF">
-<tc_include file="Public:head" />
-<style>
-.control-label{
-	font-weight: bold;
-	float: left;
-	width: 70px;
-}
-</style>
+	<meta charset="UTF-8">
+	<title>画板</title>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/palette.css">
+	<link href="__TMPL__Public/new/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/header.css">
+
+	<meta name="renderer" content="webkit">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="generator" content=""  data-variable="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
 </head>
-<body class="body-white" id="top">
-	<tc_include file="Public:nav" />
+<body>
 
-		<div class="container tc-main">
-                <div class="row">
-                    <div class="span3">
-	                    <tc_include file="Public:usernav"/>
-                    </div>
-                    <div class="span9">
-                           <div class="tabs">
-                               <ul class="nav nav-tabs">
-                                   <li class="active"><a href="#one" data-toggle="tab"><i class="fa fa-list-alt"></i>个人中心</a></li>
-                               </ul>
-                               <div class="tab-content">
-                                   <div class="tab-pane active" id="one">
-                                   		  <div class="span2">
-                                   		  <a href="{:U('profile/avatar')}">
-                                   			<if condition="empty($avatar)">
-								            <img src="__TMPL__Public/assets/images/headicon_128.png" class="headicon"/>
-								            <else/>
-								            <img src="{:sp_get_user_avatar_url($avatar)}" class="headicon"/>
-								            </if>
-								          </a>
-										  </div>      
-										  <div class="span3">
-                                   			<div class="control-group">
-                                   				<label class="control-label" for="input-user_nicename">昵称</label>
-                                   				<div class="controls">
-                                   					{$user_nicename|default='未填写'}
-                                   				</div>
-                                   			</div>
-                                   			<div class="control-group">
-                                   				<label class="control-label" for="input-sex">性别</label>
-                                   				<div class="controls">
-                                   				<php>
-                                   				$sexs=array("0"=>"保密","1"=>"程序猿","2"=>"程序媛");
-                                   				
-                                   				</php>
-                                   					{$sexs[$sex]}
-                                   				</div>
-                                   			</div>
-                                   			<div class="control-group">
-                                   				<label class="control-label" for="input-birthday">生日</label>
-                                   				<div class="controls">
-                                   					{$birthday|default='未填写'}
-                                   				</div>
-                                   			</div>
-                                   			<div class="control-group">
-                                   				<label class="control-label" for="input-user_url">个人网址</label>
-                                   				<div class="controls">
-                                   					{$user_url|default='未填写'}
-                                   				</div>
-                                   			</div>
-                                   			<div class="control-group">
-                                   				<label class="control-label" for="input-signature">个性签名</label>
-                                   				<div class="controls">
-                                   					{$signature|default='未填写'}
-                                   				</div>
-                                   			</div>
-                                   			<div class="control-group">
-                                   				<div class="controls">
-                                   					<a href="{:U('user/profile/edit')}" type="submit" class="btn">编辑</a>
-                                   				</div>
-                                   			</div>
-                                   		</div>
-                                   </div>
-                               </div>							
-                           </div>
-                    </div>
-                </div>
 
-		<tc_include file="Public:footer" />
-
+<nav class="nav-box">
+	<div class="nav-box-logo">
+		<img src="__TMPL__Public/new/image/logo.png">
 	</div>
-	<!-- /container -->
+	<div class="nav-box-ul">
+		<ul id="nav">
+			<li><a href="{:U('Portal/index/index')}">首页</a></li>
+			<li><a href="{:U('Portal/find/index')}">发现</a></li>
+			<li><a href="#">最新</a>
+				<!--		<ul>
+                            <li><a href="#">我的推荐</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的画板</a></li>
+                            <li><a href="#">用户</a></li>
+                        </ul>-->
+			</li>
+			<li><a href="{:U('Portal/activity/index')}">活动</a></li>
+		</ul>
+	</div>
 
-	<tc_include file="Public:scripts" />
+
+	<div class="right-menu">
+		<img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
+		<img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
+	</div>
+
+	<<div class="login-ul" id="user"></div>
+
+
+</nav>
+
+
+
+
+<!--明日收获-->
+<div class="yesterday">
+	<div class="yesterday_1">
+		<div class="yesterday_1_1">
+			<a href="#"><img src="{:sp_get_user_avatar_url($avatar)}"></a>
+		</div>
+		<div class="yesterday_1_2">
+			<div class="yesterday_1_2_1">200</div>
+			<div class="yesterday_1_2_2">100</div>
+		</div>
+		<div class="yesterday_1_3">
+			<a href=""> <div class="yesterday_1_3_1">粉丝</div></a>
+			<div class="yesterday_1_3_2"></div>
+			<a href="">   <div class="yesterday_1_3_3">关注</div></a>
+		</div>
+	</div>
+	<div class="yesterday_2">
+		<div class="yesterday_2_1">{$user_nicename}</div>
+		<div class="yesterday_2_2">欢迎来到我的主页，收集好看的图片</div>
+	</div>
+	<div class="yesterday_3">
+		<a href="#"><div class="yesterday_3_1">关注+</div></a>
+		<a href="#"><div class="yesterday_3_2"><img src="__TMPL__Public/new/image/envelop(1).png"></div></a>
+	</div>
+</div>
+<!--红色部分-->
+<div  class="hongse">
+	<a href="../palette/palette.html">
+		<div class="hongse_1">
+			<div class="hongse_1_1" style="color: white;" >{$huabanCount}</div>
+			<div class="hongse_1_2" style="color: white">画板</div>
+			<div  class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: 0.5rem"></div>
+		</div>
+	</a>
+	<a href="{:U('User/collect/index')}">
+		<div class="hongse_2"></div>
+		<div class="hongse_1">
+			<div class="hongse_1_1">{$caijiCount}</div>
+			<div class="hongse_1_2">采集</div>
+		</div></a>
+	<a href="#">
+		<div class="hongse_2"></div>
+		<div class="hongse_1">
+			<div class="hongse_1_1">{$loveCount}</div>
+			<div class="hongse_1_2">喜欢</div>
+		</div></a>
+	<a href="#">
+		<div class="hongse_2"></div>
+		<div class="hongse_1">
+			<div class="hongse_1_1">{$tagCount}</div>
+			<div class="hongse_1_2">标签</div>
+		</div></a>
+</div>
+
+
+
+
+
+<!--室内设计-->
+<div class="shinei">
+	<div class="design">
+		<div class="design-1">
+			<div class="design-1-1"> <a href="javascript:show()"><i class="iconfont  icon-jia"></i></a>
+
+				<div id="login">
+					<a href="javascript:hide()"> <img src="__TMPL__Public/new/image/quancha.png"  class="cha"></a>
+					<div class="quan"></div>
+					<div class="login-1">创建画板</div>
+					<div class="title"><form><input class="title-2" type="name" name="username" placeholder="标题" style=" border-bottom: 1px solid dimgrey"></form></div>
+					<!-- <div class="title-1"><form><input type="name" name="username" placeholder="分类" style="background-color: white;outline: medium;border: 0px;width: 95%">-->
+					<!-- </form>
+                    </div>-->
+					<div class="title-1"> <select name="fl" style="border: 0px;outline: medium;width: 100%;height: 3rem; border-bottom: 1px solid dimgrey;background-color: white">
+						<foreach name="categroy" item="vo">
+						<option value="{$vo.xqfl_id}" >{$vo.xqfl_name}</option>
+						</foreach>
+					</select></div>
+					<button
+							style="border: none;width: 6rem; height: 3rem; background-color:#FF455F;color: white;font-size: 1.6rem;
+                           float: right;margin-right: 4%;
+                           margin-top: 1%;
+                           border-bottom-left-radius:5px;
+                           border-bottom-right-radius: 5px;
+                           border-top-left-radius: 5px;
+                           border-top-right-radius: 5px;">确定</button>
+				</div>
+				<div id="over"></div>
+
+			</div>
+		</div>
+   <div id="design">
+
+   </div>
+
+
+
+</div>
+
+<div style="clear: both"></div>
+<!--没有更多-->
+<div class="nomore">
+	<div class="nomore_1" style="font-family: 微软雅黑;font-size:1.4rem">╮(╯﹏╰）╭&nbsp;没有更多了.....</div>
+	<a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
+</div>
+</div>
+<!--底部-->
+<tc_include file="Public:footer" />
+
+<tc_include file="Public:scripts"/>
+
+<!--script-->
+<!-- Initialize Swiper -->
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
+<script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+//用户画板
+
+ $.ajax({
+     type: "GET",
+
+     url: "/index.php?g=user&m=center&a=drawDetail",
+
+     dataType: "json",
+
+     success: function (data) {
+
+         for(var i = 0;i<data.length;i++) {
+
+             $("#design").append(
+                 '<div class="design-2">' +
+                 '<div class="design-2-1">' +
+                 '<div class="design-2-2">' +
+                 '<div class="design-2-3">48</div>' +
+                 '</div>' +
+                 '<div class="design-2-4">室内设计</div>' +
+                 '</div>' +
+                 '<div class="design-3">' +
+                 '<img src="../image/room.jpg">' +
+                 '</div>' +
+                 '<div class="design-4">' +
+                 '<div class="design-4-1"><img src="../image/room.jpg"></div>' +
+                 '<div class="design-4-2"><img src="../image/room.jpg"></div>' +
+                 '<div class="design-4-2"><img src="../image/room.jpg"></div>' +
+                 '<div class="dian">' +
+                 '<button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button>' +
+                 '</div>' +
+                 '</div>'
+             )
+         }
+     }
+	 }
+ );
+
+	//用户采集
+ $.ajax({
+     type: "GET",
+
+     url: "/index.php?g=user&m=center&a=collectDetail",
+
+     dataType: "json",
+
+     success: function (data) {
+          for(var i = 0; i<data.length;i++){
+
+		  }
+	 }
+
+
+ });
+
+    var login = document.getElementById('login');
+    var over = document.getElementById('over');
+    function show()
+    {
+        login.style.display = "block";
+        over.style.display = "block";
+    }
+    function hide()
+    {
+        login.style.display = "none";
+        over.style.display = "none";
+    }
+
+
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+
+
+
+
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+
+
+    });
+
+    $.ajax({
+        type: "GET",
+
+        url: "/index.php?g=&m=Index&a=getUser",
+
+        dataType: "json",
+
+        success: function (data) {
+            var uid =data.id;
+            //console.log(uid);
+            if(data == 0){
+                $("#user").append(
+                    '<ul id="nav-login">'+
+                    '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
+                    '</ul>'
+                )
+            }else{
+                $("#user").append(
+                    '<ul id="nav-login">'+
+                    '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
+                    '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
+                    '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
+                    '</ul>'
+                )
+            }
+        }
+
+    });
+</script>
 </body>
 </html>

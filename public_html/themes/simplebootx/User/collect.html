@@ -10,27 +10,27 @@
     <meta name="generator" content=""  data-variable="" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link href="../favicon.ico"  rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/new.css">
-    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="../css/collect.css">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" href="../css/palette.css">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link href="__TMPL__Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/new.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/collect.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/palette.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/header.css">
 
 </head>
 <body>
 
 <nav class="nav-box">
     <div class="nav-box-logo">
-        <img src="../image/logo.png">
+        <img src="__TMPL__Public/new/image/logo.png">
     </div>
     <div class="nav-box-ul">
         <ul id="nav">
-            <li><a href="../index.html" class="active">首页</a></li>
-            <li><a href="../found/found.html">发现</a></li>
-            <li><a href="../new/new.html">最新</a>
+            <li><a href="{:U('Portal/index/index')}">首页</a></li>
+            <li><a href="{:U('Portal/find/index')}">发现</a></li>
+            <li><a href="#">最新</a>
                 <!--		<ul>
                             <li><a href="#">我的推荐</a></li>
                             <li><a href="#">我的关注</a></li>
@@ -38,24 +38,16 @@
                             <li><a href="#">用户</a></li>
                         </ul>-->
             </li>
-            <li><a href="../activity/activity.html">活动</a></li>
+            <li><a href="{:U('Portal/activity/index')}">活动</a></li>
         </ul>
     </div>
-
 
     <div class="right-menu">
-        <img class="open-menu" src="../image/menu.png" />
-        <img class="close-menu" src="../image/closeMenu.png" />
+        <img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
+        <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
     </div>
 
-    <div class="login-ul">
-        <ul id="nav-login">
-            <li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
-            <li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
-            <li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="../image/touxiang.png"></div></a></li>
-            <li id="login1"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
-        </ul>
-    </div>
+    <<div class="login-ul" id="user"></div>
 
 
 </nav>
@@ -64,7 +56,7 @@
 <div class="yesterday">
     <div class="yesterday_1">
         <div class="yesterday_1_1">
-            <a href="#"><img src="../image/huge.jpg"></a>
+            <a href="#"><img src="{:sp_get_user_avatar_url($avatar)}"></a>
         </div>
         <div class="yesterday_1_2">
             <div class="yesterday_1_2_1">200</div>
@@ -77,39 +69,39 @@
         </div>
     </div>
     <div class="yesterday_2">
-        <div class="yesterday_2_1">明日收获</div>
+        <div class="yesterday_2_1">{$user_nicename}</div>
         <div class="yesterday_2_2">欢迎来到我的主页，收集好看的图片</div>
     </div>
     <div class="yesterday_3">
         <a href="#"><div class="yesterday_3_1">关注+</div></a>
-        <a href="#"><div class="yesterday_3_2"><img src="../image/envelop(1).png"></div></a>
+        <a href="#"><div class="yesterday_3_2"><img src="__TMPL__Public/new/image/envelop(1).png"></div></a>
     </div>
 </div>
 <!--红色部分-->
 <div  class="hongse">
-    <a href="../palette/palette.html">
+    <a href="{:U('User/center/index')}">
         <div class="hongse_1">
-            <div class="hongse_1_1"  >12</div>
+            <div class="hongse_1_1"  >{$huabanCount}</div>
             <div class="hongse_1_2" >画板</div>
         </div>
     </a>
-    <a href="../collect/collect.html">
+    <a href="{:U('User/collect/index')}">
         <div class="hongse_2"></div>
         <div class="hongse_1">
-            <div class="hongse_1_1" style="color: white;">122</div>
+            <div class="hongse_1_1" style="color: white;">{$caijiCount}</div>
             <div class="hongse_1_2" style="color: white">采集</div>
             <div   class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: 0.5rem"></div>
         </div></a>
     <a href="#">
         <div class="hongse_2"></div>
         <div class="hongse_1">
-            <div class="hongse_1_1">12</div>
+            <div class="hongse_1_1">{$loveCount}</div>
             <div class="hongse_1_2">喜欢</div>
         </div></a>
     <a href="#">
         <div class="hongse_2"></div>
         <div class="hongse_1">
-            <div class="hongse_1_1">12</div>
+            <div class="hongse_1_1">{$tagCount}</div>
             <div class="hongse_1_2">标签</div>
         </div></a>
 </div>
@@ -118,53 +110,53 @@
 <!--中间部分-->
 <div class="middle" id="middle">
 
-   <div class="middle_2">
-       <div class="jiazai"><a href="javascript:show()"><i class="iconfont  icon-jia" ></i></a>
-          <!-- <div id="uploadphoto">
+    <div class="middle_2">
+        <div class="jiazai"><a href="javascript:show()"><i class="iconfont  icon-jia" ></i></a>
+            <!-- <div id="uploadphoto">
 
-               <div class="upload_1">
-                  <div class="upload_1_1"> <img src="img/huge.jpg" style="width: 100%;height: 100%;object-fit: cover" id="picname" name="huge"></div>
-               </div>
-               <div class="upload_2" style="position: relative">
-                   <a href="javascript:hide()"> <img src="img/cha1.png"  class="cha1"></a>
-                   <p>上传采集</p>
-                   <input type="text" placeholder="搜索或创建画板" style="border: 1px solid #DADADA;outline: none" class="input_1">
-                 <div class="upload_2_1">
-                     <div class="upload_2_1_1"></div>
+                 <div class="upload_1">
+                    <div class="upload_1_1"> <img src="img/huge.jpg" style="width: 100%;height: 100%;object-fit: cover" id="picname" name="huge"></div>
                  </div>
-                  <div class="tags" id="tags" tabindex="1" style="position: relative;">
-                       <input id="form-field-tags" type="text" placeholder="" value="Tag Input Control" name="tags" style="display: none;">
-                       <input type="text" placeholder="输入文字，按空格键或回车以生成标签" class="tags_enter" autocomplete="off" style="width: 100%;">
+                 <div class="upload_2" style="position: relative">
+                     <a href="javascript:hide()"> <img src="img/cha1.png"  class="cha1"></a>
+                     <p>上传采集</p>
+                     <input type="text" placeholder="搜索或创建画板" style="border: 1px solid #DADADA;outline: none" class="input_1">
+                   <div class="upload_2_1">
+                       <div class="upload_2_1_1"></div>
                    </div>
-                   &lt;!&ndash;<input type="text" placeholder="输入文字，按空格键或回车以生成标签" style="border: 1px solid #DADADA;outline: none" class="input_2">&ndash;&gt;
-                  <div class="upload_2_2" style="bottom: 0;position: absolute" >
-                   <div class="button_2">
-                       <button  style="width: 7rem; height: 3rem;border:1px solid #DADADA;
-    background-color: #FF4562;border-radius: 5px;font-size:1.6rem;color: white">采下来</button>
-                   </div>
-                   <div class="button_1">
-                       <button  style="width: 6rem; height: 3rem;border:1px solid #DADADA;
-    background-color: #F3F3F3;border-radius: 5px;font-size:1.6rem;color: #5E5F54">取消</button>
-                   </div></div>
-               </div>
+                    <div class="tags" id="tags" tabindex="1" style="position: relative;">
+                         <input id="form-field-tags" type="text" placeholder="" value="Tag Input Control" name="tags" style="display: none;">
+                         <input type="text" placeholder="输入文字，按空格键或回车以生成标签" class="tags_enter" autocomplete="off" style="width: 100%;">
+                     </div>
+                     &lt;!&ndash;<input type="text" placeholder="输入文字，按空格键或回车以生成标签" style="border: 1px solid #DADADA;outline: none" class="input_2">&ndash;&gt;
+                    <div class="upload_2_2" style="bottom: 0;position: absolute" >
+                     <div class="button_2">
+                         <button  style="width: 7rem; height: 3rem;border:1px solid #DADADA;
+      background-color: #FF4562;border-radius: 5px;font-size:1.6rem;color: white">采下来</button>
+                     </div>
+                     <div class="button_1">
+                         <button  style="width: 6rem; height: 3rem;border:1px solid #DADADA;
+      background-color: #F3F3F3;border-radius: 5px;font-size:1.6rem;color: #5E5F54">取消</button>
+                     </div></div>
+                 </div>
 
-           </div>-->
-           <div id="login">
-               <a href="javascript:hide()"> <img src="../image/cha.png"  class="login_3"></a>
-               <div class="quan"></div>
-               <div class="login_1">上传采集</div>
-               <div class="login_2">
-                   <div class="login_2_p_1">拖拽图片<br>或</div>
-                   <div class="login_2_p_3">点击&nbsp;<a href="#">此处上传</a></div>
-                   <div class="login_2_p_2">可多张上传，每张图片建议10M以内</div>
-               </div>
-               <div class="button">
-                   <button  style="width: 6rem; height: 3rem;border:0px;
+             </div>-->
+            <div id="login">
+                <a href="javascript:hide()"> <img src="../image/cha.png"  class="login_3"></a>
+                <div class="quan"></div>
+                <div class="login_1">上传采集</div>
+                <div class="login_2">
+                    <div class="login_2_p_1">拖拽图片<br>或</div>
+                    <div class="login_2_p_3">点击&nbsp;<a href="#">此处上传</a></div>
+                    <div class="login_2_p_2">可多张上传，每张图片建议10M以内</div>
+                </div>
+                <div class="button">
+                    <button  style="width: 6rem; height: 3rem;border:0px;
     background-color: #FF4562;border-radius: 5px;font-size:1.6rem;color: white">上传</button>
-               </div>
-           </div>
-           <div id="over"></div>
-       </div>
+                </div>
+            </div>
+            <div id="over"></div>
+        </div>
     </div>
     <div class="middle_2">
         <div class="picture">
@@ -320,14 +312,14 @@
     var over = document.getElementById('over');
     function show()
     {
-       login.style.display = "block";
+        login.style.display = "block";
         /*uploadphoto.style.display="block";*/
         over.style.display = "block";
     }
     function hide()
     {
         login.style.display = "none";
-       /* uploadphoto.style.display="none";*/
+        /* uploadphoto.style.display="none";*/
         over.style.display = "none";
     }
 

@@ -42,4 +42,31 @@ class InterestController extends MemberbaseController
         echo json_encode($usergz);
     }
 
+
+    //用户点击关注兴趣点
+    public function do_interest()
+    {
+        $session_user = session('user');
+        if (!empty($session_user)) {
+            $uid = session("user.id");
+            $xid = I('get.xid', 0, 'intval');;
+            $xqgz_model = M("Xqd_guanzhu");
+            $xqgz = $xqgz_model->where(array("xqdgz_uid"=>$uid,"xqdgz_xqid"=>$xid))->find();
+            if($xqgz){
+                $this->error("亲，您已经关注过啦！");
+            }else{
+                $xqdgz["xqdgz_uid"] = $uid;
+                $xqdgz["xqdgz_xqid"] = $xid;
+                $xqdgz["xqdgz_create_time"] = time();
+                $result = $xqgz_model->add($xqdgz);
+                if($result){
+                    $this->success("关注兴趣点成功！");
+                }else{
+                    $this->error("关注兴趣点失败！");
+                }
+            }
+
+        }
+    }
+
 }
