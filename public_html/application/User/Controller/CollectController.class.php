@@ -40,6 +40,20 @@ class CollectController extends MemberbaseController
 
     }
 
+
+    //获取用户采集的详情
+    public function collectDetail()
+    {
+        $uid = sp_get_current_userid();
+        $caijiUser_model = M("Caiji");
+        $caijiUser = $caijiUser_model->where(array("cj_u_id" => $uid))
+            ->alias("a")
+            ->join("tb_posts b on a.cj_post_id = b.id")
+            ->select();
+        echo json_encode($caijiUser);
+
+    }
+
     //用户采集
     public function do_collect()
     {

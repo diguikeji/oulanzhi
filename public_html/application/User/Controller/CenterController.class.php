@@ -44,22 +44,33 @@ class CenterController extends MemberbaseController
     //获取用户创建的画板详情
     public function drawDetail(){
         $uid = sp_get_current_userid();
-        $huabanUser_model = M("Hb_users");
-        $huabanUser = $huabanUser_model->where(array("hbusers_users_id"=>$uid))
-                                     ->alias("a")
-                                     ->join("tb_huaban b on a.hbusers_hb_id = b.hb_id")
-                                     ->select();
-        echo json_encode($huabanUser);
+
+        $huaban_model = M("Huaban");
+        $count = $huaban_model->where(array("hb_u_id" =>$uid))->count();
+        $page = new \Think\Page($count,16);
+        $Model = M(); // 实例化一个model对象 没有对应任何数据表
+        $xingqu = $Model ->query("Select b.hb_name,b.hb_id, GROUP_CONCAT(id) as posts_id_list from tb_hbcj a , tb_huaban b ,tb_posts c where  a.hbcj_posts_id = c.id and a.hbcj_hb_id = b.hb_id and b.hb_u_id = '$uid' limit $page->firstRow,$page->listRows ");
+        echo json_encode($xingqu);
     }
 
-    //获取用户采集的详情
-    public function collectDetail(){
-        $uid = sp_get_current_userid();
-        $caijiUser_model = M("Caiji");
-        $caijiUser = $caijiUser_model->where(array("cj_u_id"=>$uid))
-                                    ->alias("a")
-                                    ->join("tb_posts b on a.cj_post_id = b.id")
-                                    ->select();
-        echo json_encode($caijiUser);
+    //用户创建画板
+    public function createDraw(){
+
+        if(IS_POST){
+            $uid = sp_get_current_userid();
+            $huaban_model = M("Huaban");
+         $hbname = $_POST["hbname"];
+         $flid = $_POST["fl"];
+        $data["hb_name"] = $hbname;
+        $data["hb_term_id"] = $flid;
+        $data["hb_u_id"] = $uid;
+        $data["hb_create_time"] = time();
+        $huaban = $huaban_model->add($data);
+        if($huaban){
+            $this->success("画板创建成功！");
+        }else{
+            $this->error("画板创建失败！");
+        }
+        }
     }
 }

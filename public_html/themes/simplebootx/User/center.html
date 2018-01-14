@@ -95,7 +95,7 @@
 			<div class="hongse_1_1">{$caijiCount}</div>
 			<div class="hongse_1_2">采集</div>
 		</div></a>
-	<a href="#">
+	<a href="{:U('User/love/index')}">
 		<div class="hongse_2"></div>
 		<div class="hongse_1">
 			<div class="hongse_1_1">{$loveCount}</div>
@@ -119,11 +119,12 @@
 		<div class="design-1">
 			<div class="design-1-1"> <a href="javascript:show()"><i class="iconfont  icon-jia"></i></a>
 
+				<form action="{:U('User/center/createDraw')}" method="post" name="hia">
 				<div id="login">
 					<a href="javascript:hide()"> <img src="__TMPL__Public/new/image/quancha.png"  class="cha"></a>
 					<div class="quan"></div>
 					<div class="login-1">创建画板</div>
-					<div class="title"><form><input class="title-2" type="name" name="username" placeholder="标题" style=" border-bottom: 1px solid dimgrey"></form></div>
+					<div class="title"><input class="title-2" type="text" name="hbname"  placeholder="标题" style=" border-bottom: 1px solid dimgrey"></div>
 					<!-- <div class="title-1"><form><input type="name" name="username" placeholder="分类" style="background-color: white;outline: medium;border: 0px;width: 95%">-->
 					<!-- </form>
                     </div>-->
@@ -132,15 +133,18 @@
 						<option value="{$vo.xqfl_id}" >{$vo.xqfl_name}</option>
 						</foreach>
 					</select></div>
-					<button
+					<input type="submit" value="确定"
 							style="border: none;width: 6rem; height: 3rem; background-color:#FF455F;color: white;font-size: 1.6rem;
                            float: right;margin-right: 4%;
                            margin-top: 1%;
                            border-bottom-left-radius:5px;
                            border-bottom-right-radius: 5px;
                            border-top-left-radius: 5px;
-                           border-top-right-radius: 5px;">确定</button>
+                           border-top-right-radius: 5px;">
 				</div>
+				</form>
+
+
 				<div id="over"></div>
 
 			</div>
@@ -180,31 +184,40 @@
 
      dataType: "json",
 
+
+
      success: function (data) {
 
-         for(var i = 0;i<data.length;i++) {
+         var html ='';
+         for (var i = 0; i < data.length; i++) {
 
-             $("#design").append(
-                 '<div class="design-2">' +
+              var postIdList = data[i].posts_id_list.split(",");
+
+                html=html+ '<div class="design-2">' +
                  '<div class="design-2-1">' +
                  '<div class="design-2-2">' +
                  '<div class="design-2-3">48</div>' +
                  '</div>' +
-                 '<div class="design-2-4">室内设计</div>' +
+                 '<div class="design-2-4">'+data[i].hb_name+'</div>' +
                  '</div>' +
                  '<div class="design-3">' +
                  '<img src="../image/room.jpg">' +
                  '</div>' +
-                 '<div class="design-4">' +
-                 '<div class="design-4-1"><img src="../image/room.jpg"></div>' +
-                 '<div class="design-4-2"><img src="../image/room.jpg"></div>' +
-                 '<div class="design-4-2"><img src="../image/room.jpg"></div>' +
-                 '<div class="dian">' +
+                 '<div class="design-4">'
+
+			 for(var j=0 ;j<postIdList.length;j++) {
+                    var pid = postIdList[j];
+                 html = html + '<div class="design-4-1"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
+             }
+
+                html=html+'<div class="dian">' +
                  '<button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button>' +
                  '</div>' +
                  '</div>'
-             )
+
          }
+
+         $("#design").append(html);
      }
 	 }
  );
