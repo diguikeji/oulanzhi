@@ -131,8 +131,8 @@ class XingquController extends AdminbaseController{
         $page = $this->page($count, 10);
         $xingqu = $User->limit($page->firstRow.','.$page->listRows)
             ->alias("a")
-            //->join("tb_posts ON a.xq_id=tb_posts.post_xq_id")
-            ->where("$id = post_xq_id")
+            ->join("tb_posts ON a.xq_id=tb_posts.post_xq_id")
+            ->where(array("post_xq_id"=>$id))
             ->select();
         $this->assign('xingqu',$xingqu);
         $this->assign("page", $page->show('Admin'));// 赋值分页输出

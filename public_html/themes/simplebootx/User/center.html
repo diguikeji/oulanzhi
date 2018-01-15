@@ -149,6 +149,8 @@
 
 			</div>
 		</div>
+
+
    <div id="design">
 
    </div>
@@ -193,6 +195,8 @@
 
               var postIdList = data[i].posts_id_list.split(",");
 
+			  var hid = data[i].hid;
+
                 html=html+ '<div class="design-2">' +
                  '<div class="design-2-1">' +
                  '<div class="design-2-2">' +
@@ -201,7 +205,7 @@
                  '<div class="design-2-4">'+data[i].hb_name+'</div>' +
                  '</div>' +
                  '<div class="design-3">' +
-                 '<img src="../image/room.jpg">' +
+                 '<img src="index.php?g=&m=Find&a=imgHuaban&id='+hid+'">' +
                  '</div>' +
                  '<div class="design-4">'
 
@@ -213,7 +217,8 @@
                 html=html+'<div class="dian">' +
                  '<button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button>' +
                  '</div>' +
-                 '</div>'
+                 '</div>'+
+						'</div>'
 
          }
 

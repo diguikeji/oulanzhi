@@ -76,8 +76,8 @@ class HuabanController extends AdminbaseController{
         $count=$User->count();
         $page = $this->page($count, 10);
         $posts = $User->limit($page->firstRow.','.$page->listRows)
-            //->alias("a")
-            //->join("tb_posts ON a.xq_id=tb_posts.post_xq_id")
+            ->alias("a")
+            ->join("tb_posts ON a.hb_id=tb_posts.post_xq_id")
             ->where(array('post_hb_id'=>$id))
             ->select();
         $this->assign('posts',$posts);
