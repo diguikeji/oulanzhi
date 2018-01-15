@@ -1,0 +1,47 @@
+<admintpl file="header" />
+</head>
+<body style="min-width: 800px;">
+<div class="wrap js-check-wrap">
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="{:U('xingqufenlei/index')}">兴趣分类</a></li>
+		<li ><a href="{:U('xingqufenlei/add')}">添加兴趣分类</a></li>
+	</ul>
+	<form class="js-ajax-form" method="post" action="{:U('xingqufenlei/index')}">
+		<div class="table-actions">
+
+		</div>
+		<table class="table table-hover table-bordered table-list">
+			<thead>
+			<tr>
+
+				<th >ID</th>
+				<th >兴趣分类名称</th>
+				<th >操作</th>
+			</tr>
+			</thead>
+			<tr>
+				<td>0</td>
+				<td>默认分类</td>
+				<td>不能修改</td>
+			</tr>
+			<foreach name="xingqus" item="vo">
+				<tr>
+
+					<td>{$vo.xqfl_id}</td>
+					<td>{$vo.xqfl_name}</td>
+					<td>
+						<a href="{:U('xingqufenlei/edit',array('id'=>$vo['xqfl_id']))}">{:L('EDIT')}</a>
+
+						<a href="{:U('xingqufenlei/delete',array('id'=>$vo['xqfl_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+					</td>
+				</tr>
+			</foreach>
+
+		</table>
+
+		<div class="pagination">{$page}</div>
+	</form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

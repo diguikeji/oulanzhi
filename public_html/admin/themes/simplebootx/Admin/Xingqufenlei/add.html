@@ -1,0 +1,28 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('xingqufenlei/index')}">兴趣分类</a></li>
+			<li class="active"><a href="{:U('xingqufenlei/add')}">添加兴趣分类</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('xingqufenlei/add_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">兴趣分类名称</label>
+					<div class="controls">
+						<input type="text" name="xqfl_name">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<span></span>
+</body>
+</html>
