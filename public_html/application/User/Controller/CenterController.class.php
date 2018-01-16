@@ -50,6 +50,7 @@ class CenterController extends MemberbaseController
         $page = new \Think\Page($count,16);
         $Model = M(); // 实例化一个model对象 没有对应任何数据表
         $xingqu = $Model ->query("Select b.hb_name,b.hb_id, GROUP_CONCAT(id) as posts_id_list from tb_hbcj a , tb_huaban b ,tb_posts c where  a.hbcj_posts_id = c.id and a.hbcj_hb_id = b.hb_id and b.hb_u_id = '$uid' limit $page->firstRow,$page->listRows ");
+
         echo json_encode($xingqu);
     }
 
