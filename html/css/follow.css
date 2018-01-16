@@ -1,0 +1,127 @@
+
+
+.middle-box{
+    width: 1255px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.middle-box::after{
+    clear: both;
+}
+
+.follow-box{
+    width: 240px;
+    height: 330px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+.follow-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-title{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    bottom: 110px;
+    text-overflow:ellipsis;
+}
+.with-line-left{
+   width: 15%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+   top: 10px;
+    left: 3%;
+    z-index:4 ;
+}
+.with-line-right{
+    width: 15%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    z-index:4 ;
+}
+.img-row{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    bottom: 100px;
+    margin-left: 3%;
+}
+.img-row-3{
+    width: 30%;
+    height: 100%;
+    margin-right: 2%;
+    float: left;
+}
+.img-row-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.following{
+    position: relative;
+    bottom: 410px;
+    width: 35%;
+    height: 2.5rem;
+    border: 1px solid grey;
+    z-index: 99;
+    color: black;
+    border-radius: 5px;
+    left: 60%;
+    background: rgba(233,233,233,0.8);
+    outline: medium;
+
+}
+.following:hover{
+    background: rgba(233,233,233,0.9);
+}
+
+@media screen and (max-width: 468px) {
+
+    .middle-box{
+        margin-top: 1rem;
+        width: 100%;
+        padding-left: 3.5%;
+        padding-top: 0.5rem;
+    }
+    .follow-box{
+        width: 47%;
+        margin-right: 2%;
+        height: 250px;
+        border-radius: 2%;
+    }
+    .box-title{
+        bottom: 120px;
+        font-size: 1.4rem;
+    }
+    .img-row{
+        height: 50px;
+        bottom: 110px;
+    }
+    .following{
+        bottom: 98px;
+        font-size: 1rem;
+        width: 100%;
+        height: 2.2rem;
+        left: 0;
+    }
+}
+

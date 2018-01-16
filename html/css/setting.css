@@ -1,0 +1,216 @@
+.account{
+    width: 993px;
+    height:133rem;
+    background-color: white;
+    border: 1px solid #D8D8D5;
+    margin:6.5rem  auto;
+border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+
+}
+.acount_1{
+    width: 100%;
+    height: 5.5rem;
+    border-bottom: 1px solid #EDEDED;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 宋体;
+    padding-top:1.25rem;
+}
+.account_2{
+    width: 95%;
+    height: 60rem;
+    margin: auto;
+}
+.account_2_1{
+    border-bottom: 1px solid  #EDEDED;
+    width: 100%;
+    height: 25rem;
+    font-size: 2rem;
+    font-family: 宋体;
+    padding-top:1.5rem;
+}
+.account_2_1 p{
+    padding-left: 2rem;
+}
+.account_2_1 input{
+    outline: none;
+}
+.account_2_1 .myself{
+
+    height: 22rem;
+    border-top: 1px dashed #EDEDED;
+}
+.account_2_1 .myself_bt{
+    margin-left: -40rem;
+    margin-top: 11rem;
+
+}
+
+.account_2_2{
+    border-bottom: 1px solid  #EDEDED;
+    width: 100%;
+    height: 27.5rem;
+    font-size: 2rem;
+    font-family: 宋体;
+    padding-top:1.5rem;
+}
+.account_2_2 p{
+    padding-left: 2rem;
+}
+.account_2_2 .shangchuan{
+    width: 100%;
+    height: 22rem;
+    border-top: 1px dashed #EDEDED;
+}
+.account_2_2 .touxiang{
+    width: 18rem;
+    height: 18rem;
+    margin-top: 2rem;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+    margin-left: 10rem;
+    float: left;
+}
+.touxiang img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.account_2_2 img{
+   text-align: center;
+    padding: 0.9rem 0.9rem;
+}
+.account_2_2 .touxiang_bt{
+    float: left;
+    margin-top: 16rem;
+    margin-left: 3rem;
+   width: 12rem;
+
+}
+
+.account_2_3{
+    border-bottom: 1px solid  #EDEDED;
+    width: 100%;
+    height: 16rem;
+    font-size: 2rem;
+    font-family: 宋体;
+    padding-top:1.5rem;
+
+}
+.account_2_3 p{
+    padding-left: 2rem;
+}
+.account_2_3 .email{
+    width: 100%;
+    height: 10.5rem;
+    border-top: 1px dashed #EDEDED;
+}
+.account_2_3 input{
+   float: left;
+    border: none;
+    outline: none;
+    margin-left: 2rem;
+    width: 30rem;
+    margin-top: 1.4rem;
+}
+.account_2_3 .email_bt1{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+
+}
+.account_2_3 .email_bt2{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 6rem;
+}
+
+.account_2_4{
+    border-bottom: 1px solid  #EDEDED;
+    width: 100%;
+    height: 22rem;
+    font-size: 2rem;
+    font-family: 宋体;
+    padding-top:1.5rem;
+
+}
+.account_2_4 p{
+    margin-left: 2rem;
+}
+.account_2_4 .password{
+    width: 100%;
+    height: 10.5rem;
+    border-top: 1px dashed #EDEDED;
+}
+.account_2_4 input{
+height: 3rem;
+    outline: none;
+    width: 20rem;
+    font-size: 2.5rem;
+    background-color: #FCFCFC;
+
+}
+.account_2_4 .password_bt{
+    font-size: 1.5rem;
+    margin-left: 15.5rem;
+margin-top: 0.5rem;
+}
+.account_2_5{
+    border-bottom: 1px solid  #EDEDED;
+    width: 100%;
+    height: 5.5rem;
+    font-size: 2rem;
+    font-family: 宋体;
+    padding-top:1.5rem;
+}
+.account_2_5 p{
+    float: left;
+    padding-left: 2rem;
+}
+.account_2_5 input{
+    float: left;
+    border: none;
+    outline: none;
+    margin-left: 6.9rem;
+    width: 40rem;
+}
+.account_2_5 a{
+    float: right;
+    margin-right: 3rem;
+}
+.account_2_6{
+    border-bottom: 1px solid  #EDEDED;
+    width: 100%;
+    height: 25rem;
+    font-size: 2rem;
+    font-family: 宋体;
+    padding-top:1.5rem;
+}
+.account_2_6 p{
+
+    padding-left: 2rem;
+}
+.account_2_6 .thirdaccount{
+    width: 100%;
+    height: 10.5rem;
+    border-top: 1px dashed #EDEDED;
+}
+.account_2_6 img{
+    width: 4rem;
+    height:4rem;
+    margin-left: 5rem;
+}
+.account_2_6 .thirdaccount_bt1{
+    font-size: 1.5rem;
+
+    margin-left: 5rem;
+}
+.account_2_6 .thirdaccount_bt2{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.onsure_bt{
+    width: 8rem;
+    height: 2.5rem;
+    margin:1.5rem auto;
+    border-radius: 5px;
+}
