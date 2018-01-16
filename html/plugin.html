@@ -98,9 +98,9 @@
 					<div style="display: none" class="script clearfix">
 						<div class="install-area">
 							<div class="button white">
-								拖动此按钮到书签栏
+
 								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://huaban.com/js/widgets.min.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">
-									采集到花瓣
+									拖动此按钮到书签栏
 								</a>
 							</div>
 							<div class="sub">
@@ -190,8 +190,8 @@
 					<div class="script clearfix">
 						<div class="install-area">
 							<div class="button white">
-								拖动此按钮到书签栏
-								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://huaban.com/js/widgets.min.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">采集到花瓣</a>
+
+								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://huaban.com/js/widgets.min.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">拖动此按钮到书签栏</a>
 							</div>
 							<div class="sub">
 								你还可以选择安装
@@ -269,36 +269,21 @@
 
 <!-- Initialize Swiper -->
 <script>
-	var swiper = new Swiper('.swiper-container', {
-		pagination: '.swiper-pagination',
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
-		paginationClickable: true,
-		spaceBetween: 30,
-		centeredSlides: true,
-		autoplay: 20000,
-		autoplayDisableOnInteraction: false
-	});
-
-	$(".nav-box .right-menu .close-menu").click(function(){
-
-		$(".login-ul").slideUp();
-		$(".nav-box-ul").slideUp();
-		$(this).parent().removeClass("active");
 
 
+	$(".units .unit .title").click(function()
+	{
 
+		$(this).toggleClass("on");
+		$(this).next().toggle();
 
 	});
 
+	$(".go").click(function()
+	{
 
-	$(".nav-box .right-menu .open-menu").click(function(){
-
-		$(".login-ul").slideDown();
-		$(".nav-box-ul").slideDown();
-		$(this).parent().addClass("active");
-
-
+		$(this).parent().parent().parent().hide();
+		$(this).parent().parent().parent().next().show();
 
 	});
 

@@ -1,0 +1,75 @@
+<admintpl file="header" />
+</head>
+<body style="min-width: 800px;">
+<? php?>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('xingqu/index')}">兴趣点</a></li>
+        <li ><a href="{:U('xingqu/add')}">添加兴趣</a></li>
+    </ul>
+    <form class="well form-search" method="post" id="cid-form">
+        <select name="xqfl_id" style="width: 100px;" id="selected-cid">
+            <option value=''>全部</option>
+            <foreach name="xqfls" item="vo">
+                <php>$cid_selected=$xq_fl_id==$vo['xqfl_id']?"selected":"";</php>
+                <option value="{$vo.xqfl_id}"{$cid_selected}>{$vo.xqfl_name}</option>
+            </foreach>
+        </select>
+    </form>
+    <form class="js-ajax-form" method="post" action="{:U('xingqu/index')}">
+        <div class="table-actions">
+            <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('xingqu/delete')}" data-subcheck="true" data-msg="{:L('DELETE_CONFIRM_MESSAGE')}">批量{:L('DELETE')}</button>
+        </div>
+        <table class="table table-hover table-bordered table-list">
+            <thead>
+            <tr>
+                <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                <th >ID</th>
+                <th >兴趣名称</th>
+                <th >兴趣介绍</th>
+                <th >兴趣图片</th>
+                <th>所属分类</th>
+                <th >操作</th>
+            </tr>
+            </thead>
+            <foreach name="xingqu" item="vo">
+                <tr>
+                    <td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.xq_id}"></td>
+                    <td>{$vo.xq_id}</td>
+                    <td>{$vo.xq_name}</td>
+                    <td>{$vo.xq_intro}</td>
+                    <td><a href="{$vo.xq_img}">查看</a></td>
+                    <td>{$vo.xqfl_name}</td>
+                    <td>
+                        <a href="{:U('xingqu/content',array('id'=>$vo['xq_id']))}">兴趣内容</a>
+                        <a href="{:U('xingqu/edit',array('id'=>$vo['xq_id']))}">{:L('EDIT')}</a>
+                        <a href="{:U('xingqu/delete',array('id'=>$vo['xq_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+                    </td>
+                </tr>
+            </foreach>
+
+        </table>
+
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    setCookie('refersh_time', 0);
+    function refersh_window() {
+        var refersh_time = getCookie('refersh_time');
+        if (refersh_time == 1) {
+            window.location.reload();
+        }
+    }
+    setInterval(function() {
+        refersh_window()
+    }, 3000);
+    $(function() {
+        $("#selected-cid").change(function() {
+            $("#cid-form").submit();
+        });
+    });
+</script>
+</body>
+</html>
