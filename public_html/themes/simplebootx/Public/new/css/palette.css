@@ -369,6 +369,7 @@
 .design-3 img{
     width:100%;
     height: 100%;
+    object-fit: cover;
 }
 .design-4{
     width: 21rem;
@@ -383,6 +384,7 @@
 .design-4-1 img {
     width:100%;
     height: 100%;
+    object-fit: cover;
 }
 .design-4-2{
     width: 31%;
@@ -393,6 +395,7 @@
 .design-4-2 img{
     width:100%;
     height: 100%;
+    object-fit: cover;
 }
 .dian{
     width: 120px; height: 2.4rem;
@@ -405,6 +408,7 @@
     margin: 0 auto;
     font-size: 14px;
     font-weight: bolder;
+    margin-top: 4rem;
 }
 .designs{
     width: 1230px;

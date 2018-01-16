@@ -29,17 +29,17 @@
     </div>
     <div class="nav-box-ul">
         <ul id="nav">
-            <li><a href="../index.html" >首页</a></li>
-            <li><a href="../found/found.html" class="active">发现</a></li>
-            <li><a href="../new/new.html">最新</a>
-                <!--		<ul>
+            <li><a href="{:U('Portal/index/index')}" >首页</a></li>
+            <li><a href="{:U('Portal/find/index')}" class="active">发现</a></li>
+            <li><a href="{:U('Portal/newest/index')}">最新</a>
+                <!--        <ul>
                             <li><a href="#">我的推荐</a></li>
                             <li><a href="#">我的关注</a></li>
                             <li><a href="#">我的画板</a></li>
                             <li><a href="#">用户</a></li>
                         </ul>-->
             </li>
-            <li><a href="../activity/activity.html">活动</a></li>
+            <li><a href="{:U('Portal/activity/index')}">活动</a></li>
         </ul>
     </div>
 
@@ -49,26 +49,15 @@
         <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
     </div>
 
-    <div class="login-ul">
-        <ul id="nav-login">
-            <li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
-            <li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
-            <li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="../image/touxiang.png"></div></a></li>
-            <li id="login"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
-        </ul>
-    </div>
+    <div class="login-ul" id="user">
 
+    </div>
 
 </nav>
 
-
-
-
-
 <!-- 幻灯片-->
-
 <php>
-    $home_slides=sp_getslide("portal_index");
+    $home_slides=sp_getslide("portal_find");
 
     $home_slides=empty($home_slides)?$default_home_slides:$home_slides;
 </php>
@@ -104,10 +93,7 @@
 
 
 
-
 <div class="contain">
-    <div class="top">
-    </div>
 
     <!--  大家关注的活动 -->
     <div class="middle">
@@ -124,10 +110,10 @@
     <div class="room">
         <div class="room-1-1" >
             <foreach name="activity" item="vo">
-            <div class="room-1" ><a href="{$vo.hd_url}" target="_blank"><img src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}" style="position: absolute;overflow-y:scroll;overflow-x: scroll;"></a>
-                <div style="position: relative; text-align: center;color: white;font-size: 25px; margin-top: 60px">{$vo.hd_name}</div>
-            </div>
-           </foreach>
+                <div class="room-1" ><a href="{$vo.hd_url}" target="_blank"><img src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}" style="position: absolute;overflow-y:scroll;overflow-x: scroll;"></a>
+                    <div style="position: relative; text-align: center;color: white;font-size: 25px; margin-top: 60px">{$vo.hd_name}</div>
+                </div>
+            </foreach>
         </div>
     </div>
 
@@ -161,6 +147,7 @@
 <script src="__TMPL__Public/new/js/swiper.min.js"></script>
 <script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
 <script src="__TMPL__Public/assets/js/slippry.min.js"></script>
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
 
 <script>
     var pageIndex = 1;
@@ -183,31 +170,32 @@
                     var imgList=data[i].hb_img_list.split(",");
 
                     var xid  = data[i].xq_id;
+
                     html=html+'<div class="sheji-1">' +
-                    '<div class="ping-1"> ' +
-                    '<div class="high-1"></div> ' +
-                    '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
-                    '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
-                    '<div class="annv"> ' +
-                    '<a  href="/index.php?g=User&m=interest&a=do_interest&xid='+xid+'"><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
-                    '</div>' +
-                    '</div>'
+                            '<div class="ping-1"> ' +
+                            '<div class="high-1"></div> ' +
+                            '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
+                            '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
+                            '<div class="annv"> ' +
+                            '<a  href="/index.php?g=User&m=interest&a=do_interest&xid='+xid+'"><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
+                            '</div>' +
+                            '</div>'
 
                     for(var j=0; j<idList.length;j++) {
-                       var hid = idList[j];
+                        var hid = idList[j];
                         html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Huaban&a=detail&hid='+hid+'">'+'<img src="index.php?g=&m=Find&a=imgHuaban&id='+hid+'">'+'</a>'+'</div>';
                         console.log(idList[j]);
                     }
 
                     html=html+'<div class="more">' +
-                    '<a href="#"><img src="__TMPL__Public/new/image/more.png"></a>' +
-                    '<div class="text-4"><a href="#">加载更多</a></div>' +
-                    '</div>' +
-                    '</div>'
+                            '<a href="#"><img src="__TMPL__Public/new/image/more.png"></a>' +
+                            '<div class="text-4"><a href="#">加载更多</a></div>' +
+                            '</div>' +
+                            '</div>'
                 }
 
 
-               // console.log(html);
+                // console.log(html);
 
                 $("#hb-box").append(html);
 
@@ -239,9 +227,56 @@
         paginationClickable: true,
         spaceBetween: 30,
         centeredSlides: true,
-        autoplay: 2000,
+        autoplay: 20000,
         autoplayDisableOnInteraction: false
     });
+
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+    });
+
+    $.ajax({
+        type: "GET",
+
+        url: "/index.php?g=&m=Index&a=getUser",
+
+        dataType: "json",
+
+        success: function (data) {
+            var uid =data.id;
+            //console.log(uid);
+            if(data == 0){
+                $("#user").append(
+                        '<ul id="nav-login">'+
+                        '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
+                        '</ul>'
+                )
+            }else{
+                $("#user").append(
+                        '<ul id="nav-login">'+
+                        '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
+                        '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
+                        '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
+                        '</ul>'
+                )
+            }
+        }
+
+    });
+
+
+
 </script>
 
 
