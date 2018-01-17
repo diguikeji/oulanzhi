@@ -18,11 +18,11 @@ class CenterController extends MemberbaseController
     public function index()
     {
         $uid = sp_get_current_userid();
-        $huabanUser_model = M("Hb_users");
+        $huabanUser_model = M("Huaban");
         $caijiUser_model = M("Caiji");
         $loveUser_model = M("Love");
         $tagUser_model = M("Tag");
-        $huabanCount = $huabanUser_model->where(array("hbusers_users_id"=>$uid))->count();
+        $huabanCount = $huabanUser_model->where(array("hb_u_id"=>$uid))->count();
         $caijiCount = $caijiUser_model->where(array("cj_u_id"=>$uid))->count();
         $loveCount = $loveUser_model->where(array("love_users_id"=>$uid))->count();
         $tagCount = $tagUser_model->where(array("tag_users_id"=>$uid))->count();
@@ -65,7 +65,7 @@ class CenterController extends MemberbaseController
         $data["hb_name"] = $hbname;
         $data["hb_term_id"] = $flid;
         $data["hb_u_id"] = $uid;
-        $data["hb_create_time"] = time();
+        $data["hb_create_time"] = date("Y-m-d H:i:s", time());;
         $huaban = $huaban_model->add($data);
         if($huaban){
             $this->success("画板创建成功！");

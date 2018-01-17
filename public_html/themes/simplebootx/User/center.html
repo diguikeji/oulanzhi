@@ -154,7 +154,7 @@
 
    </div>
 
-</div>
+	</div></div>
 
 <div style="clear: both"></div>
 <!--没有更多-->
@@ -191,6 +191,7 @@
          var html ='';
          for (var i = 0; i < data.length; i++) {
              var hid = data[i].hb_id;
+
              if(data[i].pidlist!==null){
              var postIdList = data[i].pidlist.split(",");
 
@@ -213,7 +214,7 @@
                  html = html + '<div class="design-4-1"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
              }
                 html=html+'</div><div class="dian">' +
-                 '<button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button>' +
+                 '<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button></a>' +
                  '</div>' +
                  '</div>'
 
@@ -235,7 +236,7 @@
                  '  <div class="design-4-2"></div>'+
                  '  </div>'+
                  '  <div class="dian">'+
-                 '  <button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button>'+
+                 ' <a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"> <button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button></a>'+
                  ' </div>'+
                  '  </div>'
 
