@@ -18,11 +18,11 @@ class CenterController extends MemberbaseController
     public function index()
     {
         $uid = sp_get_current_userid();
-        $huabanUser_model = M("Hb_users");
+        $huabanUser_model = M("Huaban");
         $caijiUser_model = M("Caiji");
         $loveUser_model = M("Love");
         $tagUser_model = M("Tag");
-        $huabanCount = $huabanUser_model->where(array("hbusers_users_id"=>$uid))->count();
+        $huabanCount = $huabanUser_model->where(array("hb_u_id"=>$uid))->count();
         $caijiCount = $caijiUser_model->where(array("cj_u_id"=>$uid))->count();
         $loveCount = $loveUser_model->where(array("love_users_id"=>$uid))->count();
         $tagCount = $tagUser_model->where(array("tag_users_id"=>$uid))->count();
@@ -49,7 +49,8 @@ class CenterController extends MemberbaseController
         $count = $huaban_model->where(array("hb_u_id" =>$uid))->count();
         $page = new \Think\Page($count,16);
         $Model = M(); // 实例化一个model对象 没有对应任何数据表
-        $xingqu = $Model ->query("Select b.hb_name,b.hb_id, GROUP_CONCAT(id) as posts_id_list from tb_hbcj a , tb_huaban b ,tb_posts c where  a.hbcj_posts_id = c.id and a.hbcj_hb_id = b.hb_id and b.hb_u_id = '$uid' limit $page->firstRow,$page->listRows ");
+        $xingqu = $Model ->query("Select a.hb_id ,a.hb_name,GROUP_CONCAT(id) as pidList from (select * from tb_huaban where hb_u_id='$uid') a left join tb_posts b on a.hb_id = b.post_hb_id GROUP BY hb_id");
+
         echo json_encode($xingqu);
     }
 
@@ -64,7 +65,7 @@ class CenterController extends MemberbaseController
         $data["hb_name"] = $hbname;
         $data["hb_term_id"] = $flid;
         $data["hb_u_id"] = $uid;
-        $data["hb_create_time"] = time();
+        $data["hb_create_time"] = date("Y-m-d H:i:s", time());;
         $huaban = $huaban_model->add($data);
         if($huaban){
             $this->success("画板创建成功！");
@@ -72,5 +73,15 @@ class CenterController extends MemberbaseController
             $this->error("画板创建失败！");
         }
         }
+    }
+
+    //用户编辑画板提交
+    public function edit_draw_post(){
+
+    }
+
+    //用户删除画板
+    public function delete_draw(){
+
     }
 }

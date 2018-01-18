@@ -146,18 +146,15 @@
 
 
 				<div id="over"></div>
-
 			</div>
 		</div>
 
 
-   <div id="design">
+   <div id="designn">
 
    </div>
 
-
-
-</div>
+	</div></div>
 
 <div style="clear: both"></div>
 <!--没有更多-->
@@ -165,8 +162,8 @@
 	<div class="nomore_1" style="font-family: 微软雅黑;font-size:1.4rem">╮(╯﹏╰）╭&nbsp;没有更多了.....</div>
 	<a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
 </div>
-</div>
 <!--底部-->
+
 <tc_include file="Public:footer" />
 
 <tc_include file="Public:scripts"/>
@@ -190,59 +187,68 @@
 
      success: function (data) {
 
+
          var html ='';
          for (var i = 0; i < data.length; i++) {
+             var hid = data[i].hb_id;
 
-              var postIdList = data[i].posts_id_list.split(",");
+             if(data[i].pidlist!==null){
+             var postIdList = data[i].pidlist.split(",");
 
-			  var hid = data[i].hid;
+             console.log(data);
 
                 html=html+ '<div class="design-2">' +
                  '<div class="design-2-1">' +
                  '<div class="design-2-2">' +
-                 '<div class="design-2-3">48</div>' +
+                 '<div class="design-2-3">'+postIdList.length+'</div>' +
                  '</div>' +
                  '<div class="design-2-4">'+data[i].hb_name+'</div>' +
                  '</div>' +
                  '<div class="design-3">' +
-                 '<img src="index.php?g=&m=Find&a=imgHuaban&id='+hid+'">' +
+                 '<img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'">' +
                  '</div>' +
                  '<div class="design-4">'
 
-			 for(var j=0 ;j<postIdList.length;j++) {
-                    var pid = postIdList[j];
+			 for(var j=1 ;j<4;j++) {
+                 var pid = postIdList[j];
                  html = html + '<div class="design-4-1"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
              }
-
-                html=html+'<div class="dian">' +
-                 '<button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button>' +
+                html=html+'</div><div class="dian">' +
+                 '<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button></a>' +
                  '</div>' +
-                 '</div>'+
-						'</div>'
+                 '</div>'
 
+             }else{
+
+               html=html+ ' <div class="design-2">'+
+                 '<div class="design-2-1">'+
+                 '<div class="design-2-2">'+
+                 '<div class="design-2-3">0</div>'+
+                 '</div>'+
+                 ' <div class="design-2-4">'+data[i].hb_name+'</div>'+
+                 ' </div>'+
+                 ' <div class="design-3">'+
+
+                 ' </div>'+
+                 ' <div class="design-4">'+
+                 ' <div class="design-4-1"></div>'+
+                 ' <div class="design-4-2"></div>'+
+                 '  <div class="design-4-2"></div>'+
+                 '  </div>'+
+                 '  <div class="dian">'+
+                 ' <a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"> <button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button></a>'+
+                 ' </div>'+
+                 '  </div>'
+
+			 }
          }
 
-         $("#design").append(html);
+         $("#designn").append(html);
      }
 	 }
  );
 
-	//用户采集
- $.ajax({
-     type: "GET",
 
-     url: "/index.php?g=user&m=center&a=collectDetail",
-
-     dataType: "json",
-
-     success: function (data) {
-          for(var i = 0; i<data.length;i++){
-
-		  }
-	 }
-
-
- });
 
     var login = document.getElementById('login');
     var over = document.getElementById('over');
