@@ -245,6 +245,7 @@
 
 
 
+
 </div>
 
 
@@ -320,6 +321,21 @@
         $(".login-ul").slideUp();
         $(".nav-box-ul").slideUp();
         $(this).parent().removeClass("active");
+
+
+
+
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+
+
     });
 
 
