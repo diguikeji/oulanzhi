@@ -23,11 +23,11 @@ class CollectController extends MemberbaseController
     {
         $uid = sp_get_current_userid();
         $huabanUser_model = M("Hb_users");
-        $caijiUser_model = M("Caiji");
+        $caijiUser_model = M("Posts");
         $loveUser_model = M("Love");
         $tagUser_model = M("Tag");
         $huabanCount = $huabanUser_model->where(array("hbusers_users_id"=>$uid))->count();
-        $caijiCount = $caijiUser_model->where(array("cj_u_id"=>$uid))->count();
+        $caijiCount = $caijiUser_model->where(array("post_author"=>$uid))->count();
         $loveCount = $loveUser_model->where(array("love_users_id"=>$uid))->count();
         $tagCount = $tagUser_model->where(array("tag_users_id"=>$uid))->count();
         $this->assign("huabanCount",$huabanCount);
@@ -44,21 +44,25 @@ class CollectController extends MemberbaseController
     //获取用户采集的详情
     public function collectDetail()
     {
+
         $uid = sp_get_current_userid();
-        $caijiUser_model = M("Caiji");
-        $caijiUser = $caijiUser_model->where(array("cj_u_id" => $uid))
+        $postsUser_model = M("Posts");
+        $count = $postsUser_model->where(array("post_author"=>$uid))->count();
+        $page = new \Think\Page($count,16);
+        $postsUser = $postsUser_model->where(array("post_author" => $uid))
             ->alias("a")
-            ->join("tb_posts b on a.cj_post_id = b.id")
+            ->join("tb_users c on a.post_author = c.id")
+            ->field("a.id as pid,c.id as uid,a.post_img_url,a.post_title,a.post_love,c.user_nicename")
+            ->limit($page->firstRow . ',' . $page->listRows)
             ->select();
-        echo json_encode($caijiUser);
+        echo json_encode($postsUser);
 
     }
 
     //用户采集
     public function do_collect()
     {
-        $id = I("id");
-        var_dump($id);
+
     }
 
     //用户采集编辑

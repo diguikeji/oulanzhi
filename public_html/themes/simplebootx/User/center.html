@@ -68,7 +68,7 @@
 		<div class="yesterday_1_3">
 			<a href=""> <div class="yesterday_1_3_1">粉丝</div></a>
 			<div class="yesterday_1_3_2"></div>
-			<a href="">   <div class="yesterday_1_3_3">关注</div></a>
+			<a href="{:U('User/follow/interestFollow')}">   <div class="yesterday_1_3_3">关注</div></a>
 		</div>
 	</div>
 	<div class="yesterday_2">
@@ -101,7 +101,7 @@
 			<div class="hongse_1_1">{$loveCount}</div>
 			<div class="hongse_1_2">喜欢</div>
 		</div></a>
-	<a href="#">
+	<a href="">
 		<div class="hongse_2"></div>
 		<div class="hongse_1">
 			<div class="hongse_1_1">{$tagCount}</div>
@@ -205,7 +205,7 @@
                  '<div class="design-2-4">'+data[i].hb_name+'</div>' +
                  '</div>' +
                  '<div class="design-3">' +
-                 '<img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'">' +
+                 '<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'"><img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'"></a>' +
                  '</div>' +
                  '<div class="design-4">'
 
