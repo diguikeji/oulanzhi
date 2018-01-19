@@ -1,10 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>最新</title>
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="generator" content=""  data-variable="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/new.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
+    <link href="__TMPL__Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+
+
+
+
 </head>
+
 <body>
 
+<nav class="nav-box">
+    <div class="nav-box-logo">
+        <img src="__TMPL__Public/new/image/logo.png">
+    </div>
+    <div class="nav-box-ul">
+        <ul id="nav">
+            <li><a href="{:U('Portal/index/index')}" >首页</a></li>
+            <li><a href="{:U('Portal/find/index')}" >发现</a></li>
+            <li><a href="{:U('Portal/newest/index')}" class="active">最新</a>
+                <!--        <ul>
+                            <li><a href="#">我的推荐</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的画板</a></li>
+                            <li><a href="#">用户</a></li>
+                        </ul>-->
+            </li>
+            <li><a href="{:U('Portal/activity/index')}">活动</a></li>
+        </ul>
+    </div>
+
+
+    <div class="right-menu">
+        <img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
+        <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
+    </div>
+
+    <div class="login-ul" id="user">
+
+    </div>
+
+</nav>
+<div id="flip" style="margin-top: 7rem">全部分类</div>
+<div id="panel">
+
+    <div class="fenlei-name" >工业设计</div>
+    <div class="fenlei-name">摄影</div>
+    <div class="fenlei-name">造型/美妆</div>
+    <div  class="fenlei-name">美食</div>
+    <div class="fenlei-name" >旅行</div>
+    <div class="fenlei-name">手工艺品</div>
+    <div class="fenlei-name">女装/搭配</div>
+    <div  class="fenlei-name">男士/风尚</div>
+    <div class="fenlei-name" >健身舞蹈</div>
+    <div class="fenlei-name">儿童</div>
+    <div class="fenlei-name">宠物</div>
+    <div  class="fenlei-name">美国</div>
+    <div class="fenlei-name" >明星</div>
+    <div class="fenlei-name">美女</div>
+    <div class="fenlei-name">礼物</div>
+    <div  class="fenlei-name">骑车/摩托</div>
+    <div  class="fenlei-name">电影/图书</div>
+    <div  class="fenlei-name">生活百科</div>
+    <div  class="fenlei-name">教育</div>
+    <div  class="fenlei-name">运动</div>
+    <div  class="fenlei-name">高校</div>
+    <div style="clear: both"></div>
+</div>
+<div class="guide">
+    <div class="unit">
+        <a href="#" class="unit_a">工业设计</a><a href="#" class="unit_a">摄影</a><a href="#" class="unit_a">造型/美妆</a>
+        <a href="#" class="unit_a">美食</a><a href="#" class="unit_a">旅行</a><a href="#" class="unit_a">手工艺品</a>
+        <a href="#" class="unit_a">女装/搭配</a><a href="#" class="unit_a">男士/风尚</a>
+    </div>
+    <div class="unit">
+        <a href="#" class="unit_a">健身舞蹈</a><a href="#" class="unit_a">儿童</a><a href="#" class="unit_a">宠物</a>
+        <a href="#" class="unit_a">美国</a><a href="#" class="unit_a">明星</a><a href="#" class="unit_a">美女</a>
+        <a href="#" class="unit_a">礼物</a>
+    </div>
+    <div class="unit" style="border-right:none ">
+        <a href="#" class="unit_a">骑车/摩托</a><a href="#" class="unit_a">电影/图书</a><a href="#" class="unit_a">生活百科</a>
+        <a href="#" class="unit_a">教育</a><a href="#" class="unit_a">运动</a><a href="#" class="unit_a">高校</a>
+
+    </div>
+</div>
+<div class="pictype">
+    <a href="#"><div class="pictype_1" ><img src="../image/jianbihua.jpg" ><div class="pictype_2 " style=" margin: -1.5rem 0 0 -2rem;">简笔画</div></div></a>
+    <a href="#"><div class="pictype_1"><img src="../image/sheying.jpg"><div class="pictype_2" style=" margin: -1.5rem 0 0 -4rem;">iPhone摄影</div></div></a>
+    <a href="#"><div class="pictype_1"><img src="../image/beioustyle.jpg"><div class="pictype_2" style=" margin: -1.5rem 0 0 -5rem;">北欧风格家具</div></div></a>
+    <a href="#"><div class="pictype_1"><img src="../image/shejipeise.png"><div class="pictype_2" style=" margin: -1.5rem 0 0 -3rem;">设计配色</div></div></a>
+    <div style="clear: both"></div>
+</div>
+<div class="middle">
+
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture1.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture1.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture1.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+<div class="nomore">
+    <div class="nomore_1" style="font-family: 微软雅黑;font-size:1rem">╮(・o・)╭&nbsp;没有更多了.....</div>
+    <a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
+</div>
+<tc_include file="Public:footer" />
+
+<tc_include file="Public:scripts"/>
+
+<script src="__TMPL__Public/new/js/swiper.min.js"></script>
+<script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/assets/js/slippry.min.js"></script>
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("fast");
+        });
+    });
+</script>
+<!-- Initialize Swiper -->
+<script>
+
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+
+
+
+
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+
+
+    });
+
+
+    $.ajax({
+        type: "GET",
+
+        url: "/index.php?g=&m=Index&a=getUser",
+
+        dataType: "json",
+
+        success: function (data) {
+            var uid =data.id;
+            //console.log(uid);
+            if(data == 0){
+                $("#user").append(
+                    '<ul id="nav-login">'+
+                    '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
+                    '</ul>'
+                )
+            }else{
+                $("#user").append(
+                    '<ul id="nav-login">'+
+                    '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
+                    '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
+                    '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
+                    '</ul>'
+                )
+            }
+        }
+
+    });
+
+
+
+
+
+</script>
 </body>
 </html>
