@@ -13,6 +13,23 @@
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<style>
+
+		.dropdown:hover .dropdown-menu {
+			display: block;
+		}
+		.dropdown-menu li a:hover{
+			background: #C1A062;
+		}
+		.dropdown-toggle-touxiang img:hover{
+			opacity: 0.9;
+		}
+		@media screen and (max-width: 468px) {
+			.dropdown:hover .dropdown-menu {
+				display: none;
+			}
+		}
+	</style>
 </head>
 <body class="met-navfixed">
 <!--[if lte IE 8]>
@@ -30,20 +47,23 @@
 		<ul id="nav">
 			<li><a href="index.html" class="active">首页</a></li>
 			<li><a href="found/found.html">发现</a></li>
-			<li id="new"><a href="new/new.html">最新</a>
-
-
-				<!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
+		<!--	<li id="new"><a href="new/new.html">最新</a>
+			</li>-->
+			<li class="dropdown">
+				<a href="new/new.html" class="dropdown-toggle">
+					最新
+				</a>
+				<ul class="dropdown-menu" style="margin-top: 2.1rem;margin-left: -1rem;background-color: rgba(0,0,0,0.6);font-size: 12px!important;min-width: 3rem;text-align: center ;">
+					<li style="min-width: 100%"><a href="#" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%">我的推荐</a></li>
+					<li><a href="user/user.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的关注</a></li>
+					<li><a href="palette/palette.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的画板</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">用户</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">主题</a></li>
+				</ul>
 			</li>
 			<li><a href="activity/activity.html">活动</a></li>
 		</ul>
 	</div>
-
 
 	<div class="right-menu">
 		<img class="open-menu" src="image/menu.png" />
@@ -54,11 +74,21 @@
 		<ul id="nav-login">
 			<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
 			<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
-			<li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="image/touxiang.png"></div></a></li>
+			<li class="dropdown" >
+				<a href="palette/palette.html" class="dropdown-toggle">
+				<div class="dropdown-toggle-touxiang" style="width: 27px;height: 27px;border-radius: 50%;"><img src="image/touxiang.png"></div></a>
+				<ul class="dropdown-menu" style="min-width: 12rem;background: white;margin-left: -100px;margin-top: 20px">
+					<div style="position: absolute;width: 13px;height: 13px;background-color: white;z-index: -1;right: 18px;top: -6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);"></div>
+					<li style="min-width: 100%"><a href="user/user.html" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%;color: grey"><i class="iconfont icon-guanzhu" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>已关注<font style="float: right">271</font></a></li>
+					<li><a href="palette/palette.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-huaban" style="font-size: 1.8rem;float: left;margin-right: 0.8rem" ></i>画板<font style="float: right">20</font></a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-fensi" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>粉丝<font style="float: right">41</font></a></li>
+					<li><a href="setting/setting.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">设置</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">退出</a></li>
+				</ul>
+			</li>
 			<li id="login"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
 		</ul>
 	</div>
-
 
 </nav>
 
