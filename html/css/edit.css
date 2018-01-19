@@ -23,7 +23,8 @@
  line-height: 5.5rem;
 }
 .bianjihuaban a{
-    color: #524D4D;
+    font-size: 2.1rem;
+    color: grey;
 }
 .bianjihuaban a:hover{
     color: #9A0000;

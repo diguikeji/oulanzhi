@@ -56,6 +56,9 @@
     height: 100%;
     margin-right: 2%;
     float: left;
+    -webkit-box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
 .img-row-3-user img{
     width: 100%;
@@ -81,6 +84,9 @@
 }
 .following-user:hover{
     background: rgba(233,233,233,0.9);
+    -webkit-box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 .user-touxiang{
     width: 120px;
