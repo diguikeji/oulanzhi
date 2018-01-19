@@ -125,7 +125,7 @@ class ArticleController extends HomebaseController
                     ->alias("a")
                     ->where(array("post_author"=>$uid))
                     ->join("tb_users c on a.post_author = c.id")
-                    ->field("a.id as pid,c.id as uid,a.post_like,a.post_img_url,c.user_nicename")
+                    ->field("a.id as pid,c.id as uid,a.post_love,a.post_img_url,c.user_nicename")
                     ->limit($page->firstRow . ',' . $page->listRows)
                     ->select();
         echo json_encode($list);
@@ -195,6 +195,14 @@ class ArticleController extends HomebaseController
         } else {
             $this->error("您已赞过啦！");
         }
+    }
+
+   //点赞数显示
+    public function likeView(){
+        $posts_model = M("Posts");
+        $id = I('get.pid', 0, 'intval');
+        $likeCount = $posts_model->where(array("id"=>$id))->field("post_like")->find();
+        echo json_encode($likeCount);
     }
 
     // 前台用户添加文章
