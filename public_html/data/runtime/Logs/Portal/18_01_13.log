@@ -1,0 +1,181 @@
+[ 2018-01-13T10:33:51+08:00 ] 140.205.201.37 /wls-wsat/CoordinatorPortType
+ERR: 无法加载控制器:Wls-wsat
+
+[ 2018-01-13T10:37:03+08:00 ] 140.205.201.37 /index.php?m=member&c=index&a=register&siteid=1
+ERR: 无法加载控制器:Member
+
+[ 2018-01-13T10:39:52+08:00 ] 140.205.201.37 /index.php?m=wap&a=index&siteid=1
+ERR: 无法加载控制器:Wap
+
+[ 2018-01-13T10:57:21+08:00 ] 140.205.201.37 /clusters.jsf
+ERR: 无法加载控制器:Clusters
+
+[ 2018-01-13T11:04:44+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:44+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:04:45+08:00 ] 140.205.201.37 /phpmyadmin/
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-01-13T11:21:46+08:00 ] 140.205.201.37 /hwi/
+ERR: 无法加载控制器:Hwi
+
+[ 2018-01-13T11:59:09+08:00 ] 140.205.201.37 /matrix_callback.php
+ERR: 无法加载控制器:Matrix_callback
+
+[ 2018-01-13T12:13:47+08:00 ] 140.205.201.37 /iqgmnxpzaste
+ERR: 无法加载控制器:Iqgmnxpzaste
+
+[ 2018-01-13T12:13:47+08:00 ] 140.205.201.37 /iqgmnxpzaste
+ERR: 无法加载控制器:Iqgmnxpzaste
+
+[ 2018-01-13T12:13:47+08:00 ] 140.205.201.37 /iqgmnxpzaste
+ERR: 无法加载控制器:Iqgmnxpzaste
+
+[ 2018-01-13T12:20:27+08:00 ] 140.205.201.37 /plugins/content/s5_media_player/helper.php?fileurl=Li4vLi4vLi4vY29uZmlndXJhdGlvbi5waHA=
+ERR: 无法加载控制器:Plugins
+
+[ 2018-01-13T12:27:26+08:00 ] 140.205.201.37 /jobs/
+ERR: 无法加载控制器:Jobs
+
+[ 2018-01-13T12:27:58+08:00 ] 140.205.201.37 /ganglia/index.php
+ERR: 无法加载控制器:Ganglia
+
+[ 2018-01-13T12:31:12+08:00 ] 140.205.201.37 /master-status
+ERR: 无法加载控制器:Master-status
+
+[ 2018-01-13T12:31:51+08:00 ] 140.205.201.37 /dfshealth.html
+ERR: 无法加载控制器:Dfshealth
+
+[ 2018-01-13T12:33:19+08:00 ] 140.205.201.37 /about/
+ERR: 无法加载控制器:About
+
+[ 2018-01-13T12:33:29+08:00 ] 140.205.201.37 /dfshealth.jsp
+ERR: 无法加载控制器:Dfshealth
+
+[ 2018-01-13T12:33:55+08:00 ] 140.205.201.37 /hadoop/dfshealth.jsp
+ERR: 无法加载控制器:Hadoop
+
+[ 2018-01-13T12:34:15+08:00 ] 140.205.201.37 /rs-status
+ERR: 无法加载控制器:Rs-status
+
+[ 2018-01-13T12:34:17+08:00 ] 140.205.201.37 /'%22+onmouseover=alert()+d='%22
+ERR: 无法加载控制器:'"+onmouseover=alert()+d='"
+
+[ 2018-01-13T12:34:20+08:00 ] 140.205.201.37 /%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22
+ERR: 无法加载控制器:'" onmouseover=alert() d='"
+
+[ 2018-01-13T12:34:22+08:00 ] 140.205.201.37 /%2527%2522%2520onmouseover%253Dalert%2528%2529%2520d%253D%2527%2522
+ERR: 无法加载控制器:'" onmouseover=alert() d='"
+
+[ 2018-01-13T12:34:25+08:00 ] 140.205.201.37 /'%22+onmouseover=alert()+d='%22/?.tmp=t
+ERR: 无法加载控制器:'"+onmouseover=alert()+d='"
+
+[ 2018-01-13T12:34:27+08:00 ] 140.205.201.37 /%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22/?.tmp=t
+ERR: 无法加载控制器:'" onmouseover=alert() d='"
+
+[ 2018-01-13T12:34:30+08:00 ] 140.205.201.37 /%2527%2522%2520onmouseover%253Dalert%2528%2529%2520d%253D%2527%2522/?.tmp=t
+ERR: 无法加载控制器:'" onmouseover=alert() d='"
+
+[ 2018-01-13T12:34:33+08:00 ] 140.205.201.37 /'%22/%3E%3C/script%3E%3Cscript%3Ealert()%3C/script%3E
+ERR: 无法加载控制器:'"
+
+[ 2018-01-13T12:34:36+08:00 ] 140.205.201.37 /%27%22%2f%3E%3C%2fscript%3E%3Cscript%3Ealert%28%29%3C%2fscript%3E
+ERR: 无法加载控制器:Errpage
+
+[ 2018-01-13T12:34:38+08:00 ] 140.205.201.37 /%2527%2522%252f%253E%253C%252fscript%253E%253Cscript%253Ealert%2528%2529%253C%252fscript%253E
+ERR: 无法加载控制器:Errpage
+
+[ 2018-01-13T12:34:39+08:00 ] 140.205.201.37 /'%22/%3E%3C/script%3E%3Cscript%3Ealert()%3C/script%3E/?.tmp=t
+ERR: 无法加载控制器:'"
+
+[ 2018-01-13T12:34:41+08:00 ] 140.205.201.37 /%27%22%2f%3E%3C%2fscript%3E%3Cscript%3Ealert%28%29%3C%2fscript%3E/?.tmp=t
+ERR: 无法加载控制器:Errpage
+
+[ 2018-01-13T12:34:43+08:00 ] 140.205.201.37 /%2527%2522%252f%253E%253C%252fscript%253E%253Cscript%253Ealert%2528%2529%253C%252fscript%253E/?.tmp=t
+ERR: 无法加载控制器:Errpage
+
+[ 2018-01-13T12:45:24+08:00 ] 182.118.20.144 /themes/simplebootx/Public/new/js/bootstrap.min.js
+ERR: 无法加载控制器:Themes
+
+[ 2018-01-13T12:45:24+08:00 ] 182.118.20.144 /index.php?g=&m=Index&a=getPostList&p=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000307s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tb_posts` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_posts` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT b.id as pid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date FROM tb_users a INNER JOIN tb_posts b on a.id =b.post_author  ORDER BY post_date desc LIMIT 0,16   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-01-13T12:45:24+08:00 ] 182.118.20.144 /index.php?g=&m=Index&a=getRecommended&p=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000327s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_posts` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_posts` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT b.id as pid,a.user_nicename,a.avatar,b.post_like,b.post_img_url,b.recommended,b.post_date FROM tb_users a INNER JOIN tb_posts b on a.id =b.post_author  WHERE ( recommended = 1 ) ORDER BY post_date desc LIMIT 0,16   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
