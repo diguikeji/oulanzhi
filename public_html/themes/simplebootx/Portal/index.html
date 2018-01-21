@@ -13,6 +13,23 @@
 	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
 	<link rel="stylesheet" href="__TMPL__Public/new/css/swiper.min.css">
+	<style>
+
+		.dropdown:hover .dropdown-menu {
+			display: block;
+		}
+		.dropdown-menu li a:hover{
+			background: #C1A062;
+		}
+		.dropdown-toggle-touxiang img:hover{
+			opacity: 0.9;
+		}
+		@media screen and (max-width: 468px) {
+			.dropdown:hover .dropdown-menu {
+				display: none;
+			}
+		}
+	</style>
 </head>
 <body class="met-navfixed">
 <!--[if lte IE 8]>
@@ -30,13 +47,17 @@
 		<ul id="nav">
 			<li><a href="{:U('Portal/index/index')}" class="active">首页</a></li>
 			<li><a href="{:U('Portal/find/index')}">发现</a></li>
-			<li><a href="{:U('Portal/newest/index')}">最新</a>
-				<!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
+			<li class="dropdown">
+				<a href="{:U('Portal/newest/index')}" class="dropdown-toggle">
+					最新
+				</a>
+				<ul class="dropdown-menu" style="margin-top: 2.1rem;margin-left: -1rem;background-color: rgba(0,0,0,0.6);font-size: 12px!important;min-width: 3rem;text-align: center ;">
+					<li style="min-width: 100%"><a href="#" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%">我的推荐</a></li>
+					<li><a href="user/user.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的关注</a></li>
+					<li><a href="palette/palette.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的画板</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">用户</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">主题</a></li>
+				</ul>
 			</li>
 			<li><a href="{:U('Portal/activity/index')}">活动</a></li>
 		</ul>
@@ -177,10 +198,20 @@
 			}else{
 				$("#user").append(
 						'<ul id="nav-login">'+
-				'<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
 				'<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-				'<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-				'</ul>'
+						'<li class="dropdown" >'+
+							'<a href="index.php?g=user&m=center&a=index" class="dropdown-toggle">'+
+								'<div class="dropdown-toggle-touxiang" style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a>'+
+							'<ul class="dropdown-menu" style="min-width: 12rem;background: white;margin-left: -100px;margin-top: 20px">'+
+								'<div style="position: absolute;width: 13px;height: 13px;background-color: white;z-index: -1;right: 18px;top: -6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);"></div>'+
+								'<li style="min-width: 100%"><a href="index.php?g=User&m=follow&a=interestFollow" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%;color: grey"><i class="iconfont icon-guanzhu" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>已关注<font style="float: right">271</font></a></li>'+
+								'<li><a href="index.php?g=user&m=collect&a=index"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-huaban" style="font-size: 1.8rem;float: left;margin-right: 0.8rem" ></i>采集<font style="float: right">20</font></a></li>'+
+								'<li><a href="index.php?g=User&m=love&a=index"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-fensi" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>喜欢<font style="float: right">41</font></a></li>'+
+								'<li><a href="index.php?g=user&m=profile&a=edit"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">设置</a></li>'+
+								'<li><a href="index.php?g=user&m=index&a=logout"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">退出</a></li>'+
+							'</ul>'+
+						'</li>'+
+						'</ul>'
 			)
 			}
 		}

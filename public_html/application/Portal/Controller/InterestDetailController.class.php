@@ -21,9 +21,8 @@ class InterestDetailController extends HomebaseController
         $xingqu = $xingqu_model->where(array("xq_fl_id"=>$flid))->limit(5)->select();
         $this->assign($fl);
         $this->assign("xingqu",$xingqu);
-        $this->display(":interest_detail");
+        $this->display(":category");
     }
-
 
 
     //兴趣分类下的采集
@@ -49,6 +48,47 @@ class InterestDetailController extends HomebaseController
             ->order('post_date desc')
             ->limit($page->firstRow . ',' . $page->listRows)
             ->select();
+
         echo json_encode($list);
     }
+
+
+    //兴趣详情页
+    public function interest()
+    {
+        $xid = I('get.xid',0,'intval');
+
+        $flid = I('get.fid',0,'intval');
+
+        $xingqu_model = M("Xingqu");
+        $xingqu = $xingqu_model->where(array("xq_id"=>$xid))->find();
+        $xingqus = $xingqu_model->where(array("xq_fl_id"=>$flid))->limit(5)->select();
+
+        $this->assign($xingqu);
+        $this->assign("xingqus",$xingqus);
+        $this->display(":xq_detail");
+    }
+
+    //兴趣详情页下的采集
+
+    public function detailCollect()
+    {
+        $xid = I('get.xid',0,'intval');
+
+        $users_model = M('Users');
+        $post_model = M("Posts");
+        $count = $post_model->count();
+        $page = new \Think\Page($count,16);
+        $list = $users_model
+            ->alias("a")
+            ->join("tb_posts b on a.id =b.post_author")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_img_url,b.recommended,b.post_date")
+            ->where(array("post_xq_id"=>$xid))
+            ->order('post_date desc')
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->select();
+
+        echo json_encode($list);
+    }
+
 }

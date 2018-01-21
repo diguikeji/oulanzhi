@@ -166,32 +166,34 @@
                 var html ='';
                 for(var i =0; i<data.length;i++){
 
-                    var idList = data[i].hb_id_list.split(",");
-                    var imgList=data[i].hb_img_list.split(",");
-
                     var xid  = data[i].xq_id;
 
-                    html=html+'<div class="sheji-1">' +
-                            '<div class="ping-1"> ' +
-                            '<div class="high-1"></div> ' +
-                            '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
-                            '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
-                            '<div class="annv"> ' +
-                            '<a  href="/index.php?g=User&m=interest&a=do_interest&xid='+xid+'"><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
-                            '</div>' +
-                            '</div>'
 
-                    for(var j=0; j<idList.length;j++) {
-                        var hid = idList[j];
-                        html=html+ '<div class="mian">'+'<a href="index.php?g=user&m=draw&a=drawDetail&hid='+hid+'">'+'<img src="index.php?g=&m=Find&a=imgHuaban&id='+hid+'">'+'</a>'+'</div>';
-                        console.log(idList[j]);
-                    }
+                       if(data[i].hb_id_list !=null){
 
-                    html=html+'<div class="more">' +
-                            '<a href="#"><img src="__TMPL__Public/new/image/more.png"></a>' +
-                            '<div class="text-4"><a href="#">加载更多</a></div>' +
-                            '</div>' +
-                            '</div>'
+                           var idList = data[i].hb_id_list.split(",");
+
+                           html=html+'<div class="sheji-1">' +
+                                   '<div class="ping-1"> ' +
+                                   '<div class="high-1"></div> ' +
+                                   '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
+                                   '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
+                                   '<div class="annv"> ' +
+                                   '<a  href="/index.php?g=User&m=interest&a=do_interest&xid='+xid+'"><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
+                                   '</div>' +
+                                   '</div>'
+
+                           for(var j=0; j<idList.length ;j++) {
+                               var hid = idList[j];
+                               html=html+ '<div class="mian">'+'<a href="index.php?g=user&m=draw&a=drawDetail&hid='+hid+'">'+'<img src="index.php?g=&m=Find&a=imgHuaban&id='+hid+'">'+'</a>'+'</div>';
+                           }
+
+                           html=html+'<div class="more">' +
+                                   '<a href="#"><img src="__TMPL__Public/new/image/more.png"></a>' +
+                                   '<div class="text-4"><a href="#">加载更多</a></div>' +
+                                   '</div>' +
+                                   '</div>'
+                       }
                 }
 
 
