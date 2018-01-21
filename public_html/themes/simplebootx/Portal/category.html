@@ -64,7 +64,7 @@
 <div class="morefound-1">
     <foreach name="xingqu" item="vo">
 
-    <a href="{:U('portal/InterestDetail/interest',array('xid'=>$vo['xq_id'],'fid'=>$xqfl_id))}"><div class="morefound-1-2"><img src="{:U('portal/newest/imgXingqu',array('id'=>$vo['xq_id']))}"><p>{$vo.xq_name}</p></div></a>
+    <a href="{:U('portal/InterestDetail/interest',array('xid'=>$vo['xq_id']))}"><div class="morefound-1-2"><img src="{:U('portal/newest/imgXingqu',array('id'=>$vo['xq_id']))}"><p>{$vo.xq_name}</p></div></a>
 
  </foreach>
 </div>

@@ -56,25 +56,26 @@
 
 
 <div class="cephalosome">
-
-    <input type="hidden" id="xid" value="{$xq_id}"  name="xq_id">
-
-    <div class="cephalosome-1">{$xq_name}</div>
-
-    <div class="cephalosome-3">{$xq_intro}</div>
-
-    <div class="cephalosome-2"><div class="cephalosome-2-1"><button >关注</button></div></div>
-
+    <div class="cephalosome-1">{$xqfl_name}</div>
+    <input type="hidden" name="flid" value="{$xqfl_id}" id="flid">
 </div>
+
 <div class="morefound"><img src="__TMPL__Public/new/image/huojian.png"> &nbsp;&nbsp;&nbsp;更多发现</div>
 <div class="morefound-1">
-    <foreach name="xingqus" item="vo">
-        <a href="{:U('portal/InterestDetail/interest',array('xid'=>$vo['xq_id'],'fid'=>$xqfl_id))}"><div class="morefound-1-2"><img src="{:U('portal/newest/imgXingqu',array('id'=>$vo['xq_id']))}"><p>{$vo.xq_name}</p></div></a>
+    <foreach name="huaban" item="vo">
+
+        <a href="{:U('portal/User/huaban',array('id'=>$vo['hb_id']))}"><div class="morefound-1-2"><img src="{:U('portal/find/imgHuaban',array('id'=>$vo['hb_id']))}"><p>{$vo.hb_name}</p></div></a>
+
     </foreach>
 </div>
 <div class="morefound-2">
     <!--第一个-->
     <div class="morefound-2-1" id="cj-box">
+
+
+
+
+
 
 
 
@@ -87,23 +88,25 @@
 </div>
 
 
+
+
 <tc_include file="Public:scripts"/>
 
 <script>
 
-    var xid = $("#xid").val();
-       //console.log(xid);
+    var flid = $("#flid").val();
+    //   console.log(flid);
 
     $.ajax({
 
         type: "GET",
 
-        url: "/index.php?g=&m=InterestDetail&a=detailCollect",
+        url: "/index.php?g=&m=InterestDetail&a=huabanCollect",
 
         dataType: "json",
 
         data:{
-            xid:xid
+            id:flid
         },
 
         success:function(data){
@@ -142,7 +145,6 @@
     })
 
 </script>
-
 
 
 </body>

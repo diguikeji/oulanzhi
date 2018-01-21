@@ -150,14 +150,14 @@
 <script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
 
 <script>
-    var pageIndex = 1;
+    /*var pageIndex = 1;
     function getInterestList(page)
-    {
+    {*/
         $.ajax({
 
             type: "GET",
 
-            url: "/index.php?g=&m=Find&a=getInterestList&p="+page,
+            url: "/index.php?g=&m=Find&a=gethuabanList",
 
             dataType: "json",
 
@@ -166,26 +166,27 @@
                 var html ='';
                 for(var i =0; i<data.length;i++){
 
-                    var xid  = data[i].xq_id;
+                  //  var xid  = data[i].xq_id;
 
 
-                       if(data[i].hb_id_list !=null){
+                       if(data[i].pidlist !=null){
 
-                           var idList = data[i].hb_id_list.split(",");
+                           var pidlist = data[i].pidlist.split(",");
 
                            html=html+'<div class="sheji-1">' +
                                    '<div class="ping-1"> ' +
                                    '<div class="high-1"></div> ' +
-                                   '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
-                                   '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
+                                   '<div class="text-2-1">'+data[i].hb_name+'</div> ' +
+                                   '<div class="text-3-1">'+data[i].hb_descp+'</div> ' +
                                    '<div class="annv"> ' +
-                                   '<a  href="/index.php?g=User&m=interest&a=do_interest&xid='+xid+'"><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
+                                   '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
                                    '</div>' +
                                    '</div>'
 
-                           for(var j=0; j<idList.length ;j++) {
-                               var hid = idList[j];
-                               html=html+ '<div class="mian">'+'<a href="index.php?g=user&m=draw&a=drawDetail&hid='+hid+'">'+'<img src="index.php?g=&m=Find&a=imgHuaban&id='+hid+'">'+'</a>'+'</div>';
+                           for(var j=0; j<pidlist.length ;j++) {
+                               var pid = pidlist[j];
+                               //console.log(pid);
+                               html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
                            }
 
                            html=html+'<div class="more">' +
@@ -201,26 +202,88 @@
 
                 $("#hb-box").append(html);
 
-                $("#hb-box").append(
 
-                )
-
-                if(data.length<16)
+               /* if(data.length<16)
                 {
                     $("#load").text("没有更多数据了");
                 }
 
-                pageIndex++;
+                pageIndex++;*/
             }
         });
-    }
 
-    getInterestList(pageIndex);
+        $.ajax({
+
+         type: "GET",
+
+         url: "/index.php?g=&m=Find&a=getInterestList",
+
+        dataType: "json",
+
+        success: function (data) {
+            console.log(data);
+            var html ='';
+            for(var i =0; i<data.length;i++){
+
+                //  var xid  = data[i].xq_id;
+
+
+                if(data[i].pidlist !=null){
+
+                    var pidlist = data[i].pidlist.split(",");
+
+                    var xid = data[i].xq_id;
+
+                    html=html+'<div class="sheji-1">' +
+                            '<div class="ping-1"> ' +
+                            '<div class="high-1"></div> ' +
+                            '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
+                            '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
+                            '<div class="annv"> ' +
+                            '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
+                            '</div>' +
+                            '</div>'
+
+                    for(var j=0; j<pidlist.length ;j++) {
+                        var pid = pidlist[j];
+                        //console.log(pid);
+                        html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
+                    }
+
+                    html=html+'<div class="more">' +
+                            '<a href="index.php?g=portal&m=InterestDetail&a=interest&xid='+xid+'"><img src="__TMPL__Public/new/image/more.png"></a>' +
+                            '<div class="text-4"><a href="index.php?g=portal&m=InterestDetail&a=interest&xid='+xid+'">加载更多</a></div>' +
+                            '</div>' +
+                            '</div>'
+                }
+            }
+
+
+            // console.log(html);
+
+            $("#hb-box").append(html);
+
+
+            /* if(data.length<16)
+             {
+             $("#load").text("没有更多数据了");
+             }
+
+             pageIndex++;*/
+        }
+    });
+
+
+
+
+   // }
+
+   /* getInterestList(pageIndex);
 
     $("#load").click(function()
     {
         getInterestList(pageIndex);
-    });
+    });*/
 
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
