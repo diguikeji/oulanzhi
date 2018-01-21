@@ -72,10 +72,10 @@
 				<div class="zan-box">
 					<div class="item-inner">
 						<div class="item-inner-text">
-							<div class="item-title" style="margin-top: 0.25rem"> <a href="{:U('article/do_like',array('pid'=>$pid))}"> <i class="iconfont icon-zan" style="color: red;font-size: 2rem;margin: 0 auto"></i></a></div>
+							<div class="item-title" style="margin-top: 0.25rem"> <a href="{:U('article/do_like',array('pid'=>$pid))}"> <i class="iconfont icon-zan" style="color:#D1D1D1;font-size: 2rem;margin: 0 auto"></i></a></div>
 						</div>
 						<div class="item-inner-text">
-							<div class="item-title" style="margin-top: -0.25rem">{$post_like}</div>
+							<div class="item-title" style="margin-top: -0.25rem"><span id="like"></span></div>
 						</div>
 					</div>
 				</div>
@@ -133,7 +133,36 @@
 
 <script>
 
+	//点赞数量显示
 	var pid = $("#pid").val();
+
+	$.ajax({
+		type: "GET",
+
+		url : "/index.php?g=&m=Article&a=likeView",
+
+		data:{
+
+			pid:pid
+		},
+
+		dataType: "json",
+
+		success:function(data) {
+
+			$("#like").append(
+					data.post_like
+			)
+
+		}
+	});
+
+
+
+
+
+    //显示采集喜欢的头标
+
 	$.ajax({
 		type: "POST",
 
@@ -161,8 +190,10 @@
 
 		}
 	});
-	//采集喜欢
 
+
+
+	//点击采集喜欢
 	$("#love").click(function(){
 		//alert(111);
 	   var pid = $("#pid").val();
@@ -179,7 +210,6 @@
 			dataType: "json",
 
 			success:function(data){
-				console.log(data);
 				$("#xin").remove();
 				if(data == 0){
 
@@ -194,8 +224,6 @@
 				}else{
 					
 				}
-
-
 			}
 		});
 	});
@@ -212,7 +240,6 @@
 
 		success: function (data) {
 			var uid =data.id;
-			//console.log(uid);
 			if(data == 0){
 				$("#user").append(
 						'<ul id="nav-login">'+
@@ -245,8 +272,6 @@
 			dataType: "json",
 
 			success: function (data) {
-				console.log(data);
-				//var html ='';
 				for(var i =0; i<data.length;i++){
 					var pid = data[i].pid;
 					var uid = data[i].uid;
@@ -261,7 +286,7 @@
 							'<div class="touiang">'+
 							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
-							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
+							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
 							'</div>'+
 							'</div>'
@@ -304,7 +329,6 @@
 			dataType: "json",
 
 			success: function (data) {
-				console.log(data);
 				for(var i =0; i<data.length;i++){
 					var pid = data[i].pid;
 					var uid = data[i].uid;
@@ -320,7 +344,7 @@
 							'<div class="touiang">'+
 							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
-							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
+							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
 							'</div>'+
 							'</div>'
