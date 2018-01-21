@@ -85,12 +85,12 @@
     </div>
 
 
-    <div class="search-box">
+ <!--   <div class="search-box">
         <input class="search-box-input" placeholder="点击搜索一下您就知道">
         <button class="sousuo"><i class="iconfont icon-sousuo"></i></button>
     </div>
 </div>
-
+-->
 
 
 <div class="contain">
@@ -110,8 +110,8 @@
     <div class="room">
         <div class="room-1-1" >
             <foreach name="activity" item="vo">
-                <div class="room-1" ><a href="{$vo.hd_url}" target="_blank"><img src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}" style="position: absolute;overflow-y:scroll;overflow-x: scroll;"></a>
-                    <div style="position: relative; text-align: center;color: white;font-size: 25px; margin-top: 60px">{$vo.hd_name}</div>
+                <div class="room-1" ><a href="{$vo.hd_url}" target="_blank"><img src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}"></a>
+                    <div style="position: relative; text-align: center;color: white;font-size: 25px; top: -55%;text-shadow: 5px 3px 5px rgba(0,0,0,0.6)">{$vo.hd_name}</div>
                 </div>
             </foreach>
         </div>
@@ -137,7 +137,7 @@
                    border-bottom-left-radius: 20px;
                    border-bottom-right-radius: 20px;
                    border-top-left-radius: 20px;
-                   border-top-right-radius: 20px;border: none">点击查看更多 ＞＞＞</button></div>
+                   border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
 </div>
 
 <tc_include file="Public:footer" />
