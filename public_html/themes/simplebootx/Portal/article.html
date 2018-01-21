@@ -27,19 +27,22 @@
 	</div>
 	<div class="nav-box-ul">
 		<ul id="nav">
-			<li><a href="#">首页</a></li>
-			<li><a href="#">发现</a></li>
-			<li><a href="#" class="active">最新</a>
-				<!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
-			</li>
-			<li><a href="#">活动</a></li>
+			<li><a href="{:U('Portal/index/index')}">首页</a></li>
+			<li><a href="{:U('Portal/find/index')}">发现</a></li>
+			<li><a href="{:U('Portal/newest/index')}">最新</a>
+			<li><a href="{:U('Portal/activity/index')}">活动</a></li>
 		</ul>
 	</div>
+
+	<div class="right-menu">
+		<img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
+		<img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
+	</div>
+
+	<div class="login-ul" id="user">
+
+	</div>
+
 </nav>
 
 <div class="hb-detail">
@@ -47,19 +50,20 @@
 		<div class="img-detail-box">
 			<ul  class="share">
 				<li><a href="#"><i class="iconfont icon-jia1" style="font-size: 2rem;color: white;"></i></a></li>
-				<li><a href="#"><i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red;"></i></a></li>
+				<li><a href="#"><span id="love"></span></a></li>
 				<li><a href="#"><i class="iconfont icon-fenxiang" style="font-size: 2rem;color: white;"></i></a></li>
 			</ul>
 			<div>
-				<img src="{$post_img_url}">
+				<img src="{:U('Portal/index/imgCollect',array('id'=>$pid))}">
 			</div>
 		</div>
 		<div class="detail-bbs-box">
 			<div class="info-box">
-				<div class="touxiang-box"> <img src="{$avatar}"></div>
+				<div class="touxiang-box"> <img src="{:U('user/public/avatar',array('id'=>$uid))}"></div>
 				<div class="item-inner">
 					<div class="item-inner-text">
 						<div class="item-title">{$user_nicename}</div>
+						<input type="hidden" id="pid" value="{$pid}">
 					</div>
 					<div class="item-inner-text">
 						<div class="item-title">{$post_title}</div>
@@ -68,10 +72,10 @@
 				<div class="zan-box">
 					<div class="item-inner">
 						<div class="item-inner-text">
-							<div class="item-title" style="margin-top: 0.25rem"> <a href="{:U('article/do_like',array('pid'=>$pid))}"> <i class="iconfont icon-zan" style="color: red;font-size: 2rem;margin: 0 auto"></i></a></div>
+							<div class="item-title" style="margin-top: 0.25rem"> <a href="{:U('article/do_like',array('pid'=>$pid))}"> <i class="iconfont icon-zan" style="color:#D1D1D1;font-size: 2rem;margin: 0 auto"></i></a></div>
 						</div>
 						<div class="item-inner-text">
-							<div class="item-title" style="margin-top: -0.25rem">{$post_like}</div>
+							<div class="item-title" style="margin-top: -0.25rem"><span id="like"></span></div>
 						</div>
 					</div>
 				</div>
@@ -128,6 +132,134 @@
 <script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
 
 <script>
+
+	//点赞数量显示
+	var pid = $("#pid").val();
+
+	$.ajax({
+		type: "GET",
+
+		url : "/index.php?g=&m=Article&a=likeView",
+
+		data:{
+
+			pid:pid
+		},
+
+		dataType: "json",
+
+		success:function(data) {
+
+			$("#like").append(
+					data.post_like
+			)
+
+		}
+	});
+
+
+
+
+
+    //显示采集喜欢的头标
+
+	$.ajax({
+		type: "POST",
+
+		url: "/index.php?g=&m=Article&a=loveView",
+
+		data:{
+			id:pid
+		},
+
+		dataType: "json",
+
+		success:function(data){
+			$("#xin").remove();
+			if(data == 1){
+
+				$("#love").append(
+						'<i id="xin" class="iconfont icon-guanzhu" style="font-size: 2rem;color: red;">'+'</i>'
+				)
+			}else{
+
+				$("#love").append(
+						'<i id="xin" class="iconfont icon-guanzhu" style="font-size: 2rem;color: white;">'+'</i>'
+				)
+			}
+
+		}
+	});
+
+
+
+	//点击采集喜欢
+	$("#love").click(function(){
+		//alert(111);
+	   var pid = $("#pid").val();
+
+		$.ajax({
+			type: "POST",
+
+			url: "/index.php?g=&m=Article&a=do_love",
+
+			data:{
+			   id:pid
+			},
+
+			dataType: "json",
+
+			success:function(data){
+				$("#xin").remove();
+				if(data == 0){
+
+					$("#love").append(
+							'<i id="xin" class="iconfont icon-guanzhu" style="font-size: 2rem;color: white;">'+'</i>'
+					)
+				}else if(data == 1){
+
+					$("#love").append(
+							'<i id="xin" class="iconfont icon-guanzhu" style="font-size: 2rem;color: red;">'+'</i>'
+					)
+				}else{
+					
+				}
+			}
+		});
+	});
+
+
+
+	//头部获取用户的登录状态
+	$.ajax({
+		type: "GET",
+
+		url: "/index.php?g=&m=Index&a=getUser",
+
+		dataType: "json",
+
+		success: function (data) {
+			var uid =data.id;
+			if(data == 0){
+				$("#user").append(
+						'<ul id="nav-login">'+
+						'<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
+						'</ul>'
+				)
+			}else{
+				$("#user").append(
+						'<ul id="nav-login">'+
+						'<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
+						'<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
+						'<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
+						'</ul>'
+				)
+			}
+		}
+
+	});
+
+	//用户自己的采集
 	var pageIndex=1;
 	function getPostList(page)
 	{
@@ -140,22 +272,21 @@
 			dataType: "json",
 
 			success: function (data) {
-				console.log(data);
-				//var html ='';
 				for(var i =0; i<data.length;i++){
 					var pid = data[i].pid;
+					var uid = data[i].uid;
 					$("#hb-box").append(
 							'<div class="huaban">'+
 							'<div class="guajian"><img src="__TMPL__Public/new/image/guajian.png"></div>'+
 							'<div class="image-box">'+
 
-							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="'+data[i].post_img_url+'"></a>'+
+							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="index.php?g=portal&m=index&a=imgCollect&id='+pid+'"></a>'+
 							'</div>'+
 							'<div class="bottom-box">'+
 							'<div class="touiang">'+
-							'<img src="'+data[i].avatar+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
+							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
-							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
+							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
 							'</div>'+
 							'</div>'
@@ -184,6 +315,8 @@
 		getPostList(pageIndex);
 	});
 
+
+	//系统推荐的采集
 	var pageIndexRecommend=1;
 	function getPostListRecommend(page)
 	{
@@ -196,22 +329,22 @@
 			dataType: "json",
 
 			success: function (data) {
-				console.log(data);
 				for(var i =0; i<data.length;i++){
 					var pid = data[i].pid;
+					var uid = data[i].uid;
 					console.log(pid);
 					$("#hb-box-recommended").append(
 							'<div class="huaban">'+
 							'<div class="guajian"><img src="__TMPL__Public/new/image/guajian.png"></div>'+
 							'<div class="image-box">'+
 
-							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="'+data[i].post_img_url+'"></a>'+
+							'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="index.php?g=portal&m=index&a=imgCollect&id='+pid+'"></a>'+
 							'</div>'+
 							'<div class="bottom-box">'+
 							'<div class="touiang">'+
-							'<img src="'+data[i].avatar+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
+							'<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
 							'<div class="guanzhu">'+
-							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_like+''+
+							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
 							'</div>'+
 							'</div>'

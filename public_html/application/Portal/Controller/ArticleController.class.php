@@ -96,11 +96,12 @@ class ArticleController extends HomebaseController
             ->alias("a")
             ->join("tb_users b on a.post_author = b.id")
             ->where(array("a.id" => $pid))
-            ->field("a.id as pid,b.id as uid,b.user_nicename,b.avatar,a.post_like,a.post_title,a.post_content,a.post_img_url,a.post_date")
+            ->field("a.id as pid,b.id as uid,b.user_nicename,a.post_like,a.post_title,a.post_content,a.post_img_url,a.post_date")
             ->find();
 
         session("uid", $posts["uid"]);
 
+        $this->assign("pids",$posts[pid]);
         $this->assign($posts);
         $this->display(":article");
 
@@ -124,12 +125,58 @@ class ArticleController extends HomebaseController
                     ->alias("a")
                     ->where(array("post_author"=>$uid))
                     ->join("tb_users c on a.post_author = c.id")
-                    ->field("a.id as pid,a.post_like,a.post_img_url,c.user_nicename,c.avatar")
+                    ->field("a.id as pid,c.id as uid,a.post_love,a.post_img_url,c.user_nicename")
                     ->limit($page->firstRow . ',' . $page->listRows)
                     ->select();
         echo json_encode($list);
     }
 
+    //采集喜欢
+    public function do_love(){
+
+        $this->check_login();
+
+        $pid =  $_POST['id'];
+
+        $uid = sp_get_current_userid();
+
+        $love_model = M("Love");
+        $posts_model = M("Posts");
+        $love=$love_model->where(array("love_users_id"=>$uid,"love_posts_id"=>$pid))->find();
+        //echo json_encode($love);
+        if(!$love){
+            $data["love_posts_id"] = $pid;
+            $data["love_users_id"] = $uid;
+            $love_model->add($data);
+            $post["post_love"] = array("exp","post_love+1");
+            $posts_model->where(array("id"=>$pid))->save($post);
+            echo 1;
+        }else{
+            $love_model->where(array("love_users_id"=>$uid,"love_posts_id"=>$pid))->delete();
+            $post["post_love"] = array("exp","post_love-1");
+            $posts_model->where(array("id"=>$pid))->save($post);
+            echo 0;
+        }
+    }
+
+
+    //采集显示
+    public function loveView(){
+
+        $this->check_login();
+
+        $pid =  $_POST['id'];
+        $uid = sp_get_current_userid();
+        $love_model = M("Love");
+        $love=$love_model->where(array("love_users_id"=>$uid,"love_posts_id"=>$pid))->find();
+        if($love){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+
+    }
 
     // 文章点赞
     public function do_like()
@@ -148,6 +195,14 @@ class ArticleController extends HomebaseController
         } else {
             $this->error("您已赞过啦！");
         }
+    }
+
+   //点赞数显示
+    public function likeView(){
+        $posts_model = M("Posts");
+        $id = I('get.pid', 0, 'intval');
+        $likeCount = $posts_model->where(array("id"=>$id))->field("post_like")->find();
+        echo json_encode($likeCount);
     }
 
     // 前台用户添加文章

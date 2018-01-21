@@ -1,0 +1,312 @@
+.yesterday{
+    width: 100%;
+    height: 20rem;
+    background-color: #EAEAEA;
+    margin-top: 6rem;
+}
+.yesterday_1{
+    width: 15rem;
+    height:20rem;
+    margin-left: 7%;
+    float: left;
+}
+.yesterday_1_1 {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin: 2.5rem auto;
+    overflow: hidden;
+}
+.yesterday_1_1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.yesterday_1_1 img:hover{
+    opacity: 0.9;
+}
+.yesterday_1_2{
+    width: 5.2rem;
+    height:2rem;
+    margin:-2rem  auto;
+}
+.yesterday_1_2_1{
+    font-size: 1.4rem;
+    float: left;
+    font-weight:600 ;
+}
+.yesterday_1_2_2{
+    font-size: 1.4rem;
+    float: right;
+    font-weight:600 ;
+}
+.yesterday_1_3{
+    width: 6rem;
+    height:1.6rem;
+
+    margin:2rem  auto;
+    background-color: #595959;
+}
+.yesterday_1_3_1{
+    font-size: 1rem;
+    float: left;
+    color: white;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.yesterday_1_3_1:hover{
+    color: red;
+}
+.yesterday_1_3_2{
+    background-color: white;
+    width: 0.15rem;
+    height: 1.5rem;
+
+    margin-left: 10%;
+    float: left;
+
+}
+.yesterday_1_3_3{
+    font-size: 1rem;
+    float: right;
+    color: white;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.yesterday_1_3_3:hover{
+    color: red;
+}
+.yesterday_2{
+    width: 30rem;
+    height:20rem;
+
+    float: left;
+}
+.yesterday_2_1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    letter-spacing: 2px;
+
+}
+.yesterday_2_2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #7E7E7E;
+
+}
+.yesterday_3{
+    width: 15rem;
+    height:20rem;
+
+    margin-right: 7%;
+    float: right;
+}
+.yesterday_3_1{
+    width: 6.5rem;
+    height: 2.5em;
+    margin-top: 2.5rem;
+    float: left;
+    background-color:#C29E62 ;
+    color: white;
+    font-size: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.yesterday_3_1:hover{
+    color: #000000;
+}
+.yesterday_3_2{
+    width: 5rem;
+    height: 2.5em;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    text-align: center;
+    background-color:#C29E62 ;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    float: left;
+}
+.yesterday_3_2 img{
+    width: 2.2rem;
+    height: 1.8rem;
+}
+/*画板*/
+.hongse{
+    width: 50rem;
+    height: 8rem;
+    margin: auto ;
+    background-color: #FF445F;
+    position: relative;
+    top: -4rem;
+}
+.hongse_1{
+    position: relative;
+    width: 24.8%;
+    height: 100%;
+    float: left;
+
+
+}
+.hongse_1_1{
+    text-align: center;
+    font-size: 2rem;
+    color: #FFADB8;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    padding-top: 1rem;
+}
+.hongse_1_1 .number{
+    color:#FFADB8;
+    font-size: 2rem;
+    position: absolute;
+    margin: 1rem 40%;
+
+
+}
+.hongse_1_2{
+    text-align: center;
+    font-size: 2rem;
+    color: #FFADB8;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.hongse_1_2 .number_1{
+    color:#FFADB8;
+    font-size: 2rem;
+    position: absolute;
+    margin-left: 35%;
+
+}
+.hongse_2 {
+    position: relative;
+    height: 6rem;
+    width: 1px;
+    background-color: #FFADB8;
+    float: left;
+    margin-top: 1rem;
+}
+/*320-468*/
+@media (min-width:320px)and (max-width:468px){
+    .yesterday{
+        margin-top: 6rem;
+    }
+    .heng{
+        display: none;
+    }
+    .yesterday{
+        height: 10rem;
+    }
+    .yesterday_1{
+        width: 25%;
+        height:10rem;
+        margin-left: 0;
+
+
+    }
+    .yesterday_1_1 {
+        width: 4rem;
+        height: 4rem;
+        margin: 2rem auto;
+    }
+    .yesterday_1_1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .yesterday_1_2_1{
+        font-size: 1.2rem;
+    }
+    .yesterday_1_2_2{
+        font-size: 1.2rem;
+    }
+    .yesterday_1_3_1{
+        padding-left: 0.3rem;
+    }
+    .yesterday_1_3_2{
+       margin-left: 9%;
+    }
+    .yesterday_1_3_3{
+        margin-right: 3%;
+        padding-right: 0.3rem;
+    }
+    .yesterday_2{
+        width: 75%;
+        height:5.5rem;
+    }
+    .yesterday_2_1{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+    .yesterday_2_2{
+        font-size: 1rem;
+    }
+    .yesterday_3{
+        width: 68%;
+        height:4.5rem;
+        float: left;
+    }
+    .yesterday_3_1{
+        width:5rem;
+        height: 1.8rem;
+        margin-top: 2.1rem;
+        float: right;
+        font-size: 1rem;
+        padding-top: 0.2rem;
+        margin-left: 2rem;
+    }
+    .yesterday_3_2{
+        width:5rem;
+        height: 1.8rem;
+        margin-top: 2.1rem;
+        float: right;
+        font-size: 1rem;
+        padding-top: 0.1rem;
+        margin-left: 2rem;
+    }
+    /*画板*/
+    .hongse{
+        width: 100%;
+        height: 5rem;
+        top: 0rem;
+    }
+    .hongse_1{
+        width: 24.7%;
+    }
+    .hongse_1_1{
+
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+    }
+    .hongse_1_2{
+        font-size: 1.5rem;
+
+    }
+    .hongse_1_1 .number{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0.3rem 40%;
+    }
+    .hongse_1_2 .number_1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .hongse_2{
+        height: 3rem;
+    }
+}

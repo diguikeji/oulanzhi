@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>采集</title>
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="generator" content=""  data-variable="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="../favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/new.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/collect.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/palette.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+
+</head>
+<body>
+
+<nav class="nav-box">
+    <div class="nav-box-logo">
+        <img src="../image/logo.png">
+    </div>
+    <div class="nav-box-ul">
+        <ul id="nav">
+            <li><a href="../index.html" class="active">首页</a></li>
+            <li><a href="../found/found.html">发现</a></li>
+            <li><a href="../new/new.html">最新</a>
+                <!--		<ul>
+                            <li><a href="#">我的推荐</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的画板</a></li>
+                            <li><a href="#">用户</a></li>
+                        </ul>-->
+            </li>
+            <li><a href="../activity/activity.html">活动</a></li>
+        </ul>
+    </div>
+
+
+    <div class="right-menu">
+        <img class="open-menu" src="../image/menu.png" />
+        <img class="close-menu" src="../image/closeMenu.png" />
+    </div>
+
+    <div class="login-ul">
+        <ul id="nav-login">
+            <li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
+            <li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
+            <li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="../image/touxiang.png"></div></a></li>
+            <li id="login1"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
+        </ul>
+    </div>
+
+
+</nav>
+
+<!--明日收获-->
+<div class="yesterday">
+    <div class="yesterday_1">
+        <div class="yesterday_1_1">
+            <a href="#"><img src="../image/huge.jpg"></a>
+        </div>
+        <div class="yesterday_1_2">
+            <div class="yesterday_1_2_1">200</div>
+            <div class="yesterday_1_2_2">100</div>
+        </div>
+        <div class="yesterday_1_3">
+            <a href=""> <div class="yesterday_1_3_1">粉丝</div></a>
+            <div class="yesterday_1_3_2"></div>
+            <a href="">   <div class="yesterday_1_3_3">关注</div></a>
+        </div>
+    </div>
+    <div class="yesterday_2">
+        <div class="yesterday_2_1">明日收获</div>
+        <div class="yesterday_2_2">欢迎来到我的主页，收集好看的图片</div>
+    </div>
+    <div class="yesterday_3">
+        <a href="#"><div class="yesterday_3_1">关注+</div></a>
+        <a href="#"><div class="yesterday_3_2"><img src="../image/envelop(1).png"></div></a>
+    </div>
+</div>
+<!--红色部分-->
+<div  class="hongse">
+    <a href="../palette/palette.html">
+        <div class="hongse_1">
+            <div class="hongse_1_1"  >12</div>
+            <div class="hongse_1_2" >画板</div>
+        </div>
+    </a>
+    <a href="../collect/collect.html">
+        <div class="hongse_2"></div>
+        <div class="hongse_1">
+            <div class="hongse_1_1" style="color: white;">122</div>
+            <div class="hongse_1_2" style="color: white">采集</div>
+            <div   class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: 0.5rem"></div>
+        </div></a>
+    <a href="#">
+        <div class="hongse_2"></div>
+        <div class="hongse_1">
+            <div class="hongse_1_1">12</div>
+            <div class="hongse_1_2">喜欢</div>
+        </div></a>
+    <a href="#">
+        <div class="hongse_2"></div>
+        <div class="hongse_1">
+            <div class="hongse_1_1">12</div>
+            <div class="hongse_1_2">标签</div>
+        </div></a>
+</div>
+
+
+<!--中间部分-->
+<div class="middle" id="middle">
+
+   <div class="middle_2">
+       <div class="jiazai"><a href="javascript:show()"><i class="iconfont  icon-jia" ></i></a>
+          <!-- <div id="uploadphoto">
+
+               <div class="upload_1">
+                  <div class="upload_1_1"> <img src="img/huge.jpg" style="width: 100%;height: 100%;object-fit: cover" id="picname" name="huge"></div>
+               </div>
+               <div class="upload_2" style="position: relative">
+                   <a href="javascript:hide()"> <img src="img/cha1.png"  class="cha1"></a>
+                   <p>上传采集</p>
+                   <input type="text" placeholder="搜索或创建画板" style="border: 1px solid #DADADA;outline: none" class="input_1">
+                 <div class="upload_2_1">
+                     <div class="upload_2_1_1"></div>
+                 </div>
+                  <div class="tags" id="tags" tabindex="1" style="position: relative;">
+                       <input id="form-field-tags" type="text" placeholder="" value="Tag Input Control" name="tags" style="display: none;">
+                       <input type="text" placeholder="输入文字，按空格键或回车以生成标签" class="tags_enter" autocomplete="off" style="width: 100%;">
+                   </div>
+                   &lt;!&ndash;<input type="text" placeholder="输入文字，按空格键或回车以生成标签" style="border: 1px solid #DADADA;outline: none" class="input_2">&ndash;&gt;
+                  <div class="upload_2_2" style="bottom: 0;position: absolute" >
+                   <div class="button_2">
+                       <button  style="width: 7rem; height: 3rem;border:1px solid #DADADA;
+    background-color: #FF4562;border-radius: 5px;font-size:1.6rem;color: white">采下来</button>
+                   </div>
+                   <div class="button_1">
+                       <button  style="width: 6rem; height: 3rem;border:1px solid #DADADA;
+    background-color: #F3F3F3;border-radius: 5px;font-size:1.6rem;color: #5E5F54">取消</button>
+                   </div></div>
+               </div>
+
+           </div>-->
+           <div id="login">
+               <a href="javascript:hide()"> <img src="../image/cha.png"  class="login_3"></a>
+               <div class="quan"></div>
+               <div class="login_1">上传采集</div>
+               <div class="login_2">
+                   <div class="login_2_p_1">拖拽图片<br>或</div>
+                   <div class="login_2_p_3">点击&nbsp;<a href="#">此处上传</a></div>
+                   <div class="login_2_p_2">可多张上传，每张图片建议10M以内</div>
+               </div>
+               <div class="button">
+                   <button  style="width: 6rem; height: 3rem;border:0px;
+    background-color: #FF4562;border-radius: 5px;font-size:1.6rem;color: white">上传</button>
+               </div>
+           </div>
+           <div id="over"></div>
+       </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture1.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="clear: both"></div>
+</div>
+<div class="nomore">
+    <div class="nomore_1" style="font-family: 微软雅黑;font-size:1rem">╮(・o・)╭&nbsp;没有更多了.....</div>
+    <a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
+</div>
+<div class="footer">
+    <div class="footer_1">
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+
+        </div>
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div class="footer_1_1">
+            <br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="footer_2">
+        <div class="footer_2_1"><a href="#">关注我们</a></div>
+        <div class="footer_2_2"><a href="#">信息博客</a><br><a href="#">新浪博客</a><br><a href="#">官方微信</a></div>
+        <div class="footer_2_2"><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a></div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="footer_3">Copyright©2016-2017 Heifeiku Leijan Technology Co.Ltd All Rights Reserved<br>
+        皖ICP备17010401号-2皖公网安备3301080233301号
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".tags_enter").blur(function() { //焦点失去触发
+            var txtvalue=$(this).val().trim();
+            if(txtvalue!=''){
+                addTag($(this));
+                $(this).parents(".tags").css({"border-color": "#d5d5d5"})
+            }
+        }).keydown(function(event) {
+            var key_code = event.keyCode;
+            var txtvalue=$(this).val().trim();
+            if (key_code == 13&& txtvalue != '') { //enter
+                addTag($(this));
+            }
+            if (key_code == 32 && txtvalue!='') { //space
+                addTag($(this));
+            }
+        });
+        $(".close").live("click", function() {
+            $(this).parent(".tag").remove();
+        });
+        $(".tags").click(function() {
+            $(this).css({"border-color": "#d5d5d5"})
+        }).blur(function() {
+            $(this).css({"border-color": "#d5d5d5"})
+        })
+    })
+    function addTag(obj) {
+        var tag = obj.val();
+        if (tag != '') {
+            var i = 0;
+            $(".tag").each(function() {
+                if ($(this).text() == tag + "×") {
+                    $(this).addClass("tag-warning");
+                    setTimeout("removeWarning()", 400);
+                    i++;
+                }
+            })
+            obj.val('');
+            if (i > 0) { //说明有重复
+                return false;
+            }
+            $("#form-field-tags").before("<span class='tag'>" + tag + "<button class='close' type='button'>×</button></span>"); //添加标签
+        }
+    }
+    function removeWarning() {
+        $(".tag-warning").removeClass("tag-warning");
+    }
+</script>
+<script type="text/javascript">
+    var login = document.getElementById('login');
+    /*var uploadphoto = document.getElementById('uploadphoto');*/
+    var over = document.getElementById('over');
+    function show()
+    {
+       login.style.display = "block";
+        /*uploadphoto.style.display="block";*/
+        over.style.display = "block";
+    }
+    function hide()
+    {
+        login.style.display = "none";
+       /* uploadphoto.style.display="none";*/
+        over.style.display = "none";
+    }
+
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+
+
+
+
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+
+
+    });
+
+</script>
+
+
+</body>
+</html>

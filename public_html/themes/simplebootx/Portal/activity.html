@@ -1,0 +1,246 @@
+<html><!DOCTYPE HTML>
+<head>
+    <title>活动</title>
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="generator" content=""  data-variable="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="__TMPL__Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/activity.css">
+    <link rel="stylesheet" href="__TMPL__Public/new/css/swiper.min.css">
+    <!--    <style>
+            .banner-box{
+                width: 50%;
+                height: 350px;
+                position: absolute;
+                left:27%;
+                z-index: 9999;
+                background-color:rgba(0,0,0,0.4);
+                top: 22%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+        </style>-->
+</head>
+<body class="met-navfixed">
+<!--[if lte IE 8]>
+<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+    <p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+</div>
+<![endif]-->
+
+<nav class="nav-box">
+    <div class="nav-box-logo">
+        <img src="__TMPL__Public/new/image/logo.png">
+    </div>
+    <div class="nav-box-ul">
+        <ul id="nav">
+            <li><a href="{:U('Portal/index/index')}" >首页</a></li>
+            <li><a href="{:U('Portal/find/index')}" >发现</a></li>
+            <li><a href="{:U('Portal/newest/index')}">最新</a>
+                <!--        <ul>
+                            <li><a href="#">我的推荐</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的画板</a></li>
+                            <li><a href="#">用户</a></li>
+                        </ul>-->
+            </li>
+            <li><a href="{:U('Portal/activity/index')}" class="active">活动</a></li>
+        </ul>
+    </div>
+
+    <div class="right-menu">
+        <img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
+        <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
+    </div>
+
+    <div class="login-ul" id="user">
+
+    </div>
+
+</nav>
+
+
+<!-- 幻灯片-->
+<php>
+    $home_slides=sp_getslide("portal_activity");
+
+    $home_slides=empty($home_slides)?$default_home_slides:$home_slides;
+</php>
+
+<div class="slide-box">
+    <div class="container" style="width: 100%;">
+        <div class="row" >
+            <div class="col-md-12"  style="padding: 0px">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <foreach name="home_slides" item="vo">
+                            <div class="swiper-slide"><a href="{$vo.slide_url}"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" alt=""></a></div>
+                        </foreach>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+        </div>
+
+</div>
+
+<!-- 内容 -->
+<div class="hd-box-top" style="width: auto;height: auto">
+    <div class="hd-box">
+        <div class="tip">
+            <ul style="">
+                <li>  <i class="iconfont icon-huo" style="font-size: 2.8rem;color: white"></i></li>
+                <li style="margin-left: 2px">最火</li>
+            </ul>
+        </div>
+        <div class="huodong-box">
+
+            <foreach name="activityRecommend" item="vo">
+            <div class="huodong">
+                <div class="huodong-image-box">
+                    <a href="{$vo.hd_url}" target="_blank"><img  src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}"></a>
+                </div>
+                <div class="huodong-bottom-box">
+                    <div class="title">
+                       {$vo.hd_name}</div>
+                    <div class="star">
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: black"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: black"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: black"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: grey"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: grey"></i>
+                    </div>
+                </div>
+            </div>
+            </foreach>
+
+                <div class="clear"></div>
+            </div>
+
+
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--<button class="more-box">点击查看更多>>>></button>-->
+
+
+
+
+
+<div class="com-mide">
+    <div class="hd-box">
+        <div class="tip">
+            <ul style="">
+                <li>  <i class="iconfont icon-quanbu" style="font-size: 2.8rem;color: white"></i></li>
+                <li style="margin-left: 2px">全部</li>
+            </ul>
+        </div>
+
+        <div class="huodong-box">
+            <foreach name="activity" item="vo">
+            <div class="huodong">
+                <div class="huodong-image-box">
+                    <a href="{$vo.hd_url}" target="_blank"><img  src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}"></a>
+                </div>
+                <div class="huodong-bottom-box">
+                    <div class="title">
+                        {$vo.hd_name}</div>
+                    <div class="star">
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: black"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: black"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: black"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: grey"></i>
+                        <i class="iconfont icon-xingzhuang60kaobei2" style="font-size: 1rem;color: grey"></i>
+                    </div>
+                </div>
+            </div>
+                </foreach>
+            <div class="clear"></div>
+        </div>
+
+        <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--<button class="more-box">点击查看更多>>>></button>-->
+
+<!-- foot -->
+<tc_include file="Public:footer" />
+
+<tc_include file="Public:scripts"/>
+
+
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
+<script src="__TMPL__Public/new/js/swiper.min.js"></script>
+<script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
+    });
+
+    $.ajax({
+        type: "GET",
+
+        url: "/index.php?g=&m=Index&a=getUser",
+
+        dataType: "json",
+
+        success: function (data) {
+            var uid =data.id;
+            //console.log(uid);
+            if(data == 0){
+                $("#user").append(
+                        '<ul id="nav-login">'+
+                        '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
+                        '</ul>'
+                )
+            }else{
+                $("#user").append(
+                        '<ul id="nav-login">'+
+                        '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
+                        '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
+                        '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
+                        '</ul>'
+                )
+            }
+        }
+
+    });
+
+</script>
+</body>
+</html>
