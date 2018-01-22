@@ -74,14 +74,14 @@
     </div>
     <div class="unit" style="border-right:none ">
         <foreach name="three" item="vo">
-        <a href="{:U('portal/interestDetail/index',array('id'=>$vo['xqfl_id']))}" class="unit_a">{$vo.xqfl_name}</a>
+        <a href="{:U('portal/interestDetail/huaban',array('id'=>$vo['xqfl_id']))}" class="unit_a">{$vo.xqfl_name}</a>
 </foreach>
     </div>
 </div>
 <div class="pictype">
 
     <foreach name="xingqu" item="vo">
-    <a href="#"><div class="pictype_1" ><img src="{:U('portal/newest/imgXingqu',array('id'=>$vo['xq_id']))}" ><div class="pictype_2 " style=" margin: -1.5rem 0 0 -2rem;">{$vo.xq_name}</div></div></a>
+    <a href="{:U('portal/InterestDetail/interest',array('xid'=>$vo['xq_id']))}"><div class="pictype_1" ><img src="{:U('portal/newest/imgXingqu',array('id'=>$vo['xq_id']))}" ><div class="pictype_2 " style=" margin: -1.5rem 0 0 -2rem;">{$vo.xq_name}</div></div></a>
     </foreach>
 
     <div style="clear: both"></div>

@@ -67,13 +67,12 @@
     overflow: hidden;
     position: relative;
     background-image: url("../image/background.jpg");
+    background-size: cover;
 }
-.huodong-image-box > a{position: absolute; top: -100%; bottom: -100%; left: -100%; right: -100%; text-align: center;}
-.huodong-image-box > a:before { content: ""; display: inline-block; vertical-align: middle; height: 100%; }
-.huodong-image-box > a > img { vertical-align: middle; }
 .huodong-image-box img{
-    max-width:100%;
-    height:auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: all 1s;
 }
 .huodong-image-box img:hover{

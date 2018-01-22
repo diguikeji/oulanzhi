@@ -3,7 +3,46 @@
 
 
 
+.dote{
+    position: relative;
+    width: 9px;
+    height: 9px;
+    background-color: red;
+    border-radius: 50%;
+    top: -50px;
+    left: 20px;
+    font-size: 0.5rem;
+    color: white;
 
+}
+.title-box{
+    position: relative;
+    z-index: 99;
+    top: -375px;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    width: 91.5%;
+    text-align: center;
+    left: 4%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
+}
 
 .right-menu{
     display: none;
@@ -378,11 +417,23 @@ ul#nav-login li a i{
 
 /*phone*/
 @media screen and (max-width: 468px) {
+    .title-box{
+        top: -300px;
+        width: 100%;
+        left: 0;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .nav-box{
+        height: 5rem;
+    }
     .right-menu{
         display: block;
+        margin-right: 10px;
     }
     .nav-box-logo img{width:140px;}
-    .nav-box-ul{display: none;width:100%;position: absolute;top:6rem;left:0;background-color: rgba(0,0,0,0.7);height:auto;margin:0;padding:10px 0;}
+    .nav-box-ul{display: none;width:100%;position: absolute;top:5rem;left:0;background-color: rgba(0,0,0,0.7);height:auto;margin:0;padding:10px 0;}
     .nav-box-ul #nav{width:100%;padding:0;height:auto;}
     .nav-box-ul #nav li{display: block;width:100%;text-align: left;padding:0;height:auto;}
     .nav-box-ul #nav li a{padding:0px 20px;display: block;line-height:50px;font-size:16px;}
@@ -391,12 +442,12 @@ ul#nav-login li a i{
     .login-ul{display: none;}
     .login-ul #jia{display: none;}
     .login-ul #login{display: none;}
-    .login-ul #nav-login{margin-left: -4rem}
+    .login-ul #nav-login{margin-left: -4rem;margin-top: -0.5rem}
 
 
     .nav-box .right-menu{position: absolute;right:10px;top:18px;}
     .nav-box .right-menu.active{border:0;}
-    .nav-box .right-menu img{width:30px}
+    .nav-box .right-menu img{width:25px}
     .nav-box .right-menu .close-menu{display: none;}
     .nav-box .right-menu.active .close-menu{display: block;}
     .nav-box .right-menu.active .open-menu{display: none;}
@@ -420,7 +471,7 @@ ul#nav-login li a i{
     }
     .huaban{
         width: 45%;
-        height: 310px;
+        height: 300px;
         float: left;
         background-color:rgba(255,255,255,0.6);
         -webkit-box-shadow:  0px 2px 10px  rgba(0,0,0,0.2);
@@ -456,29 +507,32 @@ ul#nav-login li a i{
     .bottom-box{
         width: 100%;
         height: 50px;
-        margin-top: 10px;
+        margin-top: 0px;
         padding: 5px;
+        font-size: 1.5rem;
 
     }
     .touiang{
         float: left;
-        width: 50%;
+        width: 70%;
         height: auto;
         margin-top: 10px;
         margin-left: 0px;
+        font-size: 1.4rem;
     }
     .touiang img{
-        width: 2rem;
-        height: 2rem;
+        width: 1.7rem;
+        height: 1.7rem;
         border-radius: 50%;
     }
     .guanzhu{
-        width: 49%;
+        width: 29%;
         height: auto;
-        margin-top: 5px;
+        margin-top: 10px;
         float: right;
         margin-right: 0px;
         color: black;
+        text-align: center;
     }
     .more-box{
         width: 50%;
