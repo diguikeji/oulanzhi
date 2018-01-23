@@ -13,6 +13,24 @@
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/index.css">
 	<link rel="stylesheet" href="/themes/simplebootx/Public/new/css/swiper.min.css">
+	<link rel="stylesheet" href="/themes/simplebootx/Public/new/css/component.css">
+	<style>
+
+		.dropdown:hover .dropdown-menu {
+			display: block;
+		}
+		.dropdown-menu li a:hover{
+			background: #C1A062;
+		}
+		.dropdown-toggle-touxiang img:hover{
+			opacity: 0.9;
+		}
+		@media screen and (max-width: 468px) {
+			.dropdown:hover .dropdown-menu {
+				display: none;
+			}
+		}
+	</style>
 </head>
 <body class="met-navfixed">
 <!--[if lte IE 8]>
@@ -30,13 +48,17 @@
 		<ul id="nav">
 			<li><a href="<?php echo U('Portal/index/index');?>" class="active">首页</a></li>
 			<li><a href="<?php echo U('Portal/find/index');?>">发现</a></li>
-			<li><a href="<?php echo U('Portal/newest/index');?>">最新</a>
-				<!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
+			<li class="dropdown">
+				<a href="<?php echo U('Portal/newest/index');?>" class="dropdown-toggle">
+					最新
+				</a>
+				<ul class="dropdown-menu" style="margin-top: 2.1rem;margin-left: -1rem;background-color: rgba(0,0,0,0.6);font-size: 12px!important;min-width: 3rem;text-align: center ;">
+					<li style="min-width: 100%"><a href="#" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%">我的推荐</a></li>
+					<li><a href="user/user.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的关注</a></li>
+					<li><a href="palette/palette.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的画板</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">用户</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">主题</a></li>
+				</ul>
 			</li>
 			<li><a href="<?php echo U('Portal/activity/index');?>">活动</a></li>
 		</ul>
@@ -62,7 +84,56 @@
 </nav>
 
 
+<!--消息框-start-->
+<div class="md-modal md-effect-1" id="modal-1">
+	<div class="md-content">
+		<div style="width: 100%;height: 5rem;border-bottom: 1px solid gainsboro;font-size: 2rem;font-weight: 700">
+			私信
+			<a href="#" class="md-close"><i class=" iconfont icon-cha1" style="float: right;font-size: 2.5rem;"></i></a>
+		</div>
+		<div class="info-detail">
+			<!--foreach循环开始-->
+			<foreach>
+				<p>系统通知 ： <font style="color: #757575">2018-1-20</font></p>
+				<ul style="border-bottom: 1px solid gainsboro">
+					<li><strong>花瓣 Live：</strong>当C4D遇到商业海报</li>	<!--标题-->
 
+					<li style="line-height: 2rem"><strong>内容：</strong>
+						<img src="image/111.jpg">近几年，C4D的应用越来越广泛，尤其在电商行业迅速兴起，
+						可以看到很多三维风格的页面设计，C4D在空间场景搭建是有非常多的优秀作品出现。
+						本周五（1.19）晚8点，花瓣live邀请到蝴蝶老师，用C4D教你空间搭构的方法
+						，如何通过C4D去制作场景？如何让你优秀的想法得到精彩的展示呢？
+						一切都会在这里找到答案 http://live.huaban.com/live/37 </li>	<!--内容-->
+
+					<li><strong>一切都会在这里找到答案：</strong> <a href="#">点击这里查看详情</a></li><!--活动链接-->
+				</ul>
+			</foreach>
+			<!--foreach循环结束-->
+
+
+			<!--foreach循环开始-->
+			<foreach>
+				<p>系统通知 ： <font style="color: #757575">2018-1-20</font></p>
+				<ul style="border-bottom: 1px solid gainsboro">
+					<li><strong>花瓣 Live：</strong>当C4D遇到商业海报</li>	<!--标题-->
+
+					<li style="line-height: 2rem"><strong>内容：</strong>
+						<img src="image/sheying.jpg">近几年，C4D的应用越来越广泛，尤其在电商行业迅速兴起，
+						可以看到很多三维风格的页面设计，C4D在空间场景搭建是有非常多的优秀作品出现。
+						本周五（1.19）晚8点，花瓣live邀请到蝴蝶老师，用C4D教你空间搭构的方法
+						，如何通过C4D去制作场景？如何让你优秀的想法得到精彩的展示呢？
+						一切都会在这里找到答案 http://live.huaban.com/live/37 </li>	<!--内容-->
+
+					<li><strong>一切都会在这里找到答案：</strong> <a href="#">点击这里查看详情</a></li><!--活动链接-->
+				</ul>
+			</foreach>
+			<!--foreach循环结束-->
+		</div>
+		<div style="width: 100%;height: 3rem;background: #FAFAFA;border: 1px solid gainsboro"></div>
+	</div>
+</div>
+<div class="md-overlay"></div>
+<!--消息框-end-->
 
 
 <!-- 幻灯片-->
@@ -228,6 +299,8 @@ $(function(){
 <script src="/themes/simplebootx/Public/new/js/swiper.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/bootstrap.min.js"></script>
 <script src="/themes/simplebootx/Public/assets/js/slippry.min.js"></script>
+<script src="/themes/simplebootx/Public/assets/js/classie.js"></script>
+<script src="/themes/simplebootx/Public/assets/js/modalEffects.js"></script>
 <!-- Initialize Swiper -->
 <script>
 	var swiper = new Swiper('.swiper-container', {
@@ -276,10 +349,20 @@ $(function(){
 			}else{
 				$("#user").append(
 						'<ul id="nav-login">'+
-				'<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
-				'<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-				'<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-				'</ul>'
+				'<li><a href="javascript:;" class="md-trigger" data-modal="modal-1"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
+						'<li class="dropdown" >'+
+							'<a href="index.php?g=user&m=center&a=index" class="dropdown-toggle">'+
+								'<div class="dropdown-toggle-touxiang" style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a>'+
+							'<ul class="dropdown-menu" style="min-width: 12rem;background: white;margin-left: -100px;margin-top: 20px">'+
+								'<div style="position: absolute;width: 13px;height: 13px;background-color: white;z-index: -1;right: 18px;top: -6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);"></div>'+
+								'<li style="min-width: 100%"><a href="index.php?g=User&m=follow&a=interestFollow" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%;color: grey"><i class="iconfont icon-guanzhu" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>已关注<font style="float: right">271</font></a></li>'+
+								'<li><a href="index.php?g=user&m=collect&a=index"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-huaban" style="font-size: 1.8rem;float: left;margin-right: 0.8rem" ></i>采集<font style="float: right">20</font></a></li>'+
+								'<li><a href="index.php?g=User&m=love&a=index"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-fensi" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>喜欢<font style="float: right">41</font></a></li>'+
+								'<li><a href="index.php?g=user&m=profile&a=edit"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">设置</a></li>'+
+								'<li><a href="index.php?g=user&m=index&a=logout"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">退出</a></li>'+
+							'</ul>'+
+						'</li>'+
+						'</ul>'
 			)
 			}
 		}
@@ -316,6 +399,8 @@ $(function(){
 							'<div class="guanzhu">'+
 							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
+							'</div>'+
+							'<div class="title-box">落日' +
 							'</div>'+
 							'</div>'
 				)
@@ -376,6 +461,7 @@ $(function(){
 							'<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
 							'</div>'+
 							'</div>'+
+							'<div class="title-box">落日</div>'+
 							'</div>'
 					)
 				}

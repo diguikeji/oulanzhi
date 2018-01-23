@@ -79,12 +79,12 @@
     </div>
 
 
-    <div class="search-box">
+ <!--   <div class="search-box">
         <input class="search-box-input" placeholder="点击搜索一下您就知道">
         <button class="sousuo"><i class="iconfont icon-sousuo"></i></button>
     </div>
 </div>
-
+-->
 
 
 <div class="contain">
@@ -103,8 +103,8 @@
 
     <div class="room">
         <div class="room-1-1" >
-            <?php if(is_array($activity)): foreach($activity as $key=>$vo): ?><div class="room-1" ><a href="<?php echo ($vo["hd_url"]); ?>" target="_blank"><img src="<?php echo U('portal/activity/imgActivity',array('id'=>$vo['hd_id']));?>" style="position: absolute;overflow-y:scroll;overflow-x: scroll;"></a>
-                    <div style="position: relative; text-align: center;color: white;font-size: 25px; margin-top: 60px"><?php echo ($vo["hd_name"]); ?></div>
+            <?php if(is_array($activity)): foreach($activity as $key=>$vo): ?><div class="room-1" ><a href="<?php echo ($vo["hd_url"]); ?>" target="_blank"><img src="<?php echo U('portal/activity/imgActivity',array('id'=>$vo['hd_id']));?>"></a>
+                    <div style="position: relative; text-align: center;color: white;font-size: 25px; top: -55%;text-shadow: 5px 3px 5px rgba(0,0,0,0.6)"><?php echo ($vo["hd_name"]); ?></div>
                 </div><?php endforeach; endif; ?>
         </div>
     </div>
@@ -129,7 +129,7 @@
                    border-bottom-left-radius: 20px;
                    border-bottom-right-radius: 20px;
                    border-top-left-radius: 20px;
-                   border-top-right-radius: 20px;border: none">点击查看更多 ＞＞＞</button></div>
+                   border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
 </div>
 
 <div class="footer" >
@@ -247,14 +247,14 @@ $(function(){
 <script src="/themes/simplebootx/Public/new/js/jquery-1.8.1.min.js"></script>
 
 <script>
-    var pageIndex = 1;
+    /*var pageIndex = 1;
     function getInterestList(page)
-    {
+    {*/
         $.ajax({
 
             type: "GET",
 
-            url: "/index.php?g=&m=Find&a=getInterestList&p="+page,
+            url: "/index.php?g=&m=Find&a=gethuabanList",
 
             dataType: "json",
 
@@ -263,32 +263,35 @@ $(function(){
                 var html ='';
                 for(var i =0; i<data.length;i++){
 
-                    var idList = data[i].hb_id_list.split(",");
-                    var imgList=data[i].hb_img_list.split(",");
+                  //  var xid  = data[i].xq_id;
 
-                    var xid  = data[i].xq_id;
 
-                    html=html+'<div class="sheji-1">' +
-                            '<div class="ping-1"> ' +
-                            '<div class="high-1"></div> ' +
-                            '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
-                            '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
-                            '<div class="annv"> ' +
-                            '<a  href="/index.php?g=User&m=interest&a=do_interest&xid='+xid+'"><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
-                            '</div>' +
-                            '</div>'
+                       if(data[i].pidlist !=null){
 
-                    for(var j=0; j<idList.length;j++) {
-                        var hid = idList[j];
-                        html=html+ '<div class="mian">'+'<a href="index.php?g=user&m=draw&a=drawDetail&hid='+hid+'">'+'<img src="index.php?g=&m=Find&a=imgHuaban&id='+hid+'">'+'</a>'+'</div>';
-                        console.log(idList[j]);
-                    }
+                           var pidlist = data[i].pidlist.split(",");
 
-                    html=html+'<div class="more">' +
-                            '<a href="#"><img src="/themes/simplebootx/Public/new/image/more.png"></a>' +
-                            '<div class="text-4"><a href="#">加载更多</a></div>' +
-                            '</div>' +
-                            '</div>'
+                           html=html+'<div class="sheji-1">' +
+                                   '<div class="ping-1"> ' +
+                                   '<div class="high-1"></div> ' +
+                                   '<div class="text-2-1">'+data[i].hb_name+'</div> ' +
+                                   '<div class="text-3-1">'+data[i].hb_descp+'</div> ' +
+                                   '<div class="annv"> ' +
+                                   '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
+                                   '</div>' +
+                                   '</div>'
+
+                           for(var j=0; j<pidlist.length ;j++) {
+                               var pid = pidlist[j];
+                               //console.log(pid);
+                               html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
+                           }
+
+                           html=html+'<div class="more">' +
+                                   '<a href="#"><img src="/themes/simplebootx/Public/new/image/more.png"></a>' +
+                                   '<div class="text-4"><a href="#">加载更多</a></div>' +
+                                   '</div>' +
+                                   '</div>'
+                       }
                 }
 
 
@@ -296,26 +299,88 @@ $(function(){
 
                 $("#hb-box").append(html);
 
-                $("#hb-box").append(
 
-                )
-
-                if(data.length<16)
+               /* if(data.length<16)
                 {
                     $("#load").text("没有更多数据了");
                 }
 
-                pageIndex++;
+                pageIndex++;*/
             }
         });
-    }
 
-    getInterestList(pageIndex);
+        $.ajax({
+
+         type: "GET",
+
+         url: "/index.php?g=&m=Find&a=getInterestList",
+
+        dataType: "json",
+
+        success: function (data) {
+            console.log(data);
+            var html ='';
+            for(var i =0; i<data.length;i++){
+
+                //  var xid  = data[i].xq_id;
+
+
+                if(data[i].pidlist !=null){
+
+                    var pidlist = data[i].pidlist.split(",");
+
+                    var xid = data[i].xq_id;
+
+                    html=html+'<div class="sheji-1">' +
+                            '<div class="ping-1"> ' +
+                            '<div class="high-1"></div> ' +
+                            '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
+                            '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
+                            '<div class="annv"> ' +
+                            '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
+                            '</div>' +
+                            '</div>'
+
+                    for(var j=0; j<pidlist.length ;j++) {
+                        var pid = pidlist[j];
+                        //console.log(pid);
+                        html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
+                    }
+
+                    html=html+'<div class="more">' +
+                            '<a href="index.php?g=portal&m=InterestDetail&a=interest&xid='+xid+'"><img src="/themes/simplebootx/Public/new/image/more.png"></a>' +
+                            '<div class="text-4"><a href="index.php?g=portal&m=InterestDetail&a=interest&xid='+xid+'">加载更多</a></div>' +
+                            '</div>' +
+                            '</div>'
+                }
+            }
+
+
+            // console.log(html);
+
+            $("#hb-box").append(html);
+
+
+            /* if(data.length<16)
+             {
+             $("#load").text("没有更多数据了");
+             }
+
+             pageIndex++;*/
+        }
+    });
+
+
+
+
+   // }
+
+   /* getInterestList(pageIndex);
 
     $("#load").click(function()
     {
         getInterestList(pageIndex);
-    });
+    });*/
 
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
