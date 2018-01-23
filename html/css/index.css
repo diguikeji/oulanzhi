@@ -1,6 +1,14 @@
 
 /*index.css*/
 
+.info-detail{
+    height: 350px;
+    width: 100%;
+    overflow:auto;
+}
+.info-detail ul li img{
+    max-width: 100%;
+}
 
 
 .dote{
@@ -42,6 +50,13 @@
     -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
     box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
     background-color: rgba(0,0,0,0.2);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    line-height: 2.4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .right-menu{
@@ -190,8 +205,8 @@ ul#nav-login li a i{
     margin: 0 auto;
     border-radius: 40px;
     background-color: rgba(0,0,0,0.5);
-    margin-top: -300px;
-    z-index: 999;
+    margin-top: -680px;
+    z-index: 99;
     position: relative;
 
 }

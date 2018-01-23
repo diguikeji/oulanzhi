@@ -10,6 +10,7 @@ INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000084s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
 NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
 
+<<<<<<< HEAD
 [ 2018-01-22T10:30:52+08:00 ] 42.156.251.194 /index.php?g=user&m=index&a=is_login
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
@@ -4788,4 +4789,782 @@ INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000349s ]
 INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000086s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
 NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+=======
+[ 2018-01-22T10:53:38+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002063s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004708s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:53:38+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001615s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001213s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002415s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0281s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0201s ]
+
+[ 2018-01-22T10:53:39+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000856s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002142s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0242s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0146s ]
+
+[ 2018-01-22T10:53:39+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001665s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001177s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002385s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0268s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0184s ]
+
+[ 2018-01-22T10:53:48+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002446s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001705s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003771s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:53:49+08:00 ] 127.0.0.1 /index.php?g=user&m=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001692s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000830s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001893s ]
+NOTIC: [8] Undefined index: redirecturl D:\phpStudy\WWW\oulanzhi\public_html\application\User\Controller\LoginController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0240s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2018-01-22T10:53:49+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002593s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001014s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:53:51+08:00 ] 127.0.0.1 /index.php?g=user&m=login&a=dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002404s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001020s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002343s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\oulanzhi\public_html\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `tb_users` WHERE `user_status` = 1 AND `user_email` = '599091685@qq.com' LIMIT 1   [ RunTime:0.0271s ]
+SQL: UPDATE `tb_users` SET `last_login_time`='2018-01-22 10:53:51',`last_login_ip`='127.0.0.1' WHERE ( id=5 ) [ RunTime:0.0136s ]
+
+[ 2018-01-22T10:53:54+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002927s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001460s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003602s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:53:55+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001658s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001173s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002481s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0258s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0161s ]
+
+[ 2018-01-22T10:53:56+08:00 ] 127.0.0.1 /index.php?g=user&m=center&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001644s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001150s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0275s ]
+SQL: SELECT `user_status` FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0299s ]
+SQL: SHOW COLUMNS FROM `tb_huaban` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `tb_caiji` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `tb_love` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `tb_tag` [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_huaban` WHERE `hb_u_id` = 5 LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_caiji` WHERE `cj_u_id` = 5 LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_love` WHERE `love_users_id` = 5 LIMIT 1   [ RunTime:0.0177s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_tag` WHERE `tag_users_id` = 5 LIMIT 1   [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `tb_xingqu_fenlei` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `tb_xingqu_fenlei`  [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0195s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2018-01-22T10:53:56+08:00 ] 127.0.0.1 /index.php?g=user&m=center&a=drawDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001701s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001214s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002460s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0302s ]
+SQL: SELECT `user_status` FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0277s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0284s ]
+SQL: SHOW COLUMNS FROM `tb_huaban` [ RunTime:0.0380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_huaban` WHERE `hb_u_id` = 5 LIMIT 1   [ RunTime:0.0147s ]
+SQL: Select a.hb_id ,a.hb_name,GROUP_CONCAT(id) as pidList from (select * from tb_huaban where hb_u_id='5') a left join tb_posts b on a.hb_id = b.post_hb_id GROUP BY hb_id [ RunTime:0.0175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2018-01-22T10:53:56+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001104s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002580s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:53:57+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000922s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002105s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0257s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0231s ]
+
+[ 2018-01-22T10:54:54+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002421s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000937s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:54:55+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001836s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001039s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002676s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0265s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0165s ]
+
+[ 2018-01-22T10:54:55+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001199s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0312s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0200s ]
+
+[ 2018-01-22T10:54:56+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001584s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001076s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0324s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0162s ]
+
+[ 2018-01-22T10:54:56+08:00 ] 127.0.0.1 /index.php?g=user&m=profile&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001664s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001189s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0299s ]
+SQL: SELECT `user_status` FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0279s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0164s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-01-22T10:54:57+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001435s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003448s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:54:57+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002983s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001161s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0284s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0175s ]
+
+[ 2018-01-22T10:57:34+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003358s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001677s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003180s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:57:34+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002367s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001711s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003487s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0262s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0175s ]
+
+[ 2018-01-22T10:57:35+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001979s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001085s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002574s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0261s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0188s ]
+
+[ 2018-01-22T10:57:36+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000878s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001892s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0338s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0173s ]
+
+[ 2018-01-22T10:57:37+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002861s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001427s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003114s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:57:37+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001494s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002712s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0383s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0165s ]
+
+[ 2018-01-22T10:57:37+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001191s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002386s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0265s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0221s ]
+
+[ 2018-01-22T10:57:38+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001621s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001184s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0270s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0162s ]
+
+[ 2018-01-22T10:57:54+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002527s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001686s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003441s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:57:55+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000801s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0276s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0159s ]
+
+[ 2018-01-22T10:58:26+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001828s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000810s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0293s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0168s ]
+
+[ 2018-01-22T10:58:27+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001601s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000794s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0300s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0178s ]
+
+[ 2018-01-22T10:58:27+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001699s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001688s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003324s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0255s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0157s ]
+
+[ 2018-01-22T10:58:28+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001599s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000891s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001877s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0246s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0152s ]
+
+[ 2018-01-22T10:58:29+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002243s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004357s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:58:39+08:00 ] 127.0.0.1 /index.php?g=user&m=center&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001118s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002250s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0265s ]
+SQL: SELECT `user_status` FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0326s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0285s ]
+SQL: SHOW COLUMNS FROM `tb_huaban` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `tb_caiji` [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `tb_love` [ RunTime:0.0174s ]
+SQL: SHOW COLUMNS FROM `tb_tag` [ RunTime:0.0182s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_huaban` WHERE `hb_u_id` = 5 LIMIT 1   [ RunTime:0.0159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_caiji` WHERE `cj_u_id` = 5 LIMIT 1   [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_love` WHERE `love_users_id` = 5 LIMIT 1   [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_tag` WHERE `tag_users_id` = 5 LIMIT 1   [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `tb_xingqu_fenlei` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `tb_xingqu_fenlei`  [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0175s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2018-01-22T10:58:40+08:00 ] 127.0.0.1 /index.php?g=user&m=center&a=drawDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002325s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001238s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003280s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0266s ]
+SQL: SELECT `user_status` FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0172s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0293s ]
+SQL: SHOW COLUMNS FROM `tb_huaban` [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_huaban` WHERE `hb_u_id` = 5 LIMIT 1   [ RunTime:0.0156s ]
+SQL: Select a.hb_id ,a.hb_name,GROUP_CONCAT(id) as pidList from (select * from tb_huaban where hb_u_id='5') a left join tb_posts b on a.hb_id = b.post_hb_id GROUP BY hb_id [ RunTime:0.0179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-01-22T10:58:40+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002404s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001518s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003113s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:58:40+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001843s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000840s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0278s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0177s ]
+
+[ 2018-01-22T10:58:43+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002560s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001455s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003120s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T10:58:44+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001202s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0263s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0183s ]
+
+[ 2018-01-22T11:47:03+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004168s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001618s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003502s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T11:47:03+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001087s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002785s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0280s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0171s ]
+
+[ 2018-01-22T11:47:05+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001623s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001142s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0267s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0165s ]
+
+[ 2018-01-22T11:47:06+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001602s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000989s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002164s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0301s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0208s ]
+
+[ 2018-01-22T11:47:06+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002430s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001789s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003673s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0318s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0184s ]
+
+[ 2018-01-22T11:47:07+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001016s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002161s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0268s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0212s ]
+
+[ 2018-01-22T11:47:08+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001599s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000929s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0264s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2018-01-22T11:59:40+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001862s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003610s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\oulanzhi\public_html\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-22T11:59:41+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002331s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001364s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002952s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0266s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0169s ]
+
+[ 2018-01-22T11:59:41+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002452s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001074s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0302s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0176s ]
+
+[ 2018-01-22T11:59:42+08:00 ] 127.0.0.1 /index.php?g=user&m=public&a=avatar&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001965s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000955s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0262s ]
+SQL: SELECT `avatar` FROM `tb_users` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0161s ]
+>>>>>>> 01daf84301aa18448bba6a9dafd865e5b9dad2fe
 

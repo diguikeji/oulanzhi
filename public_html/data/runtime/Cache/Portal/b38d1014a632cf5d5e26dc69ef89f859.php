@@ -13,6 +13,10 @@
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/index.css">
 	<link rel="stylesheet" href="/themes/simplebootx/Public/new/css/swiper.min.css">
+<<<<<<< HEAD
+=======
+	<link rel="stylesheet" href="/themes/simplebootx/Public/new/css/component.css">
+>>>>>>> 01daf84301aa18448bba6a9dafd865e5b9dad2fe
 	<style>
 
 		.dropdown:hover .dropdown-menu {
@@ -83,7 +87,56 @@
 </nav>
 
 
+<!--消息框-start-->
+<div class="md-modal md-effect-1" id="modal-1">
+	<div class="md-content">
+		<div style="width: 100%;height: 5rem;border-bottom: 1px solid gainsboro;font-size: 2rem;font-weight: 700">
+			私信
+			<a href="#" class="md-close"><i class=" iconfont icon-cha1" style="float: right;font-size: 2.5rem;"></i></a>
+		</div>
+		<div class="info-detail">
+			<!--foreach循环开始-->
+			<foreach>
+				<p>系统通知 ： <font style="color: #757575">2018-1-20</font></p>
+				<ul style="border-bottom: 1px solid gainsboro">
+					<li><strong>花瓣 Live：</strong>当C4D遇到商业海报</li>	<!--标题-->
 
+					<li style="line-height: 2rem"><strong>内容：</strong>
+						<img src="image/111.jpg">近几年，C4D的应用越来越广泛，尤其在电商行业迅速兴起，
+						可以看到很多三维风格的页面设计，C4D在空间场景搭建是有非常多的优秀作品出现。
+						本周五（1.19）晚8点，花瓣live邀请到蝴蝶老师，用C4D教你空间搭构的方法
+						，如何通过C4D去制作场景？如何让你优秀的想法得到精彩的展示呢？
+						一切都会在这里找到答案 http://live.huaban.com/live/37 </li>	<!--内容-->
+
+					<li><strong>一切都会在这里找到答案：</strong> <a href="#">点击这里查看详情</a></li><!--活动链接-->
+				</ul>
+			</foreach>
+			<!--foreach循环结束-->
+
+
+			<!--foreach循环开始-->
+			<foreach>
+				<p>系统通知 ： <font style="color: #757575">2018-1-20</font></p>
+				<ul style="border-bottom: 1px solid gainsboro">
+					<li><strong>花瓣 Live：</strong>当C4D遇到商业海报</li>	<!--标题-->
+
+					<li style="line-height: 2rem"><strong>内容：</strong>
+						<img src="image/sheying.jpg">近几年，C4D的应用越来越广泛，尤其在电商行业迅速兴起，
+						可以看到很多三维风格的页面设计，C4D在空间场景搭建是有非常多的优秀作品出现。
+						本周五（1.19）晚8点，花瓣live邀请到蝴蝶老师，用C4D教你空间搭构的方法
+						，如何通过C4D去制作场景？如何让你优秀的想法得到精彩的展示呢？
+						一切都会在这里找到答案 http://live.huaban.com/live/37 </li>	<!--内容-->
+
+					<li><strong>一切都会在这里找到答案：</strong> <a href="#">点击这里查看详情</a></li><!--活动链接-->
+				</ul>
+			</foreach>
+			<!--foreach循环结束-->
+		</div>
+		<div style="width: 100%;height: 3rem;background: #FAFAFA;border: 1px solid gainsboro"></div>
+	</div>
+</div>
+<div class="md-overlay"></div>
+<!--消息框-end-->
 
 
 <!-- 幻灯片-->
@@ -249,6 +302,8 @@ $(function(){
 <script src="/themes/simplebootx/Public/new/js/swiper.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/bootstrap.min.js"></script>
 <script src="/themes/simplebootx/Public/assets/js/slippry.min.js"></script>
+<script src="/themes/simplebootx/Public/assets/js/classie.js"></script>
+<script src="/themes/simplebootx/Public/assets/js/modalEffects.js"></script>
 <!-- Initialize Swiper -->
 <script>
 	var swiper = new Swiper('.swiper-container', {
@@ -297,7 +352,11 @@ $(function(){
 			}else{
 				$("#user").append(
 						'<ul id="nav-login">'+
+<<<<<<< HEAD
 				'<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
+=======
+				'<li><a href="javascript:;" class="md-trigger" data-modal="modal-1"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
+>>>>>>> 01daf84301aa18448bba6a9dafd865e5b9dad2fe
 						'<li class="dropdown" >'+
 							'<a href="index.php?g=user&m=center&a=index" class="dropdown-toggle">'+
 								'<div class="dropdown-toggle-touxiang" style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a>'+
