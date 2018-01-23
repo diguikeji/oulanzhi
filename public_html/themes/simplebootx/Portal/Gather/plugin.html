@@ -15,32 +15,124 @@
 	<link rel="stylesheet" href="__TMPL__Public/new/css/swiper.min.css">
 	<link rel="stylesheet" href="__TMPL__Public/new/css/other.css">
 
-
+<style>
+        .dropdown:hover .dropdown-menu {
+			display: block;
+		}
+		.dropdown-menu li a:hover{
+			background: #C1A062;
+		}
+		.dropdown-toggle-touxiang img:hover{
+			opacity: 0.9;
+		}
+		@media screen and (max-width: 468px) {
+			.dropdown:hover .dropdown-menu {
+				display: none;
+			}
+		}
+		  .title:hover{
+        background: #FAFAFA
+        }
+        .button:hover{
+        opacity: 0.9
+        }
+		@keyframes typing { from { width: 0; } }
+		@keyframes blink-caret { 50% { border-color: transparent; } }
+		.banner-box{
+			width: 100%;
+			height: 350px;
+			overflow: hidden;
+			margin-top: 6rem;
+			margin-bottom: 4rem
+		}
+		.banner-box img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover; 
+			-webkit-filter: blur(15px);
+			-moz-filter: blur(15px);
+			-o-filter: blur(15px);
+			-ms-filter: blur(15px);
+			filter: blur(5px);
+		}
+		.banner-title {
+			font: bold 200% Consolas, Monaco, monospace;
+			border-right: .05em solid;
+			width: 16.5em; /* fallback */
+			width: 30ch; /* # of chars */
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 3s steps(30, end), /* # of steps = # of chars */
+			blink-caret .8s step-end infinite alternate;
+			position: relative;
+			color: white;
+			font-size: 40px;
+			top:-70%;
+			font-weight: 700;
+			right: -50%;
+			width: 300px;
+			height: auto;
+			margin-left: -150px;
+			text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+		}
+		.banner-sub-title{
+			position: relative;
+			color: white;
+			font-size: 18px;
+			top:-65%;
+			right: -50%;
+			width: 420px;
+			height: auto;
+			font-weight: 700;
+			line-height: 30px;
+			margin-left: -200px
+		}
+		.button{
+		    width:280px;height:55px;background-color:#E54646;margin:0 auto;font-size:22px;margin-top:20px;color:white;border-radius:5px
+		}
+		.button a{
+		    text-transform: none
+		}
+	
+		.sub{
+		    width:250px;height:50px;margin:0 auto;font-size:13px;
+		}
+		.left-part{
+		    width:50%;float:left
+		}
+		.right-part{
+		    width:50%;float:right
+		}
+	
+	</style>
 </head>
 <body class="met-navfixed">
-<!--[if lte IE 8]>
-<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
-	<p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
-</div>
-<![endif]-->
 
-
-<!--
 <nav class="nav-box">
 	<div class="nav-box-logo">
-		<img src="image/logo.png">
+		<img src="__TMPL__Public/new/image/logo.png">
 	</div>
 	<div class="nav-box-ul">
 		<ul id="nav">
-			<li><a href="#" class="active">首页</a></li>
-			<li><a href="#">发现</a></li>
-			<li><a href="#">最新</a>
-
+			<li><a href="index.html" class="active">首页</a></li>
+			<li><a href="found/found.html">发现</a></li>
+		<!--	<li id="new"><a href="new/new.html">最新</a>
+			</li>-->
+			<li class="dropdown">
+				<a href="new/new.html" class="dropdown-toggle">
+					最新
+				</a>
+				<ul class="dropdown-menu" style="margin-top: 2.1rem;margin-left: -1rem;background-color: rgba(0,0,0,0.6);font-size: 12px!important;min-width: 3rem;text-align: center ;">
+					<li style="min-width: 100%"><a href="#" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%">我的推荐</a></li>
+					<li><a href="user/user.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的关注</a></li>
+					<li><a href="palette/palette.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的画板</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">用户</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">主题</a></li>
+				</ul>
 			</li>
-			<li><a href="#">活动</a></li>
+			<li><a href="activity/activity.html">活动</a></li>
 		</ul>
 	</div>
-
 
 	<div class="right-menu">
 		<img class="open-menu" src="image/menu.png" />
@@ -49,47 +141,61 @@
 
 	<div class="login-ul">
 		<ul id="nav-login">
-			<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
-			<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
-			<li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="image/touxiang.png"></div></a></li>
+		<!--	<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>-->
+			<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>
+			<li class="dropdown" >
+				<a href="palette/palette.html" class="dropdown-toggle">
+				<div class="dropdown-toggle-touxiang" style="width: 27px;height: 27px;border-radius: 50%;"><img src="__TMPL__Public/new/image/touxiang.png"></div></a>
+				<ul class="dropdown-menu" style="min-width: 12rem;background: white;margin-left: -100px;margin-top: 20px">
+					<div style="position: absolute;width: 13px;height: 13px;background-color: white;z-index: -1;right: 18px;top: -6px;transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);"></div>
+					<li style="min-width: 100%"><a href="user/user.html" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%;color: grey"><i class="iconfont icon-guanzhu" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>已关注<font style="float: right">271</font></a></li>
+					<li><a href="palette/palette.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-huaban" style="font-size: 1.8rem;float: left;margin-right: 0.8rem" ></i>画板<font style="float: right">20</font></a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey"><i class="iconfont icon-fensi" style="font-size: 1.8rem;float: left;margin-right: 0.8rem"></i>粉丝<font style="float: right">41</font></a></li>
+					<li><a href="setting/setting.html"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">设置</a></li>
+					<li><a href="#"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%;color: grey;text-align: center">退出</a></li>
+				</ul>
+			</li>
 			<li id="login"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
 		</ul>
 	</div>
 
-
 </nav>
 
--->
 
+<div class="banner-box">
+	<img src="__TMPL__Public/new/image/111.jpg">
+	<div class="banner-title" >欧澜芝采集工具</div>
+	<div class="banner-sub-title">使用欧澜芝采集工具，<br>你可以方便地保存任意网站上的图片、视频和截图</div>
+</div>
 
 
 <div class="body">
 	<div class="wrapper">
 		<div class="units">
 			<div class="unit chrome ">
-				<div class="title">
-					Chrome 浏览器
+			<div class="title " style="font-size:18px">
+				<i class="iconfont icon-chrome" style="font-size:20px;margin-right:5px;margin-left:10px"></i>	Chrome 浏览器
 					<i></i>
 					<div class="arrow"></div>
 				</div>
 				<div class="inner">
 					<div class="software clearfix">
 						<div class="install-area">
-							<div onclick="" class="button">
+							<div onclick="" class="button text-center">
 								安装花瓣 Chrome 扩展
 							</div>
-							<div class="sub">
+							<div class="sub text-center" style="">
 								你还可以选择安装
 								<a class="go">书签栏采集工具</a>
 							</div>
 						</div>
-						<h3>如何使用花瓣 Chrome 扩展？</h3>
+						<h4 style="border-bottom: 2px solid gainsboro;padding-bottom:10px">如何使用花瓣 Chrome 扩展？</h4>
 						<div class="left-part">
 							<h4>方法一</h4>
 							<p>浏览网页时，看到页面上感兴趣的图片、网页、视频，点击右上角的花瓣图标，选择相应功能进行采集。</p>
 							<img src="__TMPL__Public/new/pluginImg/about_tools_chrome_01.jpg" width="478" height="320" data-baiduimageplus-ignore="1" />
 						</div>
-						<div class="right-part">
+						<div class="right-part" >
 							<h4>方法二</h4>
 							<p>浏览网页时，把鼠标停留在你喜欢的图片上，点击右键，选择“采集到花瓣”（此方法不起作用时，推荐方法一）</p>
 							<img src="__TMPL__Public/new/pluginImg/about_tools_chrome_02.jpg" width="478" height="320" data-baiduimageplus-ignore="1" />
@@ -99,7 +205,7 @@
 						<div class="install-area">
 							<div class="button white">
 
-								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='http://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">
+								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">
 									拖动此按钮到书签栏
 								</a>
 							</div>
@@ -118,15 +224,15 @@
 				</div>
 			</div>
 			<div class="unit firefox">
-				<div class="title">
-					Firefox（火狐）浏览器
+				<div class="title" style="font-size:18px">
+				<i class="iconfont icon-firefox" style="font-size:20px;margin-right:5px;margin-left:10px"></i>	Firefox（火狐）浏览器
 					<i></i>
 					<div class="arrow"></div>
 				</div>
 				<div class="inner">
 					<div class="software clearfix">
 						<div class="install-area">
-							<a target="_blank" href="###" class="button">安装花瓣 Firefox 附加组件</a>
+						<div  class="button text-center" >	<a target="_blank" href="###"  style="color:white" >安装花瓣 Firefox 附加组件</a></div>
 							<div class="sub">
 								你还可以选择安装
 								<a class="go">书签栏采集工具</a>
@@ -148,7 +254,7 @@
 						<div class="install-area">
 							<div class="button white">
 								拖动此按钮到书签栏
-								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='http://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">采集到花瓣</a>
+								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">采集到花瓣</a>
 							</div>
 							<div class="sub">
 								返回安装
@@ -165,8 +271,8 @@
 				</div>
 			</div>
 			<div class="unit ie">
-				<div class="title">
-					IE 浏览器
+				<div class="title" style="font-size:18px">
+				<i class="iconfont icon-msnui-logo-ie" style="font-size:22px;margin-right:5px;margin-left:10px"></i>	IE 浏览器
 					<i></i>
 					<div class="arrow"></div>
 				</div>
@@ -189,9 +295,9 @@
 					</div>
 					<div class="script clearfix">
 						<div class="install-area">
-							<div class="button white">
+							<div class="button white text-center">
 
-								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='http://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">拖动此按钮到书签栏</a>
+								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">拖动此按钮到书签栏</a>
 							</div>
 							<div class="sub">
 								你还可以选择安装
@@ -207,9 +313,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="unit others " style="height: 54px;">
-				<div class="title">
-					其它浏览器
+			<div class="unit others " style="height: 54px;margin-bottom:3rem">
+				<div class="title" style="font-size:18px;">
+				<i class="iconfont icon-iconfontquestion" style="font-size:22px;margin-right:5px;margin-left:10px"></i>	其它浏览器
 					<i></i>
 					<div class="arrow"></div>
 				</div>
@@ -218,7 +324,7 @@
 						<div class="install-area">
 							<div class="button white">
 								拖动此按钮到书签栏
-								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='http://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">采集到花瓣</a>
+								<a href="javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://hb.pro.youzewang.com/public/gather/plugin.js?'+Math.floor(+new Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');" onclick="app.alert('请把按钮拖动到书签栏');return false;" class="mask-button">采集到花瓣</a>
 							</div>
 						</div>
 					</div>
@@ -243,11 +349,13 @@
 <script>
 
 
+
+
 	$(".units .unit .title").click(function()
 	{
 
 		$(this).toggleClass("on");
-		$(this).next().toggle();
+		$(this).next().toggle("slow");
 
 	});
 
@@ -258,6 +366,7 @@
 		$(this).parent().parent().parent().next().show();
 
 	});
+
 
 
 </script>

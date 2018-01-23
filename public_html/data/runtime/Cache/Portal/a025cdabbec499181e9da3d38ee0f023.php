@@ -227,6 +227,8 @@
 </div>
 
 
+<input type="hidden" id="tag_users_id" value="<?php echo ($tag_users_id); ?>" />
+
 
 <script type="text/javascript">
 //全局变量
@@ -309,10 +311,40 @@ $(function(){
 
 <script>
 
+    Date.prototype.Format = function (fmt) { //author: meizz 
+            var o = {
+                "M+": this.getMonth() + 1, //月份 
+                "d+": this.getDate(), //日 
+                "h+": this.getHours(), //小时 
+                "m+": this.getMinutes(), //分 
+                "s+": this.getSeconds(), //秒 
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+                "S": this.getMilliseconds() //毫秒 
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+    }
+
     $(".huaban-list li").eq(0).addClass("active");
 
     $(".btn-link").click(function()
     {
+        
+        var tagList=[];
+        $(".tag-labels .tag-text").each(function()
+        {
+            
+            var tagObj={};
+            tagObj.tag_users_id=$("#tag_users_id").val();
+            tagObj.tag_name=$(this).text().trim();
+            
+            tagList.push(tagObj);
+            
+        });
+        
+        console.log(tagList);
         
           $.ajax({
                 url:'/index.php/Portal/Gather/addCaiji',
@@ -321,18 +353,23 @@ $(function(){
                     post_yl_img_url:$("#post_yl_img_url").attr("src"),
                     post_miaoshu:$("#post_miaoshu").val(),
                     post_hb_id:$(".huaban-list .active").attr("data-id"),
-                    post_source:$("#post_source").val()
+                    post_source:$("#post_source").val(),
+                    tag_list:JSON.stringify(tagList)
                 },
                 success:function(data){
                     
                     if(data==1)
                     {
-                        alert("采集成功");
+                        alert("采集成功！");
                         window.close();
+                    }
+                    else if(data=="-1")
+                    {
+                        alert("已经采集过了，不能重复采集！")
                     }
                     else
                     {
-                        alert("采集失败，请重新尝试");
+                        alert("采集失败，请重新尝试！");
                     }
                     
                     
