@@ -19,11 +19,11 @@ class CenterController extends MemberbaseController
     {
         $uid = sp_get_current_userid();
         $huabanUser_model = M("Huaban");
-        $caijiUser_model = M("Caiji");
+        $caijiUser_model = M("Posts");
         $loveUser_model = M("Love");
         $tagUser_model = M("Tag");
         $huabanCount = $huabanUser_model->where(array("hb_u_id"=>$uid))->count();
-        $caijiCount = $caijiUser_model->where(array("cj_u_id"=>$uid))->count();
+        $caijiCount = $caijiUser_model->where(array("post_author"=>$uid))->count();
         $loveCount = $loveUser_model->where(array("love_users_id"=>$uid))->count();
         $tagCount = $tagUser_model->where(array("tag_users_id"=>$uid))->count();
         $this->assign("huabanCount",$huabanCount);

@@ -51,4 +51,27 @@ class UserController extends HomebaseController
             ->select();
         echo json_encode($list);
     }
+
+    //获取用户总关注数
+    public function userGz(){
+       $uid = sp_get_current_userid();
+
+    }
+
+    //获取用户采集数
+    public function userCollect(){
+
+        $uid = sp_get_current_userid();
+        $posts_model = M("posts");
+        $postCount = $posts_model->where(array("post_author"=>$uid))->count();
+
+        echo $postCount;
+
+    }
+
+    //获取用户喜欢数
+    public function userLove(){
+        $uid = sp_get_current_userid();
+
+    }
 }
