@@ -32,7 +32,8 @@
                     <td>{$vo.hd_id}</td>
                     <td>{$vo.hd_name}</td>
                     <td>{$vo.hd_url}</td>
-                    <td><a href="{$vo.hd_img_url}">查看</a></td>
+                    <td><a href="{:sp_get_image_preview_url($vo['hd_img_url'])}" target="_blank"
+                    >查看</a></td>
                     <td>{$vo.hd_time}</td>
                     <td>{$status[$vo[hd_recommend]]}</td>
                     <td>

@@ -91,7 +91,7 @@ class PostsController extends AdminbaseController{
         $xingqu=$this->xingqu_model->field("xq_id,xq_name")->select();
         $id = I("get.id",0,'intval');
         $post=$this->posts_model->where(array('id'=>$id))->find();
-        $this->assign($post);
+        $this->assign("post",$post);
         $this->assign("xingqu",$xingqu);
         $this->display();
         }

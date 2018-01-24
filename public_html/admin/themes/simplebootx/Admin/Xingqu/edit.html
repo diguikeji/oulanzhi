@@ -3,8 +3,8 @@
 <body>
 <div class="wrap js-check-wrap">
     <ul class="nav nav-tabs">
-        <li><a href="{:U('xingqu/index')}">第二级兴趣</a></li>
-        <li class="active"><a href="{:U('xingqu/add')}">添加兴趣</a></li>
+        <li><a href="{:U('xingqu/index')}">兴趣点</a></li>
+        <li class="active"><a href="{:U('xingqu/edit')}">编辑</a></li>
     </ul>
     <form action="{:U('xingqu/edit_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
         <input type="hidden" name="post[post_type]" value="2">
@@ -48,23 +48,19 @@
                     <tr>
                         <td>
                             <div style="text-align: center;">
-                                <input type="hidden" name="xq_img" id="thumb" value="">
+                                <input type="hidden" name="xq_img" id="thumb" value="{$xq_img}">
                                 <a href="javascript:upload_one_image('图片上传','#thumb');">
-                                    <img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand"/>
+                                    <if condition="empty($xq_img)">
+                                        <img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand"/>
+                                        <else />
+                                        <img src="{:sp_get_image_preview_url($xq_img)}" id="thumb-preview" width="135" style="cursor: hand; height: 113px;"/>
+                                    </if>
                                 </a>
                                 <input type="button" class="btn btn-small" onclick="$('#thumb-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <th>所属</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label class="radio"><input type="radio" name="xq_fl_zc" value="1" checked>画板</label>
-                            <label class="radio"><input type="radio" name="xq_fl_zc" value="0">采集</label>
-                        </td>
-                    </tr>
+
                 </table>
             </div>
         </div>
