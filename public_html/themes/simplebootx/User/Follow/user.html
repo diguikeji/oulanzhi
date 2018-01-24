@@ -42,36 +42,7 @@
 <body>
 
 
-<nav class="nav-box">
-    <div class="nav-box-logo">
-        <img src="__TMPL__Public/new/image/logo.png">
-    </div>
-    <div class="nav-box-ul">
-        <ul id="nav">
-            <li><a href="{:U('Portal/index/index')}">首页</a></li>
-            <li><a href="{:U('Portal/find/index')}">发现</a></li>
-            <li><a href="#">最新</a>
-                <!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
-            </li>
-            <li><a href="{:U('Portal/activity/index')}">活动</a></li>
-        </ul>
-    </div>
-
-
-    <div class="right-menu">
-        <img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
-        <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
-    </div>
-
-    <<div class="login-ul" id="user"></div>
-
-
-</nav>
+<tc_include file="Public:nav"/>
 
 
 
@@ -219,34 +190,7 @@
         <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
 
 
 <div style="clear: both"></div>
@@ -259,9 +203,7 @@
 <tc_include file="Public:footer" />
 
 <tc_include file="Public:scripts"/>
-
-
-
+<script src="__TMPL__Public/login.js"></script>
 
 
 
@@ -290,37 +232,6 @@
         $(".nav-box-ul").slideUp();
         $(this).parent().removeClass("active");
     });
-
-    $.ajax({
-        type: "GET",
-
-        url: "/index.php?g=&m=Index&a=getUser",
-
-        dataType: "json",
-
-        success: function (data) {
-            var uid =data.id;
-            //console.log(uid);
-            if(data == 0){
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
-                    '</ul>'
-                )
-            }else{
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
-                    '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-                    '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-                    '</ul>'
-                )
-            }
-        }
-
-    });
-
-
 </script>
 </body>
 </html>
