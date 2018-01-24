@@ -181,6 +181,9 @@
 	});
 
 
+	//获取用户关注状态
+
+
 	var pageIndex=1;
 	function getPostList(page)
 	{
