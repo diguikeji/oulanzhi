@@ -87,29 +87,31 @@
 </div>
 <!--红色部分-->
 <div  class="hongse">
+
+	<input type="hidden" name="id" id="id" value="<?php echo ($id); ?>" />
 	<a href="<?php echo U('User/center/index');?>">
 		<div class="hongse_1">
-			<div class="hongse_1_1" style="color: white;" ><?php echo ($huabanCount); ?></div>
+			<div class="hongse_1_1" style="color: white;" ><span id="hcount"></span></div>
 			<div class="hongse_1_2" style="color: white">画板</div>
 			<div  class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: 0.5rem"></div>
 		</div>
 	</a>
-	<a href="<?php echo U('User/collect/index');?>">
+	<a href="<?php echo U('User/center/caiji');?>">
 		<div class="hongse_2"></div>
 		<div class="hongse_1">
-			<div class="hongse_1_1"><?php echo ($caijiCount); ?></div>
+			<div class="hongse_1_1"><span id="ccount"></span></div>
 			<div class="hongse_1_2">采集</div>
 		</div></a>
-	<a href="<?php echo U('User/love/index');?>">
+	<a href="<?php echo U('User/center/love');?>">
 		<div class="hongse_2"></div>
 		<div class="hongse_1">
-			<div class="hongse_1_1"><?php echo ($loveCount); ?></div>
+			<div class="hongse_1_1"><span id="lcount"></span></div>
 			<div class="hongse_1_2">喜欢</div>
 		</div></a>
-	<a href="">
+	<a href="<?php echo U('User/center/tag');?>">
 		<div class="hongse_2"></div>
 		<div class="hongse_1">
-			<div class="hongse_1_1"><?php echo ($tagCount); ?></div>
+			<div class="hongse_1_1"><span id="tcount"></span></div>
 			<div class="hongse_1_2">标签</div>
 		</div></a>
 </div>
@@ -117,55 +119,12 @@
 
 
 
-
-<!--室内设计-->
-<!--
-<div class="shinei">
-	<div class="design">
-		<div class="design-1">
-			<div class="design-1-1"> <a href="javascript:show()"><i class="iconfont  icon-jia"></i></a>
-
-				<form action="<?php echo U('User/center/createDraw');?>" method="post" name="hia">
-				<div id="login">
-					<a href="javascript:hide()"> <img src="/themes/simplebootx/Public/new/image/quancha.png"  class="cha"></a>
-					<div class="quan"></div>
-					<div class="login-1">创建画板</div>
-					<div class="title"><input class="title-2" type="text" name="hbname"  placeholder="标题" style=" border-bottom: 1px solid dimgrey"></div>
-					&lt;!&ndash; <div class="title-1"><form><input type="name" name="username" placeholder="分类" style="background-color: white;outline: medium;border: 0px;width: 95%">&ndash;&gt;
-					&lt;!&ndash; </form>
-                    </div>&ndash;&gt;
-					<div class="title-1"> <select name="fl" style="border: 0px;outline: medium;width: 100%;height: 3rem; border-bottom: 1px solid dimgrey;background-color: white">
-						<?php if(is_array($categroy)): foreach($categroy as $key=>$vo): ?><option value="<?php echo ($vo["xqfl_id"]); ?>" ><?php echo ($vo["xqfl_name"]); ?></option><?php endforeach; endif; ?>
-					</select></div>
-					<input type="submit" value="确定"
-							style="border: none;width: 6rem; height: 3rem; background-color:#FF455F;color: white;font-size: 1.6rem;
-                           float: right;margin-right: 4%;
-                           margin-top: 1%;
-                           border-bottom-left-radius:5px;
-                           border-bottom-right-radius: 5px;
-                           border-top-left-radius: 5px;
-                           border-top-right-radius: 5px;">
-				</div>
-				</form>
-
-
-				<div id="over"></div>
-			</div>
-		</div>
--->
-
-		<div class="middle-box" id="designn">
-
-			<!--<a href="#">
-				<div class="follow-box">
-
-				</div>
-			</a>
--->
+<div class="middle-box" id="designn">
 
 
 
-		</div>
+
+</div>
 
 
 
@@ -295,114 +254,138 @@ $(function(){
 <script src="/themes/simplebootx/Public/login.js"></script>
 <script type="text/javascript">
 
-//用户画板
+	var id = $("#id").val();
+	console.log(id);
 
- $.ajax({
-     type: "GET",
+	$.ajax({
+		type: "GET",
 
-     url: "/index.php?g=user&m=center&a=drawDetail",
+		url: "/index.php?g=portal&m=user&a=userCount",
 
-     dataType: "json",
+		dataType: "json",
+
+		data:{
+		   id:id
+		},
+
+		success:function(data){
+			console.log(data);
+
+			document.getElementById('hcount').innerHTML=data.hcount;
+			document.getElementById('ccount').innerHTML=data.ccount;
+			document.getElementById('lcount').innerHTML=data.lcount;
+			document.getElementById('tcount').innerHTML=data.tcount;
+		}
+	});
+
+	//用户画板
+
+	$.ajax({
+				type: "GET",
+
+				url: "/index.php?g=user&m=center&a=drawDetail",
+
+				dataType: "json",
 
 
 
-     success: function (data) {
+				success: function (data) {
 
 
-         var html ='';
-         for (var i = 0; i < data.length; i++) {
-             var hid = data[i].hb_id;
+					var html ='';
+					for (var i = 0; i < data.length; i++) {
+						var hid = data[i].hb_id;
 
-             if(data[i].pidlist!==null){
-             var postIdList = data[i].pidlist.split(",");
+						if(data[i].pidlist!==null){
+							var postIdList = data[i].pidlist.split(",");
 
-             console.log(data);
+							console.log(data);
 
-                html=html+
-						'<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
-							'<div class="follow-box" >'+
-								'<img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'">'+
+							html=html+
+									'<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
+									'<div class="follow-box" >'+
+									'<img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'">'+
 									'<div class="box-title ">'+
-										'<div class="with-line-left"></div>'+ data[i].hb_name+
-										'<div class="with-line-right"></div>'+
+									'<div class="with-line-left"></div>'+ data[i].hb_name+
+									'<div class="with-line-right"></div>'+
 									'</div>'+'<div class="img-row">'
 
-			 for(var j=1 ;j<4;j++) {
-                 var pid = postIdList[j];
-                 html = html +
-							 '<div class="img-row-3"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
+							for(var j=1 ;j<4;j++) {
+								var pid = postIdList[j];
+								html = html +
+										'<div class="img-row-3"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
 
 
-             }
-                html=html+'</div>'+
-						'<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button class="following">编辑画板</button></a>'+
-						'</div>'+
-						'</a>'
+							}
+							html=html+'</div>'+
+									'<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button class="following">编辑画板</button></a>'+
+									'</div>'+
+									'</a>'
 
-             }else{
+						}else{
 
-              html=html+
+							html=html+
 
-				 '<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
-					 '<div class="follow-box" >'+
-						 '<img src="index.php?g=&m=Index&a=imgCollect&id='+hid+'">'+
-							 '<div class="box-title ">'+
-								 '<div class="with-line-left"></div>'+ data[i].hb_name+
-								 '<div class="with-line-right"></div>'+
-							 '</div>'+
-							 '<div class="img-row">'+
+									'<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
+									'<div class="follow-box" >'+
+									'<img src="index.php?g=&m=Index&a=imgCollect&id='+hid+'">'+
+									'<div class="box-title ">'+
+									'<div class="with-line-left"></div>'+ data[i].hb_name+
+									'<div class="with-line-right"></div>'+
+									'</div>'+
+									'<div class="img-row">'+
 
-							 '</div>'+
-							 '<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button class="following">编辑画板</button></a>'+
-					 '</div>'+
-				 '</a>'
-
-
-			 }
-         }
-
-         $("#designn").append(html);
-     }
-	 }
- );
+									'</div>'+
+									'<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button class="following">编辑画板</button></a>'+
+									'</div>'+
+									'</a>'
 
 
+						}
+					}
 
-    var login = document.getElementById('login');
-    var over = document.getElementById('over');
-    function show()
-    {
-        login.style.display = "block";
-        over.style.display = "block";
-    }
-    function hide()
-    {
-        login.style.display = "none";
-        over.style.display = "none";
-    }
-
-
-    $(".nav-box .right-menu .close-menu").click(function(){
-
-        $(".login-ul").slideUp();
-        $(".nav-box-ul").slideUp();
-        $(this).parent().removeClass("active");
+					$("#designn").append(html);
+				}
+			}
+	);
 
 
 
+	var login = document.getElementById('login');
+	var over = document.getElementById('over');
+	function show()
+	{
+		login.style.display = "block";
+		over.style.display = "block";
+	}
+	function hide()
+	{
+		login.style.display = "none";
+		over.style.display = "none";
+	}
 
-    });
+
+	$(".nav-box .right-menu .close-menu").click(function(){
+
+		$(".login-ul").slideUp();
+		$(".nav-box-ul").slideUp();
+		$(this).parent().removeClass("active");
 
 
-    $(".nav-box .right-menu .open-menu").click(function(){
-
-        $(".login-ul").slideDown();
-        $(".nav-box-ul").slideDown();
-        $(this).parent().addClass("active");
 
 
+	});
 
-    });
+
+	$(".nav-box .right-menu .open-menu").click(function(){
+
+		$(".login-ul").slideDown();
+		$(".nav-box-ul").slideDown();
+		$(this).parent().addClass("active");
+
+
+
+	});
 
 </script>
 </body>

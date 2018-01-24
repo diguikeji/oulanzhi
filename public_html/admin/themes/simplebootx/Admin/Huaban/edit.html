@@ -19,18 +19,7 @@
                             <span class="form-required">*</span>
                         </td>
                     </tr>
-                    <tr>
-                        <th width="80">兴趣分类</th>
-                        <td>
-                            <select name="hb_xqd_id">
-                                <option >选择兴趣点</option>
-                                <foreach name="xingqu" item="vo">
-                                    <php>$cid_selected=$hb_xqd_id==$vo['xq_id']?"selected":"";</php>
-                                    <option value="{$vo.xq_id}"{$cid_selected}>{$vo.xq_name}</option>
-                                </foreach>
-                            </select>
-                        </td>
-                    </tr>
+
                 </table>
             </div>
             <div class="span3">

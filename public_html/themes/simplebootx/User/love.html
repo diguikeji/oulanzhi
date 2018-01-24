@@ -50,29 +50,32 @@
 </div>
 <!--红色部分-->
 <div  class="hongse">
+
+    <input type="hidden" name="id" id="id" value="{$id}" />
+
     <a href="{:U('User/center/index')}">
         <div class="hongse_1">
-            <div class="hongse_1_1"  >{$huabanCount}</div>
+            <div class="hongse_1_1"  ><span id="hcount"></span></div>
             <div class="hongse_1_2" >画板</div>
         </div>
     </a>
-    <a href="{:U('User/collect/index')}">
+    <a href="{:U('User/center/caiji')}">
         <div class="hongse_2"></div>
         <div class="hongse_1">
-            <div class="hongse_1_1" >{$caijiCount}</div>
+            <div class="hongse_1_1" ><span id="ccount"></span></div>
             <div class="hongse_1_2" >采集</div>
         </div></a>
-    <a href="#">
+    <a href="{:U('User/center/love')}">
         <div class="hongse_2"></div>
         <div class="hongse_1">
-            <div class="hongse_1_1" style="color: white;">{$loveCount}</div>
+            <div class="hongse_1_1" style="color: white;"><span id="lcount"></span></div>
             <div class="hongse_1_2" style="color: white;">喜欢</div>
             <div   class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: 0.5rem"></div>
         </div></a>
-    <a href="#">
+    <a href="{:U('User/center/tag')}">
         <div class="hongse_2"></div>
         <div class="hongse_1">
-            <div class="hongse_1_1">{$tagCount}</div>
+            <div class="hongse_1_1"><span id="tcount"></span></div>
             <div class="hongse_1_2">标签</div>
         </div></a>
 </div>
@@ -81,15 +84,7 @@
 <!--中间部分-->
 <div class="middle" id="middle">
 
-
     <div id = "love"></div>
-
-
-
-
-
-
-
 
     <div style="clear: both"></div>
 </div>
@@ -110,6 +105,31 @@
 <script type="text/javascript" src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
 <script src="__TMPL__Public/login.js"></script>
 <script type="text/javascript">
+
+    var id = $("#id").val();
+    console.log(id);
+
+    $.ajax({
+        type: "GET",
+
+        url: "/index.php?g=portal&m=user&a=userCount",
+
+        dataType: "json",
+
+        data:{
+            id:id
+        },
+
+        success:function(data){
+            console.log(data);
+
+            document.getElementById('hcount').innerHTML=data.hcount;
+            document.getElementById('ccount').innerHTML=data.ccount;
+            document.getElementById('lcount').innerHTML=data.lcount;
+            document.getElementById('tcount').innerHTML=data.tcount;
+        }
+    });
+
 
 
     var pageIndex=1;

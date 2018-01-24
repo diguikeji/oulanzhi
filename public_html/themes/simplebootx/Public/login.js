@@ -15,7 +15,6 @@ function sixin() {
 }
 
 
-
 $.ajax({
     type: "GET",
 

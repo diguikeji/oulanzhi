@@ -14,30 +14,29 @@ class CenterController extends MemberbaseController
 
     // 用户中心
 
-    //获取用户画板、采集、喜欢、标签的总数以及用户信息
+    //获取用户画板
     public function index()
     {
-        $uid = sp_get_current_userid();
-        $huabanUser_model = M("Huaban");
-        $caijiUser_model = M("Posts");
-        $loveUser_model = M("Love");
-        $tagUser_model = M("Tag");
-        $huabanCount = $huabanUser_model->where(array("hb_u_id"=>$uid))->count();
-        $caijiCount = $caijiUser_model->where(array("post_author"=>$uid))->count();
-        $loveCount = $loveUser_model->where(array("love_users_id"=>$uid))->count();
-        $tagCount = $tagUser_model->where(array("tag_users_id"=>$uid))->count();
-        $this->assign("huabanCount",$huabanCount);
-        $this->assign("caijiCount",$caijiCount);
-        $this->assign("loveCount",$loveCount);
-        $this->assign("tagCount",$tagCount);
         $this->assign($this->user);
-
-        //分类
-        $fl_model = M("Xingqu_fenlei");
-        $fl = $fl_model->select();
-        $this ->assign("categroy",$fl);
-
         $this->display(':center');
+
+    }
+
+    public function caiji(){
+        $this->assign($this->user);
+        $this->display(':collect');
+    }
+
+    //获取用户喜欢
+    public function love(){
+        $this->assign($this->user);
+        $this->display(':love');
+    }
+
+    //获取用户标签
+    public function tag(){
+        $this->assign($this->user);
+        $this->display(":tag");
     }
 
 
@@ -75,13 +74,39 @@ class CenterController extends MemberbaseController
         }
     }
 
-    //用户编辑画板提交
-    public function edit_draw_post(){
+    //获取用户采集的详情
+    public function collectDetail()
+    {
+
+        $uid = sp_get_current_userid();
+        $postsUser_model = M("Posts");
+        $count = $postsUser_model->where(array("post_author"=>$uid))->count();
+        $page = new \Think\Page($count,16);
+        $postsUser = $postsUser_model->where(array("post_author" => $uid))
+            ->alias("a")
+            ->join("tb_users c on a.post_author = c.id")
+            ->field("a.id as pid,c.id as uid,a.post_img_url,a.post_title,a.post_love,c.user_nicename")
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->select();
+        echo json_encode($postsUser);
 
     }
 
-    //用户删除画板
-    public function delete_draw(){
 
+    //用户中心显示用户的喜欢
+    public function loveView(){
+        $uid = sp_get_current_userid();
+        $love_model = M("Love");
+        $count = $love_model->count();
+        $page = new \Think\Page($count,16);
+        $love = $love_model->where(array("love_users_id"=>$uid))
+            ->alias("a")
+            ->join("tb_posts b on a.love_posts_id = b.id")
+            ->join("tb_users c on b.post_author = c.id")
+            ->field("b.id as pid,c.id as uid,b.post_title,b.post_love,c.user_nicename")
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->select();
+        echo json_encode($love);
     }
+
 }
