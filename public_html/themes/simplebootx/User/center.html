@@ -59,7 +59,7 @@
 		<div class="hongse_1">
 			<div class="hongse_1_1" style="color: white;" ><span id="hcount"></span></div>
 			<div class="hongse_1_2" style="color: white">画板</div>
-			<div  class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: 0.5rem"></div>
+			<div  class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: -0.5rem"></div>
 		</div>
 	</a>
 	<a href="{:U('User/center/caiji')}">
@@ -87,7 +87,37 @@
 
 <div class="middle-box" id="designn">
 
-
+	<a href="javascript:show()">
+		<div class="follow-box" style="display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;border: 1px solid gainsboro">
+			<i class="iconfont icon-jia1" style="font-size: 4rem"></i>
+		</div>
+		<div id="login" style="z-index: 9999">
+			<a href="javascript:hide()"> <img src="__TMPL__Public/new/image/quancha.png"  class="cha"></a>
+			<div class="quan"></div>
+			<div class="login-1">创建画板</div>
+			<div class="title"><form><input class="title-2" type="name" name="username" placeholder="标题" style=" border-bottom: 1px solid dimgrey"></form></div>
+			<!-- <div class="title-1"><form><input type="name" name="username" placeholder="分类" style="background-color: white;outline: medium;border: 0px;width: 95%">-->
+			<!-- </form>
+            </div>-->
+			<div class="title-1"> <select style="border: 0px;outline: medium;width: 100%;height: 3rem; border-bottom: 1px solid dimgrey;background-color: white">
+				<option >分类</option>
+				<option >衣服</option>
+				<option>包包</option>
+				<option>零食</option>
+				<option>护肤品</option>、
+				<option>化妆品</option>
+			</select></div>
+			<button
+					style="border: none;width: 6rem; height: 3rem; background-color:#FF455F;color: white;font-size: 1.6rem;
+                           float: right;margin-right: 4%;
+                           margin-top: 1%;
+                           border-bottom-left-radius:5px;
+                           border-bottom-right-radius: 5px;
+                           border-top-left-radius: 5px;
+                           border-top-right-radius: 5px;">确定</button>
+		</div>
+		<div id="over"></div>
+	</a>
 
 
 </div>
@@ -247,6 +277,18 @@
 
 
 	});
+
+
+	function show()
+	{
+		login.style.display = "block";
+		over.style.display = "block";
+	}
+	function hide()
+	{
+		login.style.display = "none";
+		over.style.display = "none";
+	}
 
 </script>
 </body>

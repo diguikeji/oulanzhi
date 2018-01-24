@@ -6,6 +6,9 @@
     margin: 0 auto;
     overflow: hidden;
 }
+  a:hover{
+    text-decoration: none;
+}
 .middle-box::after{
     clear: both;
 }
@@ -18,14 +21,19 @@
     float: left;
     overflow: hidden;
     border-radius: 5px;
+    border: 1px solid gainsboro;
     -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
+
 .follow-box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.follow-box:hover .following{
+    display: block;
 }
 .box-title{
     width: 100%;
@@ -98,13 +106,14 @@
     color: black;
     border-radius: 5px;
     left: 60%;
-    background: rgba(233,233,233,0.8);
+    background: rgba(233,233,233,0.6);
     outline: medium;
+    display: none;
 
 
 }
 .following:hover{
-    background: rgba(233,233,233,0.9);
+    background: rgba(233,233,233,0.8);
     -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
