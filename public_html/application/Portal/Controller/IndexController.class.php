@@ -43,7 +43,32 @@ class IndexController extends HomebaseController
     public function getUser(){
         $user = session("user");
         if($user){
-            echo json_encode($user);
+            //用户采集数
+           $uid = sp_get_current_userid();
+            $posts_model = M("posts");
+            $postCount = $posts_model->where(array("post_author"=>$uid))->count();
+
+            //用户喜欢数
+            $love_model = M("Love");
+            $loveCount = $love_model->where(array("love_users_id"=>$uid))->count();
+
+            //用户关注
+            $xqgz_model = M("Xqd_guanzhu");
+            $xqdCount = $xqgz_model->where(array("xqdgz_uid"=>$uid))->count();
+            $usergz_model =M("Yonghu_gz");
+            $userCount = $usergz_model->where(array("usergz_uid_pid"=>$uid))->count();
+            $hbgz_model = M("hbgz");
+            $hbgzCount = $hbgz_model->where(array("hbgz_uid"=>$uid))->count();
+
+            $gzCount = $xqdCount+$userCount+$hbgzCount;
+
+            $data['post'] = $postCount;
+            $data['love'] = $loveCount;
+            $data['gz'] = $gzCount;
+            $data["user"] = $user;
+
+            echo json_encode($data);
+            //echo json_encode($user);
         }else{
             echo 0;
         }
@@ -59,7 +84,7 @@ class IndexController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_title,b.post_love,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
             ->limit($page->firstRow . ',' . $page->listRows)
             ->select();
@@ -78,7 +103,7 @@ class IndexController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_title,b.post_love,b.post_img_url,b.recommended,b.post_date")
             ->order('post_date desc')
             ->where("recommended = 1")
             ->limit($page->firstRow . ',' . $page->listRows)

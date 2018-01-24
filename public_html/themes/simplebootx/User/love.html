@@ -22,35 +22,7 @@
 </head>
 <body>
 
-<nav class="nav-box">
-    <div class="nav-box-logo">
-        <img src="__TMPL__Public/new/image/logo.png">
-    </div>
-    <div class="nav-box-ul">
-        <ul id="nav">
-            <li><a href="{:U('Portal/index/index')}">首页</a></li>
-            <li><a href="{:U('Portal/find/index')}">发现</a></li>
-            <li><a href="#">最新</a>
-                <!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
-            </li>
-            <li><a href="{:U('Portal/activity/index')}">活动</a></li>
-        </ul>
-    </div>
-
-    <div class="right-menu">
-        <img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
-        <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
-    </div>
-
-    <<div class="login-ul" id="user"></div>
-
-
-</nav>
+<tc_include file="Public:nav"/>
 
 <!--明日收获-->
 <div class="yesterday">
@@ -65,7 +37,7 @@
         <div class="yesterday_1_3">
             <a href=""> <div class="yesterday_1_3_1">粉丝</div></a>
             <div class="yesterday_1_3_2"></div>
-            <a href="">   <div class="yesterday_1_3_3">关注</div></a>
+            <a href="{:U('User/follow/interestFollow')}">   <div class="yesterday_1_3_3">关注</div></a>
         </div>
     </div>
     <div class="yesterday_2">
@@ -74,7 +46,6 @@
     </div>
     <div class="yesterday_3">
         <a href="#"><div class="yesterday_3_1">关注+</div></a>
-        <a href="#"><div class="yesterday_3_2"><img src="__TMPL__Public/new/image/envelop(1).png"></div></a>
     </div>
 </div>
 <!--红色部分-->
@@ -137,6 +108,7 @@
 <script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
 <script src="__TMPL__Public/assets/js/slippry.min.js"></script>
 <script type="text/javascript" src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
+<script src="__TMPL__Public/login.js"></script>
 <script type="text/javascript">
 
 
