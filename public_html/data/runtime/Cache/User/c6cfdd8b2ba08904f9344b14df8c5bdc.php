@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/index.css">
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/header.css">
-
+	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/follow.css">
 	<meta name="renderer" content="webkit">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,35 +22,40 @@
 
 
 <nav class="nav-box">
-	<div class="nav-box-logo">
-		<img src="/themes/simplebootx/Public/new/image/logo.png">
-	</div>
-	<div class="nav-box-ul">
-		<ul id="nav">
-			<li><a href="<?php echo U('Portal/index/index');?>">首页</a></li>
-			<li><a href="<?php echo U('Portal/find/index');?>">发现</a></li>
-			<li><a href="#">最新</a>
-				<!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
-			</li>
-			<li><a href="<?php echo U('Portal/activity/index');?>">活动</a></li>
-		</ul>
-	</div>
+    <div class="nav-box-logo">
+        <img src="/themes/simplebootx/Public/new/image/logo.png">
+    </div>
+    <div class="nav-box-ul">
+        <ul id="nav">
+            <li><a href="<?php echo U('Portal/index/index');?>">首页</a></li>
+            <li><a href="<?php echo U('Portal/find/index');?>">发现</a></li>
+            <li class="dropdown">
+                <a href="<?php echo U('Portal/newest/index');?>" class="dropdown-toggle">
+                    最新
+                </a>
+                <ul class="dropdown-menu" style="margin-top: 2.1rem;margin-left: -1rem;background-color: rgba(0,0,0,0.6);font-size: 12px!important;min-width: 3rem;text-align: center ;">
+                    <li style="min-width: 100%"><a href="<?php echo U('User/collect/index');?>" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%">我的采集</a></li>
+                    <li><a href="<?php echo U('User/center/index');?>"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的画板</a></li>
+                    <li><a href="<?php echo U('User/love/index');?>"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的喜欢</a></li>
+                    <li><a href="<?php echo U('User/follow/interestFollow');?>"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">兴趣</a></li>
+                    <li><a href="<?php echo U('User/follow/userFollow');?>"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">用户</a></li>
+                </ul>
+            </li>
+            <li><a href="<?php echo U('Portal/activity/index');?>">活动</a></li>
+        </ul>
+    </div>
 
 
-	<div class="right-menu">
-		<img class="open-menu" src="/themes/simplebootx/Public/new/image/menu.png" />
-		<img class="close-menu" src="/themes/simplebootx/Public/new/image/closeMenu.png" />
-	</div>
+    <div class="right-menu">
+        <img class="open-menu" src="/themes/simplebootx/Public/new/image/menu.png" />
+        <img class="close-menu" src="/themes/simplebootx/Public/new/image/closeMenu.png" />
+    </div>
 
-	<<div class="login-ul" id="user"></div>
+    <div class="login-ul" id="user">
 
-
+    </div>
 </nav>
+
 
 
 
@@ -82,7 +87,7 @@
 </div>
 <!--红色部分-->
 <div  class="hongse">
-	<a href="../palette/palette.html">
+	<a href="<?php echo U('User/center/index');?>">
 		<div class="hongse_1">
 			<div class="hongse_1_1" style="color: white;" ><?php echo ($huabanCount); ?></div>
 			<div class="hongse_1_2" style="color: white">画板</div>
@@ -114,6 +119,7 @@
 
 
 <!--室内设计-->
+<!--
 <div class="shinei">
 	<div class="design">
 		<div class="design-1">
@@ -125,9 +131,9 @@
 					<div class="quan"></div>
 					<div class="login-1">创建画板</div>
 					<div class="title"><input class="title-2" type="text" name="hbname"  placeholder="标题" style=" border-bottom: 1px solid dimgrey"></div>
-					<!-- <div class="title-1"><form><input type="name" name="username" placeholder="分类" style="background-color: white;outline: medium;border: 0px;width: 95%">-->
-					<!-- </form>
-                    </div>-->
+					&lt;!&ndash; <div class="title-1"><form><input type="name" name="username" placeholder="分类" style="background-color: white;outline: medium;border: 0px;width: 95%">&ndash;&gt;
+					&lt;!&ndash; </form>
+                    </div>&ndash;&gt;
 					<div class="title-1"> <select name="fl" style="border: 0px;outline: medium;width: 100%;height: 3rem; border-bottom: 1px solid dimgrey;background-color: white">
 						<?php if(is_array($categroy)): foreach($categroy as $key=>$vo): ?><option value="<?php echo ($vo["xqfl_id"]); ?>" ><?php echo ($vo["xqfl_name"]); ?></option><?php endforeach; endif; ?>
 					</select></div>
@@ -146,13 +152,24 @@
 				<div id="over"></div>
 			</div>
 		</div>
+-->
+
+		<div class="middle-box" id="designn">
+
+			<!--<a href="#">
+				<div class="follow-box">
+
+				</div>
+			</a>
+-->
 
 
-   <div id="designn">
 
-   </div>
+		</div>
 
-	</div></div>
+
+
+
 
 <div style="clear: both"></div>
 <!--没有更多-->
@@ -275,6 +292,7 @@ $(function(){
 <!-- Initialize Swiper -->
 <script src="/themes/simplebootx/Public/new/js/jquery-1.8.1.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/bootstrap.min.js"></script>
+<script src="/themes/simplebootx/Public/login.js"></script>
 <script type="text/javascript">
 
 //用户画板
@@ -300,48 +318,45 @@ $(function(){
 
              console.log(data);
 
-                html=html+ '<div class="design-2">' +
-                 '<div class="design-2-1">' +
-                 '<div class="design-2-2">' +
-                 '<div class="design-2-3">'+postIdList.length+'</div>' +
-                 '</div>' +
-                 '<div class="design-2-4">'+data[i].hb_name+'</div>' +
-                 '</div>' +
-                 '<div class="design-3">' +
-                 '<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'"><img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'"></a>' +
-                 '</div>' +
-                 '<div class="design-4">'
+                html=html+
+						'<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
+							'<div class="follow-box" >'+
+								'<img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'">'+
+									'<div class="box-title ">'+
+										'<div class="with-line-left"></div>'+ data[i].hb_name+
+										'<div class="with-line-right"></div>'+
+									'</div>'+'<div class="img-row">'
 
 			 for(var j=1 ;j<4;j++) {
                  var pid = postIdList[j];
-                 html = html + '<div class="design-4-1"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
+                 html = html +
+							 '<div class="img-row-3"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
+
+
              }
-                html=html+'</div><div class="dian">' +
-                 '<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button></a>' +
-                 '</div>' +
-                 '</div>'
+                html=html+'</div>'+
+						'<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button class="following">编辑画板</button></a>'+
+						'</div>'+
+						'</a>'
 
              }else{
 
-               html=html+ ' <div class="design-2">'+
-                 '<div class="design-2-1">'+
-                 '<div class="design-2-2">'+
-                 '<div class="design-2-3">0</div>'+
-                 '</div>'+
-                 ' <div class="design-2-4">'+data[i].hb_name+'</div>'+
-                 ' </div>'+
-                 ' <div class="design-3">'+
+              html=html+
 
-                 ' </div>'+
-                 ' <div class="design-4">'+
-                 ' <div class="design-4-1"></div>'+
-                 ' <div class="design-4-2"></div>'+
-                 '  <div class="design-4-2"></div>'+
-                 '  </div>'+
-                 '  <div class="dian">'+
-                 ' <a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"> <button  class="dian-1" style="border: none; background-color:#FF455F;text-align:center;color: white;border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">编辑画板</button></a>'+
-                 ' </div>'+
-                 '  </div>'
+				 '<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
+					 '<div class="follow-box" >'+
+						 '<img src="index.php?g=&m=Index&a=imgCollect&id='+hid+'">'+
+							 '<div class="box-title ">'+
+								 '<div class="with-line-left"></div>'+ data[i].hb_name+
+								 '<div class="with-line-right"></div>'+
+							 '</div>'+
+							 '<div class="img-row">'+
+
+							 '</div>'+
+							 '<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button class="following">编辑画板</button></a>'+
+					 '</div>'+
+				 '</a>'
+
 
 			 }
          }
@@ -389,34 +404,6 @@ $(function(){
 
     });
 
-    $.ajax({
-        type: "GET",
-
-        url: "/index.php?g=&m=Index&a=getUser",
-
-        dataType: "json",
-
-        success: function (data) {
-            var uid =data.id;
-            //console.log(uid);
-            if(data == 0){
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
-                    '</ul>'
-                )
-            }else{
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
-                    '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-                    '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-                    '</ul>'
-                )
-            }
-        }
-
-    });
 </script>
 </body>
 </html>

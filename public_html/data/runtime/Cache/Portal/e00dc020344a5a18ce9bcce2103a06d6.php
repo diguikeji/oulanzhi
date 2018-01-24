@@ -67,12 +67,12 @@
         <?php if(is_array($two)): foreach($two as $key=>$vo): ?><a href="<?php echo U('portal/interestDetail/index',array('id'=>$vo['xqfl_id']));?>" class="unit_a"><?php echo ($vo["xqfl_name"]); ?></a><?php endforeach; endif; ?>
     </div>
     <div class="unit" style="border-right:none ">
-        <?php if(is_array($three)): foreach($three as $key=>$vo): ?><a href="<?php echo U('portal/interestDetail/index',array('id'=>$vo['xqfl_id']));?>" class="unit_a"><?php echo ($vo["xqfl_name"]); ?></a><?php endforeach; endif; ?>
+        <?php if(is_array($three)): foreach($three as $key=>$vo): ?><a href="<?php echo U('portal/interestDetail/huaban',array('id'=>$vo['xqfl_id']));?>" class="unit_a"><?php echo ($vo["xqfl_name"]); ?></a><?php endforeach; endif; ?>
     </div>
 </div>
 <div class="pictype">
 
-    <?php if(is_array($xingqu)): foreach($xingqu as $key=>$vo): ?><a href="#"><div class="pictype_1" ><img src="<?php echo U('portal/newest/imgXingqu',array('id'=>$vo['xq_id']));?>" ><div class="pictype_2 " style=" margin: -1.5rem 0 0 -2rem;"><?php echo ($vo["xq_name"]); ?></div></div></a><?php endforeach; endif; ?>
+    <?php if(is_array($xingqu)): foreach($xingqu as $key=>$vo): ?><a href="<?php echo U('portal/InterestDetail/interest',array('xid'=>$vo['xq_id']));?>"><div class="pictype_1" ><img src="<?php echo U('portal/newest/imgXingqu',array('id'=>$vo['xq_id']));?>" ><div class="pictype_2 " style=" margin: -1.5rem 0 0 -2rem;"><?php echo ($vo["xq_name"]); ?></div></div></a><?php endforeach; endif; ?>
 
     <div style="clear: both"></div>
 </div>
