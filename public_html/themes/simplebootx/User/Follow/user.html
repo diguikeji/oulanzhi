@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/header.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/user.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/collect.css">
 
     <meta name="renderer" content="webkit">
     <meta charset="utf-8" />
@@ -103,7 +104,6 @@
 
 <!--中间部分-->
 <div class="middle-box" id="user-box">
-
 
 
 </div>
@@ -203,6 +203,26 @@
         }
 
     })
+
+
+    var login = document.getElementById('login');
+    /*var uploadphoto = document.getElementById('uploadphoto');*/
+    var over = document.getElementById('over');
+    function show()
+    {
+        login.style.display = "block";
+        /*uploadphoto.style.display="block";*/
+        over.style.display = "block";
+    }
+    function hide()
+    {
+        login.style.display = "none";
+        /* uploadphoto.style.display="none";*/
+        over.style.display = "none";
+    }
+
+
+
 </script>
 </body>
 </html>
