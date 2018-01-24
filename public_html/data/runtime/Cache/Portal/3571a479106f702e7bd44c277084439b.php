@@ -78,15 +78,6 @@
         </div>
     </div>
 
-
- <!--   <div class="search-box">
-        <input class="search-box-input" placeholder="点击搜索一下您就知道">
-        <button class="sousuo"><i class="iconfont icon-sousuo"></i></button>
-    </div>
-</div>
--->
-
-
 <div class="contain">
 
     <!--  大家关注的活动 -->
@@ -111,7 +102,7 @@
 
     <div class="middle">
         <div class="about">
-            <li class="text">为你推荐</li>
+            <li class="text">画板采集</li>
         </div>
         <div class="edge">
             <div class="edge-1"><div class="edge-1-1"></div></div>
@@ -130,7 +121,31 @@
                    border-bottom-right-radius: 20px;
                    border-top-left-radius: 20px;
                    border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
+
+    <div class="middle">
+        <div class="about">
+            <li class="text">兴趣采集</li>
+        </div>
+        <div class="edge">
+            <div class="edge-1"><div class="edge-1-1"></div></div>
+            <div class="edge-2"><li class="text-1"> RECOMMENDED </li></div>
+            <div class="edge-1"><div class="edge-1-1"></div></div>
+        </div>
+    </div>
+
+
+    <div id="hb">
+
+    </div>
+
+    <div class="colick">
+        <button type="submit"  id="load" style="width: 100%; height: 40px; background-color: #FF455F;color: white;
+                   border-bottom-left-radius: 20px;
+                   border-bottom-right-radius: 20px;
+                   border-top-left-radius: 20px;
+                   border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
 </div>
+    </div>
 
 <div class="footer" >
 	<div class="footer_1">
@@ -245,7 +260,7 @@ $(function(){
 <script src="/themes/simplebootx/Public/new/js/bootstrap.min.js"></script>
 <script src="/themes/simplebootx/Public/assets/js/slippry.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/jquery-1.8.1.min.js"></script>
-
+    <script src="/themes/simplebootx/Public/login.js"></script>
 <script>
     /*var pageIndex = 1;
     function getInterestList(page)
@@ -280,7 +295,7 @@ $(function(){
                                    '</div>' +
                                    '</div>'
 
-                           for(var j=0; j<pidlist.length ;j++) {
+                           for(var j=0; j<4 ;j++) {
                                var pid = pidlist[j];
                                //console.log(pid);
                                html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
@@ -341,7 +356,7 @@ $(function(){
                             '</div>' +
                             '</div>'
 
-                    for(var j=0; j<pidlist.length ;j++) {
+                    for(var j=0; j<4 ;j++) {
                         var pid = pidlist[j];
                         //console.log(pid);
                         html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
@@ -358,7 +373,7 @@ $(function(){
 
             // console.log(html);
 
-            $("#hb-box").append(html);
+            $("#hb").append(html);
 
 
             /* if(data.length<16)
@@ -408,39 +423,6 @@ $(function(){
 
     });
 
-    $.ajax({
-        type: "GET",
-
-        url: "/index.php?g=&m=Index&a=getUser",
-
-        dataType: "json",
-
-        success: function (data) {
-            var uid =data.id;
-            //console.log(uid);
-            if(data == 0){
-                $("#user").append(
-                        '<ul id="nav-login">'+
-                        '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
-                        '</ul>'
-                )
-            }else{
-                $("#user").append(
-                        '<ul id="nav-login">'+
-                        '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
-                        '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-                        '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-                        '</ul>'
-                )
-            }
-        }
-
-    });
-
-
-
 </script>
-
-
 </body>
 </html>

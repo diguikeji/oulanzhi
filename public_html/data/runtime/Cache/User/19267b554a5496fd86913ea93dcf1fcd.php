@@ -44,9 +44,6 @@
 					<div class="zhanghao-2"><input type="password"  id="input_password"  name="password" placeholder="请输入密码"style="background-color: #E7EBEE;border:0px;height: 3rem;padding-left: 0.5rem" required></div>
 			</div>
 		</div>
-		
-		<input type="hidden" name="redirecturl" value="<?php echo ($redirecturl); ?>" />
-		
 		<div class="denglu"><button  type="submit" class="js-ajax-submit" style="width: 25rem; height: 4rem;border:0px;background-color: #FE4C7E; color: white;" >登录</button></div>
 		</form>
 		<div class="bottom">

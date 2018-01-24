@@ -1,6 +1,23 @@
 
 /*index.css*/
 
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li a:hover{
+    background: #C1A062;
+}
+.dropdown-toggle-touxiang img:hover{
+    opacity: 0.9;
+}
+@media screen and (max-width: 468px) {
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+}
+
+
 .info-detail{
     height: 350px;
     width: 100%;
