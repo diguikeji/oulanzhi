@@ -13,10 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/index.css">
 	<link rel="stylesheet" href="/themes/simplebootx/Public/new/css/swiper.min.css">
-<<<<<<< HEAD
-=======
 	<link rel="stylesheet" href="/themes/simplebootx/Public/new/css/component.css">
->>>>>>> 01daf84301aa18448bba6a9dafd865e5b9dad2fe
 	<style>
 
 		.dropdown:hover .dropdown-menu {
@@ -299,6 +296,8 @@ $(function(){
 
 
 
+
+
 <script src="/themes/simplebootx/Public/new/js/swiper.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/bootstrap.min.js"></script>
 <script src="/themes/simplebootx/Public/assets/js/slippry.min.js"></script>
@@ -306,6 +305,25 @@ $(function(){
 <script src="/themes/simplebootx/Public/assets/js/modalEffects.js"></script>
 <!-- Initialize Swiper -->
 <script>
+
+    $(".nav-box").on("click","#modal1Open",function()
+    {
+        
+       
+       $("#modal-1").modal();
+       $("#modal-1").removeClass("in").addClass("md-show");
+       
+        
+    });
+    
+    $("body").on("click",".md-close",function()
+    {
+        $("#modal-1").modal("hide");
+        $(".md-overlay").remove();
+        
+    });
+    
+
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
 		nextButton: '.swiper-button-next',
@@ -352,11 +370,7 @@ $(function(){
 			}else{
 				$("#user").append(
 						'<ul id="nav-login">'+
-<<<<<<< HEAD
-				'<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
-=======
-				'<li><a href="javascript:;" class="md-trigger" data-modal="modal-1"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
->>>>>>> 01daf84301aa18448bba6a9dafd865e5b9dad2fe
+				'<li><a style="cursor:pointer" class="md-trigger" id="modal1Open"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
 						'<li class="dropdown" >'+
 							'<a href="index.php?g=user&m=center&a=index" class="dropdown-toggle">'+
 								'<div class="dropdown-toggle-touxiang" style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a>'+

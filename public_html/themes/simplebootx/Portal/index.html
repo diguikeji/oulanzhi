@@ -197,6 +197,8 @@
 
 <tc_include file="Public:scripts"/>
 
+
+
 <script src="__TMPL__Public/new/js/swiper.min.js"></script>
 <script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
 <script src="__TMPL__Public/assets/js/slippry.min.js"></script>
@@ -204,6 +206,25 @@
 <script src="__TMPL__Public/assets/js/modalEffects.js"></script>
 <!-- Initialize Swiper -->
 <script>
+
+    $(".nav-box").on("click","#modal1Open",function()
+    {
+        
+       
+       $("#modal-1").modal();
+       $("#modal-1").removeClass("in").addClass("md-show");
+       
+        
+    });
+    
+    $("body").on("click",".md-close",function()
+    {
+        $("#modal-1").modal("hide");
+        $(".md-overlay").remove();
+        
+    });
+    
+
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
 		nextButton: '.swiper-button-next',
@@ -250,7 +271,7 @@
 			}else{
 				$("#user").append(
 						'<ul id="nav-login">'+
-				'<li><a href="javascript:;" class="md-trigger" data-modal="modal-1"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
+				'<li><a style="cursor:pointer" class="md-trigger" id="modal1Open"><i class="iconfont icon-xinxi1"></i><div  class="dote" ></div></a></li>'+
 						'<li class="dropdown" >'+
 							'<a href="index.php?g=user&m=center&a=index" class="dropdown-toggle">'+
 								'<div class="dropdown-toggle-touxiang" style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a>'+

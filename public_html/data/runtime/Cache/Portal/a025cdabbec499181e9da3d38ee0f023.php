@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><html><!DOCTYPE HTML>
 <head>
-	<title></title>
+	<title>采集</title>
 	<meta name="renderer" content="webkit">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

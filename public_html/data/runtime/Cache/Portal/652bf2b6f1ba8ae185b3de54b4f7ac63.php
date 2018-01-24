@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><html><!DOCTYPE HTML>
 <head>
-	<title></title>
+	<title>批量采集</title>
 	<meta name="renderer" content="webkit">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -131,7 +131,9 @@
         
         ul,li{margin:0;padding:0;list-style: none;}
         
-        #imgListCol li{width:48%;float:left;position:relative;margin:1%;}
+        #imgListCol li{width:46%;float:left;position:relative;margin:2%;height:60px;background-size:cover;background-position:center center;}
+        #imgListCol li .remove-img{border:1px solid #C90000;border-radius:50%;color:#C90000;width:16px;height:16px;display:inline-block;position:absolute;right:2px;top:2px;cursor:pointer;text-align:center;line-height:16px;background:#fff;display:none;}
+        #imgListCol li:hover .remove-img{display:block;}
         
         
     </style>
@@ -161,7 +163,7 @@
         </div>
         
         
-        <div id="imgList"><?php echo ($imgList); ?></div>
+        <div id="imgList" style="display:none;"><?php echo ($imgList); ?></div>
         
         
     </div>
@@ -343,12 +345,18 @@ $(function(){
     for(var i=0;i<imgList.length;i++)
     {
         
-        $("#imgListCol").append(' <li>'+
-                        '<img data-description="'+imgList[i].description+'" data-source="'+imgList[i].url+'" style="width:100%;" src="'+imgList[i].imgUrl+'"  />'+
+        $("#imgListCol").append('<li data-description="'+imgList[i].description+'" data-post_yl_img_url="'+imgList[i].imgUrl+'" data-source="'+imgList[i].url+'"  style="background-image:url('+imgList[i].imgUrl+')">'+
                         '<span class="remove-img">×</span>'+
                     '</li>');
     }
     
+    $("#imgListCol .remove-img").click(function()
+    {
+        
+        $(this).parent().remove();
+        
+    });
+
 
     $(".huaban-list li").eq(0).addClass("active");
 
@@ -367,16 +375,26 @@ $(function(){
             
         });
         
-        console.log(tagList);
+        var imgList=[];
+        $("#imgListCol li").each(function()
+        {
+            var imgObj={};
+            imgObj.post_yl_img_url=$(this).attr("data-post_yl_img_url");
+            imgObj.post_miaoshu=$(this).attr("data-description");
+            imgObj.post_source=$(this).attr("data-source");
+            imgList.push(imgObj);
+            
+        });
+        
+        
+        console.log(imgList);
         
           $.ajax({
-                url:'/index.php/Portal/Gather/addCaiji',
+                url:'/index.php/Portal/Gather/addCaijiList',
                 type:'POST', 
                 data:{
-                    post_yl_img_url:$("#post_yl_img_url").attr("src"),
-                    post_miaoshu:$("#post_miaoshu").val(),
+                    img_list:JSON.stringify(imgList),
                     post_hb_id:$(".huaban-list .active").attr("data-id"),
-                    post_source:$("#post_source").val(),
                     tag_list:JSON.stringify(tagList)
                 },
                 success:function(data){
@@ -384,7 +402,7 @@ $(function(){
                     if(data==1)
                     {
                         alert("采集成功！");
-                        //window.close();
+                        window.close();
                     }
                     else if(data=="-1")
                     {

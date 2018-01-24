@@ -1,0 +1,301 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>室内设计</title>
+    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/palette.css">
+    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/design.css">
+    <link href="/themes/simplebootx/Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/bootstrap.min.css">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="generator" content=""  data-variable="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <style>
+        @media (min-width:1020px)and (max-width:1620px){
+            .middle{
+                width: 87%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="shineisheji">
+    <div class="interior">
+        <div class="interior-1">室内设计</div>
+        <div class="interior-2">
+            <a href="#"style="text-decoration: none"><div class="interior-2-1"><div class="interior-2-4"><img src="/themes/simplebootx/Public/new/image/huaban.png"></div><li>20采集</li></div></a>
+            <div class="interior-2-2"></div>
+            <a href="#"style="text-decoration: none"> <div class="interior-2-3"><div class="interior-2-5"><img src="/themes/simplebootx/Public/new/image/eye.png"></div><li>34关注</li></div></a>
+        </div>
+    </div>
+    <div class="compiles">
+        <div class="dropdown-2">
+            <div class="dropbtn"><div class="compile"><a href="#" style="text-decoration: none;color: #A0A1A0;"><div class="compile-3">分享<img src="../image/enjoy.png"></div></a></div></div>
+            <div class="dropdown-1">
+                <div class="dropdown-content" style="margin-top: 20px;margin-left: -20px;z-index: 9999" >
+                    <div class="jiantou" style="width: 15px;height: 15px;background: #F9F9F9;position: absolute;right: 20px;margin-top: -5px;z-index: 1;transform:rotate(60deg);
+           -ms-transform:rotate(60deg); 	/* IE 9 */
+           -moz-transform:rotate(60deg); 	/* Firefox */
+           -webkit-transform:rotate(60deg); /* Safari 和 Chrome */
+           -o-transform:rotate(60deg); 	/* Opera */"></div>
+                    <a href="#"style="text-decoration: none;margin-top: 1rem"><img src="../image/bo.png">&nbsp;腾讯微博</a>
+                    <a href="#"style="text-decoration: none;"><img src="../image/Q.png"> &nbsp;QQ好友</a>
+                    <a href="#"style="text-decoration: none;"><img src="../image/douban.png">&nbsp; 豆瓣</a>
+                    <a href="#"style="text-decoration: none;"><img src="../image/renren.png"> &nbsp;人人网</a>
+                </div>
+            </div>
+        </div>
+        <div class="compile-1"><a href="#"style="text-decoration: none; color: #A0A1A0;"><li>批量处理</li></a></div>
+        <div class="compile-2"><a href="#"style="text-decoration: none; color: #A0A1A0;"><li>编辑画板</li></a></div>
+    </div>
+</div>
+
+<!--内容-->
+<div class="middle">
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture1.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture1.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture1.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middle_2">
+        <div class="picture">
+            <img src="../image/picture2.png">
+        </div>
+        <div class="touxiang">
+            <div class="touxiang_1">
+                <div class="touxiang_1_img"><img src="../image/touxiang.png" ></div>
+                <div class="touxiang_1_p"><p>Dideo</p></div>
+            </div>
+            <div class="touxiang_2_p"><p>圣诞海报</p></div>
+
+            <div class="touxiang_3">
+                <div class="touxiang_3_img"><a href="#"><i class="iconfont icon-guanzhu" style="color: #959595"></i></a></div>
+                <div class="touxiang_3_p"><p>26</p></div>
+            </div>
+            <div class="touxiang_4">
+                <div class="touxiang_4_img"><a href="#"><i class="iconfont icon-fenxiang" style="color: #959595"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+<!--没有更多-->
+<div class="nomore">
+    <div class="nomore_1" style="font-family: 微软雅黑;font-size:1.4rem">╮(╯﹏╰）╭&nbsp;没有更多了.....</div>
+    <a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footer_1">
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+
+        </div>
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div class="footer_1_1">
+            <br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="footer_2">
+        <div class="footer_2_1"><a href="#">关注我们</a></div>
+        <div class="footer_2_2"><a href="#">信息博客</a><br><a href="#">新浪博客</a><br><a href="#">官方微信</a></div>
+        <div class="footer_2_2"><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a></div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="footer_3">Copyright2016-2017 Heifeiku Leijan Technology Co.Ltd All Rights Reserved<br>
+        皖ICP备17010401号-2皖公网安备3301080233301号
+    </div>
+</div>
+</body>
+</html>

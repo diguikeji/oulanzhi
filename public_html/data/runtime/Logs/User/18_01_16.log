@@ -1,8 +1,0 @@
-[ 2018-01-16T19:22:01+08:00 ] 112.64.124.135 /index.php?g=user&m=index&a=is_login
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
-INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000340s ]
-INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000088s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
-NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
-

@@ -2357,7 +2357,8 @@ function() {
                 
                 function openPostWindow(url, params,l) {
 
-                    var newWin = window.open("", l),
+                    var newWin = window.open("", l);
+                    console.log(newWin);
                           formStr = '';
                      //设置样式为隐藏，打开新标签再跳转页面前，如果有可现实的表单选项，用户会看到表单内容数据
                      formStr = '<form id="OuLanZhi2018" style="visibility:hidden;" method="POST" action="' + url + '">' +

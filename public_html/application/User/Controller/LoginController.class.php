@@ -18,6 +18,7 @@ class LoginController extends HomebaseController {
 	    session('login_http_referer',$redirect);
 	    
 	    
+	    $this->assign("params",$_POST["params"]);
 	    $this->assign("redirecturl",$_GET["redirecturl"]);
 	    
 	    if(sp_is_user_login()){ //已经登录时直接跳到首页
@@ -227,6 +228,7 @@ hello;
     	}
     	
     	$username=I('post.username');
+    	
     	
     	if(preg_match('/(^(13\d|15[^4\D]|17[13678]|18\d)\d{8}|170[^346\D]\d{7})$/', $username)){//手机号登录
     	    $this->_do_mobile_login();

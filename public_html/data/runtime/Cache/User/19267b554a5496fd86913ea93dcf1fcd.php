@@ -63,6 +63,11 @@
 	<div class="last-1"><li class="text-5">Copyright&nbsp;&nbsp;&nbsp; 2006-2016 Built by Asis. All rights reserved.</li></div>
 	<div class="last-1"><li class="text-5">Read the boring legal stuff</li></div>
 </div>
+
+<form id="myForm" style="display:none;" action="<?php echo ($redirecturl); ?>" method="post">
+    <input id="loginParams" name="params" value="<?php echo ($params); ?>">
+</form>
+
 </body>
 </html>
 

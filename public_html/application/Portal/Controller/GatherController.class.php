@@ -24,8 +24,6 @@ class GatherController extends HomebaseController
      
         $userInfo=session('user');
        
-        
-        
         if(!$userInfo)
         {
             $url="Location:/index.php?g=user&m=login&a=index&redirecturl="."https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
@@ -59,13 +57,16 @@ class GatherController extends HomebaseController
      
         $userInfo=session('user');
        
-        var_dump($_POST);
+        $imgList=$_POST["params"];
         
         
         if(!$userInfo)
         {
-            $url="Location:/index.php?g=user&m=login&a=index&redirecturl="."https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-            header($url); 
+            $url="/index.php?g=user&m=login&a=index&redirecturl="."https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+            
+            echo "<form style='display:none;' id='form1' name='form1' method='post' action='".$url."'><input name='params' type='text' value='{$imgList}' /></form><script type='text/javascript'>function load_submit(){document.form1.submit()}load_submit();</script>";
+            
+            
             
         }
        else{
@@ -75,7 +76,7 @@ class GatherController extends HomebaseController
             $data["hb_u_id"]=$userInfo["id"];
             $list=$Huaban->where($data)->order('hb_id desc')->select(); 
             
-            $imgList=$_POST["params"];
+            
             
            
             $this->assign("tag_users_id",$userInfo["id"]);
@@ -174,7 +175,7 @@ class GatherController extends HomebaseController
            
            $addData["post_img_url"]="/data/downloadImg/".$filename;
            $addData["post_yl_img_url"]=$url;
-           $addData["post_miaoshu"]=$_POST["post_miaoshu"];
+           $addData["post_title"]=$_POST["post_miaoshu"];
            $addData["post_hb_id"]=$_POST["post_hb_id"];
            $addData["post_source"]=$_POST["post_source"];
            $addData["post_author"]=$userInfo["id"];
@@ -236,6 +237,99 @@ class GatherController extends HomebaseController
        
         
     }
+    
+    }
+    
+    
+    //批量采集信息提交
+    public function addCaijiList(){
+        
+        
+        
+        
+        $userInfo=session('user');
+        
+        $Posts = M("Posts");
+       
+        
+            $imgList=json_decode($_POST["img_list"],1);
+        
+            for($i=0;$i<count($imgList);$i++)
+            {
+                
+                $url=$imgList[$i]["post_yl_img_url"];
+                
+                $dataPosts["post_author"]=$userInfo["id"];
+                $dataPosts["post_yl_img_url"]=$url;
+                $rsFind=$Posts->where($dataPosts)->find();
+                
+                if(!$rsFind)
+                {
+                    $filename=uniqid().rand(1000,9999).strrchr($url,'.');;
+                    $ch = curl_init ();
+                    curl_setopt ( $ch, CURLOPT_CUSTOMREQUEST, 'GET' ); 
+                    curl_setopt ( $ch, CURLOPT_SSL_VERIFYPEER, false ); 
+                    curl_setopt ( $ch, CURLOPT_URL, $url );
+                    ob_start ();
+                    curl_exec ( $ch );
+                    $return_content = ob_get_contents ();
+                    ob_end_clean (); 
+                    $return_code = curl_getinfo ( $ch, CURLINFO_HTTP_CODE );
+                    $fp=@fopen("data/downloadImg/".$filename,"a"); //将文件绑定到流 
+                    if($fp){
+                    fwrite($fp,$return_content); //写入文件} 
+                    }
+           
+                   $addData["post_img_url"]="/data/downloadImg/".$filename;
+                   $addData["post_yl_img_url"]=$url;
+                   $addData["post_title"]=$imgList[$i]["post_miaoshu"];
+                   $addData["post_hb_id"]=$_POST["post_hb_id"];
+                   $addData["post_source"]=$imgList[$i]["post_source"];
+                   $addData["post_author"]=$userInfo["id"];
+                   $addData["post_date"]=date("Y-m-d H:i:s");
+                    
+                     
+                    $rs=$Posts->add($addData); 
+                    
+                }
+                
+            }
+            
+            
+                $Tag = M("tag"); 
+                $addAllData=json_decode($_POST["tag_list"],1);
+                
+                
+                $Tag_posts = M("Tag_posts");
+                for($i=0;$i<count($addAllData);$i++)
+                {
+                    
+                    $rsFind=$Tag->where($addAllData[$i])->find(); 
+                    $data1["tp_post_id"]=$rs;
+                    
+                    if($rsFind)
+                    {
+                        $data1["tp_tag_id"]=$rsFind["tag_id"];
+                        $rs1=$Tag_posts->add($data1);
+                    }
+                    else
+                    {
+                        $addAllData[$i]["tag_create_time"]=date("Y-m-d H:i:s");
+                        
+                        $tagAddRsId=$Tag->add($addAllData[$i]);
+                        
+                        $data1["tp_tag_id"]=$tagAddRsId;
+                        
+                        $rs1=$Tag_posts->add($data1);
+                        
+                    }
+                }
+                
+                echo 1;
+           
+        
+        
+            
     
     }
     
