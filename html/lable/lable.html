@@ -122,66 +122,42 @@
     <a href="#">所有标签</a>
     <button class="label-button" style="">编辑标签</button>
 </div>
+<!--标签内容-->
+<div class="lable-detail-box">
+
+       <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
+        <a href="#"  class="lable">背景 <span class="extra">1</span><i  class="iconfont icon-cha1 icon"></i></a>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 
 <!--没有更多-->
-<div class="nomore">
+<!--<div class="nomore">
     <div class="nomore_1" style="font-family: 微软雅黑;font-size:1.4rem">╮(╯﹏╰）╭&nbsp;没有更多了.....</div>
     <a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
-</div>
-<!--底部-->
-<!--<div class="footer">
-    <div class="footer_1">
-        <div class="footer_1_1">
-            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
-
-        </div>
-        <div class="footer_1_1">
-            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
-        </div>
-        <div class="footer_1_1">
-            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
-        </div>
-        <div class="footer_1_1">
-            <br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
-        </div>
-        <div style="clear: both"></div>
-    </div>
-    <div class="footer_2">
-        <div class="footer_2_1"><a href="#">关注我们</a></div>
-        <div class="footer_2_2"><a href="#">信息博客</a><br><a href="#">新浪博客</a><br><a href="#">官方微信</a></div>
-        <div class="footer_2_2"><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a></div>
-    </div>
-    <div style="clear: both"></div>
-    <div class="footer_3">Copyright2016-2017 Heifeiku Leijan Technology Co.Ltd All Rights Reserved<br>
-        皖ICP备17010401号-2皖公网安备3301080233301号
-    </div>
-
 </div>-->
-
-
-
-
-
-
-
-
-
 
 
 <!--script-->
@@ -189,6 +165,13 @@
 <script src="../js/jquery-1.8.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script type="text/javascript">
+
+    $(document).ready(function(){
+        $(".icon").click(function(){
+            $(this).parent().remove();
+        });
+    });
+
     var login = document.getElementById('login');
     var over = document.getElementById('over');
     function show()
