@@ -84,8 +84,10 @@
 
 
 	<div class="search-box">
-		<input class="search-box-input" placeholder="点击搜索一下您就知道">
-		<button class="sousuo"><i class="iconfont icon-sousuo"></i></button>
+		<form method="post" action="<?php echo U('Portal/search/index');?>">
+		<input name="postname" class="search-box-input" placeholder="点击搜索一下您就知道">
+		<button type="submit" class="sousuo"><i class="iconfont icon-sousuo"></i></button>
+			</form>
 	</div>
 </div>
 
