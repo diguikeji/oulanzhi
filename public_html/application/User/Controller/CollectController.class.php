@@ -22,11 +22,11 @@ class CollectController extends MemberbaseController
     public function index()
     {
         $uid = sp_get_current_userid();
-        $huabanUser_model = M("Hb_users");
+        $huabanUser_model = M("Huaban");
         $caijiUser_model = M("Posts");
         $loveUser_model = M("Love");
         $tagUser_model = M("Tag");
-        $huabanCount = $huabanUser_model->where(array("hbusers_users_id"=>$uid))->count();
+        $huabanCount = $huabanUser_model->where(array("hb_u_id"=>$uid))->count();
         $caijiCount = $caijiUser_model->where(array("post_author"=>$uid))->count();
         $loveCount = $loveUser_model->where(array("love_users_id"=>$uid))->count();
         $tagCount = $tagUser_model->where(array("tag_users_id"=>$uid))->count();

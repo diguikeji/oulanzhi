@@ -8,7 +8,7 @@ class HuabanController extends AdminbaseController{
     public function _initialize() {
         parent::_initialize();
         $this->huaban_model = D("Common/Huaban");
-        $this->xingqu_model = D("Common/Xingqu");
+
         $this->posts_model=D("Common/Posts");
     }
 ///首页列表
@@ -18,8 +18,7 @@ class HuabanController extends AdminbaseController{
         $count=$User->count();
         $page = $this->page($count, 10);
         $huaban = $User->limit($page->firstRow.','.$page->listRows)
-            ->alias("a")
-            ->join("tb_xingqu ON a.hb_xqd_id=tb_xingqu.xq_id")
+
             ->order("hb_id")
             ->select();
         $this->assign("huaban",$huaban);
@@ -30,11 +29,11 @@ class HuabanController extends AdminbaseController{
     //编辑
     public function edit()
     {
-        $xingqu=$this->xingqu_model->field("xq_id,xq_name")->select();
+
         $id = I("get.id",0,'intval');
         $huaban=$this->huaban_model->where(array('hb_id'=>$id))->find();
         $this->assign($huaban);
-        $this->assign("xingqu",$xingqu);
+
         $this->display();
     }
 

@@ -55,7 +55,7 @@ class InterestDetailController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_title,b.post_love,b.post_img_url,b.recommended,b.post_date")
             ->where("post_xq_id in ($ids)")
             ->order('post_date desc')
             ->limit($page->firstRow . ',' . $page->listRows)
@@ -123,7 +123,7 @@ class InterestDetailController extends HomebaseController
         $list = $users_model
             ->alias("a")
             ->join("tb_posts b on a.id =b.post_author")
-            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_img_url,b.recommended,b.post_date")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_title,b.post_love,b.post_img_url,b.recommended,b.post_date")
             ->where(array("post_xq_id"=>$xid))
             ->order('post_date desc')
             ->limit($page->firstRow . ',' . $page->listRows)

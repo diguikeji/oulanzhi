@@ -15,18 +15,18 @@
                     <tr>
                         <th width="80">采集标题</th>
                         <td>
-                            <input type="hidden" name="id" value="{$id}">
-                            <input type="text" style="width: 400px;" name="post_title" id="title" value="{$post_title}" />
+                            <input type="hidden" name="id" value="{$post.id}">
+                            <input type="text" style="width: 400px;" name="post_title" id="title" value="{$post.post_title}" />
                             <span class="form-required">*</span>
                         </td>
                     </tr>
                     <tr>
                         <th width="80">兴趣分类</th>
                         <td>
-                            <select name="xq_fl_id">
+                            <select name="post_xq_id">
                                 <option >选择兴趣点</option>
                                 <foreach name="xingqu" item="vo">
-                                    <php>$cid_selected=$post_xq_id==$vo['xq_id']?"selected":"";</php>
+                                    <php>$cid_selected=$post.post_xq_id==$vo['xq_id']?"selected":"";</php>
                                     <option value="{$vo.xq_id}"{$cid_selected}>{$vo.xq_name}</option>
                                 </foreach>
                             </select>
@@ -41,8 +41,12 @@
                     </tr>
                     <tr>
                         <td>
-                            <label class="radio"><input type="radio" name="recommended" value="1" checked>推荐</label>
-                            <label class="radio"><input type="radio" name="recommended" value="0">不推荐</label>
+                            <php>
+                                $recommended_yes=$post['recommended']==1?"checked":"";
+                                $recommended_no=$post['recommended']==0?"checked":"";
+                            </php>
+                            <label class="radio"><input type="radio" name="recommended" value="1" {$recommended_yes}>推荐</label>
+                            <label class="radio"><input type="radio" name="recommended" value="0" {$recommended_no}>不推荐</label>
                         </td>
                     </tr>
                 </table>

@@ -32,20 +32,27 @@ class FindController extends HomebaseController
      public function getHuabanList(){
          ///$xingqu_model = M("xingqu");
         // $count = $xingqu_model->where("xq_fl_zc=1")->count();
-        // $page = new \Think\Page($count,16);
+
         // $Model = M(); // 实例化一个model对象 没有对应任何数据表
          //$xingqu=$Model ->query("select a.xq_id,a.xq_name,a.xq_intro, GROUP_CONCAT(hb_id) as hb_id_list,GROUP_CONCAT(hb_img) as hb_img_list from (select * from tb_xingqu where xq_fl_zc=1) a left join tb_huaban b on a.xq_id = b.hb_xqd_id group by xq_id limit $page->firstRow,$page->listRows ");
         // echo json_encode($xingqu);
+         $huaban_model = M("Huaban");
+         $count = $huaban_model->count();
+         $page = new \Think\Page($count,6);
          $Model = M();
-         $huabancaiji = $Model ->query("Select a.hb_id ,a.hb_name,a.hb_descp,GROUP_CONCAT(id) as pidList from tb_huaban a left join tb_posts b on a.hb_id = b.post_hb_id GROUP BY hb_id");
+         $huabancaiji = $Model ->query("Select a.hb_id ,a.hb_name,a.hb_descp,GROUP_CONCAT(id) as pidList from tb_huaban a left join tb_posts b on a.hb_id = b.post_hb_id  GROUP BY hb_id limit $page->firstRow,$page->listRows");
          echo json_encode($huabancaiji);
      }
 
 
     //发现页兴趣和采集
     public function getInterestList(){
+
+        $xingqu_model = M("xingqu");
+        $count = $xingqu_model->count();
+        $page = new \Think\Page($count,6);
         $Model = M();
-        $xingqucaiji = $Model ->query("Select a.xq_id ,a.xq_name,a.xq_intro,GROUP_CONCAT(id) as pidList from tb_xingqu a left join tb_posts b on a.xq_id = b.post_xq_id GROUP BY xq_id" );
+        $xingqucaiji = $Model ->query("Select a.xq_id ,a.xq_name,a.xq_intro,GROUP_CONCAT(id) as pidList from tb_xingqu a left join tb_posts b on a.xq_id = b.post_xq_id GROUP BY xq_id limit $page->firstRow,$page->listRows" );
         echo json_encode($xingqucaiji);
     }
 

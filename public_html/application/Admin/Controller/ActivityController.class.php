@@ -53,7 +53,7 @@ class ActivityController extends AdminbaseController{
     {
         $id = I("get.id",0,'intval');
         $activity=$this->activity_model->where(array('hd_id'=>$id))->find();
-        $this->assign($activity);
+        $this->assign("activity",$activity);
         $this->display();
     }
     //编辑提交

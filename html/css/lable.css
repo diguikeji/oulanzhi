@@ -1,0 +1,205 @@
+
+
+/*lable.html*/
+.label-button{
+    float: right;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    background: #FF445F;
+    border: 0px;
+    color: white;
+    -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+    border-radius: 3px;
+    outline: medium;
+}
+.label-button:hover{
+    opacity: 0.9;
+}
+.lable{
+
+    border: 1px solid gainsboro;
+    display: inline-block;
+    position: relative;
+    padding: 2px 10px;
+    margin-right: 16px;
+    border-radius: 1px;
+    color: white;
+    line-height: 1.5;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,254,255,.5);
+    padding-top: 0.3rem;
+    background: #317EF3;
+    margin-bottom: 1rem;
+
+}
+.lable:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+.lable:hover i{
+            display: block;
+}
+.lable:link{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+.lable.extra{
+    margin-left: 10px;
+    color: white;
+}
+.icon{
+   position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 17px;
+    height: 100%;
+    color: #999999;
+    text-align: center;
+    border-left: 1px solid #DDDDDD;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 9;
+    background: white;
+    padding-top: 5px;
+    display: none;
+}
+.icon:hover{
+    opacity: 1;
+}
+.icon:hover{
+    color: #C90000;
+}
+
+
+
+
+
+
+
+/*lableDetail.html*/
+.title-detail{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 2rem;
+    color: black;
+
+}
+.title-detail a{
+    color: black;
+}
+.title-detail a:hover{
+    color: #9A0000;
+}
+.lable-detail-box{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    overflow: hidden;
+}
+.middle-box{
+    width: 1250px;
+    height: auto;
+    margin-left: 0.1rem;
+    padding-top: 0.1rem;
+}
+.lable-detail-box::after{
+    clear: both;
+}
+.lable-box{
+    width: 290px;
+    height: 430px;
+    float: left;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background-color: #F3F4F3;
+    border-radius: 2px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+}
+.img-detail-box{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.img-detail-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+.img-detail-box img:hover{
+    border-radius: 2px;
+    transform: scale(1.1);
+}
+.user-box{
+    width: 100%;
+    height: 6.5rem;
+}
+.user-touxiang{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    float: left;
+    overflow: hidden;
+}
+.user-touxiang img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title-box-right{
+    width: 75%;
+    height: auto;
+    float: right;
+    margin-top: 1.7rem
+}
+.title-left{
+    width: 65%;
+    height: auto;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+.title-right{
+    width: 35%;
+    height: auto;
+    float: right;
+    padding-right: 1.3rem;
+}
+.title-right i{
+    color: #989998;
+    font-size: 1.8rem;
+}
+.title-right a:hover{
+    text-decoration: none;
+}
+.title-right a:link{
+    text-decoration: none;
+}
+.user-name{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin-top: 0.8rem;
+    margin-left: -5rem;
+    font-size: 1.2rem;
+}
+

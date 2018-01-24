@@ -1,14 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>室内设计</title>
-    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/palette.css">
-    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/design.css">
-    <link href="/themes/simplebootx/Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/index.css">
-    <link rel="stylesheet" type="text/css" href="/themes/simplebootx/Public/new/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>搜索</title>
     <meta name="renderer" content="webkit">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,51 +10,147 @@
     <meta name="generator" content=""  data-variable="" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <style>
-        @media (min-width:1020px)and (max-width:1620px){
-            .middle{
-                width: 87%;
-                height: auto;
-                margin: 0 auto;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css/new.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link href="../favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+
+<style>
+    .search{
+        width: 90%;
+        height: 3.5rem;
+        border-radius: 5px;
+        border: 1px solid gainsboro;
+        margin: 0 auto;
+        margin-top: -4rem;
+    }
+    .search input{
+        width: 90%;
+        height: 3.5rem;
+        background-color:transparent;
+        border-radius: 5px;
+        border: 0px solid gainsboro;
+        margin-left: 5%;
+        outline: medium
+    }
+
+    .search-icon a:hover{
+        text-decoration: none;
+    }
+    .search-icon a i{
+        color: #959595;
+        font-size: 2rem
+    }
+    .search-icon a i:hover{
+        color: black;
+    }
+    .search-icon a:link{
+        text-decoration: none;
+    }
+    .search-icon{
+        z-index: 999;float: right;margin-top: -7.9rem;margin-right: 1rem
+    }
+
+</style>
+
 </head>
 
 <body>
-<div class="shineisheji">
-    <div class="interior">
-        <div class="interior-1">室内设计</div>
-        <div class="interior-2">
-            <a href="#"style="text-decoration: none"><div class="interior-2-1"><div class="interior-2-4"><img src="/themes/simplebootx/Public/new/image/huaban.png"></div><li>20采集</li></div></a>
-            <div class="interior-2-2"></div>
-            <a href="#"style="text-decoration: none"> <div class="interior-2-3"><div class="interior-2-5"><img src="/themes/simplebootx/Public/new/image/eye.png"></div><li>34关注</li></div></a>
-        </div>
+
+<nav class="nav-box">
+    <div class="nav-box-logo">
+        <img src="../image/logo.png">
     </div>
-    <div class="compiles">
-        <div class="dropdown-2">
-            <div class="dropbtn"><div class="compile"><a href="#" style="text-decoration: none;color: #A0A1A0;"><div class="compile-3">分享<img src="../image/enjoy.png"></div></a></div></div>
-            <div class="dropdown-1">
-                <div class="dropdown-content" style="margin-top: 20px;margin-left: -20px;z-index: 9999" >
-                    <div class="jiantou" style="width: 15px;height: 15px;background: #F9F9F9;position: absolute;right: 20px;margin-top: -5px;z-index: 1;transform:rotate(60deg);
-           -ms-transform:rotate(60deg); 	/* IE 9 */
-           -moz-transform:rotate(60deg); 	/* Firefox */
-           -webkit-transform:rotate(60deg); /* Safari 和 Chrome */
-           -o-transform:rotate(60deg); 	/* Opera */"></div>
-                    <a href="#"style="text-decoration: none;margin-top: 1rem"><img src="../image/bo.png">&nbsp;腾讯微博</a>
-                    <a href="#"style="text-decoration: none;"><img src="../image/Q.png"> &nbsp;QQ好友</a>
-                    <a href="#"style="text-decoration: none;"><img src="../image/douban.png">&nbsp; 豆瓣</a>
-                    <a href="#"style="text-decoration: none;"><img src="../image/renren.png"> &nbsp;人人网</a>
-                </div>
-            </div>
-        </div>
-        <div class="compile-1"><a href="#"style="text-decoration: none; color: #A0A1A0;"><li>批量处理</li></a></div>
-        <div class="compile-2"><a href="#"style="text-decoration: none; color: #A0A1A0;"><li>编辑画板</li></a></div>
+    <div class="nav-box-ul">
+        <ul id="nav">
+            <li><a href="../index.html" >首页</a></li>
+            <li><a href="../found/found.html">发现</a></li>
+            <li><a href="../new/new.html" class="active">最新</a>
+                <!--		<ul>
+                            <li><a href="#">我的推荐</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的画板</a></li>
+                            <li><a href="#">用户</a></li>
+                        </ul>-->
+            </li>
+            <li><a href="../activity/activity.html">活动</a></li>
+        </ul>
+    </div>
+
+
+    <div class="right-menu">
+        <img class="open-menu" src="../image/menu.png" />
+        <img class="close-menu" src="../image/closeMenu.png" />
+    </div>
+
+    <div class="login-ul">
+        <ul id="nav-login">
+            <li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
+            <li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
+            <li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="../image/touxiang.png"></div></a></li>
+            <li id="login1"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
+        </ul>
+    </div>
+
+
+</nav>
+
+
+
+
+
+
+<div id="flip" style="margin-top: 7rem">全部分类</div>
+<div id="panel">
+
+    <div class="fenlei-name" >工业设计</div>
+    <div class="fenlei-name">摄影</div>
+    <div class="fenlei-name">造型/美妆</div>
+    <div  class="fenlei-name">美食</div>
+    <div class="fenlei-name" >旅行</div>
+    <div class="fenlei-name">手工艺品</div>
+    <div class="fenlei-name">女装/搭配</div>
+    <div  class="fenlei-name">男士/风尚</div>
+    <div class="fenlei-name" >健身舞蹈</div>
+    <div class="fenlei-name">儿童</div>
+    <div class="fenlei-name">宠物</div>
+    <div  class="fenlei-name">美国</div>
+    <div class="fenlei-name" >明星</div>
+    <div class="fenlei-name">美女</div>
+    <div class="fenlei-name">礼物</div>
+    <div  class="fenlei-name">骑车/摩托</div>
+    <div  class="fenlei-name">电影/图书</div>
+    <div  class="fenlei-name">生活百科</div>
+    <div  class="fenlei-name">教育</div>
+    <div  class="fenlei-name">运动</div>
+    <div  class="fenlei-name">高校</div>
+    <div style="clear: both"></div>
+</div>
+<div class="guide" style="padding-top: 5rem;height: 10.5rem">
+    <div class="unit">
+        <a href="#" class="unit_a">工业设计</a><a href="#" class="unit_a">摄影</a><a href="#" class="unit_a">造型/美妆</a>
+        <a href="#" class="unit_a">美食</a><a href="#" class="unit_a">旅行</a><a href="#" class="unit_a">手工艺品</a>
+        <a href="#" class="unit_a">女装/搭配</a><a href="#" class="unit_a">男士/风尚</a>
+    </div>
+    <div class="unit">
+        <a href="#" class="unit_a">健身舞蹈</a><a href="#" class="unit_a">儿童</a><a href="#" class="unit_a">宠物</a>
+        <a href="#" class="unit_a">美国</a><a href="#" class="unit_a">明星</a><a href="#" class="unit_a">美女</a>
+        <a href="#" class="unit_a">礼物</a>
+    </div>
+    <div class="unit" style="border-right:none ">
+        <a href="#" class="unit_a">骑车/摩托</a><a href="#" class="unit_a">电影/图书</a><a href="#" class="unit_a">生活百科</a>
+        <a href="#" class="unit_a">教育</a><a href="#" class="unit_a">运动</a><a href="#" class="unit_a">高校</a>
+    </div>
+    <div class="search">
+        <input>
+        <div class="search-icon" ><a href="#"><i class="iconfont icon-sousuo" ></i></a></div>
     </div>
 </div>
 
-<!--内容-->
 <div class="middle">
+
     <div class="middle_2">
         <div class="picture">
             <img src="../image/picture1.png">
@@ -264,12 +354,10 @@
     </div>
     <div style="clear: both"></div>
 </div>
-<!--没有更多-->
 <div class="nomore">
-    <div class="nomore_1" style="font-family: 微软雅黑;font-size:1.4rem">╮(╯﹏╰）╭&nbsp;没有更多了.....</div>
+    <div class="nomore_1" style="font-family: 微软雅黑;font-size:1rem">╮(・o・)╭&nbsp;没有更多了.....</div>
     <a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
 </div>
-<!--底部-->
 <div class="footer">
     <div class="footer_1">
         <div class="footer_1_1">
@@ -293,9 +381,47 @@
         <div class="footer_2_2"><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a></div>
     </div>
     <div style="clear: both"></div>
-    <div class="footer_3">Copyright2016-2017 Heifeiku Leijan Technology Co.Ltd All Rights Reserved<br>
+    <div class="footer_3">Copyright©2016-2017 Heifeiku Leijan Technology Co.Ltd All Rights Reserved<br>
         皖ICP备17010401号-2皖公网安备3301080233301号
     </div>
+
 </div>
+<script src="../js/jquery-1.8.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("fast");
+        });
+    });
+</script>
+<!-- Initialize Swiper -->
+<script>
+
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+
+
+
+
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+
+
+    });
+
+
+</script>
 </body>
 </html>

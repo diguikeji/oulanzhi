@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/header.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/user.css">
-
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/follow.css">
     <meta name="renderer" content="webkit">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -42,36 +42,7 @@
 <body>
 
 
-<nav class="nav-box">
-    <div class="nav-box-logo">
-        <img src="__TMPL__Public/new/image/logo.png">
-    </div>
-    <div class="nav-box-ul">
-        <ul id="nav">
-            <li><a href="{:U('Portal/index/index')}">首页</a></li>
-            <li><a href="{:U('Portal/find/index')}">发现</a></li>
-            <li><a href="#">最新</a>
-                <!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
-            </li>
-            <li><a href="{:U('Portal/activity/index')}">活动</a></li>
-        </ul>
-    </div>
-
-
-    <div class="right-menu">
-        <img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
-        <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
-    </div>
-
-    <<div class="login-ul" id="user"></div>
-
-
-</nav>
+<tc_include file="Public:nav"/>
 
 
 
@@ -132,76 +103,11 @@
 
 
 <!--中间部分-->
-<div class="middle-box">
-
-
-    <div class="follow-box-user">
-        <img src="../image/user-bg.jpg">
-        <div class="box-title-user">
-            18 画板&nbsp;&nbsp;3859 采集
-        </div>
-        <a href="#">
-            <div class="img-row-user">
-                <div class="img-row-3-user"><img src="../image/3012.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3014.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3015.jpg"></div>
-            </div>
-        </a>
-        <button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>
-        <a href="#"> <div class="user-touxiang"><img src="../image/user-touxiang.jpg"></div></a>
-        <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
-    </div>
-
-    <div class="follow-box-user">
-        <img src="../image/user-bg.jpg">
-        <div class="box-title-user">
-            18 画板&nbsp;&nbsp;3859 采集
-        </div>
-        <a href="#">
-            <div class="img-row-user">
-                <div class="img-row-3-user"><img src="../image/3012.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3014.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3015.jpg"></div>
-            </div>
-        </a>
-        <button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>
-        <a href="#"> <div class="user-touxiang"><img src="../image/user-touxiang.jpg"></div></a>
-        <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="middle-box" id="hb-box">
 
 
 
 </div>
-
-
-
-
-
-
-
-
-
 
 <div style="clear: both"></div>
 <!--没有更多-->
@@ -213,6 +119,8 @@
 <tc_include file="Public:footer" />
 
 <tc_include file="Public:scripts"/>
+
+<script src="__TMPL__Public/login.js"></script>
 
 
 
@@ -245,35 +153,73 @@
         $(this).parent().removeClass("active");
     });
 
+
+
     $.ajax({
-        type: "GET",
+                type: "GET",
 
-        url: "/index.php?g=&m=Index&a=getUser",
+                url: "/index.php?g=User&m=follow&a=drawDetail",
 
-        dataType: "json",
+                dataType: "json",
 
-        success: function (data) {
-            var uid =data.id;
-            //console.log(uid);
-            if(data == 0){
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
-                    '</ul>'
-                )
-            }else{
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
-                    '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-                    '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-                    '</ul>'
-                )
+
+
+                success: function (data) {
+
+
+                    var html ='';
+                    for (var i = 0; i < data.length; i++) {
+                        var hid = data[i].hb_id;
+
+                        if(data[i].pidlist!==null){
+                            var postIdList = data[i].pidlist.split(",");
+
+                            console.log(data);
+
+                            html=html+
+                                    '<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
+                                    '<div class="follow-box" >'+
+                                    '<img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'">'+
+                                    '<div class="box-title ">'+
+                                    '<div class="with-line-left"></div>'+ data[i].hb_name+
+                                    '<div class="with-line-right"></div>'+
+                                    '</div>'+'<div class="img-row">'
+
+                            for(var j=1 ;j<4;j++) {
+                                var pid = postIdList[j];
+                                html = html +
+                                        '<div class="img-row-3"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
+
+
+                            }
+                            html=html+'</div>'+
+                                    '</div>'+
+                                    '</a>'
+
+                        }else{
+
+                            html=html+
+
+                                    '<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
+                                    '<div class="follow-box" >'+
+                                    '<img src="index.php?g=&m=Index&a=imgCollect&id='+hid+'">'+
+                                    '<div class="box-title ">'+
+                                    '<div class="with-line-left"></div>'+ data[i].hb_name+
+                                    '<div class="with-line-right"></div>'+
+                                    '</div>'+
+                                    '<div class="img-row">'+
+                                    '</div>'+
+                                    '</div>'+
+                                    '</a>'
+
+
+                        }
+                    }
+
+                    $("#hb-box").append(html);
+                }
             }
-        }
-
-    });
-
+    );
 
 </script>
 </body>

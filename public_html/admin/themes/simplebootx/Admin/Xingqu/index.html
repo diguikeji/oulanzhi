@@ -38,8 +38,8 @@
                     <td>{$vo.xq_id}</td>
                     <td>{$vo.xq_name}</td>
                     <td>{$vo.xq_intro}</td>
-                    <td><a href="{$vo.xq_img}">查看</a></td>
-                    <td><a target="_blank" href="{:sp_get_image_preview_url($vo['xq_img'])}">查看</a></td>
+                    <td><a href="{:sp_get_image_preview_url($vo['xq_img'])}" target="_blank">查看</a></td>
+                    <td>{$vo.xqfl_name}</td>
                     <td>
                         <a href="{:U('xingqu/content',array('id'=>$vo['xq_id']))}">兴趣内容</a>
                         <a href="{:U('xingqu/edit',array('id'=>$vo['xq_id']))}">{:L('EDIT')}</a>

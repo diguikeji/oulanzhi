@@ -8,8 +8,6 @@ class LoginController extends HomebaseController {
     // 前台用户登录
 	public function index(){
 	    $redirect=I('get.redirect','');
-	    
-	    
 	    if(empty($redirect)){
 	        $redirect=$_SERVER['HTTP_REFERER'];
 	    }else{
@@ -17,10 +15,13 @@ class LoginController extends HomebaseController {
 	    }
 	    session('login_http_referer',$redirect);
 	    
+<<<<<<< HEAD
 	    
 	    $this->assign("params",$_POST["params"]);
 	    $this->assign("redirecturl",$_GET["redirecturl"]);
 	    
+=======
+>>>>>>> 43731a3f54f2131f099e498c8420209156b71b11
 	    if(sp_is_user_login()){ //已经登录时直接跳到首页
 	        redirect(__ROOT__."/");
 	    }else{
@@ -233,7 +234,7 @@ hello;
     	if(preg_match('/(^(13\d|15[^4\D]|17[13678]|18\d)\d{8}|170[^346\D]\d{7})$/', $username)){//手机号登录
     	    $this->_do_mobile_login();
     	}else{
-    	    $this->_do_email_login($_POST["redirecturl"]); // 用户名或者邮箱登录
+    	    $this->_do_email_login(); // 用户名或者邮箱登录
     	}
     	 
     }
@@ -269,7 +270,7 @@ hello;
     }
     
     // 处理前台用户邮件或者用户登录
-    private function _do_email_login($redirecturl){
+    private function _do_email_login(){
 
         $username=I('post.username');
         $password=I('post.password');
@@ -286,7 +287,6 @@ hello;
         $ucenter_old_user_login=false;
          
         $ucenter_login_ok=false;
-        
         if($ucenter_syn){
             cookie("thinkcmf_auth","");
             include UC_CLIENT_ROOT."client.php";
@@ -357,14 +357,10 @@ hello;
                          
                 }
             }
-            
             $ucenter_login_ok=true;
             echo uc_user_synlogin($uc_uid);
-            
         }
-        
-        
-        
+        //exit();
         if(!empty($result)){
             if(sp_compare_password($password, $result['user_pass'])|| $ucenter_login_ok){
                 session('user',$result);
@@ -384,19 +380,7 @@ hello;
                     //$ucenter_old_user_login_msg="老用户请在跳转后，再次登陆";
                 }
         
-                if($redirecturl)
-                {
-                    $dataRs["info"]="登录验证成功";
-                    $dataRs["referer"]=$redirecturl;
-                    $dataRs["status"]=1;
-                    $dataRs["state"]="success";
-                    echo json_encode($dataRs);
-                }
-                else{
-                    $this->success("登录验证成功！", $redirect);
-                }
-        
-                
+                $this->success("登录验证成功！", $redirect);
             }else{
                 $this->error("密码错误！");
             }

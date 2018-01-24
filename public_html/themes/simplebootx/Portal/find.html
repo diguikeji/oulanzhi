@@ -84,15 +84,6 @@
         </div>
     </div>
 
-
- <!--   <div class="search-box">
-        <input class="search-box-input" placeholder="点击搜索一下您就知道">
-        <button class="sousuo"><i class="iconfont icon-sousuo"></i></button>
-    </div>
-</div>
--->
-
-
 <div class="contain">
 
     <!--  大家关注的活动 -->
@@ -119,7 +110,7 @@
 
     <div class="middle">
         <div class="about">
-            <li class="text">为你推荐</li>
+            <li class="text">画板采集</li>
         </div>
         <div class="edge">
             <div class="edge-1"><div class="edge-1-1"></div></div>
@@ -138,7 +129,31 @@
                    border-bottom-right-radius: 20px;
                    border-top-left-radius: 20px;
                    border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
+
+    <div class="middle">
+        <div class="about">
+            <li class="text">兴趣采集</li>
+        </div>
+        <div class="edge">
+            <div class="edge-1"><div class="edge-1-1"></div></div>
+            <div class="edge-2"><li class="text-1"> RECOMMENDED </li></div>
+            <div class="edge-1"><div class="edge-1-1"></div></div>
+        </div>
+    </div>
+
+
+    <div id="hb">
+
+    </div>
+
+    <div class="colick">
+        <button type="submit"  id="load2" style="width: 100%; height: 40px; background-color: #FF455F;color: white;
+                   border-bottom-left-radius: 20px;
+                   border-bottom-right-radius: 20px;
+                   border-top-left-radius: 20px;
+                   border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
 </div>
+    </div>
 
 <tc_include file="Public:footer" />
 
@@ -148,142 +163,144 @@
 <script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
 <script src="__TMPL__Public/assets/js/slippry.min.js"></script>
 <script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
-
+    <script src="__TMPL__Public/login.js"></script>
 <script>
-    /*var pageIndex = 1;
-    function getInterestList(page)
-    {*/
+
+
+    var pageIndex = 1;
+
+    function getHuabanList(page) {
         $.ajax({
 
             type: "GET",
 
-            url: "/index.php?g=&m=Find&a=gethuabanList",
+            url: "/index.php?g=&m=Find&a=gethuabanList&p="+page,
 
             dataType: "json",
 
             success: function (data) {
                 console.log(data);
-                var html ='';
-                for(var i =0; i<data.length;i++){
+                var html = '';
+                for (var i = 0; i < data.length; i++) {
 
-                  //  var xid  = data[i].xq_id;
+                    //  var xid  = data[i].xq_id;
 
 
-                       if(data[i].pidlist !=null){
+                    if (data[i].pidlist != null) {
 
-                           var pidlist = data[i].pidlist.split(",");
+                        var pidlist = data[i].pidlist.split(",");
 
-                           html=html+'<div class="sheji-1">' +
-                                   '<div class="ping-1"> ' +
-                                   '<div class="high-1"></div> ' +
-                                   '<div class="text-2-1">'+data[i].hb_name+'</div> ' +
-                                   '<div class="text-3-1">'+data[i].hb_descp+'</div> ' +
-                                   '<div class="annv"> ' +
-                                   '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
-                                   '</div>' +
-                                   '</div>'
+                        html = html + '<div class="sheji-1">' +
+                                '<div class="ping-1"> ' +
+                                '<div class="high-1"></div> ' +
+                                '<div class="text-2-1">' + data[i].hb_name + '</div> ' +
+                                '<div class="text-3-1">' + data[i].hb_descp + '</div> ' +
+                                '<div class="annv"> ' +
+                                '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">' + '点击关注</button></a>' +
+                                '</div>' +
+                                '</div>'
 
-                           for(var j=0; j<pidlist.length ;j++) {
-                               var pid = pidlist[j];
-                               //console.log(pid);
-                               html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
-                           }
+                        for (var j = 0; j < 4; j++) {
+                            var pid = pidlist[j];
+                            //console.log(pid);
+                            html = html + '<div class="mian">' + '<a href="index.php?g=&m=Article&a=posts&pid=' + pid + '">' + '<img src="index.php?g=&m=Index&a=imgCollect&id=' + pid + '">' + '</a>' + '</div>';
+                        }
 
-                           html=html+'<div class="more">' +
-                                   '<a href="#"><img src="__TMPL__Public/new/image/more.png"></a>' +
-                                   '<div class="text-4"><a href="#">加载更多</a></div>' +
-                                   '</div>' +
-                                   '</div>'
-                       }
+                        html = html + '<div class="more">' +
+                                '<a href="#"><img src="__TMPL__Public/new/image/more.png"></a>' +
+                                '<div class="text-4"><a href="#">加载更多</a></div>' +
+                                '</div>' +
+                                '</div>'
+                    }
                 }
-
-
-                // console.log(html);
 
                 $("#hb-box").append(html);
 
 
-               /* if(data.length<16)
-                {
+                if (data.length < 6) {
                     $("#load").text("没有更多数据了");
                 }
 
-                pageIndex++;*/
+                pageIndex++;
             }
         });
+    }
 
+        getHuabanList(pageIndex);
+
+        $("#load").click(function()
+        {
+            getHuabanList(pageIndex);
+        });
+
+
+
+
+
+
+   var pageIndex2 = 1;
+    function getInterestList(page) {
         $.ajax({
 
-         type: "GET",
+            type: "GET",
 
-         url: "/index.php?g=&m=Find&a=getInterestList",
+            url: "/index.php?g=&m=Find&a=getInterestList&p="+page,
 
-        dataType: "json",
+            dataType: "json",
 
-        success: function (data) {
-            console.log(data);
-            var html ='';
-            for(var i =0; i<data.length;i++){
+            success: function (data) {
+                var html = '';
+                for (var i = 0; i < data.length; i++) {
 
-                //  var xid  = data[i].xq_id;
+                    if (data[i].pidlist != null) {
 
+                        var pidlist = data[i].pidlist.split(",");
 
-                if(data[i].pidlist !=null){
+                        var xid = data[i].xq_id;
 
-                    var pidlist = data[i].pidlist.split(",");
+                        html = html + '<div class="sheji-1">' +
+                                '<div class="ping-1"> ' +
+                                '<div class="high-1"></div> ' +
+                                '<div class="text-2-1">' + data[i].xq_name + '</div> ' +
+                                '<div class="text-3-1">' + data[i].xq_intro + '</div> ' +
+                                '<div class="annv"> ' +
+                                '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">' + '点击关注</button></a>' +
+                                '</div>' +
+                                '</div>'
 
-                    var xid = data[i].xq_id;
+                        for (var j = 0; j < 4; j++) {
+                            var pid = pidlist[j];
+                            html = html + '<div class="mian">' + '<a href="index.php?g=&m=Article&a=posts&pid=' + pid + '">' + '<img src="index.php?g=&m=Index&a=imgCollect&id=' + pid + '">' + '</a>' + '</div>';
+                        }
 
-                    html=html+'<div class="sheji-1">' +
-                            '<div class="ping-1"> ' +
-                            '<div class="high-1"></div> ' +
-                            '<div class="text-2-1">'+data[i].xq_name+'</div> ' +
-                            '<div class="text-3-1">'+data[i].xq_intro+'</div> ' +
-                            '<div class="annv"> ' +
-                            '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">'+'点击关注</button></a>' +
-                            '</div>' +
-                            '</div>'
-
-                    for(var j=0; j<pidlist.length ;j++) {
-                        var pid = pidlist[j];
-                        //console.log(pid);
-                        html=html+ '<div class="mian">'+'<a href="index.php?g=&m=Article&a=posts&pid='+pid+'">'+'<img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'">'+'</a>'+'</div>';
+                        html = html + '<div class="more">' +
+                                '<a href="index.php?g=portal&m=InterestDetail&a=interest&xid=' + xid + '"><img src="__TMPL__Public/new/image/more.png"></a>' +
+                                '<div class="text-4"><a href="index.php?g=portal&m=InterestDetail&a=interest&xid=' + xid + '">加载更多</a></div>' +
+                                '</div>' +
+                                '</div>'
                     }
-
-                    html=html+'<div class="more">' +
-                            '<a href="index.php?g=portal&m=InterestDetail&a=interest&xid='+xid+'"><img src="__TMPL__Public/new/image/more.png"></a>' +
-                            '<div class="text-4"><a href="index.php?g=portal&m=InterestDetail&a=interest&xid='+xid+'">加载更多</a></div>' +
-                            '</div>' +
-                            '</div>'
                 }
-            }
 
+                $("#hb").append(html);
 
-            // console.log(html);
+                 if(data.length < 6)
 
-            $("#hb-box").append(html);
+             $("#load2").text("没有更多数据了");
 
-
-            /* if(data.length<16)
-             {
-             $("#load").text("没有更多数据了");
-             }
-
-             pageIndex++;*/
+             pageIndex2++;
         }
     });
 
+        }
 
+   getInterestList(pageIndex2);
 
-
-   // }
-
-   /* getInterestList(pageIndex);
-
-    $("#load").click(function()
+    $("#load2").click(function()
     {
-        getInterestList(pageIndex);
-    });*/
+        getInterestList(pageIndex2);
+    });
+
+
 
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -311,39 +328,6 @@
 
     });
 
-    $.ajax({
-        type: "GET",
-
-        url: "/index.php?g=&m=Index&a=getUser",
-
-        dataType: "json",
-
-        success: function (data) {
-            var uid =data.id;
-            //console.log(uid);
-            if(data == 0){
-                $("#user").append(
-                        '<ul id="nav-login">'+
-                        '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
-                        '</ul>'
-                )
-            }else{
-                $("#user").append(
-                        '<ul id="nav-login">'+
-                        '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
-                        '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-                        '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-                        '</ul>'
-                )
-            }
-        }
-
-    });
-
-
-
 </script>
-
-
 </body>
 </html>
