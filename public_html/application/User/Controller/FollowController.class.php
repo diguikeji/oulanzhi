@@ -152,7 +152,29 @@ class FollowController extends MemberbaseController
     {
         $uid = sp_get_current_userid();
         $upid = I('get.id', 0, 'intval');
+        $yonghu_model = M("Yonghu_gz");
+        $yonghu = $yonghu_model->where(array("usergz_uid_pid"=>$uid,"usergz_uid_childid"=>$upid))->select();
+        if($yonghu){
+            echo 1;
+        }else{
+            echo 0;
+        }
+    }
 
+    //用户点击关注用户
+    public function clickUserFollow(){
+        $uid = sp_get_current_userid();
+        $upid = I('get.id', 0, 'intval');
+        $data["usergz_uid_pid"] = $uid;
+        $data["usergz_uid_childid"] = $upid;
+        $yonghu_model = M("Yonghu_gz");
+        $yonghu = $yonghu_model->where($data)->select();
+        if(!$yonghu){
+            $yonghu_model->save($data);
+        }
+        else{
+            $yonghu_model->where($data)->delete();
+        }
     }
 
 

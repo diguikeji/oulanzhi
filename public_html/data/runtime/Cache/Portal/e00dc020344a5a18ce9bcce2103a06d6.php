@@ -200,6 +200,7 @@ $(function(){
 <script src="/themes/simplebootx/Public/new/js/bootstrap.min.js"></script>
 <script src="/themes/simplebootx/Public/assets/js/slippry.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/jquery-1.8.1.min.js"></script>
+<script src="/themes/simplebootx/Public/login.js"></script>
 
 <script>
     $(document).ready(function(){
@@ -233,36 +234,6 @@ $(function(){
 
     });
 
-
-
-    $.ajax({
-        type: "GET",
-
-        url: "/index.php?g=&m=Index&a=getUser",
-
-        dataType: "json",
-
-        success: function (data) {
-            var uid =data.id;
-            //console.log(uid);
-            if(data == 0){
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="login"><a href="index.php?g=user&m=login&a=index"><i class="iconfont icon-denglu"></i></a></li>'+
-                    '</ul>'
-                )
-            }else{
-                $("#user").append(
-                    '<ul id="nav-login">'+
-                    '<li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>'+
-                    '<li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>'+
-                    '<li><a href="index.php?g=user&m=center&a=index"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a></li>'+
-                    '</ul>'
-                )
-            }
-        }
-
-    });
 
 
     var pageIndex=1;
