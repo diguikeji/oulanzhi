@@ -13,9 +13,67 @@
     -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
     box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
     border-radius: 3px;
+    outline: medium;
 }
 .label-button:hover{
     opacity: 0.9;
+}
+.lable{
+
+    border: 1px solid gainsboro;
+    display: inline-block;
+    position: relative;
+    padding: 2px 10px;
+    margin-right: 16px;
+    border-radius: 1px;
+    color: white;
+    line-height: 1.5;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,254,255,.5);
+    padding-top: 0.3rem;
+    background: #317EF3;
+    margin-bottom: 1rem;
+
+}
+.lable:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+.lable:hover i{
+            display: block;
+}
+.lable:link{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+.lable.extra{
+    margin-left: 10px;
+    color: white;
+}
+.icon{
+   position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 17px;
+    height: 100%;
+    color: #999999;
+    text-align: center;
+    border-left: 1px solid #DDDDDD;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 9;
+    background: white;
+    padding-top: 5px;
+    display: none;
+}
+.icon:hover{
+    opacity: 1;
+}
+.icon:hover{
+    color: #C90000;
 }
 
 
@@ -33,6 +91,7 @@
     border-bottom: 1px solid gainsboro;
     padding-bottom: 2rem;
     color: black;
+
 }
 .title-detail a{
     color: black;
