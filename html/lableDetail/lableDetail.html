@@ -17,6 +17,7 @@
     <meta name="generator" content=""  data-variable="" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <link href="../css/share.css" rel="stylesheet" type="text/css"><!--分享-->
 </head>
 <body>
 
@@ -136,7 +137,7 @@
                             </div>
                             <div class="title-right">
                                 <a href="#"><i class="iconfont icon-guanzhu" style="color: red"></i><font style="position: relative;top: 1.5rem;left: -1.5rem;color: #989998">26</font></a>
-                                <a href="#">  <font style="float: right"><i class="iconfont icon-fenxiang"></i></font></a>
+                                <a href="javascript:void(0)">  <font style="float: right"><i id="share" class="iconfont icon-fenxiang"></i></font></a>
                             </div>
                             </div>
                             <div class="user-name">鎏哖亂灬浮生</div> <!--昵称-->
@@ -337,6 +338,15 @@
 <!-- Initialize Swiper -->
 <script src="../js/jquery-1.8.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/share.js"></script><!--分享-->
+<script  type="text/javascript">
+    $('#share').shareConfig({
+        Shade : true, //是否显示遮罩层
+        Event:'click', //触发事件
+        Content : 'Share', //内容DIV ID
+        Title : '分享给朋友' //显示标题
+    });
+</script>
 <script type="text/javascript">
     var login = document.getElementById('login');
     var over = document.getElementById('over');
