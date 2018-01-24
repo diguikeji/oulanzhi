@@ -258,10 +258,27 @@
     	                            }else{
     	                            	if(wait){
     	                            		setTimeout(function(){
-    	                            			window.location.href = data.referer;
+    	                            		    
+                                		    	if($("#loginParams").val())
+    	                            		    {
+    	                            		        $("#myForm").submit();
+    	                            		    }
+    	                            		    else{
+    	                            		        window.location.href = data.referer;
+    	                            		    }
+    	                            		    
+    	                            			
     	                            		},wait);
     	                        		}else{
-    	                        			window.location.href = data.referer;
+    	                        			
+        	                        			if($("#loginParams").val())
+    	                            		    {
+    	                            		        $("#myForm").submit();
+    	                            		    }
+    	                            		    else{
+    	                            		        window.location.href = data.referer;
+    	                            		    }
+    	                        			
     	                        		}
     	                            }
     	                        } else {

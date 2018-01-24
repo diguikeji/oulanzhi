@@ -1,0 +1,63 @@
+<admintpl file="header" />
+</head>
+<body style="min-width: 800px;">
+<? php?>
+<div class="wrap js-check-wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="{:U('sixin/index')}">私信列表</a></li>
+        <li ><a href="{:U('sixin/add')}">添加私信</a></li>
+    </ul>
+    <form class="js-ajax-form" method="post" action="{:U('sixin/index')}">
+        <div class="table-actions">
+            <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('sixin/delete')}" data-subcheck="true" data-msg="{:L('DELETE_CONFIRM_MESSAGE')}">批量{:L('DELETE')}</button>
+        </div>
+        <table class="table table-hover table-bordered table-list">
+            <thead>
+            <tr>
+                <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                <th >ID</th>
+                <th >私信标题</th>
+                <th >私信内容</th>
+                <th >创建时间</th>
+                <th >操作</th>
+            </tr>
+            </thead>
+            <foreach name="sixin" item="vo">
+                <tr>
+                    <td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.sx_id}"></td>
+                    <td>{$vo.sx_id}</td>
+                    <td>{$vo.sx_title}</td>
+                    <td>{$vo.sx_content}</td>
+                    <td>{$vo.sx_time}</td>
+                    <td>
+                        <a href="{:U('sixin/edit',array('id'=>$vo['sx_id']))}">{:L('EDIT')}</a>
+                        <a href="{:U('sixin/delete',array('id'=>$vo['sx_id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+                    </td>
+                </tr>
+            </foreach>
+
+        </table>
+
+        <div class="pagination">{$page}</div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+<script>
+    setCookie('refersh_time', 0);
+    function refersh_window() {
+        var refersh_time = getCookie('refersh_time');
+        if (refersh_time == 1) {
+            window.location.reload();
+        }
+    }
+    setInterval(function() {
+        refersh_window()
+    }, 3000);
+    $(function() {
+        $("#selected-cid").change(function() {
+            $("#cid-form").submit();
+        });
+    });
+</script>
+</body>
+</html>

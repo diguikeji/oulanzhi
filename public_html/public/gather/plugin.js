@@ -936,7 +936,7 @@ function() {
     } (window, document),
     function(e, t) {
         var n = t.Qatrix,
-        i = "http://hb.pro.youzewang.com";
+        i = "https://hb.pro.youzewang.com";
         e.__huaban_dev && "hb.pro.youzewang.com" !== e.__huaban_dev && (i = "http://" + __huaban_dev);
         var o = t.settings = {
             autoInitialize: !0,
@@ -957,7 +957,7 @@ function() {
             },
             huabanUrl: i,
             popupUrl: i + "/index.php/Portal/Gather/index/",
-            multiPopupUrl: i + "/bookmarklet_multiple/",
+            multiPopupUrl: i + "/index.php/Portal/Gather/caijiAll/",
             imgBase: i.replace("http:", "") + "/img/widgets",
             analyticsUrl: i.replace("http:", "") + "/share_analytics.html?v=3",
             waterfallLimit: 600,
@@ -2348,8 +2348,31 @@ function() {
                     a.url = n(a.url || location.href)
                 }
                 this.exportUnits = o;
+                
+                console.log("批量采集");
+                console.log(o);
+                
                 var l = "status=no,resizable=no,scrollbars=yes,personalbar=no,directories=no,location=no,toolbar=no,menubar=no,width=630,height=520,left=0,top=0";
-                this.popupWindow = t.open(e.settings.multiPopupUrl, "", l)
+                //this.popupWindow = t.open(e.settings.multiPopupUrl, "", l);
+                
+                function openPostWindow(url, params,l) {
+
+                    var newWin = window.open("", l);
+                    console.log(newWin);
+                          formStr = '';
+                     //设置样式为隐藏，打开新标签再跳转页面前，如果有可现实的表单选项，用户会看到表单内容数据
+                     formStr = '<form id="OuLanZhi2018" style="visibility:hidden;" method="POST" action="' + url + '">' +
+                          '<input type="hidden" name="params" value=' + escape(params) + ' />' +
+                          '</form>';
+                
+                    newWin.document.body.innerHTML = formStr;
+                    newWin.document.forms[0].submit();
+                    
+                    return newWin;
+                }
+                
+                openPostWindow(e.settings.multiPopupUrl, JSON.stringify(o), l);
+                
             },
             sendExportUnits: function() {
                 if (this.exportUnits && this.exportUnits.length) {
@@ -2532,7 +2555,7 @@ function() {
                 e.settings.hideCallback && e.settings.hideCallback()
             },
             checkPermission: function() {
-                if (location.href.match(/^http?:\/\/hb.pro.youzewang.com/)) {
+                if (location.href.match(/^https?:\/\/hb.pro.youzewang.com/)) {
                     var e = "你就在欧兰芝本站呢，可以直接采集本站图片。";
                     return t.app && app.error ? app.error(e) : alert(e),
                     !0
