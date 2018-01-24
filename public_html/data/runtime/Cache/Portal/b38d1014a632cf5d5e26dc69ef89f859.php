@@ -141,13 +141,12 @@
 </div>
 
 
-<script src="/themes/simplebootx/Public/new/js/jquery/1.9.1/jquery.min.js"></script>
+<script src="/themes/simplebootx/Public/new/js/jquery-1.8.1.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/swiper.min.js"></script>
 <script src="/themes/simplebootx/Public/new/js/bootstrap.min.js"></script>
 <script src="/themes/simplebootx/Public/assets/js/slippry.min.js"></script>
-
 <script src="/themes/simplebootx/Public/login.js"></script>
-<script src="/themes/simplebootx/Public/new/js/layer/layer.js"></script>
+
 
 <!-- Initialize Swiper -->
 <script>
