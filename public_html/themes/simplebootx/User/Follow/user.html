@@ -102,93 +102,9 @@
 
 
 <!--中间部分-->
-<div class="middle-box">
+<div class="middle-box" id="user-box">
 
 
-    <div class="follow-box-user">
-        <img src="../image/user-bg.jpg">
-        <div class="box-title-user">
-            18 画板&nbsp;&nbsp;3859 采集
-        </div>
-        <a href="#">
-            <div class="img-row-user">
-                <div class="img-row-3-user"><img src="../image/3012.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3014.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3015.jpg"></div>
-            </div>
-        </a>
-        <button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>
-        <a href="#"> <div class="user-touxiang"><img src="../image/user-touxiang.jpg"></div></a>
-        <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
-    </div>
-
-    <div class="follow-box-user">
-        <img src="../image/user-bg.jpg">
-        <div class="box-title-user">
-            18 画板&nbsp;&nbsp;3859 采集
-        </div>
-        <a href="#">
-            <div class="img-row-user">
-                <div class="img-row-3-user"><img src="../image/3012.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3014.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3015.jpg"></div>
-            </div>
-        </a>
-        <button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>
-        <a href="#"> <div class="user-touxiang"><img src="../image/user-touxiang.jpg"></div></a>
-        <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
-    </div>
-
-    <div class="follow-box-user">
-        <img src="../image/user-bg.jpg">
-        <div class="box-title-user">
-            18 画板&nbsp;&nbsp;3859 采集
-        </div>
-        <a href="#">
-            <div class="img-row-user">
-                <div class="img-row-3-user"><img src="../image/3012.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3014.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3015.jpg"></div>
-            </div>
-        </a>
-        <button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>
-        <a href="#"> <div class="user-touxiang"><img src="../image/user-touxiang.jpg"></div></a>
-        <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
-    </div>
-
-    <div class="follow-box-user">
-        <img src="../image/user-bg.jpg">
-        <div class="box-title-user">
-            18 画板&nbsp;&nbsp;3859 采集
-        </div>
-        <a href="#">
-            <div class="img-row-user">
-                <div class="img-row-3-user"><img src="../image/3012.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3014.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3015.jpg"></div>
-            </div>
-        </a>
-        <button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>
-        <a href="#"> <div class="user-touxiang"><img src="../image/user-touxiang.jpg"></div></a>
-        <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
-    </div>
-
-    <div class="follow-box-user">
-        <img src="../image/user-bg.jpg">
-        <div class="box-title-user">
-            18 画板&nbsp;&nbsp;3859 采集
-        </div>
-        <a href="#">
-            <div class="img-row-user">
-                <div class="img-row-3-user"><img src="../image/3012.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3014.jpg"></div>
-                <div class="img-row-3-user"><img src="../image/3015.jpg"></div>
-            </div>
-        </a>
-        <button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>
-        <a href="#"> <div class="user-touxiang"><img src="../image/user-touxiang.jpg"></div></a>
-        <div class="user-name"><a href="#">鎏哖亂灬浮生</a></div>
-    </div>
 
 </div>
 
@@ -232,6 +148,61 @@
         $(".nav-box-ul").slideUp();
         $(this).parent().removeClass("active");
     });
+
+
+
+    $.ajax({
+
+        type: "GET",
+
+        url: "/index.php?g=user&m=follow&a=userDetail",
+
+        dataType: "json",
+
+        success: function (data) {
+
+            console.log(data);
+
+            var html = "";
+
+            for(var i=0; i< data.length; i++) {
+
+                var uid = data[i].usergz_uid_childid;
+
+                if(data[i].pidlist!==null) {
+
+                    var postIdList = data[i].pidlist.split(",");
+
+                    html = html + '<div class="follow-box-user">' +
+                            '<img src="__TMPL__Public/new/image/user-bg.jpg">' +
+                            '<div class="box-title-user">' +
+                            data[i].huaban_count+'画板&nbsp;&nbsp;'+postIdList.length+' 采集' +
+                            '</div>' +
+                            '<a href="#">' +
+                            '<div class="img-row-user">'
+
+                    for (var j = 0; j <3;j++) {
+
+                        var pid = postIdList[j];
+
+                        html = html + '<div class="img-row-3-user"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
+                    }
+
+                    html = html + '</div>' +
+                            '</a>' +
+                            '<button class="following-user"><i class="iconfont icon-jia1"></i>&nbsp;&nbsp;关注</button>' +
+                            '<a href="#"> <div class="user-touxiang"><img src="index.php?g=user&m=public&a=avatar&id='+uid+'"></div></a>' +
+                            '<div class="user-name"><a href="#">'+data[i].user_nicename+'</a></div>' +
+                            '</div>'
+
+                }
+            }
+
+            $("#user-box").append(html);
+
+        }
+
+    })
 </script>
 </body>
 </html>
