@@ -9,7 +9,7 @@
 .contain{
     width: 100%;
     height: auto;
-    margin-top: 50px
+    margin-top: 50px;
 
 }
 .top{
@@ -20,6 +20,7 @@
 .middle{
     width: 100%;
     height: 100px;
+
 
 }
 .about{
@@ -119,12 +120,12 @@
     background-color: #F3F4F3;
 }
 .high{
-     width: 30px;
-     height: 60px;
-     margin-left: 30px;
-     border-bottom-left-radius: 20px;
-     background-color: white;
- }
+    width: 30px;
+    height: 60px;
+    margin-left: 30px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+}
 .high-1{
     width: 30px;
     height: 60px;
@@ -291,8 +292,217 @@
     text-decoration: none;
     color: #EDEDED;
 }
+
+
+
+
+/*宽度：469px-1200px*/
+@media (min-width:468px)and (max-width:900px){
+    .contain{
+        width: 100%;
+        height:auto;
+    }
+    .top{
+        display: none;
+        block:none;;
+    }
+    .middle{
+        display: none;
+        block: none;
+
+    }
+    .about{
+        display: none;
+        block:none;
+
+    }
+    .text{
+        display: none;
+        block:none;
+    }
+    .edge{
+        display: none;
+        block:none;
+
+    }
+    .edge-1{
+        display: none;
+        block:none;
+    }
+    .edge-1-1{
+        display: none;
+        block:none;
+    }
+    .text-1{
+        display: none;
+        block:none;
+    }
+    .room{
+        display: none;
+        block:none;
+    }
+    .room-1{
+        display: none;
+        block:none;
+    }
+    .room-1 img{
+        display: none;
+        block:none;
+    }
+    .sheji{
+        width: 100%;
+        height: 200px;
+
+    }
+    .sheji-1{
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .ping{
+        width:100%;
+        height: 200px;
+        background-color: #FF455F;
+        margin:0 auto;
+    }
+    .ping-1{
+        width:100%;
+        height: 200px;
+        float: left;
+        background-color: #F3F4F3;
+    }
+    .high{
+        width: 30px;
+        height: 70px;
+        border-bottom-left-radius: 20px;
+        background-color: white;
+    }
+    .high-1{
+        width: 30px;
+        height: 70px;
+        margin-left: 30px;
+        border-bottom-left-radius: 20px;
+        background-color:#C1A062;
+    }
+    .text-2{
+        width: 150px;
+        height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        font-weight:bolder ;
+    }
+    .text-2-1{
+        width: 150px;
+        height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
+        color: #919291;
+        font-weight:bolder ;
+    }
+    .text-3{
+        width: 200px;
+        height: 40px;
+        margin: 10px auto;
+        font-size: 13px;
+        color: white;
+
+    }
+    .text-3-1{
+        width: 200px;
+        height: 40px;
+        margin: 10px auto;
+        font-size: 13px;
+        color: #919291;
+
+    }
+    .annv{
+        width: 150px;
+        height: 30px;
+        margin: 15px auto;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .mian{
+        width: 190px;
+        height: 250px;
+        float: left;
+        margin-left:40px ;
+        margin-top: 10px;
+        box-shadow: 0rem  0.1rem 0.9rem rgba(0,0,0,0.8);
+    }
+    .mian img{
+        width: 190px;
+        height: 250px;
+
+
+    }
+    .mian:hover img{
+        left: 0%;
+        transition: left 0s;
+        top: 0;
+
+    }
+    .more{
+        width: 100%;
+        height: 60px;
+        float:left;
+    }
+    .more img{
+        display: none;
+        block:none;
+    }
+    .text-4{
+        font-size: 18px;
+        width: 75px;
+        height: 20px;
+        margin: 15px auto;
+    }
+    .colick{
+        display: none;
+        block:none;
+    }
+    .footer{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_1_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2{
+        display: none;
+        block:none;
+    }
+    .footer_2 .footer_2_1{
+        display: none;
+        block:none;
+    }
+    .footer .footer_2_2{
+        display: none;
+        block:none;
+    }
+    .footer .footer_3{
+        display: none;
+        block:none;
+    }
+    .footer a{
+        display: none;
+        block:none;
+    }
+}
 /*宽度：200px-468px*/
 @media (min-width:200px)and (max-width:468px){
+    .slide-box{
+        display:none;
+    }
        .contain{
         width: 100%;
         height:auto;
@@ -499,209 +709,7 @@
         block:none;
     }
 }
-/*宽度：469px-1200px*/
-@media (min-width:468px)and (max-width:900px){
-    .contain{
-        width: 100%;
-        height:auto;
-    }
-    .top{
-        display: none;
-        block:none;;
-    }
-    .middle{
-        display: none;
-        block: none;
-
-    }
-    .about{
-        display: none;
-        block:none;
-
-    }
-    .text{
-        display: none;
-        block:none;
-    }
-    .edge{
-        display: none;
-        block:none;
-
-    }
-    .edge-1{
-        display: none;
-        block:none;
-    }
-    .edge-1-1{
-        display: none;
-        block:none;
-    }
-    .text-1{
-        display: none;
-        block:none;
-    }
-    .room{
-        display: none;
-        block:none;
-    }
-    .room-1{
-        display: none;
-        block:none;
-    }
-    .room-1 img{
-        display: none;
-        block:none;
-    }
-    .sheji{
-        width: 100%;
-        height: 200px;
-
-    }
-    .sheji-1{
-        width: 100%;
-        height: 200px;
-        margin: 0 auto;
-        margin-top: 15px;
-    }
-    .ping{
-        width:100%;
-        height: 200px;
-        background-color: #FF455F;
-        margin:0 auto;
-    }
-    .ping-1{
-        width:100%;
-        height: 200px;
-        float: left;
-        background-color: #F3F4F3;
-    }
-    .high{
-        width: 30px;
-        height: 70px;
-        border-bottom-left-radius: 20px;
-        background-color: white;
-    }
-    .high-1{
-        width: 30px;
-        height: 70px;
-        margin-left: 30px;
-        border-bottom-left-radius: 20px;
-        background-color:#C1A062;
-    }
-    .text-2{
-        width: 150px;
-        height: 20px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 24px;
-        color: white;
-        font-weight:bolder ;
-    }
-    .text-2-1{
-        width: 150px;
-        height: 20px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 24px;
-        color: #919291;
-        font-weight:bolder ;
-    }
-    .text-3{
-        width: 200px;
-        height: 40px;
-        margin: 10px auto;
-        font-size: 13px;
-        color: white;
-
-    }
-    .text-3-1{
-        width: 200px;
-        height: 40px;
-        margin: 10px auto;
-        font-size: 13px;
-        color: #919291;
-
-    }
-    .annv{
-        width: 150px;
-        height: 30px;
-        margin: 15px auto;
-        font-size: 16px;
-        font-weight: bolder;
-    }
-    .mian{
-        width: 190px;
-        height: 250px;
-        float: left;
-        margin-left:40px ;
-        margin-top: 10px;
-        box-shadow: 0rem  0.1rem 0.9rem rgba(0,0,0,0.8);
-    }
-    .mian img{
-        width: 190px;
-        height: 250px;
-
-
-    }
-    .mian:hover img{
-        left: 0%;
-        transition: left 0s;
-        top: 0;
-
-    }
-    .more{
-        width: 100%;
-        height: 60px;
-        float:left;
-    }
-    .more img{
-        display: none;
-        block:none;
-    }
-    .text-4{
-        font-size: 18px;
-        width: 75px;
-        height: 20px;
-        margin: 15px auto;
-    }
-    .colick{
-        display: none;
-        block:none;
-    }
-    .footer{
-        display: none;
-        block:none;
-    }
-    .footer .footer_1{
-        display: none;
-        block:none;
-    }
-    .footer .footer_1_1{
-        display: none;
-        block:none;
-    }
-    .footer .footer_2{
-        display: none;
-        block:none;
-    }
-    .footer_2 .footer_2_1{
-        display: none;
-        block:none;
-    }
-    .footer .footer_2_2{
-        display: none;
-        block:none;
-    }
-    .footer .footer_3{
-        display: none;
-        block:none;
-    }
-    .footer a{
-        display: none;
-        block:none;
-    }
-}
-/*宽度：200px-350px*/
+/*/*宽度：200px-350px*/
 @media (min-width:200px)and (max-width:350px){
     .contain{
         width: 100%;

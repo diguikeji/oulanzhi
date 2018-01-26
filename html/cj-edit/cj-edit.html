@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑采集</title>
+    <link href="../favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="generator" content=""  data-variable="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="../css/edit.css">
+    <style>
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+
+<nav class="nav-box">
+    <div class="nav-box-logo">
+        <img src="../image/logo.png">
+    </div>
+    <div class="nav-box-ul">
+        <ul id="nav">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../found/found.html">发现</a></li>
+            <li><a href="../new/new.html">最新</a>
+                <!--		<ul>
+                            <li><a href="#">我的推荐</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的画板</a></li>
+                            <li><a href="#">用户</a></li>
+                        </ul>-->
+            </li>
+            <li><a href="../activity/activity.html">活动</a></li>
+        </ul>
+    </div>
+
+
+    <div class="right-menu">
+        <img class="open-menu" src="../image/menu.png" />
+        <img class="close-menu" src="../image/closeMenu.png" />
+    </div>
+
+    <div class="login-ul">
+        <ul id="nav-login">
+            <li id="jia"><a href="#" ><i class="iconfont icon-jia1"></i></a></li>
+            <li id="info"><a href="#"><i class="iconfont icon-xinxi1"></i></a></li>
+            <li><a href="#"><div style="width: 27px;height: 27px;border-radius: 50%;"><img src="../image/touxiang.png"></div></a></li>
+            <li id="login1"><a href="#"><i class="iconfont icon-denglu"></i></a></li>
+        </ul>
+    </div>
+
+
+</nav>
+
+
+
+<!--内容-->
+<div class="palette" style="width:1200px;height: auto;margin: 0 auto;margin-top: 9rem;">
+<div class="palette-1" style="width: 60%;margin: 0;float: left">
+    <div class="bianjihuaban">编辑画板/<a href="#">千与千寻</a></div>
+
+    <div class="biaoti" style="height: auto;padding-bottom: 1rem">标签
+        <!--<input type="text" placeholder="画板标题，不能超过32字符" style="font-size: 16px;outline: none;width: 50%;height: 3rem;margin-left: 6rem;padding-left: 0.5rem">-->
+        <div class="tags" id="tags" tabindex="1">
+            <input id="form-field-tags" type="text" placeholder="请输入标签 ..." value="Tag Input Control" name="tags" style="display: none;">
+            <input type="text" placeholder="请输入标签 ..." class="tags_enter" autocomplete="off">
+        </div>
+    </div>
+    <div class="describe"><div style="float: left">描述</div><textarea style="outline: none;margin-left: 6.4rem;font-size: 16px;padding-left: 0.5rem;width: 50%"></textarea></div>
+    <div class="biaoti">来自
+        <input type="text" placeholder="" value="http//:" style="font-size: 16px;outline: none;width: 50%;height: 3rem;margin-left: 6rem;padding-left: 0.5rem">
+    </div>
+    <div class="describe-1" style="margin-top: 3rem">画板<select style="outline: medium;width:50%;height: 3rem;background-color: white;margin-left: 6.4rem;border: 1.5px solid gainsboro">
+        <option >分类</option>
+        <option >龙猫</option>
+        <option >悬崖边的金鱼姬</option>
+        <option>移动的哈尔城堡</option>
+        <option>魔女宅急便</option>、
+        <option>蜡笔小新</option>
+    </select> </div>
+    <div class="describe-2">删除<button >删除采集</button></div>
+    <div class="describe-3"><button >保存设置</button></div>
+
+</div>
+
+    <div class="image-box-cj">
+        <a href="#">
+            <img src="../image/111.jpg">
+        </a>
+        <p>浮生</p>
+    </div>
+
+</div>
+<script src="../js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".tags_enter").blur(function() { //焦点失去触发
+            var txtvalue=$(this).val().trim();
+            if(txtvalue!=''){
+                addTag($(this));
+                $(this).parents(".tags").css({"border-color": "#ccc"})
+            }
+        }).keydown(function(event) {
+            var key_code = event.keyCode;
+            var txtvalue=$(this).val().trim();
+            if (key_code == 13&& txtvalue != '') { //enter
+                addTag($(this));
+            }
+            if (key_code == 32 && txtvalue!='') { //space
+                addTag($(this));
+            }
+        });
+        $(".close").live("click", function() {
+            $(this).parent(".tag").remove();
+        });
+        $(".tags").click(function() {
+            $(this).css({"border-color": "#66afe9"})
+        }).blur(function() {
+            $(this).css({"border-color": "#66afe9"})
+        })
+    })
+    function addTag(obj) {
+        var tag = obj.val();
+        if (tag != '') {
+            var i = 0;
+            $(".tag").each(function() {
+                if ($(this).text() == tag + "×") {
+                    $(this).addClass("tag-warning");
+                    setTimeout("removeWarning()", 400);
+                    i++;
+                }
+            })
+            obj.val('');
+            if (i > 0) { //说明有重复
+                return false;
+            }
+            $("#form-field-tags").before("<span class='tag'>" + tag + "<button class='close' type='button'>×</button></span>"); //添加标签
+        }
+    }
+    function removeWarning() {
+        $(".tag-warning").removeClass("tag-warning");
+    }
+</script>
+
+
+</body>
+</html>

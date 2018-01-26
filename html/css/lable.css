@@ -68,6 +68,7 @@
     background: white;
     padding-top: 5px;
     display: none;
+
 }
 .icon:hover{
     opacity: 1;
@@ -75,7 +76,6 @@
 .icon:hover{
     color: #C90000;
 }
-
 
 
 
@@ -98,6 +98,9 @@
 }
 .title-detail a:hover{
     color: #9A0000;
+}
+.lable-num{
+    float: right;
 }
 .lable-detail-box{
     width: 1200px;
@@ -201,5 +204,97 @@
     margin-top: 0.8rem;
     margin-left: -5rem;
     font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width: 468px) {
+    .title-detail{
+        width:100%;
+        padding-bottom:1rem;
+        padding-top:1rem;
+    }
+    .title-detail a{
+        margin-left: 5%;
+    }
+    .label-button{
+        float:right;
+        margin-right: 2%;
+        margin-top: -0.5rem;
+    }
+    .lable-detail-box{
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .lable{
+        float: left;
+    }
+
+
+    .title-detail a{
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+    .address-lable{
+        font-size: 1.5rem;
+    }
+    .lable-num{
+        margin-right: 2%;
+        font-size: 1.5rem;
+    }
+    .middle-box{
+        width: 100%;
+        margin-left: 1%;
+    }
+    .lable-box{
+        width: 48%;
+        height: 28rem;
+        margin-right: 2%;
+    }
+    .img-detail-box{
+        height: 18rem;
+    }
+    .user-box{
+        height: 10rem;
+    }
+    .title-box-right{
+        width: 100%;
+    }
+    .title-left{
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: -7rem;
+        border-bottom: 1px solid gainsboro;
+        padding-bottom: 0.5rem;
+    }
+    .title-right{
+        width: 40%;
+        margin-top: -1.5rem;
+    }
+    .title-right a i{
+        font-size: 1.6rem;
+    }
+    #num-like{
+        font-size: 1.4rem;
+        left: -1.3rem!important;
+    }
+    #share{
+        float: right;
+        margin-right: 2%;
+    }
+    .user-touxiang{
+        margin-left: 8%;
+        margin-top: 3rem;
+    }
+    .user-name{
+        width: 65%;
+        margin-left: 0;
+        float: right;
+        margin-top: -4.5rem;
+        text-align: left;
+    }
+
 }
 
