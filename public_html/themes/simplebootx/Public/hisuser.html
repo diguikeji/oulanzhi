@@ -1,0 +1,23 @@
+
+<div class="yesterday">
+	<div class="yesterday_1">
+		<div class="yesterday_1_1">
+			<a href="#"><img src="{:U('User/public/avatar',array('id'=>$user[0][id]))}"></a>
+		</div>
+		<div class="yesterday_1_2">
+			<div class="yesterday_1_2_1"><span id="fcount"></span></div>
+			<div class="yesterday_1_2_2"><span id="gcount"></span></div>
+		</div>
+		<div class="yesterday_1_3">
+			<a href="{:U('Portal/user/fans',array('id'=>$user[0][id]))}"> <div class="yesterday_1_3_1">粉丝</div></a>
+			<div class="yesterday_1_3_2"></div>
+			<a href="{:U('Portal/user/hisUser',array('id'=>$user[0][id]))}">   <div class="yesterday_1_3_3">关注</div></a>
+		</div>
+	</div>
+	<div class="yesterday_2">
+		<div class="yesterday_2_1">{$user[0].user_nicename}</div>
+		<div class="yesterday_2_2">{$user[0].signature}</div>
+	</div>
+	<div class="yesterday_3" id="guanzhu">
+	</div>
+</div>

@@ -1,34 +1,164 @@
-<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<title>ThinkCMF-跳转提示</title>
-		<tc_include file="Public/head"/>
-		<style type="text/css">
-		*{ padding: 0; margin: 0; }
-		body{ background: #fff; font-family: '微软雅黑'; color: #333; font-size: 16px; }
-		.system-message{ padding: 24px 48px;text-align: center; }
-		.system-message h1{ font-size: 100px; font-weight: normal; line-height: 120px; margin-bottom: 12px; text-align: center;}
-		.system-message .jump{ padding-top: 10px}
-		.system-message .success,.system-message .error{ line-height: 1.8em; font-size: 36px }
-		.system-message .detail{ font-size: 12px; line-height: 20px; margin-top: 12px; display:none}
-		</style>
-	</head>
-<body class="body-white">
-	<tc_include file="Public/nav"/>
-	<div class="system-message">
-	<present name="message">
-	<h1>^_^</h1>
-	<p class="success"><?php echo($message); ?></p>
-	<else/>
-	<h1>&gt;_&lt;</h1>
-	<p class="error"><?php echo($error); ?></p>
-	</present>
-	<p class="detail"></p>
-	<p class="jump">
-	ThinkCMF：页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
-	</p>
-	</div>
-	<script type="text/javascript">
+<html><!DOCTYPE HTML>
+<head>
+    <title>欧兰芝</title>
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="generator" content=""  data-variable="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="__TMPL__Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+    <link rel="stylesheet" href="__TMPL__Public/new/css/swiper.min.css">
+    <link rel="stylesheet" href="__TMPL__Public/new/css/component.css">
+    
+    <style>
+        body{
+            background-image: url("__TMPL__Public/new/image/hb-edit-bg.png");
+            background-size: cover;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu li a:hover{
+            background: #C1A062;
+        }
+        .dropdown-toggle-touxiang img:hover{
+            opacity: 0.9;
+        }
+         .tip-login{
+            width: 630px;
+            height: 355px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin:-230px 0 0 -315px;
+        }
+        .info-tip{
+            width: 630px;
+            height: 355px;
+            position: relative;
+            z-index: 9;
+            text-align: center;
+            font-size: 5rem;
+            color: #B25900;
+            font-family: 华文行楷;
+            top:-380px;
+            word-wrap:break-word;
+            padding-left: 35px;
+            padding-right: 35px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+        }
+        .tishi{
+            width: auto;
+            height: auto;
+            position: absolute;
+            z-index: 9;
+            font-size: 2.5rem;
+            text-align: center;
+            text-shadow: -1px -1px 1px #fff, 1px 1px 1px #fff;
+
+            top: 110%;
+            left: 10%;
+        }
+        @media screen and (max-width: 468px) {
+            .dropdown:hover .dropdown-menu {
+                display: none;
+            }
+            .tip-login{
+                width: 100%;
+                height: auto;
+                left: 0%;
+                margin-left: 0;
+                margin-top: -12rem;
+            }
+            .tip-login img{
+                max-width: 100%;
+            }
+            .tishi{
+                font-size: 2.5rem;
+                left: 0%;
+                top: 90%;
+
+            }
+            .info-tip{
+                font-size: 3rem;
+                top: -15rem;
+                padding-left: 5%;
+                padding-right: 5%;
+                height: auto;
+                width: 100%;
+            }
+
+        }
+    </style>
+
+</head>
+<body class="met-navfixed">
+<!--[if lte IE 8]>
+<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+    <p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+</div>
+<![endif]-->
+
+
+<tc_include file="Public:nav"/>
+
+
+<div class="tip-login">
+    <img src="__TMPL__Public/new/image/tip-ban.fw.png" style="max-width: 100%">
+    <present name="message">
+         <div class="info-tip"><?php echo($message); ?>(^_^)</div>
+    <else/>
+    <div class="info-tip"><?php echo($error); ?>(>﹏<)</div>
+    </present>
+    
+    
+    <div class="tishi">欧兰芝温馨提示：页面自动<a  id="href" href="<?php echo($jumpUrl); ?>"> 跳转 </a>等待时间：<b id="wait"><?php echo($waitSecond); ?></b></div>
+</div>
+
+
+
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
+<script src="__TMPL__Public/login.js"></script>
+<script src="__TMPL__Public/assets/js/classie.js"></script>
+<script src="__TMPL__Public/assets/js/modalEffects.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+
+
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+    });
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+    });
+
+
+
 	(function(){
 	var wait = document.getElementById('wait'),href = document.getElementById('href').href;
 	var interval = setInterval(function(){
@@ -39,7 +169,7 @@
 		};
 	}, 1000);
 	})();
-	</script>
+</script>
 
 </body>
 </html>

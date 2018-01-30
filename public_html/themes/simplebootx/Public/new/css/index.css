@@ -1,22 +1,23 @@
 
 /*index.css*/
-
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-.dropdown-menu li a:hover{
-    background: #C1A062;
-}
-.dropdown-toggle-touxiang img:hover{
-    opacity: 0.9;
-}
-@media screen and (max-width: 468px) {
-    .dropdown:hover .dropdown-menu {
-        display: none;
-    }
+body{
+    overflow:Scroll;overflow-x:hidden
 }
 
+	.dropdown:hover .dropdown-menu {
+			display: block;
+		}
+		.dropdown-menu li a:hover{
+			background: #C1A062;
+		}
+		.dropdown-toggle-touxiang img:hover{
+			opacity: 0.9;
+		}
+		@media screen and (max-width: 468px) {
+			.dropdown:hover .dropdown-menu {
+				display: none;
+		}
+}
 
 .info-detail{
     height: 350px;
@@ -110,7 +111,7 @@
     height: 100%;
 
 }
-ul#nav{ width:100%;
+ul#nav{ width:120%;
     height:100%;
     margin: 0 auto;
 
@@ -217,20 +218,21 @@ ul#nav-login li a i{
     height: 100%;
 }
 .search-box{
-    width: 700px;
+  width: 700px;
     height: 80px;
     margin: 0 auto;
     border-radius: 40px;
     background-color: rgba(0,0,0,0.5);
-    margin-top: -300px;
     z-index: 99;
-    position: relative;
+    position: absolute;
+    margin-top: -300px;
+    left: 50%;
+    margin-left: -350px;
 
 }
 .search-box-input{
-    width: 400px;
+ width: 400px;
     height: 60px;
-    margin-top: -290px;
     border: 0px;
     margin-left: 40px;
     font-size: 2.5rem;
@@ -238,13 +240,14 @@ ul#nav-login li a i{
     background-color:transparent;
     color: white;
     outline:medium;
+    position: absolute;
+    margin-top: 0.8rem;
 }
 .sousuo{
-    width: 80px;
+     width: 80px;
     height: 80px;
     padding-top: 5px;
     float: right;
-    margin-top: -300px;
     background-color:transparent;
     border: 0px;
     outline:medium;
@@ -276,7 +279,7 @@ ul#nav-login li a i{
     width: 1200px;
     height: auto;
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 2rem;
 }
 .clear{
     clear: both;
@@ -328,6 +331,12 @@ ul#nav-login li a i{
     padding-left: 10px;
     padding-right: 10px;
 
+}
+.bottom-box a{
+    color:black;
+}
+.bottom-box a:hover{
+    color:#E10601;
 }
 .touiang{
     float: left;
@@ -473,8 +482,12 @@ ul#nav-login li a i{
 
     .login-ul{display: none;}
     .login-ul #jia{display: none;}
-    .login-ul #login{display: none;}
-    .login-ul #nav-login{margin-left: -4rem;margin-top: -0.5rem}
+    .login-ul #login{margin-left:2.5rem}
+    .login-ul #nav-login{margin-left: -3rem;margin-top: -0.5rem}
+    #login{
+        z-index:999;
+        margin-left:-4rem;
+    }
 
 
     .nav-box .right-menu{position: absolute;right:10px;top:18px;}

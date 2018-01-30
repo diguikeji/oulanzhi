@@ -189,4 +189,38 @@ class ProfileController extends MemberbaseController {
 		}
 		$this->ajaxReturn($res);
 	}       
+	
+	
+	 //上传头像代码
+    public function uploadImg(){
+        
+        
+        
+        
+        if($_FILES["file"]["error"]>0){
+            $data["code"] = 1001;
+            $data["msg"] = "上传失败";
+        }else{
+            
+            $imgurlStr=uniqid().'.'.substr(strrchr($_FILES["file"]["name"], '.'), 1);
+            
+            move_uploaded_file($_FILES["file"]["tmp_name"],"data/upload/avatar/".$imgurlStr);
+            $data["url"] = "avatar/".$imgurlStr;
+            $data["code"] = 1000;
+        }
+        
+    	$imgurl=$data["url"];
+		$old_img=$this->user['avatar'];
+		$this->user['avatar']=$imgurl;
+		$res=$this->users_model->where(array("id"=>$this->userid))->save($this->user);		
+		if($res){
+			//更新session
+			session('user',$this->user);
+			//删除旧头像
+			sp_delete_avatar($old_img);
+			
+			echo json_encode($data);
+		}
+        
+    }
 }

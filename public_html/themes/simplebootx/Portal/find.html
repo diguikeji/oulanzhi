@@ -1,6 +1,6 @@
 <html><!DOCTYPE HTML>
 <head>
-    <title>欧兰芝</title>
+    <title>发现</title>
     <meta name="renderer" content="webkit">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,8 +14,9 @@
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
     <link rel="stylesheet" href="__TMPL__Public/new/css/swiper.min.css">
     <link rel="stylesheet" href="__TMPL__Public/new/css/found.css">
+    <link rel="stylesheet" href="__TMPL__Public/new/css/component.css">
 </head>
-<body class="met-navfixed">
+<body>
 <!--[if lte IE 8]>
 <div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
     <p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
@@ -31,13 +32,17 @@
         <ul id="nav">
             <li><a href="{:U('Portal/index/index')}" >首页</a></li>
             <li><a href="{:U('Portal/find/index')}" class="active">发现</a></li>
-            <li><a href="{:U('Portal/newest/index')}">最新</a>
-                <!--        <ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
+             <li class="dropdown">
+                <a href="{:U('Portal/newest/index')}" class="dropdown-toggle">
+                    最新
+                </a>
+                <ul class="dropdown-menu" style="margin-top: 2.1rem;margin-left: -1rem;background-color: rgba(0,0,0,0.6);font-size: 12px!important;min-width: 3rem;text-align: center ;">
+                    <li style="min-width: 100%"><a href="{:U('User/center/caiji')}" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%">我的采集</a></li>
+                    <li><a href="{:U('User/center/index')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的画板</a></li>
+                    <li><a href="{:U('User/center/love')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的喜欢</a></li>
+                    <li><a href="{:U('User/follow/interestFollow')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">兴趣</a></li>
+                    <li><a href="{:U('User/follow/userFollow')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">用户</a></li>
+                </ul>
             </li>
             <li><a href="{:U('Portal/activity/index')}">活动</a></li>
         </ul>
@@ -55,6 +60,8 @@
 
 </nav>
 
+<div id="si-box"></div>
+
 <!-- 幻灯片-->
 <php>
     $home_slides=sp_getslide("portal_find");
@@ -63,7 +70,7 @@
 </php>
 
 <div class="slide-box">
-    <div class="container" style="width: 100%;">
+   
         <div class="row" >
             <div class="col-md-12"  style="padding: 0px">
                 <!-- Swiper -->
@@ -82,6 +89,7 @@
             </div>
 
         </div>
+
     </div>
 
 <div class="contain">
@@ -91,6 +99,7 @@
         <div class="about">
             <li class="text">大家关注</li>
         </div>
+
         <div class="edge">
             <div class="edge-1"><div class="edge-1-1"style="margin-left:-1rem "></div></div>
             <div class="edge-2"><li class="text-1">MORE ATTENTION</li></div>
@@ -101,7 +110,7 @@
     <div class="room">
         <div class="room-1-1" >
             <foreach name="activity" item="vo">
-                <div class="room-1" ><a href="{$vo.hd_url}" target="_blank"><img src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}"></a>
+                <div class="room-1" ><a href="{$vo.hd_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['hd_img_url'])}"></a>
                     <div style="position: relative; text-align: center;color: white;font-size: 25px; top: -55%;text-shadow: 5px 3px 5px rgba(0,0,0,0.6)">{$vo.hd_name}</div>
                 </div>
             </foreach>
@@ -115,7 +124,7 @@
         <div class="edge">
             <div class="edge-1"><div class="edge-1-1"></div></div>
             <div class="edge-2"><li class="text-1"> RECOMMENDED </li></div>
-            <div class="edge-1"><div class="edge-1-1"></div></div>
+            <div class="edge-1"><div class="edge-1-1"  style="margin-left:1rem"></div></div>
         </div>
     </div>
 
@@ -128,7 +137,7 @@
                    border-bottom-left-radius: 20px;
                    border-bottom-right-radius: 20px;
                    border-top-left-radius: 20px;
-                   border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
+                   border-top-right-radius: 20px;border: none;outline:medium">点击查看更多>>></button></div>
 
     <div class="middle">
         <div class="about">
@@ -151,22 +160,30 @@
                    border-bottom-left-radius: 20px;
                    border-bottom-right-radius: 20px;
                    border-top-left-radius: 20px;
-                   border-top-right-radius: 20px;border: none">点击查看更多>>></button></div>
+                   border-top-right-radius: 20px;border: none;outline:medium">点击查看更多>>></button></div>
 </div>
-    </div>
+  
 
 <tc_include file="Public:footer" />
 
-<tc_include file="Public:scripts"/>
 
+
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
 <script src="__TMPL__Public/new/js/swiper.min.js"></script>
 <script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
 <script src="__TMPL__Public/assets/js/slippry.min.js"></script>
-<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
-    <script src="__TMPL__Public/login.js"></script>
+<script src="__TMPL__Public/login.js"></script>
+<script src="__TMPL__Public/assets/js/classie.js"></script>
+<script src="__TMPL__Public/assets/js/modalEffects.js"></script>
+
 <script>
 
 
+
+  var isLogin='{$isLogin}';
+  
+ // console.log(isLogin);
+  
     var pageIndex = 1;
 
     function getHuabanList(page) {
@@ -190,15 +207,28 @@
 
                         var pidlist = data[i].pidlist.split(",");
 
-                        html = html + '<div class="sheji-1">' +
-                                '<div class="ping-1"> ' +
-                                '<div class="high-1"></div> ' +
-                                '<div class="text-2-1">' + data[i].hb_name + '</div> ' +
-                                '<div class="text-3-1">' + data[i].hb_descp + '</div> ' +
+                         if(data[i].hbgz_hbid ==null  || isLogin == 0)
+                         {
+                        html = html + '<div class="sheji">' +
+                                '<div class="ping"> ' +
+                                '<div class="high">'+pidlist.length+'</div> ' +
+                                '<div class="text-2">' + data[i].hb_name + '</div> ' +
+                                '<div class="text-3">' + data[i].hb_descp + '</div> ' +
                                 '<div class="annv"> ' +
-                                '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">' + '点击关注</button></a>' +
+                                '<button  data-hb_id="'+data[i].hb_id+'" class="guanzhu"  style="border: none;width: 150px; height: 40px; background-color:#EEEEEE;color:#757575;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;outline:medium">' + '点击关注</button>' +
                                 '</div>' +
                                 '</div>'
+                         }else{
+                        html = html +  '<div class="sheji">' +
+                                '<div class="ping"> ' +
+                                '<div class="high">'+pidlist.length+'</div> ' +
+                                '<div class="text-2">' + data[i].hb_name + '</div> ' +
+                                '<div class="text-3">' + data[i].hb_descp + '</div> ' +
+                                '<div class="annv"> ' +
+                                '<button  data-hb_id="'+data[i].hb_id+'" class="guanzhu"  style="border: none;width: 150px; height: 40px; background-color:#C0C0C0;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;outline:medium">' + '已关注</button>' +
+                                '</div>' +
+                                '</div>'
+                         }
 
                         for (var j = 0; j < 4; j++) {
                             var pid = pidlist[j];
@@ -207,8 +237,8 @@
                         }
 
                         html = html + '<div class="more">' +
-                                '<a href="#"><img src="__TMPL__Public/new/image/more.png"></a>' +
-                                '<div class="text-4"><a href="#">加载更多</a></div>' +
+                                '<a href="index.php?g=Portal&m=User&a=huaban&id=' + data[i].hb_id + '"><img src="__TMPL__Public/new/image/more.png"></a>' +
+                                '<div class="text-4"><a href="index.php?g=Portal&m=User&a=huaban&id=' + data[i].hb_id + '">加载更多</a></div>' +
                                 '</div>' +
                                 '</div>'
                     }
@@ -234,6 +264,62 @@
         });
 
 
+    
+
+    $("body").on("click",".guanzhu",function()
+    {
+       var hb_id= $(this).attr("data-hb_id");
+       if($(this).text()=="点击关注")
+       {
+           $.ajax({
+               type: "GET",
+
+               url: "/index.php?g=User&m=follow&a=clickDrawFollow",
+               
+               dataType: "json",
+               
+               data:{
+                   
+                  id:hb_id
+                  
+               },
+               
+               success:function(data){
+                   
+                   
+               }
+           })
+           
+           $(this).text("已关注")
+           $(this).css({"background":'#C0C0C0',"color":'white'})
+          
+       }
+       else{
+         $.ajax({
+               type: "GET",
+
+               url: "/index.php?g=User&m=follow&a=clickCancelDraw",
+               
+               dataType: "json",
+               
+               data:{
+                   
+                  id:hb_id
+                  
+               },
+               
+               success:function(data){
+                   
+                  
+               }
+           })
+           
+            $(this).text("点击关注")
+            $(this).css({"background":'#EEEEEE',"color":'#757575'})
+        
+       }
+       
+    });
 
 
 
@@ -257,16 +343,33 @@
                         var pidlist = data[i].pidlist.split(",");
 
                         var xid = data[i].xq_id;
-
-                        html = html + '<div class="sheji-1">' +
+                         
+                         
+                         if(data[i].xqdgz_xqid == null||isLogin==0)
+                         {
+                                html = html + '<div class="sheji-1">' +
                                 '<div class="ping-1"> ' +
-                                '<div class="high-1"></div> ' +
+                                '<div class="high-1" style="color:white">'+pidlist.length+'</div> ' +
                                 '<div class="text-2-1">' + data[i].xq_name + '</div> ' +
                                 '<div class="text-3-1">' + data[i].xq_intro + '</div> ' +
                                 '<div class="annv"> ' +
-                                '<a  href=""><button     style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;">' + '点击关注</button></a>' +
+                                '<button  data-xq-id ="'+xid+'" class="xqgz"   style="border: none;width: 150px; height: 40px; background-color:#C1A062;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;outline:medium">' + '点击关注</button>' +
                                 '</div>' +
                                 '</div>'
+                         }
+                         else{
+                              html = html + '<div class="sheji-1">' +
+                                '<div class="ping-1"> ' +
+                                '<div class="high-1" style="color:white">'+pidlist.length+'</div> ' +
+                                '<div class="text-2-1">' + data[i].xq_name + '</div> ' +
+                                '<div class="text-3-1">' + data[i].xq_intro + '</div> ' +
+                                '<div class="annv"> ' +
+                                '<button  data-xq-id ="'+xid+'" class="xqgz"  style="border: none;width: 150px; height: 40px; background-color:#C0C0C0;color: white;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;border-top-left-radius: 20px;border-top-right-radius: 20px;outline:medium">' + '已关注</button>' +
+                                '</div>' +
+                                '</div>'
+                         }
+ 
+                       
 
                         for (var j = 0; j < 4; j++) {
                             var pid = pidlist[j];
@@ -299,6 +402,66 @@
     {
         getInterestList(pageIndex2);
     });
+    
+    
+    
+     $("body").on("click",".xqgz",function()
+    {
+       var xid= $(this).attr("data-xq-id");
+       console.log(xid);
+       if($(this).text()=="点击关注")
+       {
+           $.ajax({
+               type: "GET",
+
+               url: "/index.php?g=User&m=follow&a=clickInterestFollow",
+               
+               dataType: "json",
+               
+               data:{
+                   
+                  id:xid
+                  
+               },
+               
+               success:function(data){
+                   
+                   
+               }
+           })
+           
+           $(this).text("已关注")
+           $(this).css({"background":'#C0C0C0',"color":'white'})
+          
+       }
+       else{
+         $.ajax({
+               type: "GET",
+
+               url: "/index.php?g=User&m=follow&a=clickCancelInterest",
+               
+               dataType: "json",
+               
+               data:{
+                   
+                  id:xid
+                  
+               },
+               
+               success:function(data){
+                   
+                  
+               }
+           })
+           
+            $(this).text("点击关注")
+            $(this).css({"background":'#C1A062'})
+        
+       }
+       
+    });
+
+    
 
 
 

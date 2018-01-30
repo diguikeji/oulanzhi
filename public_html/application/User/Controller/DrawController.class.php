@@ -41,7 +41,7 @@ class DrawController extends MemberbaseController
         $hid = I("get.id", 0, 'intval');
         $huaban_model = M("Huaban");
         $fl_model = M("Xingqu_fenlei");
-        $hb_fl = $fl_model->select();
+        $hb_fl = $fl_model->where("xqfl_area = 3")->select();
         $result = $huaban_model->where(array("hb_id" => $hid, "hb_uid" => $uid))->find();
         $this->assign($result);
         //var_dump($result);
@@ -60,7 +60,7 @@ class DrawController extends MemberbaseController
             $draw["hb_name"] = $_POST["hb_name"];
             $draw["hb_descp"] = $_POST["hb_descp"];
             $draw["hb_update_time"] = date("Y-m-d H:i:s", time());
-            $draw["hb_term_id"] = $_POST["hb_term_id"];
+            $draw["hb_xqd_id"] = $_POST["hb_term_id"];
             $result = $huaban_model->where(array("hb_uid"=>$uid,"hb_id"=>$id))->save($draw);
             if($result){
                 $this->success("编辑成功！", U("user/center/index"));
@@ -88,10 +88,43 @@ class DrawController extends MemberbaseController
         }
     }
 
-    //画板详情页
+    //用户的画板里面的采集详情页
     public function drawDetail(){
+
+        $hid = I('get.id',0,'intval');
+
+        $huaban_model = M("Huaban");
+        $huaban = $huaban_model->where(array("hb_id"=>$hid))->find();
+
+        $post_model = M("Posts");
+        $postCount = $post_model->where(array("post_hb_id"=>$hid))->count();
+
+        $hbgz_model = M("Hbgz");
+        $hbgzCount = $hbgz_model->where(array("hbgz_hbid"=>$hid))->count();
+
+        $this->assign($huaban);
+        $this->assign("postCount",$postCount);
+        $this->assign("hbgzCount",$hbgzCount);
+
         $this->display(":drawdetail");
     }
 
+    //本画板下的所有采集
+    public function caiji(){
+        $hid = I('get.id',0,'intval');
+        $users_model = M('Users');
+        $post_model = M("Posts");
+        $count = $post_model->count();
+        $page = new \Think\Page($count,16);
+        $list = $users_model
+            ->alias("a")
+            ->join("tb_posts b on a.id =b.post_author")
+            ->field("b.id as pid,a.id as uid,a.user_nicename,a.avatar,b.post_love,b.post_title")
+            ->where(array("post_hb_id"=>$hid))
+            ->order('post_date desc')
+            ->limit($page->firstRow . ',' . $page->listRows)
+            ->select();
+        echo json_encode($list);
+    }
 
 }

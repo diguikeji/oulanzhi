@@ -19,6 +19,15 @@ class FindController extends HomebaseController
      public function index(){
          $activity_model = M("Activity");
          $activity = $activity_model->order('hd_time')->where("hd_recommend=1")->limit(5)->select();
+         
+         
+        if($this->user){
+             $this->assign("isLogin",1);
+        }
+        else{
+            $this->assign("isLogin",0);
+        }
+         
          $this->assign("activity",$activity);
          $this->display(":find");
      }
@@ -30,29 +39,24 @@ class FindController extends HomebaseController
 
      //发现页画板和采集
      public function getHuabanList(){
-         ///$xingqu_model = M("xingqu");
-        // $count = $xingqu_model->where("xq_fl_zc=1")->count();
-
-        // $Model = M(); // 实例化一个model对象 没有对应任何数据表
-         //$xingqu=$Model ->query("select a.xq_id,a.xq_name,a.xq_intro, GROUP_CONCAT(hb_id) as hb_id_list,GROUP_CONCAT(hb_img) as hb_img_list from (select * from tb_xingqu where xq_fl_zc=1) a left join tb_huaban b on a.xq_id = b.hb_xqd_id group by xq_id limit $page->firstRow,$page->listRows ");
-        // echo json_encode($xingqu);
+         $uid = sp_get_current_userid();
          $huaban_model = M("Huaban");
          $count = $huaban_model->count();
          $page = new \Think\Page($count,6);
          $Model = M();
-         $huabancaiji = $Model ->query("Select a.hb_id ,a.hb_name,a.hb_descp,GROUP_CONCAT(id) as pidList from tb_huaban a left join tb_posts b on a.hb_id = b.post_hb_id  GROUP BY hb_id limit $page->firstRow,$page->listRows");
+         $huabancaiji = $Model ->query("Select a.hb_id ,a.hb_name,a.hb_descp,GROUP_CONCAT(id) as pidList, c.hbgz_hbid from tb_huaban a left join tb_posts b on a.hb_id = b.post_hb_id left join (select * from tb_hbgz WHERE hbgz_uid ='$uid')c on c.hbgz_hbid = a.hb_id  GROUP BY hb_id limit $page->firstRow,$page->listRows");
          echo json_encode($huabancaiji);
      }
 
 
     //发现页兴趣和采集
     public function getInterestList(){
-
+        $uid = sp_get_current_userid();
         $xingqu_model = M("xingqu");
         $count = $xingqu_model->count();
         $page = new \Think\Page($count,6);
         $Model = M();
-        $xingqucaiji = $Model ->query("Select a.xq_id ,a.xq_name,a.xq_intro,GROUP_CONCAT(id) as pidList from tb_xingqu a left join tb_posts b on a.xq_id = b.post_xq_id GROUP BY xq_id limit $page->firstRow,$page->listRows" );
+        $xingqucaiji = $Model ->query("Select a.xq_id ,a.xq_name,a.xq_intro,GROUP_CONCAT(id) as pidList,c.xqdgz_xqid from tb_xingqu a left join tb_posts b on a.xq_id = b.post_xq_id left join (select * from tb_xqd_guanzhu where xqdgz_uid = '$uid' )c on c.xqdgz_xqid = a.xq_id GROUP BY xq_id limit $page->firstRow,$page->listRows" );
         echo json_encode($xingqucaiji);
     }
 

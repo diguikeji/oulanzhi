@@ -1,0 +1,125 @@
+[ 2018-01-25T12:42:01+08:00 ] 122.194.3.195 /index.php?g=comment&m=comment&a=post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000777s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000317s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+
+[ 2018-01-25T13:24:33+08:00 ] 60.168.149.11 /index.php?g=comment&m=comment&a=post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000790s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000430s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+
+[ 2018-01-25T16:13:53+08:00 ] 36.63.93.67 /index.php?g=comment&m=comment&a=post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000760s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0009s ]
+SQL: SELECT `user_status` FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '5' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_comments` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Comment/Controller/CommentController.class.php 第 42 行.
+NOTIC: [8] Undefined index: scheme /www/web/hb_pro_youzewang_com/public_html/application/Comment/Controller/CommentController.class.php 第 44 行.
+NOTIC: [8] Undefined index: host /www/web/hb_pro_youzewang_com/public_html/application/Comment/Controller/CommentController.class.php 第 44 行.
+SQL: SELECT `user_login`,`user_email`,`user_nicename` FROM `tb_users` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+SQL: SHOW TABLES [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: auto /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `tb_comments` (`content`,`post_table`,`post_id`,`to_uid`,`parentid`,`url`,`uid`,`full_name`,`email`,`status`,`createtime`) VALUES ('很好','posts','198','0','0','://','5','王五','599091685@qq.com','1','2018-01-25 16:13:53') [ RunTime:0.0003s ]
+SQL: UPDATE `tb_comments` SET `path`='0-10' WHERE ( id=10 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_posts` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `tb_posts` SET `comment_count`=comment_count+1 WHERE `id` = 198 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: url /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+
+[ 2018-01-25T16:14:53+08:00 ] 101.226.66.191 /index.php?g=comment&m=comment&a=post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000761s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000440s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+
+[ 2018-01-25T16:14:55+08:00 ] 61.129.7.217 /index.php?g=comment&m=comment&a=post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000795s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [8] Undefined index: HTTP_REFERER /www/web/hb_pro_youzewang_com/public_html/application/Common/Controller/HomebaseController.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+

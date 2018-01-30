@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
     <link href="__TMPL__Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="__TMPL__Public/new/css/component.css">
 
 
     <style>
@@ -109,10 +110,12 @@
             <img src="{:U('Portal/index/imgCollect',array('id'=>$vo['pid']))}">
         </div>
         <div class="touxiang">
+            <a href="{:U('Portal/user/index',array('id'=>$vo['uid']))}">
             <div class="touxiang_1">
                 <div class="touxiang_1_img"><img src="{:U('User/public/avatar',array('id'=>$vo['uid']))}" ></div>
                 <div class="touxiang_1_p"><p>{$vo.user_nicename}</p></div>
             </div>
+            </a>
             <div class="touxiang_2_p"><p>{$vo.post_title}</p></div>
 
             <div class="touxiang_3">

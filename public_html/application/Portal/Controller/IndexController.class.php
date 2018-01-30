@@ -130,8 +130,9 @@ class IndexController extends HomebaseController
                 header("Location: $img");
                 exit();
             } else {
-                $img_dir = C("UPLOADPATH") . "posts/";
+                $img_dir = C("UPLOADPATH");
                 $img = $img_dir . $img;
+          
                 if (file_exists($img)) {
                     $imageInfo = getimagesize($img);
                     if ($imageInfo !== false) {
@@ -169,6 +170,13 @@ class IndexController extends HomebaseController
 
         }
         exit();
+    }
+    
+     //私信列表
+    public function message(){
+        $sixin_model = M("Sixin");
+        $sixin = $sixin_model->select();
+        echo json_encode($sixin);
     }
 }
 

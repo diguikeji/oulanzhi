@@ -67,7 +67,6 @@
     overflow: hidden;
     position: relative;
     background-image: url("../image/background.jpg");
-    background-size: cover;
 }
 .huodong-image-box img{
     width: 100%;
@@ -136,7 +135,7 @@
     .huodong{
         width: 49%;
         margin: 1px;
-        height: 25rem;
+        height: 26rem;
         margin-top: 1rem;
     }
     .huodong-bottom-box {

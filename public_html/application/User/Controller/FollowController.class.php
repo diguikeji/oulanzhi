@@ -21,7 +21,7 @@ class FollowController extends MemberbaseController
     public function interestFollow()
     {
         $this->assign($this->user);
-        $this->display(":follow/interest");
+        $this->display(":Follow/interest");
     }
 
     //用户关注的兴趣点详情
@@ -38,7 +38,7 @@ class FollowController extends MemberbaseController
     public function userFollow()
     {
         $this->assign($this->user);
-        $this->display(":follow/user");
+        $this->display(":Follow/user");
     }
 
     //用户关注的用户详情
@@ -66,12 +66,35 @@ class FollowController extends MemberbaseController
         echo json_encode($yonghu);
 
     }
+    
+    public function fansDetail(){
+        $uid = sp_get_current_userid();
+        $Model = M(); // 实例化一个model对象 没有对应任何数据表
+        $yonghu = $Model->query("select usergz_uid_pid,user_nicename,caiji_count,count(usergz_uid_pid) as huaban_count  FROM
+
+(
+  select usergz_uid_pid,user_nicename,count(usergz_uid_pid) as caiji_count from
+	(
+
+  select usergz_uid_pid,b.user_nicename from (select usergz_uid_pid from tb_yonghu_gz where usergz_uid_childid='$uid') a
+
+	left join tb_users b on a.usergz_uid_pid = b.id
+
+
+	left join tb_posts c on a.usergz_uid_pid = c.post_author
+
+	) a GROUP BY usergz_uid_pid
+) a
+
+ left join tb_huaban d on a.usergz_uid_pid = d.hb_u_id  GROUP BY usergz_uid_pid ");
+        echo json_encode($yonghu);
+    }
 
     //用户关注的画板
     public function drawFollow()
     {
         $this->assign($this->user);
-        $this->display(":follow/draw");
+        $this->display(":Follow/draw");
     }
 
     //用户关注的画板详情
@@ -84,99 +107,110 @@ class FollowController extends MemberbaseController
     }
 
 
-    //用户关注画板状态
-    public function drawFollowView()
-    {
-        $uid = sp_get_current_userid();
-        $hid = I('get.id', 0, 'intval');
-        $hbgz_model = M("Hbgz");
-        $hbgz = $hbgz_model->where(array("hbgz_uid" => $uid, "hbgz_hbid" => $hid))->select();
-        if ($hbgz) {
-            echo 1;
-        } else {
-            echo 2;
-        }
-    }
-
-    //点击关注画板
+   //点击关注画板
     public function clickDrawFollow()
     {
         $uid = sp_get_current_userid();
         $hid = I('get.id', 0, 'intval');
         $data["hbgz_uid"] = $uid;
-        $data["hbgz_hid"] = $hid;
+        $data["hbgz_hbid"] = $hid;
+        $data["hbgz_create_time"] = date("Y-m-d H:i:s");
         $hbgz_model = M("Hbgz");
+        $huaban_model = M("Huaban");
         $hbgz = $hbgz_model->where($data)->select();
         if (!$hbgz) {
+            $huaban["hb_love_count"] = array("exp","hb_love_count+1");
+            $huaban_model->where(array("hb_id"=>$hid))->save($huaban);
+            $hbgz_model->add($data);
+        }
+    }
 
-            $hbgz_model->save($data);
-
-        } else {
-
+    //点击取消关注画板
+    public function clickCancelDraw(){
+        $uid = sp_get_current_userid();
+        $hid = I('get.id', 0, 'intval');
+        $data["hbgz_uid"] = $uid;
+        $data["hbgz_hbid"] = $hid;
+        $hbgz_model = M("Hbgz");
+        $huaban_model = M("Huaban");
+        $hbgz = $hbgz_model->where($data)->select();
+        if($hbgz_model){
+            $huaban["hb_love_count"] = array("exp","hb_love_count-1");
+            $huaban_model->where(array("hb_id"=>$hid))->save($huaban);
             $hbgz_model->where($data)->delete();
         }
     }
 
-    //用户关注兴趣点状态
-    public function interestFollowView()
-    {
-       $uid = sp_get_current_userid();
-        $xid = I('get.id', 0, 'intval');
-        $xqdgz_model = M("Xqd_guanzhu");
-        $xqdgz = $xqdgz_model->where(array("xqdgz_uid"=>$uid,"xqdgz_xid"=>$xid))->select();
-        if($xqdgz){
-
-            echo 1;
-        }else {
-            echo 0;
-        }
-    }
-
+   
     //点击关注兴趣点
     public function clickInterestFollow(){
         $uid = sp_get_current_userid();
         $xid = I('get.id', 0, 'intval');
         $data["xqdgz_uid"] = $uid;
-        $data["xqdgz_xid"] = $xid;
+        $data["xqdgz_xqid"] = $xid;
+        $data["xqdgz_create_time"] = date("Y-m-d H:i:s");
         $xqdgz_model = M("Xqd_guanzhu");
+        $xqd_model = M("Xingqu");
         $xqdgz = $xqdgz_model->where($data)->select();
+        $xqd["xq_love_count"] =  array("exp","xq_love_count+1");
         if(!$xqdgz){
-            $xqdgz_model->save($data);
-        }else{
+            $xqdgz_model->add($data);
+            $xqd_model->where(array("xq_id"=>$xid))->save($xqd);
+        }
+    }
+    
+    
+    //点击取消关注兴趣点
+    public function clickCancelInterest(){
+        $uid = sp_get_current_userid();
+        $xid = I('get.id', 0, 'intval');
+        $data["xqdgz_uid"] = $uid;
+        $data["xqdgz_xqid"] = $xid;
+         $xqd_model = M("Xingqu");
+         $xqdgz_model = M("Xqd_guanzhu");
+          $xqd["xq_love_count"] =  array("exp","xq_love_count-1");
+        $xqdgz = $xqdgz_model->where($data)->select();
+        if($xqdgz){
             $xqdgz_model->where($data)->delete();
+            $xqd_model->where(array("xq_id"=>$xid))->save($xqd);
         }
     }
 
-    //用户关注用户状态
-    public function userFollowView()
-    {
-        $uid = sp_get_current_userid();
-        $upid = I('get.id', 0, 'intval');
-        $yonghu_model = M("Yonghu_gz");
-        $yonghu = $yonghu_model->where(array("usergz_uid_pid"=>$uid,"usergz_uid_childid"=>$upid))->select();
-        if($yonghu){
-            echo 1;
-        }else{
-            echo 0;
-        }
-    }
 
     //用户点击关注用户
     public function clickUserFollow(){
+        $this->check_login();
         $uid = sp_get_current_userid();
         $upid = I('get.id', 0, 'intval');
         $data["usergz_uid_pid"] = $uid;
         $data["usergz_uid_childid"] = $upid;
+        $data["usergz_create_time"] = date("Y-m-d H:i:s");
         $yonghu_model = M("Yonghu_gz");
         $yonghu = $yonghu_model->where($data)->select();
         if(!$yonghu){
-            $yonghu_model->save($data);
+            if($uid!=$upid){
+                $yonghu_model->add($data);
+            }else{
+                
+                echo 1;
+            }
+            
         }
-        else{
+    }
+    
+    //用户点击取消关注用户
+    public function clickCancelUser(){
+        
+        $uid = sp_get_current_userid();
+        $upid = I('get.id', 0, 'intval');
+        $yonghu_model = M("Yonghu_gz");
+        $data["usergz_uid_pid"] = $uid;
+        $data["usergz_uid_childid"] = $upid;
+        $yonghu = $yonghu_model->where($data)->select();
+        if($yonghu){
             $yonghu_model->where($data)->delete();
         }
     }
-
 
 
 }

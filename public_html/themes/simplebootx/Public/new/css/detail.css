@@ -1,24 +1,7 @@
-input{
-    border: 1px solid #ccc;
-    padding: 7px 0px;
-    border-radius: 3px;
-    padding-left:5px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
-}
-input:focus{
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
-}
-
 .clear{
     clear: both;
 }
+
 .hb-detail{
     width: 98%;
     height:auto;
@@ -164,6 +147,7 @@ input:focus{
     -webkit-box-align: center;
     align-items: center;
     text-align: center;
+    
 }
 .info-content{
     width: 100%;
@@ -218,14 +202,30 @@ input:focus{
    /* border: 1px solid green;*/
     margin-top: 2rem;
 }
-.huifu input{
-    width: 100%;
+
+  input{
+         width: 100%;
     height: 3rem;
     border-radius: 10px;
   /*  border: 1px solid grey;*/
     padding-left: 0.5rem;
-    outline:medium;
-}
+                border: 1px solid #ccc;
+                padding: 7px 0px;
+                border-radius: 3px;
+                padding-left:5px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+            }
+           .huifu  input:focus{
+                    border-color: #66afe9;
+                    outline: 0;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+            }
+
 .fabu{
     width: 5rem;
     height: 2.2rem;
@@ -238,6 +238,9 @@ input:focus{
     margin-right: 0.5rem;
     outline:medium;
 }
+.fabu:hover{
+    opacity: 0.9
+}
 .fabu:active{
     background-color: red;
 }
@@ -249,22 +252,23 @@ input:focus{
     border-bottom-right-radius: 1%;
 }
 /*phone*/
-@media screen and (max-width: 468px) {
+@media  only screen and (min-width: 469px) and (max-width: 699px) {
+
     .hb-detail{
         border-radius: 0;
         padding: 5px 0 10px 0px;
         margin-bottom: 0;
         margin-top: 6rem;
     }
-     .hb-detail-box{
-         padding-left: 5px;
-         padding-right: 5px;
-         width: 100%;
-         height: auto;
-         -moz-border-radius-topleft: 5px;
-         -moz-border-radius-topright: 5px;
+    .hb-detail-box{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        height: auto;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
 
-     }
+    }
     .img-detail-box{
         width: 100%;
         height:auto;
@@ -298,14 +302,14 @@ input:focus{
         border-radius: 0;
         margin-top: 0.5rem;
     }
-    .zan-box{
-        margin-right: 1rem;
-    }
     .com-mide{
         margin-top: 1rem;
         padding-top: 0.5rem;
     }
-
+    .hb-box{
+        max-width: 100%;
+        height: auto;
+    }
 }
 @media  only screen and (min-width: 700px) and (max-width: 1225px) {
     .hb-detail{
@@ -367,23 +371,23 @@ input:focus{
     height: auto;
 }
 }
-@media  only screen and (min-width: 469px) and (max-width: 699px) {
 
+@media screen and (max-width: 468px) {
     .hb-detail{
         border-radius: 0;
         padding: 5px 0 10px 0px;
         margin-bottom: 0;
         margin-top: 6rem;
     }
-    .hb-detail-box{
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 100%;
-        height: auto;
-        -moz-border-radius-topleft: 5px;
-        -moz-border-radius-topright: 5px;
+     .hb-detail-box{
+         padding-left: 5px;
+         padding-right: 5px;
+         width: 100%;
+         height: auto;
+         -moz-border-radius-topleft: 5px;
+         -moz-border-radius-topright: 5px;
 
-    }
+     }
     .img-detail-box{
         width: 100%;
         height:auto;
@@ -417,12 +421,20 @@ input:focus{
         border-radius: 0;
         margin-top: 0.5rem;
     }
+    .zan-box{
+        margin-right: 1rem;
+    }
     .com-mide{
         margin-top: 1rem;
         padding-top: 0.5rem;
     }
-    .hb-box{
-        max-width: 100%;
-        height: auto;
+    .info-box{
+        padding-right:0px;
     }
+    .item-title{
+        width:90%
+    }
+  
+  
+
 }

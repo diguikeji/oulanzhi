@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$user[0].user_nicename}欧澜芝的个人主页</title>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/palette.css">
+	<link href="__TMPL__Public/new/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/header.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/follow.css">
+	<link rel="stylesheet" href="__TMPL__Public/new/css/component.css">
+	<meta name="renderer" content="webkit">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="generator" content=""  data-variable="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+</head>
+<body>
+
+<!--头部-->
+<tc_include file="Public:nav"/>
+
+
+
+<!--他人用户中心头部-->
+<tc_include file="Public:hisuser"/>
+<!--红色部分-->
+<div  class="hongse">
+
+	<input type="hidden" name="id" id="id" value="{$user[0].id}" />
+	<a href="{:U('Portal/user/index',array('id'=>$user[0][id]))}">
+		<div class="hongse_1">
+			<div class="hongse_1_1" style="color: white;" ><span id="hcount"></span></div>
+			<div class="hongse_1_2" style="color: white">画板</div>
+			<div  class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: -0.5rem"></div>
+		</div>
+	</a>
+	<a href="{:U('Portal/user/caiji',array('id'=>$user[0][id]))}">
+		<div class="hongse_2"></div>
+		<div class="hongse_1">
+			<div class="hongse_1_1"><span id="ccount"></span></div>
+			<div class="hongse_1_2">采集</div>
+		</div></a>
+	<a href="{:U('Portal/user/love',array('id'=>$user[0][id]))}">
+		<div class="hongse_2"></div>
+		<div class="hongse_1">
+			<div class="hongse_1_1"><span id="lcount"></span></div>
+			<div class="hongse_1_2">喜欢</div>
+		</div></a>
+	<a href="{:U('Portal/user/tag',array('id'=>$user[0][id]))}">
+		<div class="hongse_2"></div>
+		<div class="hongse_1">
+			<div class="hongse_1_1"><span id="tcount"></span></div>
+			<div class="hongse_1_2">标签</div>
+		</div></a>
+</div>
+
+
+
+
+<div class="middle-box" id="designn">
+    
+    
+	
+
+
+</div>
+
+<div style="clear: both"></div>
+<!--没有更多-->
+<div class="nomore" id="load">
+	<div class="nomore_1" style="font-family: 微软雅黑;font-size:1.4rem">╮(╯﹏╰）╭&nbsp;查看更多</div>
+	<i class="iconfont icon-daosanjiao" style="color: black"></i>
+</div>
+<!--底部-->
+
+
+<tc_include file="Public:scripts"/>
+
+<!--script-->
+<!-- Initialize Swiper -->
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
+<script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/login.js"></script>
+<script src="__TMPL__Public/new/js/classie.js"></script>
+<script src="__TMPL__Public/new/js/modalEffects.js"></script>
+<script type="text/javascript">
+
+	var id = $("#id").val();
+//	console.log(id);
+
+//关注按钮状态
+    $.ajax({
+        
+        type: "GET",
+
+        url: "/index.php?g=portal&m=user&a=userFollowStatus",
+
+        dataType: "json",
+
+        data:{
+            
+            id:id
+            
+        },
+        
+        success:function(data){
+            
+            
+            if(data==0){
+                
+                $("#guanzhu").append(
+                    
+                     '<div class="yesterday_3_1 " ><button class="userclick">关注+</button></div>'
+                    
+                    )
+                
+            }else{
+                
+                $("#guanzhu").append(
+                    
+                     '<div class="yesterday_3_1 "><button class="userclick">已关注</button></div>'
+                    
+                    )
+                
+            }
+        }
+        
+    });
+    
+    
+     $("body").on("click",".userclick",function()
+    {
+        
+       if($(this).text()=="关注+")
+       {
+           $.ajax({
+               type: "GET",
+
+               url: "/index.php?g=User&m=follow&a=clickUserFollow",
+               
+               dataType: "json",
+               
+               data:{
+                   
+                  id:id
+                  
+               },
+               
+               success:function(data){
+                   if(data.status == 0){
+                       alert(data.info);
+                       $(location).attr('href', data.url);
+                   }
+                   if(data ==1){
+                       alert("亲，自己不能关注自己哦！")
+                   }
+               }
+           })
+           
+            $(this).text("已关注")
+         
+       }
+       else{
+           
+         $.ajax({
+               type: "GET",
+
+               url: "/index.php?g=User&m=follow&a=clickCancelUser",
+               
+               dataType: "json",
+               
+               data:{
+                   
+                  id:id
+                  
+               },
+               
+               success:function(data){
+                   
+                  
+               }
+           })
+           
+            $(this).text("关注+")
+
+       }
+       
+    });
+
+	$.ajax({
+		type: "GET",
+
+		url: "/index.php?g=portal&m=user&a=userCount",
+
+		dataType: "json",
+
+		data:{
+		   id:id
+		},
+
+		success:function(data){
+	
+			document.getElementById('hcount').innerHTML=data.hcount;
+			document.getElementById('ccount').innerHTML=data.ccount;
+			document.getElementById('lcount').innerHTML=data.lcount;
+			document.getElementById('tcount').innerHTML=data.tcount;
+			document.getElementById('fcount').innerHTML=data.fcount;
+			document.getElementById('gcount').innerHTML=data.gcount;
+		}
+	});
+
+	//用户画板
+	
+	var pageIndex=1;
+    
+    function getPostList(page) {
+
+	$.ajax({
+				type: "GET",
+
+				url: "/index.php?g=Portal&m=user&a=drawDetail&p="+page,
+
+				dataType: "json",
+
+                data:{
+                    
+                    id:id
+                    
+                },
+
+				success: function (data) {
+
+					var html ='';
+					for (var i = 0; i < data.length; i++) {
+						var hid = data[i].hb_id;
+
+						if(data[i].pidlist!==null){
+							var postIdList = data[i].pidlist.split(",");
+
+							//console.log(data);
+
+							html=html+
+									'<a href="index.php?g=Portal&m=User&a=huaban&id='+hid+'">'+
+									'<div class="follow-box" >'+
+									'<img src="index.php?g=&m=Index&a=imgCollect&id='+postIdList[0]+'">'+
+									'<div class="box-title ">'+
+									'<div class="with-line-left"></div>'+ data[i].hb_name+
+									'<div class="with-line-right"></div>'+
+									'</div>'+'<div class="img-row">'
+
+							for(var j=1 ;j<4;j++) {
+								var pid = postIdList[j];
+								html = html +
+										'<div class="img-row-3"><img src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></div>'
+
+
+							}
+							html=html+'</div>'+
+									'</div>'+
+									'</a>'
+
+						}else{
+
+							html=html+
+
+									'<a href="index.php?g=User&m=draw&a=drawDetail&id='+hid+'">'+
+									'<div class="follow-box" >'+
+									'<img src="index.php?g=&m=Index&a=imgCollect&id='+hid+'">'+
+									'<div class="box-title ">'+
+									'<div class="with-line-left"></div>'+ data[i].hb_name+
+									'<div class="with-line-right"></div>'+
+									'</div>'+
+									'<div class="img-row">'+
+
+									'</div>'+
+									'<a href="index.php?g=User&m=draw&a=edit_draw&id='+hid+'"><button class="following">编辑画板</button></a>'+
+									'</div>'+
+									'</a>'
+
+
+						}
+					}
+
+					$("#designn").append(html);
+					
+			    if(data.length<20)
+                {
+                    $("#load").text("╮(・o・)╭没有更多了.....");
+                }
+
+                pageIndex++;
+        
+				}
+			}
+	);
+}
+
+
+    getPostList(pageIndex);
+
+    $("#load").click(function()
+    {
+        getPostList(pageIndex);
+        
+    });
+
+
+
+	var login = document.getElementById('login');
+	var over = document.getElementById('over');
+	function show()
+	{
+		login.style.display = "block";
+		over.style.display = "block";
+	}
+	function hide()
+	{
+		login.style.display = "none";
+		over.style.display = "none";
+	}
+
+
+	$(".nav-box .right-menu .close-menu").click(function(){
+
+		$(".login-ul").slideUp();
+		$(".nav-box-ul").slideUp();
+		$(this).parent().removeClass("active");
+
+
+
+
+	});
+
+
+	$(".nav-box .right-menu .open-menu").click(function(){
+
+		$(".login-ul").slideDown();
+		$(".nav-box-ul").slideDown();
+		$(this).parent().addClass("active");
+
+
+
+	});
+
+
+	function show()
+	{
+		login.style.display = "block";
+		over.style.display = "block";
+	}
+	function hide()
+	{
+		login.style.display = "none";
+		over.style.display = "none";
+	}
+
+</script>
+</body>
+</html>

@@ -58,7 +58,7 @@
 
 
 <!--内容-->
-<div class="palette">
+
     <div class="palette-1">
         <form action="{:U('User/draw/edit_post')}" method="post">
         <div class="bianjihuaban">编辑画板/{$hb_name}</div>
@@ -75,11 +75,11 @@
             <option value="{$vo.xqfl_id}"{$hid_selected} >{$vo.xqfl_name}</option>
                 </foreach>
         </select> </div>
-            <div class="describe-2">删除<button ><a href="{:U('User/draw/delete',array('id'=>$hb_id))}">删除画板</a></button></div>
+            <div class="describe-2">删除<a href="{:U('User/draw/delete',array('id'=>$hb_id))}"><button >删除画板</button></a></div>
         <div class="describe-3"><button type="submit">保存设置</button></div>
         </form>
     </div>
-</div>
+
 
 <tc_include file="Public:scripts"/>
 

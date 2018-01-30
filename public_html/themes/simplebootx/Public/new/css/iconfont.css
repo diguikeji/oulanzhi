@@ -13,7 +13,6 @@
   url('iconfont.ttf?t=1515394868617') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('iconfont.svg?t=1515394868617#iconfont') format('svg'); /* iOS 4.1- */
 }
-
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1516591191100'); /* IE9*/
   src: url('iconfont.eot?t=1516591191100#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -21,7 +20,6 @@
   url('iconfont.ttf?t=1516591191100') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('iconfont.svg?t=1516591191100#iconfont') format('svg'); /* iOS 4.1- */
 }
-
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;

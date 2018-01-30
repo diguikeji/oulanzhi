@@ -124,6 +124,12 @@
     -webkit-align-items: center;
     align-items: center;
 }
+.yesterday_3_1 button{
+  background-color: #C29E62;
+  border:0px;
+ outline: medium
+  
+}
 .yesterday_3_1:hover{
     color: #000000;
 }
@@ -203,7 +209,7 @@
 /*320-468*/
 @media (min-width:320px)and (max-width:468px){
     .yesterday{
-        margin-top: 6rem;
+        margin-top: 5rem;
     }
     .heng{
         display: none;

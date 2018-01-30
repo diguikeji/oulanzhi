@@ -1,0 +1,1189 @@
+[ 2018-01-30T10:53:57+08:00 ] 183.57.53.177 /index.php?g=admin&m=public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000806s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000663s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000459s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-01-30T10:54:20+08:00 ] 60.168.149.11 /index.php?g=admin&m=public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000787s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000435s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000363s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2018-01-30T10:54:27+08:00 ] 60.168.149.11 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000931s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000399s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000491s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM tb_role_user a INNER JOIN tb_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `tb_users` SET `user_login`='admin',`user_pass`='###3292f0f51b4822ab58e9bce5e00b1799',`user_nicename`='admin',`user_email`='450175465@qq.com',`user_url`='',`avatar`='avatar/5a535681e5bf2.png',`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='60.168.149.11',`last_login_time`='2018-01-30 10:54:27',`create_time`='2017-12-27 06:00:41',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0005s ]
+
+[ 2018-01-30T10:54:27+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000809s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000412s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000385s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 156 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 197 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 200 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 198 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 205 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 190 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 191 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 195 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 196 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 201 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 202 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 203 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 204 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 53 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 54 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 62 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 133 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 134 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 137 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 139 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 146 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 147 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 86 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 87 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 94 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 2 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 4 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 25 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 32 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 33 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 36 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 47 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 68 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 75 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 83 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-01-30T10:54:27+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Main&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000926s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000520s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000432s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() as version [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-01-30T10:54:37+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Sixin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000763s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000364s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000388s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SixinModel
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sixin` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_sixin` ORDER BY sx_id LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-01-30T10:54:46+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Activity&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000808s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000410s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000401s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ActivityModel
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_activity` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_activity` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2018-01-30T10:54:50+08:00 ] 60.168.149.11 /index.php?g=Admin&m=activity&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000759s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000383s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000363s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ActivityModel
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-01-30T10:55:31+08:00 ] 60.168.149.11 /index.php?g=Admin&m=activity&a=add_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000405s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ActivityModel
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0004s ]
+SQL: INSERT INTO `tb_activity` (`hd_img_url`,`hd_time`,`hd_recommend`,`hd_name`,`hd_url`) VALUES ('admin/20180130/5a6fde9f67853.jpg','2018-01-30 10:55:31','1','测试2','diguikeji.com') [ RunTime:0.0041s ]
+
+[ 2018-01-30T10:55:33+08:00 ] 60.168.149.11 /index.php?g=Admin&m=activity&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000872s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000385s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ActivityModel
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_activity` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_activity` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-01-30T10:55:34+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Sixin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000741s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000366s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SixinModel
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sixin` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_sixin` ORDER BY sx_id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-01-30T10:55:41+08:00 ] 60.168.149.11 /index.php?g=Admin&m=activity&a=edit&id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000547s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000584s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ActivityModel
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_activity` WHERE `hd_id` = 16 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: hd_img_url /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/498d746d279e4975ff4ea491841fbe67.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2018-01-30T10:57:29+08:00 ] 60.168.149.11 /index.php?g=Admin&m=activity&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000747s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000370s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ActivityModel
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_activity` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_activity` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2018-01-30T10:58:08+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Posts&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000806s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000349s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000424s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+SQL: SHOW COLUMNS FROM `tb_posts` [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\XingquModel
+SQL: SHOW COLUMNS FROM `tb_xingqu` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\HuabanModel
+SQL: SHOW COLUMNS FROM `tb_huaban` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tb_posts` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_posts` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT a.id as pid,tb_users.id as uid,a.*,`user_nicename` FROM tb_posts a INNER JOIN tb_users ON a.post_author = tb_users.id  ORDER BY id LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2018-01-30T11:12:52+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Activity&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000775s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000385s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000358s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\ActivityModel
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_activity` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_activity` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_activity` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+NOTIC: [8] Use of undefined constant hd_recommend - assumed 'hd_recommend' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/d2fc0f9b5e82fbf6a342e4d9b55a818e.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2018-01-30T11:13:55+08:00 ] 60.168.149.11 /index.php?g=Admin&m=Sixin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000517s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SixinModel
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sixin` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_sixin` ORDER BY sx_id LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-01-30T14:44:08+08:00 ] 36.63.46.73 /index.php?g=admin&m=public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000805s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000387s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-01-30T15:38:13+08:00 ] 36.63.46.73 /index.php?g=admin&m=public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000899s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000366s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000463s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-01-30T15:38:25+08:00 ] 36.63.46.73 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000722s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000364s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000403s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000443s ]
+
+[ 2018-01-30T15:38:29+08:00 ] 36.63.46.73 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000806s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000484s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM tb_role_user a INNER JOIN tb_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `tb_users` SET `user_login`='admin',`user_pass`='###3292f0f51b4822ab58e9bce5e00b1799',`user_nicename`='admin',`user_email`='450175465@qq.com',`user_url`='',`avatar`='avatar/5a535681e5bf2.png',`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='36.63.46.73',`last_login_time`='2018-01-30 15:38:29',`create_time`='2017-12-27 06:00:41',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0004s ]
+
+[ 2018-01-30T15:38:29+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000796s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000344s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000376s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 126 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 127 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 129 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 156 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 167 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 131 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 197 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 200 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 198 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 205 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 190 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 191 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 195 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 196 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 201 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 202 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 203 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 204 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 53 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 54 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 62 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 132 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 133 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 134 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 137 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 139 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 140 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 146 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 147 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 85 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 86 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 87 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 94 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 100 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 1 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 2 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 4 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 7 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 18 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 25 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 32 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 33 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 36 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 39 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 47 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 68 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 75 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_menu` WHERE `parentid` = 83 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-01-30T15:38:29+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Main&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000788s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000456s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000495s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: select VERSION() as version [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2018-01-30T15:38:33+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Xingqufenlei&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000794s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000396s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000383s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\XingquFenleiModel
+SQL: SHOW COLUMNS FROM `tb_xingqu_fenlei` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\XingquModel
+SQL: SHOW COLUMNS FROM `tb_xingqu` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_xingqu_fenlei` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_xingqu_fenlei` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_xingqu_fenlei` ORDER BY xqfl_id LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2018-01-30T15:38:36+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Posts&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000860s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000413s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000354s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+SQL: SHOW COLUMNS FROM `tb_posts` [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\XingquModel
+SQL: SHOW COLUMNS FROM `tb_xingqu` [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\HuabanModel
+SQL: SHOW COLUMNS FROM `tb_huaban` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_posts` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_posts` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT a.id as pid,tb_users.id as uid,a.*,`user_nicename` FROM tb_posts a INNER JOIN tb_users ON a.post_author = tb_users.id  ORDER BY id LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+NOTIC: [8] Use of undefined constant recommended - assumed 'recommended' /www/web/hb_pro_youzewang_com/public_html/data/runtime/Cache/Admin/ae0ecbfad10df4b552108c384edbb40f.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2018-01-30T15:38:43+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Slide&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000435s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000423s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_slide` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_slide_cat` [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cat_name` FROM `tb_slide_cat` WHERE ( cat_status!=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_slide` ORDER BY listorder ASC  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2018-01-30T15:38:44+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Slidecat&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000795s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000425s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000496s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_slide_cat` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tb_slide_cat` WHERE ( cat_status!=0 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2018-01-30T15:38:46+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Slide&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000783s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000505s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000503s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_slide` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_slide_cat` [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cat_name` FROM `tb_slide_cat` WHERE ( cat_status!=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_slide` ORDER BY listorder ASC  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2018-01-30T15:38:47+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Slidecat&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000856s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000464s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000494s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_slide_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tb_slide_cat` WHERE ( cat_status!=0 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-01-30T15:38:50+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Slidecat&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000768s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000431s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000408s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tb_slide_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tb_slide_cat` WHERE ( cat_status!=0 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0004s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-01-30T15:38:51+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Slidecat&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000478s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000457s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_slide_cat` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tb_slide_cat` WHERE ( cat_status!=0 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2018-01-30T15:38:53+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Slide&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000846s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000402s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_slide` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_slide_cat` [ RunTime:0.0003s ]
+SQL: SELECT `cid`,`cat_name` FROM `tb_slide_cat` WHERE ( cat_status!=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_slide` ORDER BY listorder ASC  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-01-30T15:38:55+08:00 ] 36.63.46.73 /index.php?g=Admin&m=Sixin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000356s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000361s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `tb_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: D方法实例化没找到模型类Common\Model\SixinModel
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tb_sixin` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_sixin` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tb_sixin` ORDER BY sx_id LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+

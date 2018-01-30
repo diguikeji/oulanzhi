@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签</title>
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/palette.css">
+    <link href="__TMPL__Public/favicon.ico"  rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/header.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/lable.css">
+    <link rel="stylesheet" href="__TMPL__Public/new/css/component.css">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="generator" content=""  data-variable="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="__TMPL__Public/new/css/share.css" rel="stylesheet" type="text/css"><!--分享-->
+</head>
+
+<style>
+    .lable-box:hover .following{
+    display: block;
+}
+.lable-box:hover a{
+    text-decoration: none;
+}
+.following{
+    position: relative;
+    bottom: 410px;
+    width: 30%;
+    height: 2.5rem;
+    border: 1px solid grey;
+    z-index: 99;
+    color: black;
+    border-radius: 5px;
+    left: 65%;
+    background: rgba(233,233,233,0.8);
+    outline: medium;
+    display: none;
+}
+.following:hover{
+    background: rgba(233,233,233,0.9);
+    -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+</style>
+<body>
+
+
+
+
+
+<tc_include file="Public:nav"/>
+
+
+
+
+<!--用户中心头部-->
+<tc_include file="Public:user"/>
+
+<!--红色部分-->
+<div  class="hongse">
+
+    <input type="hidden" name="tid" id="tid" value="{$tid}">
+    <input type="hidden" name="id" id="id" value="{$id}" />
+
+    <a href="{:U('User/center/index')}">
+        <div class="hongse_1">
+            <div class="hongse_1_1"  ><span id="hcount"></span></div>
+            <div class="hongse_1_2" >画板</div>
+        </div>
+    </a>
+    <a href="{:U('User/center/caiji')}">
+        <div class="hongse_2"></div>
+        <div class="hongse_1">
+            <div class="hongse_1_1"><span id="ccount"></span></div>
+            <div class="hongse_1_2">采集</div>
+
+        </div></a>
+    <a href="{:U('User/center/love')}">
+        <div class="hongse_2"></div>
+        <div class="hongse_1">
+            <div class="hongse_1_1"><span id="lcount"></span></div>
+            <div class="hongse_1_2">喜欢</div>
+        </div></a>
+    <a href="{:U('User/center/tag')}">
+        <div class="hongse_2"></div>
+        <div class="hongse_1">
+            <div class="hongse_1_1" style="color: white;"><span id="tcount"></span></div>
+            <div class="hongse_1_2" style="color: white">标签</div>
+            <div  class="heng" style="width: 50px;height: 3px;background: white;margin: 0 auto;margin-top: -0.5rem"></div>
+        </div></a>
+</div>
+
+<!--标签类型-->
+<div class="title-detail">
+    <a href="{:U('User/center/tag')}">所有标签</a>&nbsp; <font  class="address-lable" style="color: #777777"> » {$tagname}</font>
+    <div style="float: right">{$pcount} 个包含:“{$tagname}”标签的采集</div>
+</div>
+<!--标签内容-->
+<div class="lable-detail-box">
+    <div class="middle-box" id="tag-box">
+</div>
+
+</div>
+
+
+<!--没有更多-->
+<div class="nomore">
+    <div class="nomore_1" style="font-family: 微软雅黑;font-size:1.4rem" id="load">╮(╯﹏╰）╭&nbsp;查看更多</div>
+    <a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
+</div>
+<!--底部-->
+<!--
+<div class="footer">
+    <div class="footer_1">
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+
+        </div>
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div class="footer_1_1">
+            <a href="#"> 首页</a><br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div class="footer_1_1">
+            <br><a href="#">采集工具</a><br><a href="#">官方微博</a><br><a href="#">信息举报</a>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="footer_2">
+        <div class="footer_2_1"><a href="#">关注我们</a></div>
+        <div class="footer_2_2"><a href="#">信息博客</a><br><a href="#">新浪博客</a><br><a href="#">官方微信</a></div>
+        <div class="footer_2_2"><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a><br><a href="#">@新浪微博</a></div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="footer_3">Copyright2016-2017 Heifeiku Leijan Technology Co.Ltd All Rights Reserved<br>
+        皖ICP备17010401号-2皖公网安备3301080233301号
+    </div>
+
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!--script-->
+<!-- Initialize Swiper -->
+<script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
+<script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__TMPL__Public/new/js/share.js"></script><!--分享-->
+<script src="__TMPL__Public/login.js"></script>
+<script src="__TMPL__Public/new/js/classie.js"></script>
+<script src="__TMPL__Public/new/js/modalEffects.js"></script>
+
+<script  type="text/javascript">
+
+
+    var tid = $("#tid").val();
+
+    console.log(tid);
+
+    var pageIndex=1;
+    function getPostList(page) {
+
+    $.ajax({
+        type: "GET",
+
+        url: "/index.php?g=User&m=center&a=tagDetailView&p="+page,
+
+        dataType: "json",
+
+        data: {
+
+            id:tid
+
+        },
+
+        success: function (data) {
+
+            console.log(data);
+
+            for(var i=0;i<data.length;i++) {
+
+                var pid = data[i].pid;
+                var uid = data[i].uid;
+                $("#tag-box").append(
+                        '<div class="lable-box">' +
+                        '<div class="img-detail-box">' +
+                        '<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img src="index.php?g=&m=Index&a=imgCollect&id=' + pid + '"></a>' +
+                        '</div>' +
+                        '<div class="user-box">' +
+                        '<div class="user-touxiang">' +
+                        '<img src="index.php?g=user&m=public&a=avatar&id=' + uid + '">' +
+                        '</div>' +
+                        '<div class="title-box-right">' +
+                        '<div class="title-left">' +
+                        data[i].post_title +
+                        '</div>' +
+                        '<div class="title-right">' +
+                        '<a href="#">' +
+                        '<i class="iconfont icon-guanzhu" style="color: red"></i>'  +
+                        '<font id="num-like" style="color: #989998">12'+data[i].post_love+'</font>' +
+                        '</a>' +
+                 /*       '<a href="#">' +
+                        '<font style="float: right">' +
+                        '<i class="iconfont icon-fenxiang"></i>' +
+                        '</font>' +*/
+                        '</a>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div class="user-name">'+data[i].user_nicename+'</div>' +
+                        '</div>' +
+                        '<a href="index.php?g=User&m=collect&a=edit_collect&id='+pid+'"><button class="following">编辑采集</button></a>'+
+                        '</div>'
+                )
+            }
+            
+             if(data.length<16)
+                {
+                    $("#load").text("╮(・o・)╭没有更多了.....");
+                }
+
+                pageIndex++;
+            
+            }
+    });
+   }
+
+    getPostList(pageIndex);
+
+    $("#load").click(function()
+    {
+        getPostList(pageIndex);
+    });
+
+
+
+    var id = $("#id").val();
+
+
+    $.ajax({
+        type: "GET",
+
+        url: "/index.php?g=portal&m=user&a=userCount",
+
+        dataType: "json",
+
+        data:{
+            id:id
+        },
+
+        success:function(data){
+            console.log(data);
+
+            document.getElementById('hcount').innerHTML=data.hcount;
+            document.getElementById('ccount').innerHTML=data.ccount;
+            document.getElementById('lcount').innerHTML=data.lcount;
+            document.getElementById('tcount').innerHTML=data.tcount;
+            document.getElementById('fcount').innerHTML=data.fcount;
+			document.getElementById('gcount').innerHTML=data.gcount;
+        }
+    });
+
+
+
+    $('#share').shareConfig({
+        Shade : true, //是否显示遮罩层
+        Event:'click', //触发事件
+        Content : 'Share', //内容DIV ID
+        Title : '分享给朋友' //显示标题
+    });
+</script>
+<script type="text/javascript">
+    var login = document.getElementById('login');
+    var over = document.getElementById('over');
+    function show()
+    {
+        login.style.display = "block";
+        over.style.display = "block";
+    }
+    function hide()
+    {
+        login.style.display = "none";
+        over.style.display = "none";
+    }
+
+
+    $(".nav-box .right-menu .close-menu").click(function(){
+
+        $(".login-ul").slideUp();
+        $(".nav-box-ul").slideUp();
+        $(this).parent().removeClass("active");
+
+
+
+
+    });
+
+
+    $(".nav-box .right-menu .open-menu").click(function(){
+
+        $(".login-ul").slideDown();
+        $(".nav-box-ul").slideDown();
+        $(this).parent().addClass("active");
+
+
+
+    });
+</script>
+</body>
+</html>

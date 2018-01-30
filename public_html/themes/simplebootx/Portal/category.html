@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/lable.css">
+    <link rel="stylesheet" href="__TMPL__Public/new/css/component.css">
     <meta name="renderer" content="webkit">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,45 +17,12 @@
     <meta name="generator" content=""  data-variable="" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <title>发现</title>
+    <title>最新分类</title>
 </head>
 <body>
 
-<nav class="nav-box">
-    <div class="nav-box-logo">
-        <img src="__TMPL__Public/new/image/logo.png">
-    </div>
-    <div class="nav-box-ul">
-        <ul id="nav">
-            <li><a href="../index.html" >首页</a></li>
-            <li><a href="../found/found.html" class="active">发现</a></li>
-            <li><a href="../new/new.html">最新</a>
-                <!--		<ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
-            </li>
-            <li><a href="../activity/activity.html">活动</a></li>
-        </ul>
-    </div>
 
-
-
-    <div class="right-menu">
-        <img class="open-menu" src="__TMPL__Public/new/image/menu.png" />
-        <img class="close-menu" src="__TMPL__Public/new/image/closeMenu.png" />
-    </div>
-
-    <div class="login-ul" id="user">
-
-    </div>
-
-
-</nav>
-
-
+<tc_include file="Public:nav"/>
 
 <div class="cephalosome">
     <img src="__TMPL__Public/new/image/banner2.jpg" style="width: 100%;height: 100%;object-fit: cover; -webkit-filter: blur(3px); /* Chrome, Opera */-moz-filter: blur(3px);-ms-filter: blur(3px);    filter: blur(3px);">
@@ -70,9 +39,7 @@
  </foreach>
 </div>
 <div class="morefound-2">
-    <!--第一个-->
-    <div class="morefound-2-1" id="cj-box">
-
+    <div class="morefound-2-1"  id="cj-box">
 
 
 
@@ -83,8 +50,8 @@
     </div>
 </div>
 <!--没有更多-->
-<div class="nomore">
-    <div class="nomore_1" style="font-family: 微软雅黑;">╮(╯﹏╰）╭&nbsp;没有更多了.....</div>
+<div class="nomore" id="load">
+    <div class="nomore_1" style="font-family: 微软雅黑;">╮(╯﹏╰）╭&nbsp;查看更多</div>
     <a href="#"><i class="iconfont icon-daosanjiao" style="color: black"></i></a>
 </div>
 
@@ -92,17 +59,24 @@
 
 
 <tc_include file="Public:scripts"/>
+<script src="__TMPL__Public/login.js"></script>
+<script src="__TMPL__Public/new/js/classie.js"></script>
+<script src="__TMPL__Public/new/js/modalEffects.js"></script>
 
 <script>
 
      var flid = $("#flid").val();
   //   console.log(flid);
 
+    var pageIndex=1;
+    
+    function getPostList(page) {
+
     $.ajax({
 
         type: "GET",
 
-        url: "/index.php?g=&m=InterestDetail&a=interestCollect",
+        url: "/index.php?g=&m=InterestDetail&a=interestCollect&p="+page,
 
         dataType: "json",
 
@@ -121,19 +95,33 @@
 
                 $("#cj-box").append(
 
-                        '<div class="huaban">'+
-                        '<div class="guajian"><img src="__TMPL__Public/new/image/guajian.png"></div>'+
-                        '<div class="image-box">'+
-
-                        '<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img  src="index.php?g=&m=Index&a=imgCollect&id='+pid+'"></a>'+
-                        '</div>'+
-                        '<div class="bottom-box">'+
-                        '<div class="touiang">'+
-                        '<img src="index.php?g=user&m=public&a=avatar&id='+uid+'">&nbsp;&nbsp;'+data[i].user_nicename+'</div>'+
-                        '<div class="guanzhu">'+
-                        '<i class="iconfont icon-guanzhu" style="font-size: 2rem;color: red"></i>&nbsp;&nbsp;'+data[i].post_love+''+
-                        '</div>'+
-                        '</div>'+
+                        '<div class="lable-box">' +
+                        '<div class="img-detail-box">' +
+                        '<a href="index.php?g=&m=Article&a=posts&pid='+pid+'"><img src="index.php?g=&m=Index&a=imgCollect&id=' + pid + '"></a>' +
+                        '</div>' +
+                        '<div class="user-box">' +
+                        '<a href="index.php?g=Portal&m=user&a=index&id='+uid+'">'+
+                        '<div class="user-touxiang">' +
+                        '<img src="index.php?g=user&m=public&a=avatar&id=' + uid + '">' +
+                        '</div></a>' +
+                        '<div class="title-box-right">' +
+                        '<div class="title-left">' +
+                        data[i].post_title +
+                        '</div>' +
+                        '<div class="title-right">' +
+                        '<a href="#">' +
+                        '<i class="iconfont icon-guanzhu" style="color: red"></i>'  +
+                        '<font id="num-like" style="color: #989998">'+data[i].post_love+'</font>' +
+                        '</a>' +
+                 /*       '<a href="#">' +
+                        '<font style="float: right">' +
+                        '<i class="iconfont icon-fenxiang"></i>' +
+                        '</font>' +*/
+                        '</a>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div class="user-name">'+data[i].user_nicename+'</div>' +
+                        '</div>' +
                         '</div>'
                 )
             }
@@ -142,8 +130,25 @@
 
                     '<div style="clear: both"></div>'
             )
+            
+            if(data.length<16)
+                {
+                    $("#load").text("╮(・o・)╭没有更多了.....");
+                }
+
+                pageIndex++;
+            
         }
     })
+    
+    }
+    
+   getPostList(pageIndex);
+
+    $("#load").click(function()
+    {
+        getPostList(pageIndex);
+    });
 
 </script>
 

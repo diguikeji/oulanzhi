@@ -68,7 +68,20 @@ class CollectController extends MemberbaseController
     //用户采集编辑
     public function edit_collect()
     {
-
+        $uid = sp_get_current_userid();
+        $pid = I('get.id',0,'intval');
+        $post_model = M("Posts");
+        $post = $post_model->where(array("id"=>$pid))->find();
+        $huaban_model = M("Huaban");
+        $huaban = $huaban_model->where(array("hb_u_id"=>$uid))->field("hb_id,hb_name")->select();
+       /* $tagpost_model = M("Tag_posts");
+        $tagpost = $tagpost_model->where(array("tp_post_id"))
+                                 ->join("tb_tag b on a.tp_tag_id = tag_id")
+                                 ->select();*/
+        $this->assign($post);
+        $this->assign("huaban",$huaban);
+     //   $this->assign("tagpost",$tagpost);
+        $this->display(":edit_collect");
     }
 
     //用户采集编辑提交
@@ -80,7 +93,48 @@ class CollectController extends MemberbaseController
     //用户采集删除
     public function delete_collect()
     {
-
+        $uid = sp_get_current_userid();
+        $pid = I('get.id',0,'intval');
+        //删除采集列表中的采集
+        $post_model = M("Posts");
+        $post = $post_model->where(array("id"=>$pid,"post_author"=>$uid))->delete();
+        //删除标签下面这个采集
+        $tag_post_model = M("Tag_posts");
+        $tag_post = $tag_post_model->where(array("tp_post_id"=>$pid))->delete();
+        //删除其他用户喜欢这个采集
+        $love_model = M("Love");
+        $love = $love_model->where(array("love_posts_id"=>$pid))->delete();
+        
+        if($post==true&&$tag_post==true&&$love==true){
+            $this->success("采集删除成功！");
+        }else{
+            $this->error("采集删除失败！");
+        }
+    }
+    
+    //用户批量删除采集
+    public function deleteMoreCollect(){
+        
+        $pids = implode(",",$_GET["pids"]);
+         //删除采集列表中的采集
+        $post_model = M("Posts");
+        $post = $post_model->where("id in ($pids)")->delete();
+        //删除标签下面这个采集
+        $tag_post_model = M("Tag_posts");
+        $tag_post = $tag_post_model->where("tp_post_id in ($pids)")->delete();
+        //删除其他用户喜欢这个采集
+        $love_model = M("Love");
+        $love = $love_model->where("love_posts_id in ($pids)")->delete();
+        
+        if($post==true&&$tag_post==true&&$love==true){
+            
+            echo 1; //批量删除采集成功
+            
+        }else{
+            
+            echo 0; //批量删除采集失败
+        }
+        
     }
 
     //用户自己的标签

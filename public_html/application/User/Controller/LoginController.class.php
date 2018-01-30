@@ -15,18 +15,72 @@ class LoginController extends HomebaseController {
 	    }
 	    session('login_http_referer',$redirect);
 	    
-<<<<<<< HEAD
+
 	    
 	    $this->assign("params",$_POST["params"]);
 	    $this->assign("redirecturl",$_GET["redirecturl"]);
 	    
-=======
->>>>>>> 43731a3f54f2131f099e498c8420209156b71b11
+
 	    if(sp_is_user_login()){ //已经登录时直接跳到首页
 	        redirect(__ROOT__."/");
 	    }else{
 	        $this->display(":login");
 	    }
+	}
+	
+	//用户手机号注册页面
+	public function reg(){
+	    $this->display(":reg");
+	}
+	
+	
+	//前台用户手机注册提交
+	public function mobileRegister(){
+	    
+    
+    	
+	    $users_model=M("Users");
+	     
+	    $phone = $_GET["phone"];
+	    $name = $_GET["name"];
+	    $password = $_GET["password"];
+	    if($password&&$name&&$password){
+	        $users_model=M("Users");
+	        $p = $users_model->where(array("mobile"=>$phone))->find();
+	        if($p){
+	            echo 5; //该手机号已注册过
+	            
+	        }else{
+	             $data=array(
+	        'user_login' => '',
+	        'user_email' => '',
+	        'mobile' =>$phone,
+	        'user_nicename' =>$name,
+	        'user_pass' => sp_password($password),
+	        'last_login_ip' => get_client_ip(0,true),
+	        'create_time' => date("Y-m-d H:i:s"),
+	        'last_login_time' => date("Y-m-d H:i:s"),
+	        'user_status' => 1,
+	        "user_type"=>2,//会员
+	    );
+	    
+	    $result = $users_model->add($data);
+	    if($result){
+	        //注册成功页面跳转
+	        $data['id']=$result;
+	        session('user',$data);
+	        $this->success("注册成功！",__ROOT__."/");
+	         
+	    }else{
+	        $this->error("注册失败！",U("user/register/index"));
+	    }
+	        }
+	   
+	    }else{
+	        echo 0;
+	    }
+	    
+	  
 	}
 	
 	// 前台用户邮箱激活

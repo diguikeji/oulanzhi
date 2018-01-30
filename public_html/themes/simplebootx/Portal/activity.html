@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/index.css">
     <link rel="stylesheet" type="text/css" href="__TMPL__Public/new/css/activity.css">
+    <link rel="stylesheet" href="__TMPL__Public/new/css/component.css">
     <link rel="stylesheet" href="__TMPL__Public/new/css/swiper.min.css">
     <!--    <style>
             .banner-box{
@@ -53,13 +54,17 @@
         <ul id="nav">
             <li><a href="{:U('Portal/index/index')}" >首页</a></li>
             <li><a href="{:U('Portal/find/index')}" >发现</a></li>
-            <li><a href="{:U('Portal/newest/index')}">最新</a>
-                <!--        <ul>
-                            <li><a href="#">我的推荐</a></li>
-                            <li><a href="#">我的关注</a></li>
-                            <li><a href="#">我的画板</a></li>
-                            <li><a href="#">用户</a></li>
-                        </ul>-->
+            <li class="dropdown">
+                <a href="{:U('Portal/newest/index')}" class="dropdown-toggle">
+                    最新
+                </a>
+                <ul class="dropdown-menu" style="margin-top: 2.1rem;margin-left: -1rem;background-color: rgba(0,0,0,0.6);font-size: 12px!important;min-width: 3rem;text-align: center ;">
+                    <li style="min-width: 100%"><a href="{:U('User/center/caiji')}" style="font-size: 1.5rem;line-height: 30px;;min-width: 100%">我的采集</a></li>
+                    <li><a href="{:U('User/center/index')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的画板</a></li>
+                    <li><a href="{:U('User/center/love')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">我的喜欢</a></li>
+                    <li><a href="{:U('User/follow/interestFollow')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">兴趣</a></li>
+                    <li><a href="{:U('User/follow/userFollow')}"  style="font-size: 1.5rem;line-height: 30px;min-width: 100%">用户</a></li>
+                </ul>
             </li>
             <li><a href="{:U('Portal/activity/index')}" class="active">活动</a></li>
         </ul>
@@ -76,6 +81,8 @@
 
 </nav>
 
+<div id="si-box"></div>
+
 
 <!-- 幻灯片-->
 <php>
@@ -85,7 +92,7 @@
 </php>
 
 <div class="slide-box">
-    <div class="container" style="width: 100%;">
+ 
         <div class="row" >
             <div class="col-md-12"  style="padding: 0px">
                 <!-- Swiper -->
@@ -108,7 +115,7 @@
 </div>
 
 <!-- 内容 -->
-<div class="hd-box-top" style="width: auto;height: auto">
+<div class="hd-box-top" style="width: auto;height: auto;margin-top:2rem">
     <div class="hd-box">
         <div class="tip">
             <ul style="">
@@ -121,7 +128,7 @@
             <foreach name="activityRecommend" item="vo">
             <div class="huodong">
                 <div class="huodong-image-box">
-                    <a href="{$vo.hd_url}" target="_blank"><img  src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}"></a>
+                    <a href="{$vo.hd_url}" target="_blank"><img  src="{:sp_get_asset_upload_path($vo['hd_img_url'])}"></a>
                 </div>
                 <div class="huodong-bottom-box">
                     <div class="title">
@@ -165,7 +172,7 @@
             <foreach name="activity" item="vo">
             <div class="huodong">
                 <div class="huodong-image-box">
-                    <a href="{$vo.hd_url}" target="_blank"><img  src="{:U('portal/activity/imgActivity',array('id'=>$vo['hd_id']))}"></a>
+                    <a href="{$vo.hd_url}" target="_blank"><img  src="{:sp_get_asset_upload_path($vo['hd_img_url'])}"></a>
                 </div>
                 <div class="huodong-bottom-box">
                     <div class="title">
@@ -198,6 +205,8 @@
 <script src="__TMPL__Public/new/js/jquery-1.8.1.min.js"></script>
 <script src="__TMPL__Public/new/js/swiper.min.js"></script>
 <script src="__TMPL__Public/new/js/bootstrap.min.js"></script>
+<script src="__TMPL__Public/new/js/classie.js"></script>
+<script src="__TMPL__Public/new/js/modalEffects.js"></script>
 <script src="__TMPL__Public/login.js"></script>
 
 <!-- Initialize Swiper -->
@@ -213,6 +222,21 @@
         autoplayDisableOnInteraction: false
     });
 
+	$(".nav-box .right-menu .close-menu").click(function(){
+
+		$(".login-ul").slideUp();
+		$(".nav-box-ul").slideUp();
+		$(this).parent().removeClass("active");
+
+	});
+
+	$(".nav-box .right-menu .open-menu").click(function(){
+
+		$(".login-ul").slideDown();
+		$(".nav-box-ul").slideDown();
+		$(this).parent().addClass("active");
+
+	});
 
 
 </script>

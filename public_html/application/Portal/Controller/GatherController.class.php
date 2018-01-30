@@ -157,8 +157,9 @@ class GatherController extends HomebaseController
         }
         else{
             
+            $houzui=".".explode("/",getimagesize($url)["mime"])[1];
             
-            $filename=uniqid().rand(1000,9999).strrchr($url,'.');;
+            $filename=uniqid().rand(1000,9999).$houzui;
             $ch = curl_init ();
             curl_setopt ( $ch, CURLOPT_CUSTOMREQUEST, 'GET' ); 
             curl_setopt ( $ch, CURLOPT_SSL_VERIFYPEER, false ); 
@@ -168,12 +169,12 @@ class GatherController extends HomebaseController
             $return_content = ob_get_contents ();
             ob_end_clean (); 
             $return_code = curl_getinfo ( $ch, CURLINFO_HTTP_CODE );
-            $fp=@fopen("data/downloadImg/".$filename,"a"); //将文件绑定到流 
+            
+            $fp=@fopen("data/upload/downloadImg/".$filename,"a"); //将文件绑定到流 
             if($fp){
             fwrite($fp,$return_content); //写入文件} 
            
-           
-           $addData["post_img_url"]="/data/downloadImg/".$filename;
+           $addData["post_img_url"]="downloadImg/".$filename;
            $addData["post_yl_img_url"]=$url;
            $addData["post_title"]=$_POST["post_miaoshu"];
            $addData["post_hb_id"]=$_POST["post_hb_id"];
@@ -181,8 +182,6 @@ class GatherController extends HomebaseController
            $addData["post_author"]=$userInfo["id"];
            $addData["post_date"]=date("Y-m-d H:i:s");
             
-            
-             
             $rs=$Posts->add($addData); 
             
             
@@ -265,7 +264,11 @@ class GatherController extends HomebaseController
                 
                 if(!$rsFind)
                 {
-                    $filename=uniqid().rand(1000,9999).strrchr($url,'.');;
+                    
+                    $houzui=".".explode("/",getimagesize($url)["mime"])[1];
+            
+                    $filename=uniqid().rand(1000,9999).$houzui;
+                    
                     $ch = curl_init ();
                     curl_setopt ( $ch, CURLOPT_CUSTOMREQUEST, 'GET' ); 
                     curl_setopt ( $ch, CURLOPT_SSL_VERIFYPEER, false ); 
@@ -275,12 +278,12 @@ class GatherController extends HomebaseController
                     $return_content = ob_get_contents ();
                     ob_end_clean (); 
                     $return_code = curl_getinfo ( $ch, CURLINFO_HTTP_CODE );
-                    $fp=@fopen("data/downloadImg/".$filename,"a"); //将文件绑定到流 
+                    $fp=@fopen("data/upload/downloadImg/".$filename,"a"); //将文件绑定到流 
                     if($fp){
                     fwrite($fp,$return_content); //写入文件} 
                     }
            
-                   $addData["post_img_url"]="/data/downloadImg/".$filename;
+                   $addData["post_img_url"]="downloadImg/".$filename;
                    $addData["post_yl_img_url"]=$url;
                    $addData["post_title"]=$imgList[$i]["post_miaoshu"];
                    $addData["post_hb_id"]=$_POST["post_hb_id"];

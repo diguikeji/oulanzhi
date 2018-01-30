@@ -41,6 +41,22 @@
     font-size: 1.1rem;
     text-align: center;
 }
+.zhanghao-2{
+  width: 60%;
+    height: 3rem;
+    float: right;
+    margin-right: 10%;
+    margin-top:2% ;
+
+
+}
+.zhanghao-2 input{
+  
+  font-size: 1.2rem
+}
+.last{
+    display: none
+}
 /*注册手机端*/
 .reg-box{
     margin-top: 0px;
@@ -83,3 +99,4 @@
 .div3_form input{
     width: 100%;
 }
+

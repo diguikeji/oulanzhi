@@ -99,11 +99,22 @@ class InterestDetailController extends HomebaseController
 
        // $flid = I('get.fid',0,'intval');
 
+       if($this->user){
+             $this->assign("isLogin",1);
+        }
+        else{
+            $this->assign("isLogin",0);
+        }
         $xingqu_model = M("Xingqu");
         $xingqu = $xingqu_model->where(array("xq_id"=>$xid))->find();
 
         $flid = $xingqu["xq_fl_id"];
-        $xingqus = $xingqu_model->where(array("xq_fl_id"=>$flid))->limit(5)->select();
+     if($this->user){
+             $this->assign("isLogin",1);
+        }
+        else{
+            $this->assign("isLogin",0);
+        }    $xingqus = $xingqu_model->where(array("xq_fl_id"=>$flid))->limit(5)->select();
 
         $this->assign($xingqu);
         $this->assign("xingqus",$xingqus);
@@ -130,6 +141,21 @@ class InterestDetailController extends HomebaseController
             ->select();
 
         echo json_encode($list);
+    }
+    
+    //判断兴趣关注状态
+    public function interestgz(){
+        
+           $xid = I('get.id',0,'intval');
+          $uid = sp_get_current_userid();
+          $xqgz_model = M("Xqd_guanzhu");
+          $xqd = $xqgz_model->where(array("xqdgz_uid"=>$uid,"xqdgz_xqid"=>$xid))->find();
+          if($xqd){
+              echo 1;
+          }
+          else{
+              echo 0;
+          }
     }
 
 }

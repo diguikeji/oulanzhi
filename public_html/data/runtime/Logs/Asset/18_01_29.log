@@ -1,0 +1,1044 @@
+[ 2018-01-29T10:30:08+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193008237
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000825s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+
+[ 2018-01-29T10:30:16+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193016913
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000815s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2018-01-29T10:34:40+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193280568
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000908s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000476s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+
+[ 2018-01-29T10:35:30+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193330675
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000805s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+
+[ 2018-01-29T10:35:57+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193357952
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000823s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000312s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-01-29T10:36:03+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193363216
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000885s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+
+[ 2018-01-29T10:39:48+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193598462
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000783s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000313s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+
+[ 2018-01-29T10:40:07+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193617320
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000876s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-01-29T10:41:20+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193680828
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000792s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+
+[ 2018-01-29T10:41:36+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=uploadimage&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000763s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000329s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given /www/web/hb_pro_youzewang_com/public_html/application/Asset/Controller/UeditorController.class.php 第 297 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T10:43:27+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193816741
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000819s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000406s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+
+[ 2018-01-29T10:45:18+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193928549
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000769s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000344s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+
+[ 2018-01-29T10:45:33+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193943440
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000455s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+
+[ 2018-01-29T10:46:23+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=uploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000741s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given /www/web/hb_pro_youzewang_com/public_html/application/Asset/Controller/UeditorController.class.php 第 297 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T10:46:27+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517193997543
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000810s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+
+[ 2018-01-29T10:47:55+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194085309
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000778s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000333s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+
+[ 2018-01-29T10:48:01+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=uploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000850s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given /www/web/hb_pro_youzewang_com/public_html/application/Asset/Controller/UeditorController.class.php 第 297 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T10:48:05+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194094775
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000818s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000329s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+
+[ 2018-01-29T10:48:11+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194101030
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000944s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000448s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+
+[ 2018-01-29T10:49:35+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194184883
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000838s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000320s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+
+[ 2018-01-29T10:49:41+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194191353
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000907s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000297s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+
+[ 2018-01-29T10:50:03+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194213093
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000814s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000318s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-01-29T10:50:10+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=uploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000851s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given /www/web/hb_pro_youzewang_com/public_html/application/Asset/Controller/UeditorController.class.php 第 297 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T10:50:18+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194227994
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000731s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+
+[ 2018-01-29T10:50:41+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517194250649
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000787s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000342s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2018-01-29T10:50:56+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=uploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000535s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given /www/web/hb_pro_youzewang_com/public_html/application/Asset/Controller/UeditorController.class.php 第 297 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T16:58:54+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517216334655
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000776s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000311s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-01-29T17:03:06+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517216587297
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000967s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000424s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+
+[ 2018-01-29T17:42:29+08:00 ] 60.168.149.11 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517218959345
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000756s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+
+[ 2018-01-29T17:47:40+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000762s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000322s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000323s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-01-29T17:47:52+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000795s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000334s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000364s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T17:48:07+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000878s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000337s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-01-29T17:48:24+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000879s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000336s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000349s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T17:48:33+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000829s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000367s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000344s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-01-29T17:48:52+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000762s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000332s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T17:49:13+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000788s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000321s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000315s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2018-01-29T17:49:25+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000761s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000327s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T17:49:44+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000498s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000362s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-01-29T17:49:54+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000831s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000532s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000575s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T17:50:22+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000771s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000344s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2018-01-29T17:50:43+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000728s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000325s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000371s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T17:50:55+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000850s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000355s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000359s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2018-01-29T17:51:08+08:00 ] 60.168.149.11 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000832s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000482s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000405s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:46:06+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517229966723
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000760s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000371s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+
+[ 2018-01-29T20:46:07+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000315s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000314s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-01-29T20:46:27+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000319s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000311s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:46:40+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230000928
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000745s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+
+[ 2018-01-29T20:46:41+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000733s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000288s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000362s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-01-29T20:46:50+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000814s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000426s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000357s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000400s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:46:57+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230018118
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000835s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000316s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-01-29T20:46:58+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000821s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000341s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000324s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-01-29T20:47:05+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000811s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000379s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000359s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:47:11+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230031945
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000743s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000331s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-01-29T20:47:13+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000747s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000296s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000368s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-01-29T20:47:19+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000763s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000337s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000311s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:47:27+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230047568
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000752s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000341s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+
+[ 2018-01-29T20:47:29+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000740s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000341s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-01-29T20:47:36+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000768s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000312s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000336s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:58:15+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230696110
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000748s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000293s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+
+[ 2018-01-29T20:58:16+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000741s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000335s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000319s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-01-29T20:58:22+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000781s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000295s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000333s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:58:57+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230737340
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000873s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000314s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+
+[ 2018-01-29T20:59:26+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230766999
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000794s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000333s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+
+[ 2018-01-29T20:59:27+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload&multi=0&filetype=image&app=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000802s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000353s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000364s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tb_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `tb_options` WHERE `option_name` = 'cdn_settings' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2018-01-29T20:59:32+08:00 ] 36.63.95.216 /index.php?g=asset&m=asset&a=plupload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000791s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000312s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000310s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/web/hb_pro_youzewang_com/public_html/simplewind/Core/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-29T20:59:37+08:00 ] 36.63.95.216 /index.php?g=Asset&m=Ueditor&a=upload&action=config&&noCache=1517230778040
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000324s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+
